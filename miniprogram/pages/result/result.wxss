@@ -1,0 +1,213 @@
+/* ============================================================
+   匹配结果页
+   ============================================================ */
+.result {
+  padding: 10px 16px 0;
+}
+
+/* ---------------- 汇总卡（深色） ---------------- */
+.summary {
+  padding: 18px 16px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #0a1317 0%, #052550 100%);
+  margin-bottom: 16px;
+}
+.summary__count {
+  display: flex;
+  align-items: baseline;
+}
+.summary__num {
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+.summary__unit {
+  margin-left: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+}
+.summary__insight {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+}
+.summary__tiers {
+  display: flex;
+  margin-top: 16px;
+}
+.summary__tier {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.summary__tier + .summary__tier {
+  margin-left: 8px;
+}
+.summary__tier-num {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.summary__tier-label {
+  margin-top: 2px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+/* ---------------- 筛选 ---------------- */
+.chips__scroll {
+  margin-bottom: 12px;
+}
+
+/* ---------------- 结果卡片 ---------------- */
+.rcard {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+}
+.rcard + .rcard {
+  margin-top: 10px;
+}
+.rcard__body {
+  flex: 1;
+  margin-left: 12px;
+  min-width: 0;
+}
+.rcard__name-row {
+  display: flex;
+  align-items: center;
+}
+.rcard__name {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--t1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+.rcard__name-row .badge {
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+.rcard__meta {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--t3);
+}
+.rcard__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+.rcard__score {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--t1);
+  line-height: 1;
+}
+.rcard__score--mute {
+  color: var(--t3);
+}
+.rcard__right .mt {
+  margin-top: 6px;
+}
+
+.result__empty {
+  padding: 60px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--t3);
+}
+
+.result__disclaimer {
+  display: block;
+  margin: 18px 4px 8px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--t4);
+  text-align: center;
+}
+
+/* ---------------- 行动建议 ----------------
+   内容由「解读」环节产出：AI 接入时来自模型，未接入时来自规则模板。
+   两者结构一致，因此这里不需要区分来源，只在底部统一标注。 */
+.sug {
+  margin-bottom: 16px;
+  padding: 4px 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+}
+.sug__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 14px 0;
+}
+.sug__item + .sug__item {
+  border-top: 1px solid var(--line);
+}
+.sug__dot {
+  width: 6px;
+  height: 6px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: var(--brand);
+  flex-shrink: 0;
+}
+.sug__body {
+  flex: 1;
+  margin-left: 10px;
+  min-width: 0;
+}
+.sug__title {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.sug__detail {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--t2);
+}
+
+.result__src {
+  display: block;
+  margin: 6px 4px 8px;
+  font-size: 11px;
+  color: var(--t4);
+  text-align: center;
+}
+
+/* ---------------- 无结果引导 ---------------- */
+.result__none {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+.result__none-title {
+  margin-top: 24px;
+  font-size: 15px;
+  color: var(--t2);
+}
+.result__none-btn {
+  margin-top: 20px;
+  padding: 0 40px;
+}

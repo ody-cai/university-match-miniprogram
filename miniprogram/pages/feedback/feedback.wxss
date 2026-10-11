@@ -1,0 +1,200 @@
+/* ==================================================================
+   意见反馈（09）
+   ------------------------------------------------------------------
+   尺寸依据：升学规划小程序UI稿/09-意见反馈-Feedback.png（375 基准，1:1）
+
+   ⚠️ `.fb__local` 本地模式提示条必须保留 —— 后端未接入时反馈只存本机、
+      团队收不到，必须如实告知（见 data/content.js 的 localNotice）。
+      提交结果态已迁到独立页面（pages/feedback-result/），不在本文件内。
+   ================================================================== */
+
+/* ---------------------------------------------------------------
+   页面骨架
+   ---------------------------------------------------------------
+   底部动作栏是 fixed 的，高度 = 10 + 按钮 52 + 10（+ 安全区），
+   因此内容区要让出约 76px，否则最后一张卡会被压住。
+   （v1.0.3 删掉了按钮下面那行说明文字，让位高度从 100px 降到 76px）
+   --------------------------------------------------------------- */
+.fb {
+  padding-bottom: calc(76px + env(safe-area-inset-bottom));
+}
+.fb__body {
+  padding: 12px var(--pad) 16px;
+}
+/* 卡片间距 16（设计稿实测） */
+.fb__card + .fb__card {
+  margin-top: 16px;
+}
+
+/* 卡片标题行：标题 + 必填/选填 badge，badge 紧跟标题 */
+.fb__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.fb__head .badge {
+  margin-left: 6px;
+}
+.fb__head--between {
+  justify-content: space-between;
+}
+.fb__head-l {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+/* 字数计数：0/200 */
+.fb__count {
+  font-size: 13px;
+  color: var(--t3);
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+/* ---------------------------------------------------------------
+   卡 1 · 反馈类型（2×2 网格）
+   ---------------------------------------------------------------
+   用 flex-wrap + 50% 宽度而非 grid：小程序 WebView 对 grid 的支持
+   在部分安卓机型上不一致，flex 更稳。
+   ⚠️ 未选中态也保留 1px 透明描边 —— 否则选中时多出边框会让整格
+      尺寸变化，视觉上「跳」一下。
+   --------------------------------------------------------------- */
+.fb__types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fb-type {
+  width: calc((100% - 10px) / 2);
+  height: 36px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--field);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--t2);
+}
+/* 最后一行不留底边距，避免卡片底部多出 10px 空白 */
+.fb-type:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+.fb-type--on {
+  background: #EEF5FF;
+  border-color: var(--brand);
+  color: var(--brand);
+  font-weight: 500;
+}
+.fb-type--press {
+  opacity: 0.7;
+}
+
+/* ---------------------------------------------------------------
+   卡 2 · 问题描述
+   --------------------------------------------------------------- */
+.fb__ta {
+  width: 100%;
+  height: 96px;
+  padding: 12px;
+  background: var(--field);
+  border-radius: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--t1);
+}
+.fb__ph {
+  color: var(--t3);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* ---------------------------------------------------------------
+   卡 3 · 相关截图
+   ---------------------------------------------------------------
+   初始态是「上传框 + 右侧说明文字」同一行（设计稿即如此）；
+   选了图之后图片会依次排在左侧，说明文字被挤到剩余空间。
+   --------------------------------------------------------------- */
+.fb__imgs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fb__add,
+.fb__img {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  margin: 0 10px 0 0;
+  flex-shrink: 0;
+}
+.fb__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--field);
+  border: 1px dashed var(--line-2);
+}
+.fb__add--press {
+  background: #EDF1F6;
+}
+.fb__img {
+  position: relative;
+}
+.fb__img-pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+/* 删除角标：深色圆底 + 旋转 45° 的加号（拼出 ×，避免再做一个图标） */
+.fb__img-del {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(10, 19, 23, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fb__imgs-hint {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--t3);
+  padding-left: 2px;
+}
+
+/* ---------------------------------------------------------------
+   卡 4 · 联系方式 —— v1.0.3 已整卡移除
+   ---------------------------------------------------------------
+   原样式为 `.fb__input`（44px 输入行）与 `.fb__hint`（输入框下方说明），
+   随输入卡一并删除。历史背景见 feedback.wxml 顶部注释。
+   --------------------------------------------------------------- */
+
+/* 本地模式提示条 */
+.fb__local {
+  margin-top: 16px;
+}
+
+/* ---------------------------------------------------------------
+   底部动作栏
+   ---------------------------------------------------------------
+   复用 .cta-bar 的 fixed 定位与白底描边，只覆盖内边距。
+   ⚠️ 本页无标签栏，所以**不需要** `.cta-bar--tab` 的让位修饰符。
+   ⚠️ v1.0.3 删除了 `.fb__foot`（按钮下方那行承诺回复时限的文字）。
+   --------------------------------------------------------------- */
+.fb__cta {
+  padding-top: 10px;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+}
+
+/* ---------------------------------------------------------------
+   提交结果已迁至独立页面 pages/feedback-result/（09b 成功 / 09c 失败），
+   本页因此不再有任何浮层样式 —— 别再往这里加结果态。
+   --------------------------------------------------------------- */

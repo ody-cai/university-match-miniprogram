@@ -1,0 +1,116 @@
+<!-- ============================================================
+     账号管理（08）
+     资料卡 / 三项统计 / 账号与安全 / 偏好与其他 / 退出登录
+     未登录时顶部显示登录入口，不强制、不阻断浏览
+     ============================================================ -->
+<view class="page page--tab">
+  <nav-bar title="{{c.nav.account}}" />
+
+  <view class="acct">
+    <!-- ============ 资料卡 ============ -->
+    <!-- 点击进入「个人资料」（10）可编辑头像 / 昵称 / 邮箱 / 年级 / 城市。
+         未登录时不打墙：那一页自带登录入口，不在这里分叉成两种行为。
+         昵称为空时如实提示去完善，不编一个默认昵称顶上（曾因此显示出无关账号名） -->
+    <view class="profile" bindtap="onProfileCard">
+      <view class="profile__avatar">
+        <!-- ⚠️ 头像的闸门同样是 signedIn：退出登录后必须立刻回到占位图标，
+             不能只剩一个「退出登录按钮消失、头像还挂在那」的半登录态 -->
+        <image
+          wx:if="{{signedIn && user.avatarUrl}}"
+          class="profile__avatar-img"
+          src="{{user.avatarUrl}}"
+          mode="aspectFill"
+        />
+        <!-- 未登录用灰色占位（区别于已登录的钴蓝）。此前这里写的是一段
+             硬编码文案「未登录」，既违反「文案全在内容层」，也放不进 56px 圆 -->
+        <icon wx:else name="tab-me" size="{{26}}" color="{{signedIn ? 'blue' : 'mute'}}" />
+      </view>
+
+      <view class="profile__body">
+        <view class="profile__name-row">
+          <text class="profile__name">{{profileName}}</text>
+          <!-- 版本徽标由服务端下发；为空则完全不渲染，不预置默认值 -->
+          <text wx:if="{{plan}}" class="badge badge--req profile__plan">{{plan}}</text>
+        </view>
+        <text class="profile__sub">{{profileSub}}</text>
+      </view>
+      <icon name="chevron-right" size="{{18}}" color="line" />
+    </view>
+
+    <!-- ============ 三项统计 ============ -->
+    <view class="stats">
+      <view
+        wx:for="{{c.account.stats}}"
+        wx:key="key"
+        class="stat tap"
+        data-key="{{item.key}}"
+        bindtap="onStat"
+      >
+        <view class="stat__value-row">
+          <text class="stat__value">{{stats[item.key]}}</text>
+          <icon wx:if="{{item.link}}" name="chevron-right" size="{{12}}" color="blue" style="margin-left:2px" />
+        </view>
+        <text class="stat__label {{item.link ? 'stat__label--link' : ''}}">{{item.label}}</text>
+      </view>
+    </view>
+
+    <!-- ============ 账号与安全 ============ -->
+    <view class="group">
+      <text class="group__title">{{c.account.groupSecurity}}</text>
+      <view class="glist">
+        <view
+          wx:for="{{security}}"
+          wx:key="key"
+          class="grow tap"
+          data-url="{{item.url}}"
+          data-tab="{{item.tab}}"
+          data-ready="{{item.ready}}"
+          bindtap="onRow"
+        >
+          <text class="grow__label">{{c.account.rows[item.key]}}</text>
+          <!-- 右侧可选状态标签（目前只有「消息通知」用）。
+               ⚠️ `item.value` 为空时整块不渲染，不留一个空标签占位 ——
+                  「未开启」与「没读到」在列表行上必须长得不一样，
+                  后者宁可不显示，也不猜一个状态顶上 -->
+          <view class="grow__right">
+            <text wx:if="{{item.value}}" class="grow__value">{{item.value}}</text>
+            <icon name="chevron-right" size="{{18}}" color="line" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 偏好与其他 ============ -->
+    <view class="group">
+      <text class="group__title">{{c.account.groupPreference}}</text>
+      <view class="glist">
+        <view
+          wx:for="{{preference}}"
+          wx:key="key"
+          class="grow tap"
+          data-url="{{item.url}}"
+          data-tab="{{item.tab}}"
+          data-ready="{{item.ready}}"
+          bindtap="onRow"
+        >
+          <text class="grow__label">{{c.account.rows[item.key]}}</text>
+          <!-- 右侧可选状态标签（目前只有「消息通知」用）。
+               ⚠️ `item.value` 为空时整块不渲染，不留一个空标签占位 ——
+                  「未开启」与「没读到」在列表行上必须长得不一样，
+                  后者宁可不显示，也不猜一个状态顶上 -->
+          <view class="grow__right">
+            <text wx:if="{{item.value}}" class="grow__value">{{item.value}}</text>
+            <icon name="chevron-right" size="{{18}}" color="line" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 退出登录 ============ -->
+    <view wx:if="{{signedIn}}" class="logout tap" bindtap="onLogout">
+      <text>{{c.account.logout}}</text>
+    </view>
+
+    <text wx:else class="acct__foot">{{c.common.offlineTip}}</text>
+  </view>
+</view>

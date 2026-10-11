@@ -1,0 +1,43 @@
+# ---------- macOS ----------
+.DS_Store
+._*
+.AppleDouble
+
+# ---------- 依赖 / 构建产物 ----------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- 微信开发者工具 ----------
+# 本地个人配置（开发者工具自动生成，含本机设置，官方模板默认忽略）
+/project.private.config.json
+miniprogram/project.private.config.json
+
+# ---------- 运行期私有配置 ----------
+# 云开发环境 ID 等部署信息，不进入公开仓库
+miniprogram/private/config.js
+
+# ---------- 助手工作区 ----------
+# 临时中间产物；项目记忆因含内部过程记录与个人路径，不随公开仓库同步
+.workbuddy/tmp/
+.workbuddy/memory/
+
+# ---------- 凭据（绝不入库） ----------
+# 小程序代码上传密钥（miniprogram-ci 用），官方文件名形如 private.<appid>.key
+# 泄漏 = 任何人可往本小程序上传代码，务必配合后台「IP 白名单」使用
+*.key
+private.*.key
+
+# ---------- 编辑器 / IDE ----------
+.idea/
+.vscode/
+*.swp
+*~
+
+admin/.admin-key
+admin/.admin-key.sha256
+
+# ---------- 内部草稿（不公开） ----------
+致大赛组委会问询邮件.md
+致大赛组委会问询邮件-授权书.md

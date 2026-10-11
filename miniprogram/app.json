@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/terms/terms",
+    "pages/home/home",
+    "pages/match/match",
+    "pages/schools/schools",
+    "pages/account/account",
+    "pages/profile/profile",
+    "pages/notify/notify",
+    "pages/signin/signin",
+    "pages/functions/functions",
+    "pages/matching/matching",
+    "pages/result/result",
+    "pages/detail/detail",
+    "pages/feedback/feedback",
+    "pages/feedback-result/feedback-result",
+    "pages/favorites/favorites"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#F3F6FA",
+    "backgroundColorTop": "#F3F6FA",
+    "backgroundColorBottom": "#F3F6FA",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#8A96A3",
+    "selectedColor": "#0064E0",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/match/match", "text": "匹配" },
+      { "pagePath": "pages/schools/schools", "text": "院校" },
+      { "pagePath": "pages/account/account", "text": "我的" }
+    ]
+  },
+  "style": "v2",
+  "renderer": "webview",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

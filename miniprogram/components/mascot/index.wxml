@@ -1,0 +1,26 @@
+<!--
+  吉祥物结构分三层，各自负责一种运动，互不干扰：
+    mascot__shadow  投影 —— 不随形变移动，保持「压在地面上」的观感
+    mascot__body    主体 —— 负责形体形变（缩放 / 倾斜）
+    mascot__face    视线层 —— 负责视线漂移（眼睛整体平移）
+  眼睛再各自做眨眼（scaleY）。
+
+  表情由 `mood` 控制（default / happy / sad），**只改变眼睛形状并显隐嘴巴**，
+  不影响上面三层各自的动画 —— 形体照常呼吸、视线照常漂移，表情只是「脸」。
+  嘴巴放在 face 层内，这样它和眼睛一起漂移，不会出现「眼睛动了嘴没动」的割裂感。
+-->
+<view
+  class="mascot mascot--{{cls}} mascot--{{moodCls}} {{glow ? 'mascot--glow' : ''}}"
+  style="width:{{size}}px;height:{{size}}px;{{extra}}"
+>
+  <view class="mascot__shadow"></view>
+
+  <view class="mascot__body">
+    <view class="mascot__face">
+      <view class="mascot__eye mascot__eye--l"></view>
+      <view class="mascot__eye mascot__eye--r"></view>
+      <view class="mascot__mouth"></view>
+    </view>
+  </view>
+</view>
+

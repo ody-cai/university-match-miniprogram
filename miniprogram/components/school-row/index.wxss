@@ -1,0 +1,85 @@
+/* ============================================================
+   院校行（院校库 / 我的收藏 共用）
+   原先这套样式写在 pages/schools/schools.wxss 里，只有院校库一个页面能用；
+   收藏页要用同一行，所以整体搬到这里，避免两份样式各自漂移。
+   ============================================================ */
+
+/* 行间距用 :host 而不是 `.srow + .srow`：
+   `.srow` 是组件**内部**的节点，相邻兄弟关系在组件外已经断开了，
+   写 `.srow + .srow` 在页面里永远匹配不到，且不报错（列表会静默贴在一起）。
+   :host 上给下边距则与使用方页面的结构无关，稳定生效。 */
+:host {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.srow {
+  display: flex;
+  align-items: center;
+  padding: 14px 12px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  /* 入场动画。app.wxss 里已有 `.schools .srow` 的错峰规则（apply-shared 下仍命中组件内部节点），
+     这里再声明一次是为了让本组件**不依赖使用方页面的容器类名** ——
+     收藏页的容器叫 .fav，不在 app.wxss 那份选择器里，靠这一条兜住。
+     两处同时命中时声明的是同一组关键帧，不会叠加。 */
+  animation: item-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.srow__body {
+  flex: 1;
+  margin-left: 12px;
+  min-width: 0;
+}
+.srow__name {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--t1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.srow__meta {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--t3);
+}
+.srow__qs {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--t2);
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+.srow__star {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: 2px;
+}
+
+/* 已收藏星标的底色块。
+   ⚠️ 这段原先只有首页定义过（home.wxss），院校库用了**同一个类名却没有定义** ——
+   于是同一个「已收藏」控件在首页有浅蓝底块、在院校库是裸星标。
+   搬进公共组件时补齐，两个页面从此刻起一致。 */
+.star-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 尊重系统「减弱动态效果」设置 */
+@media (prefers-reduced-motion: reduce) {
+  .srow {
+    animation: none;
+  }
+}

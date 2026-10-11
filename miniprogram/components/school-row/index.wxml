@@ -1,0 +1,20 @@
+<!-- 院校行：校徽 / 名称 / 副文案 / QS / 收藏星标
+     行内两处点击是**不同动作**，所以星标必须用 catchtap 阻止冒泡，
+     否则点星标会连带打开院校详情（事件冒泡到 bindtap="onOpen"）。 -->
+<view class="srow tap" bindtap="onOpen">
+  <crest size="{{52}}" color="{{school.crestColor}}" shape="{{school.crestShape}}" />
+
+  <view class="srow__body">
+    <text class="srow__name">{{school.nameCn}}</text>
+    <text class="srow__meta">{{school.meta}}</text>
+  </view>
+
+  <text class="srow__qs">{{school.qsLabel}}</text>
+
+  <view wx:if="{{star}}" class="srow__star tap" catchtap="onFavorite">
+    <view wx:if="{{school.favorite}}" class="star-box">
+      <icon name="star" size="{{15}}" color="blue" />
+    </view>
+    <icon wx:else name="star-line" size="{{24}}" color="line" />
+  </view>
+</view>

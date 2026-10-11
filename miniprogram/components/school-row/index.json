@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "crest": "/components/crest/index",
+    "icon": "/components/icon/index"
+  },
+  "styleIsolation": "apply-shared"
+}

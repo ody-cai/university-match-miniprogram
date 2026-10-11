@@ -1,0 +1,33 @@
+.tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background: #ffffff;
+  border-top: 1px solid #edf1f6;
+}
+
+.tabbar__inner {
+  display: flex;
+  align-items: stretch;
+}
+
+.tabbar__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabbar__text {
+  margin-top: 3px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #8a96a3;
+}
+.tabbar__text--on {
+  color: #0064e0;
+  font-weight: 600;
+}

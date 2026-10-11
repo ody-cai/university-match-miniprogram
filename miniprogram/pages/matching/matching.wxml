@@ -1,0 +1,42 @@
+<!-- ============================================================
+     匹配中（04）
+     过渡态独占：无 TabBar、无底部 CTA
+     进度对应**真实阶段**，不是随机数字：
+       校验成绩档案 → 比对各校录取要求 → 计算匹配梯度 → 生成个性化建议
+     ============================================================ -->
+<view class="page matching">
+  <nav-bar title="{{c.nav.matching}}" back-text="{{c.matching.cancel}}" bind:back="onCancel" />
+
+  <view class="matching__main">
+    <!-- 吉祥物：搜索中动画（形体循环形变，每次形变被眨眼遮住） -->
+    <mascot size="{{132}}" motion="search" />
+
+    <view class="matching__text">
+      <text class="matching__title">{{c.matching.title}}</text>
+      <text class="matching__caption">{{caption}}</text>
+
+      <!-- 阶段指示：已完成的显示打勾，当前的拉长高亮 -->
+      <view class="matching__steps">
+        <view
+          wx:for="{{phases}}"
+          wx:key="key"
+          class="mstep {{index < phase ? 'mstep--done' : ''}} {{index === phase ? 'mstep--on' : ''}}"
+        >
+          <icon wx:if="{{index < phase}}" name="check" size="{{10}}" color="blue" />
+        </view>
+      </view>
+    </view>
+
+    <!-- 进度卡 -->
+    <view class="matching__card">
+      <view class="matching__card-head">
+        <text class="matching__label">{{phaseLabel}}</text>
+        <text class="matching__pct">{{progress}}%</text>
+      </view>
+      <view class="bar">
+        <view class="bar__fill" style="width:{{progress}}%"></view>
+      </view>
+      <text class="matching__foot">{{c.matching.foot}}</text>
+    </view>
+  </view>
+</view>

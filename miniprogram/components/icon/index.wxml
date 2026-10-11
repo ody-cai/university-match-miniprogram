@@ -1,0 +1,13 @@
+<!--
+  图标渲染：<image> 载入 PNG data URI。
+  尺寸只由 size 决定，所以组件根节点（:host）天然就是 size × size 的方块；
+  外部想加边距 / 定位 / 旋转，请在标签上写 class 或 style（见 index.js 的说明）。
+-->
+<image
+  wx:if="{{src}}"
+  class="icon"
+  src="{{src}}"
+  style="width:{{size}}px;height:{{size}}px;"
+  mode="aspectFit"
+/>
+<view wx:else class="icon icon--missing" style="width:{{size}}px;height:{{size}}px;"></view>

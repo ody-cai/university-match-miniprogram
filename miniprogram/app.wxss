@@ -1,0 +1,830 @@
+/* ==================================================================
+   升学规划 · 全局样式
+   基准：375px 宽（设计稿尺寸，代码中直接使用 px，与设计稿 1:1 对应）
+   规范优先级：微信官方规范 = 硬约束；Meta 视觉语言 = 软装饰
+   ================================================================== */
+
+page {
+  /* ---- 品牌色 ---- */
+  --brand: #0064E0;
+  --brand-strong: #00479F;
+  --brand-soft: #2E86EE;
+  --brand-tint: #E8F1FD;
+  --brand-tint-2: #D6E8FB;
+
+  /* ---- 深色 Hero 渐变 ---- */
+  --hero-from: #0A1317;
+  --hero-to: #032E6B;
+
+  /* ---- 文本层级 ---- */
+  --t1: #0A1317;
+  --t2: #5A6470;
+  --t3: #8A96A3;
+  --t4: #B4BFCB;
+
+  /* ---- 面 / 线 ---- */
+  --bg: #F3F6FA;
+  --card: #FFFFFF;
+  --field: #F7F9FB;
+  --line: #EDF1F6;
+  --line-2: #E2E8F0;
+
+  /* ---- 语义色 ---- */
+  --warn: #E08A00;
+  --warn-bg: #FFF6E5;
+  --ok: #07C160;
+  --ok-bg: #E6F8EE;
+  --danger: #D0342C;
+  --star-off: #9AA7B4;
+
+  /* ---- 结构尺寸（数值取自设计稿 PNG 实测） ---- */
+  --sb: 44px;          /* 状态栏（运行时按机型覆盖） */
+  --nav: 44px;         /* 导航栏（标题中心落在 66） */
+  --tab: 78px;         /* 标签栏 44 + 安全区 34 */
+  --cta: 72px;         /* 底部动作栏 = 10 + 按钮 52 + 10 */
+  --pad: 16px;         /* 内容左右留白（卡片宽 375 − 32 = 343） */
+  --top: 10px;         /* 内容区距导航栏底部的间距（首元素落在 y≈98） */
+
+  /* ---- 圆角 ---- */
+  --r-card: 16px;
+  --r-hero: 24px;
+  --r-pill: 100px;
+
+  /* ---- 按钮（全站统一：高 52 / 药丸） ---- */
+  --btn-h: 52px;
+
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC",
+    "Helvetica Neue", Arial, sans-serif;
+  color: var(--t1);
+  font-size: 15px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+view, text, navigator, button, input, scroll-view, swiper, image {
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------
+   页面骨架
+   ------------------------------------------------------------------ */
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+/* 有标签栏的页面：底部留出标签栏高度 */
+.page--tab {
+  padding-bottom: var(--tab);
+}
+/* 有底部动作栏的页面 */
+.page--cta {
+  padding-bottom: var(--cta);
+}
+/* 既有动作栏又有标签栏 */
+.page--cta-tab {
+  padding-bottom: calc(var(--cta) + var(--tab));
+}
+
+/* 状态栏占位（自定义导航栏必需） */
+.status-bar {
+  height: var(--sb);
+  flex-shrink: 0;
+}
+
+/* 内容区 */
+.content {
+  padding: 0 var(--pad);
+}
+.content--tight {
+  padding: 0 16px;
+}
+
+/* 大区块之间统一节奏 */
+.block + .block {
+  margin-top: 14px;
+}
+
+/* ------------------------------------------------------------------
+   卡片
+   ------------------------------------------------------------------ */
+.card {
+  background: var(--card);
+  border-radius: var(--r-card);
+  padding: 16px;
+  border: 1px solid var(--line);
+}
+.card--flat {
+  border: none;
+}
+.card--field {
+  background: var(--field);
+  border: none;
+}
+.card--hero {
+  border: none;
+  border-radius: var(--r-hero);
+  background: linear-gradient(160deg, var(--hero-from) 0%, var(--hero-to) 100%);
+}
+
+/* 卡片标题 */
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--t1);
+  letter-spacing: 0.1px;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.card-head--tight {
+  margin-bottom: 8px;
+}
+.card-sub {
+  font-size: 13px;
+  color: var(--t3);
+  margin-top: 4px;
+}
+.card-desc {
+  font-size: 13px;
+  color: var(--t3);
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* ------------------------------------------------------------------
+   徽标 / 药丸 / 标签
+   ------------------------------------------------------------------ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1;
+  background: var(--field);
+  color: var(--t3);
+}
+.badge--opt {
+  background: #EEF1F5;
+  color: #8A96A3;
+}
+.badge--req {
+  background: var(--brand-tint);
+  color: var(--brand);
+}
+.badge--warn {
+  background: var(--warn-bg);
+  color: var(--warn);
+}
+.badge--ok {
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+.badge--head {
+  height: 22px;
+  padding: 0 9px;
+  border-radius: 100px;
+  font-size: 12px;
+}
+
+/* 药丸按钮 */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: var(--r-pill);
+  font-size: 14px;
+  background: var(--field);
+  color: var(--t2);
+}
+.pill--on {
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 筛选 chip（横向滚动列表） */
+.chips {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.chips__scroll {
+  width: 100%;
+  white-space: nowrap;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 16px;
+  margin-right: 8px;
+  border-radius: var(--r-pill);
+  background: #fff;
+  border: 1px solid var(--line-2);
+  color: var(--t1);
+  font-size: 14px;
+  line-height: 1;
+}
+.chip:last-child {
+  margin-right: 0;
+}
+.chip--on {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 多选「勾选型」chip —— 与主按钮同屏时必须降权
+   ------------------------------------------------------------------
+   为什么要有这个变体（2026-09-23 修「开始匹配按钮和选项粘在一起」）：
+   本变体用在**档案填写**的多选组（目标国家 / 目标专业方向），
+   这类页面底部有悬浮的主 CTA，而 CTA 的品牌蓝和 chip--on 的品牌蓝
+   是同一个色值（--brand）—— 两者上下相邻时色块连成一片，
+   用户分不清「这是选项」还是「这是按钮」（截图实测：选中 chip 与按钮
+   之间没有边界，看起来是一坨蓝）。
+
+   约定（全站统一的层级语言）：
+     · 实心品牌蓝 = 可点的**动作**（主按钮 / 单选筛选 tab）
+     · 浅蓝底 + 蓝字 + 蓝框 = 已选中的**选项**（多选勾选态）
+   单选筛选 chip（院校库 / 结果页，页面顶部、周围无主按钮）保持实心蓝不变，
+   它们承担的是 tab 语义，不该跟着变。 */
+.chips--pick .chip--on {
+  background: var(--brand-tint);
+  border-color: var(--brand);
+  color: var(--brand);
+  font-weight: 600;
+}
+
+/* 软 chip（详情页优势专业等） */
+.soft-chip {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 14px;
+  margin: 0 8px 8px 0;
+  border-radius: 8px;
+  background: var(--brand-tint);
+  color: var(--brand);
+  font-size: 14px;
+}
+.soft-chip--ghost {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  height: 26px;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 100px;
+}
+
+/* ------------------------------------------------------------------
+   按钮
+   ------------------------------------------------------------------ */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  border-radius: var(--r-pill);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+}
+/**
+ * ⚠️ 微信 `<button>` 的 `::after` 自带 1px 半透明边框，`.btn { border: none }`
+ *    清不掉它。此前只有 `.btn--primary::after` 做了重置，于是**其余变体**
+ *    （`.btn--disabled` / `.btn--ghost` / `.btn--outline-danger`）都多出一圈描边 ——
+ *    条款页未勾选时的禁用按钮就是灰底上套了一圈黑边，与设计稿不符。
+ *    提到基础类上，所有变体自然继承；`--ghost` / `--outline-danger` 想要的
+ *    边框写在元素自身的 `border` 上，不受影响。
+ */
+.btn::after {
+  border: none;
+}
+.btn--primary {
+  background: var(--brand);
+  color: #fff;
+}
+.btn--ghost {
+  background: #fff;
+  color: var(--brand);
+  border: 1.5px solid var(--brand);
+}
+.btn--disabled {
+  background: #C3CFDC;
+  color: #fff;
+}
+.btn--outline-danger {
+  background: #fff;
+  color: var(--danger);
+  border: 1px solid #F0C4C0;
+}
+.btn--sm {
+  height: 44px;
+  font-size: 15px;
+}
+.btn__icon {
+  margin-right: 8px;
+}
+
+/* 底部动作栏（固定） */
+.cta-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  background: #fff;
+  border-top: 1px solid var(--line);
+  padding: 8px 16px;
+  padding-bottom: calc(8px + env(safe-area-inset-bottom));
+}
+.cta-bar--tab {
+  bottom: var(--tab);
+  /* ⚠️ --tab 运行时 = 44 + safeBottom（app.js 的 tabBarHeight），**已含安全区**。
+     基础类里的 padding-bottom: calc(8px + env(safe-area-inset-bottom)) 是给
+     bottom: 0 的页面用的，这里再让一次属于语义重叠（env() 生效时会多顶出约 34px）。
+     所以 --tab 版本只保留 8px 的视觉间距。 */
+  padding-bottom: 8px;
+}
+/* 悬浮动作栏：去掉白底与分隔线，按钮直接浮在内容之上。
+   为什么要有这个修饰符 —— 页面主体是长表单/长列表时，通栏白底会把底部横切一刀，
+   视觉上像多出一条「白条」；悬浮按钮只让按钮本身占位，内容从它下面穿过。
+   ⚠️ 两个必须同时成立的点，改之前先读：
+   1) 容器 pointer-events: none + 按钮 auto —— 透明的 fixed 容器**仍然会命中测试**，
+      不写这条会让按钮正上方 52px 内的 chips / 字段行点不动；
+   2) 页面底部留白不能跟着减 —— 按钮是浮在内容之上的，留白不够时滚到底的内容
+      会被永久遮住。--cta(72) + --tab(78) = 150px 的默认留白 > 按钮顶边
+      (--tab 78 + 12 + 52 = 142)，余 8px，正好够，所以页面继续用 .page--cta-tab 即可。 */
+.cta-bar--float {
+  background: transparent;
+  border-top: none;
+  padding: 0 var(--pad);
+  /* 显式归零：bottom 已经用 --tab 让出了「标签栏 + 安全区」，
+     再留 padding-bottom 会把按钮顶得过高；悬浮的那 12px 间距由 bottom 控制 */
+  padding-bottom: 0;
+  pointer-events: none;
+}
+/* 距标签栏 12px 起步，按钮四周留出背景，悬浮感才成立（贴死标签栏就又变成「一条」了） */
+.cta-bar--float.cta-bar--tab {
+  bottom: calc(var(--tab) + 12px);
+}
+.cta-bar--float .btn {
+  pointer-events: auto;
+  /* 第一层 5px 白色实心环（spread，不是 blur）——
+     悬浮按钮是压在内容之上的，滚到底时它会长在 chip 上：同色时两者边界消失，
+     看起来「粘在一起」。白色实心环等于给按钮四周垫了一圈底，
+     压到任何色块上都有 5px 硬边界；压在白色卡片上时环不可见，不产生副作用。
+     后两层是原本的投影（品牌蓝光晕 + 环境阴影），保留不动。 */
+  box-shadow: 0 0 0 5px #fff, 0 8px 20px -6px rgba(0, 100, 224, 0.40), 0 2px 6px rgba(10, 19, 23, 0.06);
+}
+.cta-bar__row {
+  display: flex;
+  align-items: center;
+}
+.cta-bar__row .btn + .btn {
+  margin-left: 10px;
+}
+.cta-bar__row .btn--flex {
+  flex: 1;
+}
+
+/* ------------------------------------------------------------------
+   行 / 列表
+   ------------------------------------------------------------------ */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+}
+.row__label {
+  font-size: 15px;
+  color: var(--t1);
+}
+.row__sub {
+  font-size: 12px;
+  color: var(--t3);
+  margin-top: 3px;
+}
+.row__value {
+  font-size: 15px;
+  color: var(--t2);
+}
+.row-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 0;
+}
+
+/* 键值行（成绩录入等，带浅底） */
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--field);
+  border-radius: 12px;
+  padding: 12px 12px;
+}
+.field-row + .field-row {
+  margin-top: 8px;
+}
+.field-row__label {
+  font-size: 15px;
+  color: var(--t1);
+  font-weight: 500;
+}
+.field-row__hint {
+  font-size: 12px;
+  color: var(--t3);
+  margin-top: 4px;
+}
+.field-row__value {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--t1);
+  margin-left: 8px;
+}
+.field-row__value--warn {
+  color: var(--warn);
+}
+.field-row__chevron {
+  margin-left: 6px;
+  opacity: 0.55;
+}
+
+/* ------------------------------------------------------------------
+   区块标题
+   ------------------------------------------------------------------ */
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 12px;
+}
+.section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--t1);
+  letter-spacing: 0.1px;
+}
+.section-more {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--brand);
+}
+
+/* ------------------------------------------------------------------
+   搜索框
+   ------------------------------------------------------------------ */
+.search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: var(--r-pill);
+  background: #fff;
+  border: 1px solid var(--line-2);
+}
+.search__input {
+  flex: 1;
+  margin-left: 8px;
+  font-size: 14px;
+  color: var(--t1);
+  height: 100%;
+}
+.search__ph {
+  color: var(--t3);
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------------------
+   进度条
+   ------------------------------------------------------------------ */
+.bar {
+  height: 6px;
+  border-radius: 100px;
+  background: #E7ECF2;
+  overflow: hidden;
+}
+.bar__fill {
+  height: 100%;
+  border-radius: 100px;
+  background: var(--brand);
+  transition: width 0.5s ease-out;
+}
+.bar__fill--warn {
+  background: var(--warn);
+}
+.bar__fill--ok {
+  background: var(--ok);
+}
+
+/* ------------------------------------------------------------------
+   工具
+   ------------------------------------------------------------------ */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tap {
+  transition: opacity 0.15s;
+}
+.tap:active {
+  opacity: 0.6;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+.hidden {
+  display: none !important;
+}
+
+/* ------------------------------------------------------------------
+   页面转场与入场动画
+   ------------------------------------------------------------------
+   背景：微信原生转场只在 navigateTo / navigateBack 时右滑入场，
+   **switchTab（标签页之间）本来就没有转场动画**，这是平台行为。
+   另外之前「匹配中 → 匹配结果」用的是 redirectTo，属硬替换、零动画，
+   观感上像「闪一下」。
+   因此这里统一补两层：
+     ① 内容区整体淡入上移 —— 每个页面渲染时都会播一次
+     ② 列表项错峰入场 —— 让「有动画」这件事一眼可见，而不是感觉不到
+   ⚠️ 动画只加在**内容容器**上，不加在 .page 根节点：
+      根节点一旦有 transform，其内部 position:fixed 的导航栏与底部栏
+      会退化成相对根节点定位，滚动时错位。
+   ------------------------------------------------------------------ */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes item-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ① 内容容器入场。新增页面时把内容容器类名补进这个列表即可 */
+.terms__body,
+.home,
+.fn,
+.match,
+.matching__main,
+.result,
+.result__none,
+.schools,
+.detail,
+.acct,
+.prof__body,
+.signin__main,
+.fb__body,
+.fro__body {
+  animation: page-in 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ② 列表项错峰：同一容器内前 6 项依次延后 40ms */
+.home .rec,
+.schools .srow,
+.result .rcard,
+.detail .rrow,
+.fn__group,
+.acct .group {
+  animation: item-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.home .rec:nth-child(2),
+.schools .srow:nth-child(2),
+.result .rcard:nth-child(2),
+.detail .rrow:nth-child(2),
+.fn__group:nth-child(2),
+.acct .group:nth-child(2) {
+  animation-delay: 0.04s;
+}
+.home .rec:nth-child(3),
+.schools .srow:nth-child(3),
+.result .rcard:nth-child(3),
+.detail .rrow:nth-child(3),
+.fn__group:nth-child(3),
+.acct .group:nth-child(3) {
+  animation-delay: 0.08s;
+}
+.home .rec:nth-child(4),
+.schools .srow:nth-child(4),
+.result .rcard:nth-child(4),
+.detail .rrow:nth-child(4),
+.fn__group:nth-child(4),
+.acct .group:nth-child(4) {
+  animation-delay: 0.12s;
+}
+.home .rec:nth-child(n + 5),
+.schools .srow:nth-child(n + 5),
+.result .rcard:nth-child(n + 5),
+.detail .rrow:nth-child(n + 5),
+.fn__group:nth-child(n + 5),
+.acct .group:nth-child(n + 5) {
+  animation-delay: 0.16s;
+}
+
+/* 尊重系统「减弱动态效果」设置 */
+@media (prefers-reduced-motion: reduce) {
+  .terms__body,
+  .home,
+  .fn,
+  .match,
+  .matching__main,
+  .result,
+  .result__none,
+  .schools,
+  .detail,
+  .acct,
+  .prof__body,
+  .signin__main,
+  .fb__body,
+  .fro__body,
+  .home .rec,
+  .schools .srow,
+  .result .rcard,
+  .detail .rrow,
+  .fn__group,
+  .acct .group {
+    animation: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   底部浮层（条款正文 / 成绩录入等）
+   ------------------------------------------------------------------ */
+.sheet-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(10, 19, 23, 0.45);
+  z-index: 300;
+  display: flex;
+  align-items: flex-end;
+}
+.sheet {
+  width: 100%;
+  max-height: 80vh;
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  padding: 20px 16px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  animation: sheet-up 0.24s ease-out;
+}
+/**
+ * 带标签栏的页面上的浮层：底部要额外让出标签栏高度。
+ * ------------------------------------------------------------------
+ * ⚠️ 症状（实测）：成绩匹配页弹「高中成绩单均分」录入浮层时，
+ *    末尾的「确定」按钮被自定义标签栏盖住 —— 既看不见、点下去还会误触标签页。
+ *
+ * ⚠️ 为什么不能靠提高 z-index 解决：`.sheet-mask` 已经是 z-index 300、
+ *    标签栏只有 200，**仍然被盖住**。原因是自定义 tabBar（custom: true）
+ *    由框架绘制在页面内容之上，不受页面内层叠上下文控制。
+ *    所以唯一可行的做法是**让位**，而不是「压上去」。
+ *
+ * ⚠️ 与 `.cta-bar--tab { bottom: var(--tab) }`（见上方底部动作栏一节）是同一条约定：
+ *    页面里任何贴底的固定元素，只要页面有标签栏，都要主动让出 `var(--tab)`。
+ *    新增贴底元素时先想一遍这条，别等真机截图才发现被挡。
+ *
+ * ⚠️ `--tab`（默认 78px）= 标签栏内容 44 + 安全区 34，**已含安全区**，
+ *    因此这里不要再叠加 `env(safe-area-inset-bottom)`，否则底部会多出一段空白。
+ */
+.sheet--tab {
+  padding-bottom: calc(16px + var(--tab));
+}
+@keyframes sheet-up {
+  from {
+    transform: translateY(24%);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.sheet__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sheet__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--t1);
+}
+.sheet__close {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -8px;
+}
+.sheet__meta {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--t3);
+}
+.sheet__scroll {
+  flex: 1;
+  max-height: 58vh;
+  margin-top: 14px;
+}
+.sheet__sec {
+  margin-bottom: 16px;
+}
+.sheet__h {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.sheet__p {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--t2);
+}
+.sheet__foot {
+  margin-top: 12px;
+}
+
+/* ------------------------------------------------------------------
+   匹配档位标记（详情页 / 结果页共用）
+   ------------------------------------------------------------------ */
+.mt {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+}
+.mt--safe {
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+.mt--match {
+  background: var(--brand);
+  color: #fff;
+}
+.mt--reach {
+  background: var(--warn-bg);
+  color: var(--warn);
+}
+.mt--unknown {
+  background: var(--field);
+  color: var(--t3);
+  font-weight: 400;
+}
+
+/* 数据缺失提示条 */
+.datacap {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--warn-bg);
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8A6200;
+}
+.datacap__ic {
+  margin-right: 6px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}

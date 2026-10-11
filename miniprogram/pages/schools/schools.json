@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-bar": "/components/nav-bar/index",
+    "icon": "/components/icon/index",
+    "school-row": "/components/school-row/index"
+  }
+}

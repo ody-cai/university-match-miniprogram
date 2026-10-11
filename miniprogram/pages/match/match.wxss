@@ -1,0 +1,221 @@
+/* ============================================================
+   成绩匹配页
+   结构间距与设计稿一致：卡片间距 14、内容左右 16、
+   底部 CTA 固定于标签栏之上
+   ============================================================ */
+.match {
+  padding: 10px 16px 0;
+}
+
+/* ---------------- 分段控件 ---------------- */
+.seg {
+  display: flex;
+  padding: 3px;
+  border-radius: 100px;
+  background: #eef1f5;
+  margin-bottom: 14px;
+}
+.seg__item {
+  flex: 1;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-size: 14px;
+  color: var(--t2);
+}
+/* 选中项：白底 + 主文本，靠背景反差而非颜色，兼容多套课程体系 */
+.seg__item--on {
+  background: #ffffff;
+  color: var(--t1);
+  font-weight: 600;
+  box-shadow: 0 2px 6px -2px rgba(10, 19, 23, 0.18);
+}
+
+/* ---------------- 卡片头部（标题 + 徽标左对齐，操作右对齐） ---------------- */
+.card-head-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------------- 添加科目 ---------------- */
+.add {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 4px;
+  color: var(--brand);
+}
+.add__text {
+  margin-left: 2px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ---------------- 科目行 ---------------- */
+.course-row {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.course-row__main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 12px;
+  background: var(--field);
+}
+.course-row__score {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--t1);
+  flex-shrink: 0;
+}
+/* 满分科目：绿色打勾感，表示成绩出色 */
+.course-row__score--full {
+  color: var(--ok);
+}
+.course-row__body {
+  flex: 1;
+  margin-left: 10px;
+  min-width: 0;
+}
+.course-row__name {
+  display: block;
+  font-size: 14px;
+  color: var(--t1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.course-row__date {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--t3);
+}
+/* ---------------- 删除科目 ----------------
+   设计稿里课程行是纯展示、本来没有删除键；这是我们加的功能，就必须让它在视觉上
+   「一眼是删除」。曾经放的是 rotate(180deg) 的 chevron-left —— 形状与行内表示
+   「可点进编辑」的 chevron-right 几乎一样，于是用户加完科目后找不到删除入口。
+   现在换成 danger 红的垃圾桶图标，并给按下态铺一层浅红底（hover-class 比 :active
+   在真机上稳），明确告诉用户「这里是可以点的操作」。 */
+.course-row__del {
+  width: 36px;
+  height: 44px;
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.course-row__del--on {
+  background: #fdecea;
+}
+
+.course-empty {
+  padding: 14px 10px;
+  border-radius: 12px;
+  background: var(--field);
+  font-size: 13px;
+  color: var(--t3);
+}
+
+/* ---------------- 学业总成绩 ---------------- */
+.field-row__right {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------- chips 多行换行 ----------------
+   本页国家 5 项、专业 9 项，一行都放不下。
+   app.wxss 的 `.chips` 是给「横向滚动列表」用的（display:flex + white-space:nowrap，
+   不换行，配合 .chips__scroll 使用）。本页没有 scroll-view 外壳，直接用它会让
+   flex 项被压缩进卡片 311px 的内宽里，文字溢出药丸外（即「超出显示框」）。
+   行间距用 row-gap 而不是给 chip 加 margin-bottom：最后一行不会多出一截空白，
+   卡片底部留白始终等于 .card 自身的 padding。 */
+.chips--wrap {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+/* 换行布局下药丸不该再被压缩，宽度按内容撑开 */
+.chips--wrap .chip {
+  flex-shrink: 0;
+}
+
+/* ---------------- 信息说明卡 ---------------- */
+.usage {
+  margin-top: 12px;
+}
+.usage__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+}
+.usage__label {
+  font-size: 14px;
+  color: var(--t1);
+}
+
+/* ---------------- 编辑浮层 ---------------- */
+.edit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.edit-row__label {
+  font-size: 14px;
+  color: var(--t1);
+  flex-shrink: 0;
+}
+.edit-row__input {
+  flex: 1;
+  margin-left: 16px;
+  text-align: right;
+  font-size: 16px;
+  color: var(--t1);
+  height: 32px;
+}
+
+/* 输入行的补充说明（如「得分留空表示尚未出分」）。
+   用 --t3 弱化，避免和主文案抢注意力 */
+.edit-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--t3);
+}
+
+/* ---------------- 浮层里的删除入口 ----------------
+   与行右侧的垃圾桶是同一个动作。做成整行可点、48px 高：
+   浮层里空间充裕，没必要再让用户去瞄一个 36px 的小图标。 */
+.sheet__del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  margin-top: 16px;
+  border-radius: 12px;
+  background: #fdecea;
+}
+.sheet__del-text {
+  margin-left: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--danger, #d94a3d);
+}

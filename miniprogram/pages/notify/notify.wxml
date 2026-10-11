@@ -1,0 +1,77 @@
+<!-- ============================================================
+     消息通知
+     入口：「我的 > 偏好与其他 > 消息通知」
+
+     ⚠️ 这一页刻意**不做成一个开关**（switch）。
+        小程序给用户的主动触达通道只有「订阅消息」一条，而个人主体只能
+        申请到**一次性订阅** ——「授权一次 = 可下发一条」。做成常驻开关的
+        后果是：开关显示为「开」，而额度早已用尽、消息根本发不出去，
+        并且没有任何地方会报错。那正是本项目最反对的「界面在撒谎」。
+
+        所以这里如实呈现五态：未开启 / 已开启待使用 / 已使用 /
+        暂未开放 / 状态读取失败。**逐态渲染，不要合并。**
+
+     ⚠️ 所有文案取自内容层 c.notify，本文件不写死一个字。
+     ⚠️ 绑定表达式里不出现函数调用（WXML 求值不出来且**不报错**），
+        状态文案一律在 notify.js 里预先算好。
+     ============================================================ -->
+<view class="page page--cta ntf">
+  <nav-bar title="{{c.notify.navTitle}}" back="{{true}}" fallback-url="/pages/account/account" />
+
+  <view class="ntf__body">
+    <!-- ============ 说明卡 ============ -->
+    <view class="card ntf__hero">
+      <view class="ntf__badge">
+        <icon name="feedback" size="{{22}}" color="blue" />
+      </view>
+      <text class="ntf__title">{{c.notify.cardTitle}}</text>
+      <text class="ntf__desc">{{c.notify.cardDesc}}</text>
+    </view>
+
+    <!-- ============ 当前状态 ============
+         状态点颜色由 status 决定，五态各有专属色；
+         `unknown` 用中性灰 —— 它是「不知道」，不是「出错」也不是「没有」 -->
+    <text class="ntf__group">{{c.notify.groupStatus}}</text>
+    <view class="card ntf__status">
+      <view class="ntf__status-head">
+        <text class="ntf__status-value">{{statusText}}</text>
+        <view class="ntf__dot ntf__dot--{{status}}"></view>
+      </view>
+      <text class="ntf__status-desc">{{statusDesc}}</text>
+
+      <!-- 已使用态：回显上次通知关联的工单号，方便用户对上号。
+           没有工单号就整行不渲染，不留一个空的「关联工单」标签 -->
+      <view wx:if="{{usedTicketId}}" class="ntf__meta">
+        <text class="ntf__meta-k">{{c.notify.usedTicketLabel}}</text>
+        <text class="ntf__meta-v">{{usedTicketId}}</text>
+      </view>
+    </view>
+
+    <!-- 未登录说明：订阅按微信身份记录，**不要求业务登录** ——
+         如实讲清楚，省得用户以为「得先登录才能开」 -->
+    <text wx:if="{{showGuestTip}}" class="ntf__tip">{{c.notify.guestTip}}</text>
+
+    <!-- ============ 关于通知 ============ -->
+    <text class="ntf__group">{{c.notify.groupNotes}}</text>
+    <view class="card ntf__notes">
+      <view wx:for="{{c.notify.notes}}" wx:key="*this" class="ntf__note">
+        <view class="ntf__bullet"></view>
+        <text class="ntf__note-text">{{item}}</text>
+      </view>
+    </view>
+
+    <text wx:if="{{footTip}}" class="ntf__foot">{{footTip}}</text>
+  </view>
+
+  <!-- ============ 底部动作 ============
+       没有可执行动作时（能力未开放）**整条不渲染** ——
+       摆一个必然失败的按钮比什么都不放更糟 -->
+  <view wx:if="{{actionText}}" class="cta-bar">
+    <button
+      class="btn btn--primary {{pending ? 'btn--disabled' : ''}}"
+      bindtap="onPrimary"
+    >
+      <text>{{pending ? c.notify.action.pending : actionText}}</text>
+    </button>
+  </view>
+</view>

@@ -1,0 +1,134 @@
+<view class="page page--tab">
+  <nav-bar title="{{c.nav.home}}" />
+
+  <view class="home">
+    <!-- ============ Hero ============ -->
+    <view class="hero">
+      <!-- chip 文案在 home.js 的 initSeasonChip 里用 api.tpl 插值得到（chipText）。
+           不要改成 {{c.home.hero.chip}} —— 那会把 {season} 原样显示出来。
+           也不再按日期显隐：申请季是常驻信息，不该过了某天就消失。 -->
+      <view class="hero__chip">
+        <text>{{chipText}}</text>
+      </view>
+      <view class="hero__title">
+        <text wx:for="{{c.home.hero.title}}" wx:key="*this">{{item}}</text>
+      </view>
+      <text class="hero__sub">{{c.home.hero.sub}}</text>
+      <view class="hero__btn tap" bindtap="onStartMatch">
+        <text>{{c.home.hero.cta}}</text>
+        <icon name="arrow-right" size="{{16}}" color="white" style="margin-left:6px" />
+      </view>
+    </view>
+
+    <!-- ============ 搜索 ============ -->
+    <view class="search tap" bindtap="onSearch">
+      <icon name="search" size="{{18}}" color="mute" />
+      <text class="search__ph">{{c.home.searchPlaceholder}}</text>
+    </view>
+
+    <!-- ============ 常用功能 ============ -->
+    <view class="section-head">
+      <text class="section-title">{{c.home.sections.features}}</text>
+      <view class="section-more tap" bindtap="onAllFunctions">
+        <text>{{c.home.sections.featuresMore}}</text>
+        <icon name="chevron-right" size="{{15}}" color="blue" style="margin-left:2px" />
+      </view>
+    </view>
+
+    <view class="grid">
+      <!--
+        常态统一为浅灰容器，**按下（hover）时才变钴蓝 + 图标转白**。
+        曾经把设计稿里「成绩匹配」的钴蓝实心当成常态，
+        结果是首个入口无故高亮、与其他入口不一致 —— 那是按下态的示意。
+
+        两个图标（墨蓝 / 白）叠放在同一个格子里用透明度切换 ——
+        图标是 PNG，颜色由文件决定，不能靠 CSS 换色。
+        叠放依赖 .grid__ic-wrap 给死尺寸后再绝对定位，详见 home.wxss 的说明。
+      -->
+      <view
+        wx:for="{{features}}"
+        wx:key="key"
+        class="grid__item"
+        hover-class="grid__item--press"
+        hover-start-time="0"
+        hover-stay-time="140"
+        data-index="{{index}}"
+        bindtap="onFeature"
+      >
+        <view class="grid__box">
+          <view class="grid__ic-wrap">
+            <icon class="grid__ic grid__ic--idle" name="{{item.icon}}" size="{{26}}" color="ink" />
+            <icon class="grid__ic grid__ic--press" name="{{item.icon}}" size="{{26}}" color="white" />
+          </view>
+        </view>
+        <text class="grid__label">{{item.label}}</text>
+      </view>
+    </view>
+
+    <!-- ============ 为你推荐 ============ -->
+    <view class="section-head">
+      <text class="section-title">{{c.home.sections.recommend}}</text>
+      <view class="section-more tap" bindtap="onNextBatch">
+        <text>{{c.home.sections.recommendMore}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{loading}}" class="rec-skeleton"></view>
+
+    <view
+      wx:for="{{recommend}}"
+      wx:key="id"
+      class="rec tap"
+      data-id="{{item.id}}"
+      bindtap="onOpenSchool"
+    >
+      <crest size="{{52}}" color="{{item.crest.color}}" shape="{{item.crest.shape}}" />
+
+      <view class="rec__body">
+        <text class="rec__name">{{item.nameCn}}</text>
+        <!-- ⚠️ 副标题这里是**院校属性位**，只放描述这所学校本身的字段。
+             2026-09-24 移除过一版「国家 · 专业 · QS」里那个专业标签
+             （取自用户档案的目标专业）。移除的理由不是它没数据 ——
+             它有（就是用户自己在学业档案里勾的）—— 而是这个位置会被读成
+             「**这所学校的**专业」，而该字段既不是院校数据、也从未参与推荐筛选：
+               · 兜底分支只按「目标国家 + QS 排序」取列表，没有专业维度；
+               · 匹配算法（utils/match.js）只评估 academic / language / curriculum。
+             于是每行都挂同一个专业名，看上去像在暗示一个并不存在的筛选依据。
+             要在这个位置显示**真正的院校专业**，前提是把院校库的
+             `strengths` 补齐 —— 当前覆盖 63/99（美 53/57、加 10/25、
+             **澳 0/11、英 0/6**），澳洲英国一所都没有，硬做只能留空或编造。 -->
+        <view class="rec__meta">
+          <text>{{item.countryCn}}</text>
+          <text class="rec__dot">·</text>
+          <text>{{item.qsLabel}}</text>
+        </view>
+      </view>
+
+      <view class="rec__right">
+        <!-- 徽标只在**确实有评估结论**时出现（item.tier 有值）。
+             这里要区分两种「没有匹配度」，它们语义完全不同：
+               · item.tier 为空 —— 这批推荐是「没匹配过 → 按 QS 兜底」来的，
+                 压根没有任何评估结论，出徽标就是凭空下结论 → 不渲染。
+               · item.tier === 'unknown' —— 匹配过，但该校录取要求尚未采集，
+                 这是真实的数据状态，如实标「待评估」→ 渲染。
+             曾经无差别走 else 分支贴「待评估」，对新用户会满屏误报：
+             那句话读起来像「这所学校数据还在整理」，实际含义是「你还没匹配」。 -->
+        <view wx:if="{{item.tier}}" class="mt mt--{{item.tier}}">
+          <text wx:if="{{item.match !== null && item.match !== undefined}}">{{c.result.tierShort[item.tier]}} {{item.match}}%</text>
+          <text wx:else>{{c.result.tierShort.unknown}}</text>
+        </view>
+
+        <view class="rec__star tap" data-id="{{item.id}}" catchtap="onToggleFavorite">
+          <view wx:if="{{item.favorite}}" class="star-box">
+            <icon name="star" size="{{15}}" color="blue" />
+          </view>
+          <icon wx:else name="star-line" size="{{24}}" color="line" />
+        </view>
+      </view>
+    </view>
+
+    <view class="home__foot">
+      <text>{{c.home.footer}}</text>
+    </view>
+  </view>
+</view>

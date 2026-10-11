@@ -1,0 +1,146 @@
+/* ⚠️ 这里必须叠加 env(safe-area-inset-bottom)。
+   底部动作栏的实际高度 = padding-top 12 + 按钮 52 + 「不同意」40 + padding-bottom(10 + safe)
+   = 114 + safe。旧版只写裸的 118px，在全面屏机型（safe = 34）上留白比动作栏矮 30px，
+   正文滚到底时 `.terms__foot` 会被固定栏压住 —— 页面看起来「最后一行显示不全」。
+   本仓库其余带动作栏的页面（feedback / signin / feedback-result）都是
+   `calc(Npx + env(safe-area-inset-bottom))`，本页此前是唯一漏的。 */
+.terms {
+  padding-bottom: calc(118px + env(safe-area-inset-bottom));
+}
+
+.terms__body {
+  padding: 0 16px;
+}
+
+/* ---------------- 品牌区 ---------------- */
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0;
+}
+.brand__name {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--t1);
+  letter-spacing: 0.4px;
+}
+.brand__tag {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--t3);
+}
+
+.terms__intro {
+  display: block;
+  margin: 26px 0 14px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--t2);
+}
+
+/* ---------------- 条款入口 ---------------- */
+.docs {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.doc {
+  display: flex;
+  align-items: center;
+  padding: 14px 14px;
+}
+.doc + .doc {
+  border-top: 1px solid var(--line);
+}
+/* 按下反馈：用 hover-class 而不是 :active，前者在真机上更稳定 */
+.doc--press {
+  background: var(--field);
+}
+.doc__ic {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.doc__body {
+  flex: 1;
+  margin: 0 10px;
+  min-width: 0;
+}
+.doc__title {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.doc__desc {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--t3);
+  line-height: 1.4;
+}
+
+/* ---------------- 勾选 ---------------- */
+.agree {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  padding: 0 2px;
+}
+.agree__box {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1.5px solid var(--line-2);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.agree__box--on {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.agree__text {
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--t1);
+}
+.agree--press {
+  opacity: 0.7;
+}
+
+.terms__foot {
+  display: block;
+  margin-top: 12px;
+  padding: 0 2px;
+  font-size: 12px;
+  color: var(--t3);
+  line-height: 1.5;
+}
+
+/* ---------------- 底部动作栏 ---------------- */
+.terms__cta {
+  padding-top: 12px;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+}
+.terms__decline {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--t3);
+}
+.terms__decline--press {
+  opacity: 0.6;
+}

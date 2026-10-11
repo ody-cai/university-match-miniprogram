@@ -1,0 +1,194 @@
+<!-- ============================================================
+     大学详情（07）
+     首屏：Hero / 录取可能性 / 录取方式
+     续屏：QS 排名 / 优势专业 / 相关院校推荐
+     底部固定：收藏 + 加入申请清单
+     ============================================================ -->
+<view class="page page--cta" wx:if="{{school}}">
+  <nav-bar title="{{c.nav.detail}}" back="{{true}}" fallback-url="/pages/schools/schools" />
+
+  <view class="detail">
+    <!-- ============ Hero ============ -->
+    <view class="dhero">
+      <view class="dhero__crest">
+        <crest size="{{56}}" color="#FFFFFF" shape="cap" icon-color="blue" />
+      </view>
+      <view class="dhero__body">
+        <text class="dhero__name">{{school.nameCn}}</text>
+        <text class="dhero__en">{{school.nameEn}}</text>
+      </view>
+      <view class="dhero__fav tap" bindtap="onToggleFavorite">
+        <view wx:if="{{favorite}}" class="dhero__fav-box">
+          <icon name="star" size="{{18}}" color="blue" />
+        </view>
+        <icon wx:else name="star-line" size="{{26}}" color="white" />
+      </view>
+
+      <view class="dhero__chips">
+        <view class="soft-chip soft-chip--ghost">{{school.countryCn}}</view>
+        <view class="soft-chip soft-chip--ghost">{{school.provinceCn}} · {{school.cityCn}}</view>
+        <view class="soft-chip soft-chip--ghost">建校 {{school.founded}}</view>
+      </view>
+    </view>
+
+    <!-- ============ 录取可能性 ============ -->
+    <view class="card">
+      <view class="card-head">
+        <view class="card-title">{{c.detail.admissionTitle}}</view>
+        <text class="card-sub">{{c.detail.admissionSub}}</text>
+      </view>
+
+      <block wx:if="{{match && match.score !== null}}">
+        <view class="dscore">
+          <text class="dscore__num">{{match.score}}%</text>
+          <view class="mt mt--{{match.tier}}">
+            <text>{{c.result.tierShort[match.tier]}}</text>
+          </view>
+        </view>
+
+        <view class="ddims">
+          <view wx:for="{{match.dims}}" wx:key="key" class="ddim">
+            <!-- 维度不适用（value 为 null）时只给一行如实说明：
+                 它根本没有参与评分，就不该画进度条、更不该编一个百分比出来。
+                 当前只有「先修课程」会出现这种情况 —— 院校不拿 AP 当录取依据，
+                 或考生一门 AP 都没填。 -->
+            <block wx:if="{{item.value === null || item.value === undefined}}">
+              <view class="ddim__head">
+                <text class="ddim__label">{{item.label}}</text>
+              </view>
+              <text class="ddim__detail">{{item.detail}}</text>
+            </block>
+            <block wx:else>
+              <view class="ddim__head">
+                <text class="ddim__label">{{item.label}}</text>
+                <text class="ddim__pct {{item.met ? 'ddim__pct--ok' : 'ddim__pct--warn'}}">{{item.value}}%</text>
+              </view>
+              <view class="bar">
+                <view class="bar__fill {{item.met ? 'bar__fill--ok' : 'bar__fill--warn'}}" style="width:{{item.value}}%"></view>
+              </view>
+              <text class="ddim__detail">{{item.detail}}</text>
+            </block>
+          </view>
+        </view>
+
+        <text class="dscore__note">{{c.detail.admissionNote}}</text>
+        <!-- 语言未达直录线导致档位封顶：必须说明，否则「高分 + 冲刺」看起来像算错 -->
+        <view wx:if="{{admissionCappedText}}" class="datacap">
+          <icon name="alert-triangle" size="{{14}}" color="warn" style="margin-right:6px" />
+          <text>{{admissionCappedText}}</text>
+        </view>
+        <!-- 部分维度无官方数据时，占位分会让总分分辨率下降，必须如实说明 -->
+        <view wx:if="{{admissionPartialText}}" class="datacap">
+          <icon name="alert-triangle" size="{{14}}" color="warn" style="margin-right:6px" />
+          <text>{{admissionPartialText}}</text>
+        </view>
+      </block>
+
+      <!-- 录取要求缺失：不下结论 -->
+      <block wx:else>
+        <view class="datacap">
+          <icon name="alert-triangle" size="{{14}}" color="warn" style="margin-right:6px" />
+          <text>{{admissionEmptyText}}</text>
+        </view>
+      </block>
+    </view>
+
+    <!-- ============ 录取方式 ============ -->
+    <view class="card">
+      <view class="card-head">
+        <view class="card-title">{{c.detail.pathwaysTitle}}</view>
+        <text class="card-sub">{{c.detail.pathwaysSub}}</text>
+      </view>
+
+      <block wx:if="{{pathways.length}}">
+        <view wx:for="{{pathways}}" wx:key="name" class="pw {{item.status === 'current' ? 'pw--on' : ''}}">
+          <view class="pw__main">
+            <text class="pw__name">{{item.name}}</text>
+            <text class="pw__desc">{{item.desc}}</text>
+          </view>
+          <view class="pw__badge">
+            <text>{{item.statusText}}</text>
+          </view>
+        </view>
+      </block>
+      <view wx:else class="datacap">
+        <icon name="alert-triangle" size="{{14}}" color="warn" style="margin-right:6px" />
+        <text>{{c.detail.admissionNoData}}</text>
+      </view>
+    </view>
+
+    <!-- ============ QS 排名 ============ -->
+    <view class="card">
+      <view class="card-head">
+        <view class="card-title">{{c.detail.qsTitle}}</view>
+        <text class="badge">{{c.detail.qsEdition}}</text>
+      </view>
+      <view class="dqs">
+        <view class="dqs__main">
+          <text class="dqs__num">{{school.qsDisplay}}</text>
+          <text class="dqs__label">{{c.detail.qsGlobalLabel}}</text>
+        </view>
+        <view class="dqs__side">
+          <text class="dqs__side-row">综合得分 {{school.qsScore || '—'}}</text>
+          <text wx:if="{{school.nationalRank}}" class="dqs__side-row">{{school.countryCn}}第 {{school.nationalRank}}</text>
+          <text wx:if="{{rankChangeText}}" class="dqs__side-row">{{rankChangeText}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 优势专业 ============ -->
+    <view class="card">
+      <view class="card-head">
+        <view class="card-title">{{c.detail.strengthsTitle}}</view>
+      </view>
+      <block wx:if="{{school.strengths.length}}">
+        <view class="soft-chips">
+          <view wx:for="{{school.strengths}}" wx:key="*this" class="soft-chip">{{item}}</view>
+        </view>
+      </block>
+      <text wx:else class="card-desc">{{c.detail.strengthsEmpty}}</text>
+    </view>
+
+    <!-- ============ 相关院校推荐 ============ -->
+    <view class="card">
+      <view class="card-head">
+        <view class="card-title">{{c.detail.recommendTitle}}</view>
+        <text class="card-sub">{{c.detail.recommendSub}}</text>
+      </view>
+
+      <block wx:if="{{recommend.length}}">
+        <view
+          wx:for="{{recommend}}"
+          wx:key="id"
+          class="rrow tap"
+          data-id="{{item.id}}"
+          bindtap="onOpenSchool"
+        >
+          <crest size="{{40}}" color="{{item.crest.color}}" shape="{{item.crest.shape}}" />
+          <view class="rrow__body">
+            <text class="rrow__name">{{item.nameCn}}</text>
+            <text class="rrow__meta">{{item.provinceCn}} · {{item.cityCn}}</text>
+          </view>
+          <view class="badge">{{item.badge}}</view>
+          <text wx:if="{{item.qsLabel}}" class="rrow__qs">{{item.qsLabel}}</text>
+        </view>
+      </block>
+      <text wx:else class="card-desc">{{c.detail.campusesEmpty}}</text>
+    </view>
+
+    <!-- 数据来源说明 -->
+    <text class="detail__foot">{{c.home.footer}}</text>
+  </view>
+
+  <!-- ============ 底部操作栏 ============ -->
+  <view class="cta-bar">
+    <view class="cta-bar__row">
+      <button class="btn btn--ghost btn--flex" bindtap="onToggleFavorite">
+        <text>{{favorite ? c.detail.collected : c.detail.collect}}</text>
+      </button>
+      <button class="btn btn--primary btn--flex" bindtap="onAddToList">
+        <text>{{c.detail.addToList}}</text>
+      </button>
+    </view>
+  </view>
+</view>

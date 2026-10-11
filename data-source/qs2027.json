@@ -1,0 +1,3083 @@
+{
+  "meta": {
+    "title": "QS World University Rankings 2027",
+    "releasedAt": "2026-06-18",
+    "publisher": "QS Quacquarelli Symonds",
+    "scale": "全球 1,500+ 所院校，106 个教育体系（本项目收录 4 个国家/地区的 99 所）",
+    "collectedAt": "2026-09-15",
+    "verification": "排名数字经 ≥3 个独立来源交叉核对后才写入；未能交叉验证的字段留 null，不做推断",
+    "sources": [
+      "https://www.narcity.com/university-of-toronto-best-universities-world-ranking-2027-mcgill-ubc",
+      "https://www.abc.net.au/news/2026-06-18/global-university-rankings-unsw-top-performer/106808096",
+      "https://www.pickmyuni.com/student-resources/qs-australian-universities-rankings-2027-125",
+      "https://www.timeout.com/australia/news/nine-australian-universities-rank-among-the-worlds-top-100-for-2027-as-a-new-no-1-emerges-062426",
+      "https://gostudyin.com/study-in-canada/study-guides/best-universities-canada",
+      "https://leapscholar.com/blog/?p=61696"
+    ],
+    "disclaimer": "排名数据仅用于展示与参考，不构成录取承诺。QS 排名每年发布一次，本项目数据为 2026-09-15 快照。",
+    "correctedAt": "2026-09-19",
+    "correctedNote": "2026-09-19 修正：原数据中牛津/剑桥/哈佛/加州理工的 2027 名次分别误写为 3/5/4/6，实际应为 4/6/5/7（权威来源：topuniversities.com 官方榜单页、idp.com、金吉列《QS2027 世界大学排名分区域完整版》、新东方前途出国 2027 分析、高途留学美国榜单汇总，五源一致）。原值疑为误用旧版榜单。同时补齐英美院校的综合得分与所在国排名，并重算「较上年升降位次」（依据 QS 2026 榜单，5 个独立来源数值一致）。",
+    "collectSources": {
+      "qs2027_rankings": [
+        "https://www.topuniversities.com/qs-top-uni-wur",
+        "https://www.idp.com/korea/qs-world-university-rankings/",
+        "https://www.jjl.cn/article/1345871",
+        "https://liuxue.gaotu.cn/usyjs/xx/17915.html",
+        "http://liuxue.neworiental.org/news/7982639.shtml",
+        "https://www.hellostudy.com.tw?p=3695/",
+        "https://ranking.ivyelite.net/qs-ca"
+      ],
+      "qs2026_rankings": [
+        "https://www.huizhou.gov.cn/attachment/0/320/320634/5621296.xlsx",
+        "http://www.wuan.gov.cn/ggtz/202509/P020250917727286906042.pdf",
+        "http://www.lst.gov.cn/lstzzb/0300/202604/cab897394d6545fcb80225f207f4ee2d/files/3d1dff7ebfd34ea1873e1f1d038f9c46.doc"
+      ],
+      "note": "排名数字均经 ≥3 个独立来源交叉核对；国家内排名（nationalRank）与升降位次(rankChange) 由本仓库脚本依据上述榜单计算，非院校官方发布。crest（校徽色块）为界面视觉标识，非学校官方品牌色。"
+    }
+  },
+  "global": {
+    "1": "Massachusetts Institute of Technology",
+    "2": "Imperial College London / Stanford University（并列）",
+    "4": "University of Oxford",
+    "5": "Harvard University",
+    "6": "University of Cambridge",
+    "7": "California Institute of Technology",
+    "8": "UCL / ETH Zurich（并列）",
+    "10": "National University of Singapore"
+  },
+  "schools": [
+    {
+      "id": "mcgill",
+      "nameCn": "麦吉尔大学",
+      "nameEn": "McGill University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "蒙特利尔",
+      "provinceCn": "魁北克省",
+      "qs2027": 30,
+      "rankTie": false,
+      "rankChange": -3,
+      "score": 87.5,
+      "nationalRank": 1,
+      "founded": 1821,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C0392B",
+        "shape": "leaf"
+      }
+    },
+    {
+      "id": "toronto",
+      "nameCn": "多伦多大学",
+      "nameEn": "University of Toronto",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "多伦多",
+      "provinceCn": "安大略省",
+      "qs2027": 32,
+      "rankTie": false,
+      "rankChange": -3,
+      "score": 86.8,
+      "nationalRank": 2,
+      "founded": 1827,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#0B4DA2",
+        "shape": "building"
+      },
+      "campuses": [
+        {
+          "id": "utm",
+          "nameCn": "多伦多大学密西沙加校区",
+          "nameEn": "University of Toronto Mississauga",
+          "shortEn": "UTM",
+          "cityCn": "密西沙加市",
+          "provinceCn": "安大略省",
+          "crest": {
+            "color": "#4A7BD4",
+            "shape": "cap"
+          }
+        },
+        {
+          "id": "utsc",
+          "nameCn": "多伦多大学士嘉堡校区",
+          "nameEn": "University of Toronto Scarborough",
+          "shortEn": "UTSC",
+          "cityCn": "多伦多市",
+          "provinceCn": "安大略省",
+          "crest": {
+            "color": "#3E8E7E",
+            "shape": "cap"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ubc",
+      "nameCn": "英属哥伦比亚大学",
+      "nameEn": "University of British Columbia",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "温哥华",
+      "provinceCn": "不列颠哥伦比亚省",
+      "qs2027": 45,
+      "rankTie": true,
+      "rankChange": -5,
+      "score": 83.9,
+      "nationalRank": 3,
+      "founded": 1908,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C94A4A",
+        "shape": "wave"
+      },
+      "campuses": [
+        {
+          "id": "ubco",
+          "nameCn": "英属哥伦比亚大学奥肯那根校区",
+          "nameEn": "UBC Okanagan",
+          "shortEn": "UBCO",
+          "cityCn": "基洛纳市",
+          "provinceCn": "不列颠哥伦比亚省",
+          "crest": {
+            "color": "#D4735E",
+            "shape": "cap"
+          }
+        }
+      ]
+    },
+    {
+      "id": "alberta",
+      "nameCn": "阿尔伯塔大学",
+      "nameEn": "University of Alberta",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "埃德蒙顿",
+      "provinceCn": "阿尔伯塔省",
+      "qs2027": 96,
+      "rankTie": false,
+      "rankChange": -2,
+      "score": 69.3,
+      "nationalRank": 4,
+      "founded": 1908,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1F7A4D",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "waterloo",
+      "nameCn": "滑铁卢大学",
+      "nameEn": "University of Waterloo",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "滑铁卢",
+      "provinceCn": "安大略省",
+      "qs2027": 113,
+      "rankTie": true,
+      "rankChange": 6,
+      "score": 66.6,
+      "nationalRank": 5,
+      "founded": 1957,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#D4A017",
+        "shape": "blocks"
+      }
+    },
+    {
+      "id": "western",
+      "nameCn": "韦仕敦大学",
+      "nameEn": "Western University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "伦敦",
+      "provinceCn": "安大略省",
+      "qs2027": 142,
+      "rankTie": true,
+      "rankChange": 9,
+      "score": 62.5,
+      "nationalRank": 6,
+      "founded": 1878,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#6A3FA0",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "umontreal",
+      "nameCn": "蒙特利尔大学",
+      "nameEn": "Université de Montréal",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "蒙特利尔",
+      "provinceCn": "魁北克省",
+      "qs2027": 162,
+      "rankTie": true,
+      "rankChange": -6,
+      "score": 60.4,
+      "nationalRank": 7,
+      "founded": 1878,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1B5FA8",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "mcmaster",
+      "nameCn": "麦克马斯特大学",
+      "nameEn": "McMaster University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "汉密尔顿",
+      "provinceCn": "安大略省",
+      "qs2027": 174,
+      "rankTie": true,
+      "rankChange": 1,
+      "score": 58.2,
+      "nationalRank": 8,
+      "founded": 1887,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#8E2B3F",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "queens",
+      "nameCn": "女王大学",
+      "nameEn": "Queen's University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "金斯顿",
+      "provinceCn": "安大略省",
+      "qs2027": 179,
+      "rankTie": true,
+      "rankChange": 12,
+      "score": 57.6,
+      "nationalRank": 9,
+      "founded": 1841,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1E4E8C",
+        "shape": "star"
+      }
+    },
+    {
+      "id": "ottawa",
+      "nameCn": "渥太华大学",
+      "nameEn": "University of Ottawa",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "渥太华",
+      "provinceCn": "安大略省",
+      "qs2027": 228,
+      "rankTie": true,
+      "rankChange": -9,
+      "score": 53.1,
+      "nationalRank": 10,
+      "founded": 1848,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#2E7D6B",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "calgary",
+      "nameCn": "卡尔加里大学",
+      "nameEn": "University of Calgary",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "卡尔加里",
+      "provinceCn": "阿尔伯塔省",
+      "qs2027": 249,
+      "rankTie": false,
+      "rankChange": -38,
+      "score": null,
+      "nationalRank": 11,
+      "founded": 1966,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C0392B",
+        "shape": "blocks"
+      }
+    },
+    {
+      "id": "dalhousie",
+      "nameCn": "达尔豪斯大学",
+      "nameEn": "Dalhousie University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "哈利法克斯",
+      "provinceCn": "新斯科舍省",
+      "qs2027": 298,
+      "rankTie": false,
+      "rankChange": -15,
+      "score": null,
+      "nationalRank": 12,
+      "founded": 1818,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1F4E79",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "sfu",
+      "nameCn": "西蒙菲莎大学",
+      "nameEn": "Simon Fraser University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "本拿比",
+      "provinceCn": "不列颠哥伦比亚省",
+      "qs2027": 312,
+      "rankTie": false,
+      "rankChange": -4,
+      "score": null,
+      "nationalRank": 13,
+      "founded": 1965,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#B03A2E",
+        "shape": "building"
+      }
+    },
+    {
+      "id": "york",
+      "nameCn": "约克大学",
+      "nameEn": "York University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "多伦多",
+      "provinceCn": "安大略省",
+      "qs2027": 322,
+      "rankTie": true,
+      "rankChange": -11,
+      "score": null,
+      "nationalRank": 14,
+      "founded": 1959,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#A93226",
+        "shape": "star"
+      }
+    },
+    {
+      "id": "uvic",
+      "nameCn": "维多利亚大学",
+      "nameEn": "University of Victoria",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "维多利亚",
+      "provinceCn": "不列颠哥伦比亚省",
+      "qs2027": 370,
+      "rankTie": true,
+      "rankChange": -12,
+      "score": null,
+      "nationalRank": 15,
+      "founded": 1963,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1B6CA8",
+        "shape": "wave"
+      }
+    },
+    {
+      "id": "unsw",
+      "nameCn": "新南威尔士大学",
+      "nameEn": "UNSW Sydney",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "悉尼",
+      "provinceCn": "新南威尔士州",
+      "qs2027": 19,
+      "rankTie": false,
+      "rankChange": 1,
+      "score": null,
+      "nationalRank": 1,
+      "founded": 1949,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#F0A500",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "melbourne",
+      "nameCn": "墨尔本大学",
+      "nameEn": "University of Melbourne",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "墨尔本",
+      "provinceCn": "维多利亚州",
+      "qs2027": 22,
+      "rankTie": true,
+      "rankChange": -3,
+      "score": null,
+      "nationalRank": 2,
+      "founded": 1853,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1D3A6B",
+        "shape": "blocks"
+      }
+    },
+    {
+      "id": "sydney",
+      "nameCn": "悉尼大学",
+      "nameEn": "University of Sydney",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "悉尼",
+      "provinceCn": "新南威尔士州",
+      "qs2027": 28,
+      "rankTie": false,
+      "rankChange": -3,
+      "score": null,
+      "nationalRank": 3,
+      "founded": 1850,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#7B61C9",
+        "shape": "blocks"
+      }
+    },
+    {
+      "id": "anu",
+      "nameCn": "澳大利亚国立大学",
+      "nameEn": "Australian National University",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "堪培拉",
+      "provinceCn": "首都领地",
+      "qs2027": 29,
+      "rankTie": false,
+      "rankChange": 3,
+      "score": null,
+      "nationalRank": 4,
+      "founded": 1946,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1B4F8A",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "monash",
+      "nameCn": "蒙纳士大学",
+      "nameEn": "Monash University",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "墨尔本",
+      "provinceCn": "维多利亚州",
+      "qs2027": 31,
+      "rankTie": false,
+      "rankChange": 5,
+      "score": null,
+      "nationalRank": 5,
+      "founded": 1958,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#2E5C9A",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "uq",
+      "nameCn": "昆士兰大学",
+      "nameEn": "University of Queensland",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "布里斯班",
+      "provinceCn": "昆士兰州",
+      "qs2027": 40,
+      "rankTie": true,
+      "rankChange": 2,
+      "score": null,
+      "nationalRank": 6,
+      "founded": 1909,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#4A2E82",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "uwa",
+      "nameCn": "西澳大学",
+      "nameEn": "University of Western Australia",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "珀斯",
+      "provinceCn": "西澳大利亚州",
+      "qs2027": 77,
+      "rankTie": true,
+      "rankChange": 0,
+      "score": null,
+      "nationalRank": 7,
+      "founded": 1911,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1B5E9C",
+        "shape": "wave"
+      }
+    },
+    {
+      "id": "adelaide",
+      "nameCn": "阿德莱德大学",
+      "nameEn": "Adelaide University",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "阿德莱德",
+      "provinceCn": "南澳大利亚州",
+      "qs2027": 79,
+      "rankTie": false,
+      "rankChange": 3,
+      "score": null,
+      "nationalRank": 8,
+      "founded": 1874,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#7A2E3E",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "uts",
+      "nameCn": "悉尼科技大学",
+      "nameEn": "University of Technology Sydney",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "悉尼",
+      "provinceCn": "新南威尔士州",
+      "qs2027": 87,
+      "rankTie": true,
+      "rankChange": 9,
+      "score": null,
+      "nationalRank": 9,
+      "founded": 1988,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#D64541",
+        "shape": "blocks"
+      }
+    },
+    {
+      "id": "rmit",
+      "nameCn": "皇家墨尔本理工大学",
+      "nameEn": "RMIT University",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "墨尔本",
+      "provinceCn": "维多利亚州",
+      "qs2027": 119,
+      "rankTie": true,
+      "rankChange": 6,
+      "score": null,
+      "nationalRank": 10,
+      "founded": 1887,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C0392B",
+        "shape": "star"
+      }
+    },
+    {
+      "id": "macquarie",
+      "nameCn": "麦考瑞大学",
+      "nameEn": "Macquarie University",
+      "region": "au",
+      "countryCn": "澳大利亚",
+      "cityCn": "悉尼",
+      "provinceCn": "新南威尔士州",
+      "qs2027": 126,
+      "rankTie": true,
+      "rankChange": 12,
+      "score": null,
+      "nationalRank": 11,
+      "founded": 1964,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#2E8B7A",
+        "shape": "star"
+      }
+    },
+    {
+      "id": "imperial",
+      "nameCn": "帝国理工学院",
+      "nameEn": "Imperial College London",
+      "region": "uk",
+      "countryCn": "英国",
+      "cityCn": "伦敦",
+      "provinceCn": "英格兰",
+      "qs2027": 2,
+      "rankTie": true,
+      "rankChange": 0,
+      "score": 99.2,
+      "nationalRank": 1,
+      "founded": 1907,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#E08A2E",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "oxford",
+      "nameCn": "牛津大学",
+      "nameEn": "University of Oxford",
+      "region": "uk",
+      "countryCn": "英国",
+      "cityCn": "牛津",
+      "provinceCn": "英格兰",
+      "qs2027": 4,
+      "rankTie": false,
+      "rankChange": 0,
+      "score": 98.6,
+      "nationalRank": 2,
+      "founded": 1096,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#1B3A6B",
+        "shape": "building"
+      }
+    },
+    {
+      "id": "cambridge",
+      "nameCn": "剑桥大学",
+      "nameEn": "University of Cambridge",
+      "region": "uk",
+      "countryCn": "英国",
+      "cityCn": "剑桥",
+      "provinceCn": "英格兰",
+      "qs2027": 6,
+      "rankTie": false,
+      "rankChange": 0,
+      "score": 97.1,
+      "nationalRank": 3,
+      "founded": 1209,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#A62B3A",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "ucl",
+      "nameCn": "伦敦大学学院",
+      "nameEn": "University College London",
+      "region": "uk",
+      "countryCn": "英国",
+      "cityCn": "伦敦",
+      "provinceCn": "英格兰",
+      "qs2027": 8,
+      "rankTie": true,
+      "rankChange": 1,
+      "score": 96.3,
+      "nationalRank": 4,
+      "founded": 1826,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#2C3E6B",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "edinburgh",
+      "nameCn": "爱丁堡大学",
+      "nameEn": "University of Edinburgh",
+      "region": "uk",
+      "countryCn": "英国",
+      "cityCn": "爱丁堡",
+      "provinceCn": "苏格兰",
+      "qs2027": 35,
+      "rankTie": false,
+      "rankChange": -1,
+      "score": 85.9,
+      "nationalRank": 5,
+      "founded": 1583,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#2E9E63",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "manchester",
+      "nameCn": "曼彻斯特大学",
+      "nameEn": "University of Manchester",
+      "region": "uk",
+      "countryCn": "英国",
+      "cityCn": "曼彻斯特",
+      "provinceCn": "英格兰",
+      "qs2027": 40,
+      "rankTie": true,
+      "rankChange": -5,
+      "score": 84.6,
+      "nationalRank": 6,
+      "founded": 1824,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#2AA5B8",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "mit",
+      "nameCn": "麻省理工学院",
+      "nameEn": "Massachusetts Institute of Technology",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "剑桥市",
+      "provinceCn": "马萨诸塞州",
+      "qs2027": 1,
+      "rankTie": false,
+      "rankChange": 0,
+      "score": 100,
+      "nationalRank": 1,
+      "founded": 1861,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#A31F34",
+        "shape": "building"
+      }
+    },
+    {
+      "id": "stanford",
+      "nameCn": "斯坦福大学",
+      "nameEn": "Stanford University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "斯坦福",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 2,
+      "rankTie": true,
+      "rankChange": 1,
+      "score": 99.2,
+      "nationalRank": 2,
+      "founded": 1885,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#8C1515",
+        "shape": "arch"
+      }
+    },
+    {
+      "id": "harvard",
+      "nameCn": "哈佛大学",
+      "nameEn": "Harvard University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "剑桥市",
+      "provinceCn": "马萨诸塞州",
+      "qs2027": 5,
+      "rankTie": false,
+      "rankChange": 0,
+      "score": 97.4,
+      "nationalRank": 3,
+      "founded": 1636,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#A51C30",
+        "shape": "shield"
+      }
+    },
+    {
+      "id": "caltech",
+      "nameCn": "加州理工学院",
+      "nameEn": "California Institute of Technology",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "帕萨迪纳",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 7,
+      "rankTie": false,
+      "rankChange": 3,
+      "score": 96.6,
+      "nationalRank": 4,
+      "founded": 1891,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#FF6C0C",
+        "shape": "blocks"
+      }
+    },
+    {
+      "id": "upenn",
+      "nameCn": "宾夕法尼亚大学",
+      "nameEn": "University of Pennsylvania",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "费城",
+      "provinceCn": "宾夕法尼亚州",
+      "qs2027": 15,
+      "rankTie": false,
+      "rankChange": 0,
+      "score": 91.7,
+      "nationalRank": 5,
+      "founded": 1740,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#011F5B",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "商科",
+        "护理学",
+        "医学",
+        "法学",
+        "经济学",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://www.upenn.edu/about/history",
+        "https://www.upenn.edu/about",
+        "https://www.upenn.edu/about/facts"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/university-of-pennsylvania"
+      ]
+    },
+    {
+      "id": "cornell",
+      "nameCn": "康奈尔大学",
+      "nameEn": "Cornell University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "伊萨卡",
+      "provinceCn": "纽约州",
+      "qs2027": 16,
+      "rankTie": true,
+      "rankChange": 0,
+      "score": 91.5,
+      "nationalRank": 6,
+      "founded": 1865,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#B31B1B",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "兽医学",
+        "农业与林业",
+        "酒店与休闲管理",
+        "计算机科学",
+        "建筑学",
+        "商科"
+      ],
+      "metaSource": [
+        "https://www.cornell.edu/about/",
+        "https://www.cornell.edu/academics/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/cornell-university"
+      ]
+    },
+    {
+      "id": "yale",
+      "nameCn": "耶鲁大学",
+      "nameEn": "Yale University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "纽黑文",
+      "provinceCn": "康涅狄格州",
+      "qs2027": 16,
+      "rankTie": true,
+      "rankChange": 5,
+      "score": 91.5,
+      "nationalRank": 7,
+      "founded": 1701,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#00356B",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "法学",
+        "心理学",
+        "政治学",
+        "经济学",
+        "医学",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://www.yale.edu/about-yale/traditions-history",
+        "https://www.yale.edu/contact-us",
+        "https://www.yale.edu/academics"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/yale-university"
+      ]
+    },
+    {
+      "id": "jhu",
+      "nameCn": "约翰霍普金斯大学",
+      "nameEn": "Johns Hopkins University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "巴尔的摩",
+      "provinceCn": "马里兰州",
+      "qs2027": 20,
+      "rankTie": true,
+      "rankChange": 4,
+      "score": 89.7,
+      "nationalRank": 8,
+      "founded": 1876,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#002D72",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "医学",
+        "护理学",
+        "药学",
+        "生物科学",
+        "统计学与运筹学",
+        "教育学"
+      ],
+      "metaSource": [
+        "https://www.jhu.edu/about/history/",
+        "https://www.jhu.edu/about/",
+        "https://www.jhu.edu/academics/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/johns-hopkins-university"
+      ]
+    },
+    {
+      "id": "berkeley",
+      "nameCn": "加州大学伯克利分校",
+      "nameEn": "University of California, Berkeley",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "伯克利",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 20,
+      "rankTie": true,
+      "rankChange": -3,
+      "score": 89.7,
+      "nationalRank": 9,
+      "founded": 1868,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#003262",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "计算机科学",
+        "电气与电子工程",
+        "土木与结构工程",
+        "统计学与运筹学",
+        "化学",
+        "经济学"
+      ],
+      "metaSource": [
+        "https://www.berkeley.edu/about/",
+        "https://www.berkeley.edu/about/history-discoveries",
+        "https://www.berkeley.edu/academics/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/university-of-california-berkeley"
+      ]
+    },
+    {
+      "id": "uchicago",
+      "nameCn": "芝加哥大学",
+      "nameEn": "University of Chicago",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "芝加哥",
+      "provinceCn": "伊利诺伊州",
+      "qs2027": 24,
+      "rankTie": false,
+      "rankChange": -11,
+      "score": 89.2,
+      "nationalRank": 10,
+      "founded": 1890,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#800000",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "经济学",
+        "商科",
+        "社会学",
+        "法学",
+        "物理学与天文学",
+        "数学"
+      ],
+      "metaSource": [
+        "https://www.uchicago.edu/who-we-are/history-and-traditions",
+        "https://www.uchicago.edu/who-we-are",
+        "https://www.uchicago.edu/academics/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/university-of-chicago"
+      ]
+    },
+    {
+      "id": "princeton",
+      "nameCn": "普林斯顿大学",
+      "nameEn": "Princeton University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "普林斯顿",
+      "provinceCn": "新泽西州",
+      "qs2027": 27,
+      "rankTie": false,
+      "rankChange": -2,
+      "score": 88.9,
+      "nationalRank": 11,
+      "founded": 1746,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#E77500",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "政治学",
+        "社会学",
+        "数学",
+        "经济学",
+        "物理学与天文学",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://www.princeton.edu/meet-princeton",
+        "https://www.princeton.edu/meet-princeton/facts-figures"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/princeton-university/school-engineering-applied-science"
+      ]
+    },
+    {
+      "id": "columbia",
+      "nameCn": "哥伦比亚大学",
+      "nameEn": "Columbia University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "纽约",
+      "provinceCn": "纽约州",
+      "qs2027": 43,
+      "rankTie": true,
+      "rankChange": -5,
+      "score": 84.0,
+      "nationalRank": 12,
+      "founded": 1754,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#1D4F91",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "法学",
+        "传播学与媒体研究",
+        "心理学",
+        "经济学",
+        "商科",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://www.columbia.edu/content/university-history",
+        "https://www.columbia.edu/content/about-columbia"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/columbia-university"
+      ]
+    },
+    {
+      "id": "northwestern",
+      "nameCn": "西北大学",
+      "nameEn": "Northwestern University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "埃文斯顿",
+      "provinceCn": "伊利诺伊州",
+      "qs2027": 45,
+      "rankTie": true,
+      "rankChange": -3,
+      "score": 83.8,
+      "nationalRank": 13,
+      "founded": 1851,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#4E2A84",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "市场营销",
+        "材料科学",
+        "经济学",
+        "商科",
+        "化学",
+        "传播学与媒体研究"
+      ],
+      "metaSource": [
+        "https://www.northwestern.edu/about/facts.html",
+        "https://www.northwestern.edu/about/",
+        "https://www.northwestern.edu/about/history/index.html"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/northwestern-university-evanston",
+        "https://daxue.menggy.com/universities/northwestern-university"
+      ]
+    },
+    {
+      "id": "ucla",
+      "nameCn": "加州大学洛杉矶分校",
+      "nameEn": "University of California, Los Angeles",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "洛杉矶",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 49,
+      "rankTie": false,
+      "rankChange": -3,
+      "score": 82.7,
+      "nationalRank": 14,
+      "founded": 1919,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#2774AE",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "心理学",
+        "数学",
+        "医学",
+        "电气与电子工程",
+        "商科",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://www.ucla.edu/about",
+        "https://www.ucla.edu/about/awards-and-honors/",
+        "https://100.ucla.edu/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/university-of-california-los-angeles"
+      ]
+    },
+    {
+      "id": "umich",
+      "nameCn": "密歇根大学安娜堡分校",
+      "nameEn": "University of Michigan-Ann Arbor",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "安娜堡",
+      "provinceCn": "密歇根州",
+      "qs2027": 51,
+      "rankTie": false,
+      "rankChange": -6,
+      "score": 82.2,
+      "nationalRank": 15,
+      "founded": 1817,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#00274C",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "牙科学",
+        "心理学",
+        "机械工程",
+        "电气与电子工程",
+        "医学",
+        "商科"
+      ],
+      "metaSource": [
+        "https://almanac.obp.umich.edu/chapter/university-overview/",
+        "https://almanac.obp.umich.edu/chapter/academic-reputational-rankings/",
+        "https://umich.edu/facts-figures/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/university-of-michigan"
+      ]
+    },
+    {
+      "id": "cmu",
+      "nameCn": "卡内基梅隆大学",
+      "nameEn": "Carnegie Mellon University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "匹兹堡",
+      "provinceCn": "宾夕法尼亚州",
+      "qs2027": 55,
+      "rankTie": false,
+      "rankChange": -3,
+      "score": 81.4,
+      "nationalRank": 16,
+      "founded": 1900,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#C41230",
+        "shape": "blocks"
+      },
+      "campuses": [],
+      "strengths": [
+        "计算机科学",
+        "数据科学",
+        "统计学与运筹学",
+        "电气与电子工程",
+        "数学",
+        "艺术与设计"
+      ],
+      "metaSource": [
+        "https://www.cmu.edu/about/",
+        "https://www.cmu.edu/about/history/",
+        "https://www.cmu.edu/about/vision-mission-values"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/carnegie-mellon-university"
+      ]
+    },
+    {
+      "id": "nyu",
+      "nameCn": "纽约大学",
+      "nameEn": "New York University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "纽约",
+      "provinceCn": "纽约州",
+      "qs2027": 58,
+      "rankTie": false,
+      "rankChange": -3,
+      "score": 80.8,
+      "nationalRank": 17,
+      "founded": 1831,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#57068C",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "哲学",
+        "法学",
+        "表演艺术",
+        "传播学与媒体研究",
+        "商科",
+        "经济学"
+      ],
+      "metaSource": [
+        "https://www.nyu.edu/about.html",
+        "https://www.nyu.edu/academics.html"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/new-york-university"
+      ]
+    },
+    {
+      "id": "brown",
+      "nameCn": "布朗大学",
+      "nameEn": "Brown University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "普罗维登斯",
+      "provinceCn": "罗德岛州",
+      "qs2027": 66,
+      "rankTie": false,
+      "rankChange": 3,
+      "score": 77.4,
+      "nationalRank": 18,
+      "founded": 1764,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#4E3629",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "经济学",
+        "考古学",
+        "英语语言文学",
+        "历史学"
+      ],
+      "metaSource": [
+        "https://www.brown.edu/about"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/brown-university"
+      ]
+    },
+    {
+      "id": "duke",
+      "nameCn": "杜克大学",
+      "nameEn": "Duke University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "达勒姆",
+      "provinceCn": "北卡罗来纳州",
+      "qs2027": 70,
+      "rankTie": false,
+      "rankChange": -8,
+      "score": 75.8,
+      "nationalRank": 19,
+      "founded": 1838,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#012169",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "护理学",
+        "医学",
+        "统计学与运筹学",
+        "经济学",
+        "商科",
+        "法学"
+      ],
+      "metaSource": [
+        "https://library.duke.edu/rubenstein/uarchives/history/articles/narrative-history",
+        "https://www.duke.edu/about",
+        "https://www.duke.edu/academics"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/universities/duke-university"
+      ]
+    },
+    {
+      "id": "utaustin",
+      "nameCn": "得克萨斯大学奥斯汀分校",
+      "nameEn": "University of Texas at Austin",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "奥斯汀",
+      "provinceCn": "得克萨斯州",
+      "qs2027": 72,
+      "rankTie": false,
+      "rankChange": -4,
+      "score": 75.3,
+      "nationalRank": 20,
+      "founded": 1883,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#BF5700",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "石油工程",
+        "传播学与媒体研究",
+        "土木工程",
+        "化学工程",
+        "会计与金融",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://www.utexas.edu/about-texas",
+        "https://www.utexas.edu/about/facts-and-figures",
+        "https://graduate.utexas.edu/about/why-ut/rankings"
+      ],
+      "strengthsSource": [
+        "https://daxue.menggy.com/universities/university-texas-austin"
+      ]
+    },
+    {
+      "id": "uiuc",
+      "nameCn": "伊利诺伊大学厄巴纳-香槟分校",
+      "nameEn": "University of Illinois Urbana-Champaign",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "厄巴纳-香槟",
+      "provinceCn": "伊利诺伊州",
+      "qs2027": 74,
+      "rankTie": false,
+      "rankChange": -4,
+      "score": 74.7,
+      "nationalRank": 21,
+      "founded": 1867,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#13294B",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "图书馆与信息管理",
+        "土木工程",
+        "农学与林业",
+        "物理学与天文学",
+        "电子电气工程",
+        "心理学"
+      ],
+      "metaSource": [
+        "https://illinois.edu/about/",
+        "https://illinois.edu/about/rankings/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-illinois-urbana-champaign",
+        "https://www.betteredu.net/universityranking/529.html?page=1",
+        "https://www.betteredu.net/universityranking/497.html?page=1"
+      ]
+    },
+    {
+      "id": "ucsd",
+      "nameCn": "加州大学圣地亚哥分校",
+      "nameEn": "University of California, San Diego",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "拉霍亚",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 81,
+      "rankTie": false,
+      "rankChange": -15,
+      "score": 73.3,
+      "nationalRank": 22,
+      "founded": 1960,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#182B49",
+        "shape": "blocks"
+      },
+      "campuses": [],
+      "strengths": [
+        "生物科学",
+        "解剖与生理学",
+        "药剂与药理学",
+        "地球与海洋科学",
+        "医学",
+        "经济与计量经济学"
+      ],
+      "metaSource": [
+        "https://www.ucsd.edu/about/index.html",
+        "https://univcomms.ucsd.edu/campus-profile",
+        "https://today.ucsd.edu/story/uc-san-diego-turns-60"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-california-san-diego",
+        "https://www.betteredu.net/universityranking/512.html?page=1",
+        "https://www.betteredu.net/universityranking/513.html?page=1"
+      ]
+    },
+    {
+      "id": "psu",
+      "nameCn": "宾夕法尼亚州立大学",
+      "nameEn": "Pennsylvania State University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "大学公园",
+      "provinceCn": "宾夕法尼亚州",
+      "qs2027": 92,
+      "rankTie": true,
+      "rankChange": -10,
+      "score": 70.2,
+      "nationalRank": 23,
+      "founded": 1855,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#041E42",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "矿物与采矿工程",
+        "酒店与休闲管理",
+        "石油工程",
+        "材料科学",
+        "体育相关学科",
+        "传媒学"
+      ],
+      "metaSource": [
+        "https://www.psu.edu/about/history",
+        "https://www.psu.edu/academics/",
+        "https://www.psu.edu/academics/campuses"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/pennsylvania-state-university",
+        "https://www.betteredu.net/universityranking/502.html?page=1",
+        "https://www.betteredu.net/universityranking/501.html?page=1"
+      ]
+    },
+    {
+      "id": "uw",
+      "nameCn": "华盛顿大学",
+      "nameEn": "University of Washington",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "西雅图",
+      "provinceCn": "华盛顿州",
+      "qs2027": 92,
+      "rankTie": true,
+      "rankChange": -11,
+      "score": 70.2,
+      "nationalRank": 24,
+      "founded": 1861,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#4B2E83",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "图书馆与信息管理",
+        "地球与海洋科学",
+        "护理学",
+        "数据科学与人工智能",
+        "牙科学",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://www.washington.edu/about/",
+        "https://www.washington.edu/news/2026/04/06/uws-graduate-and-professional-programs-highly-ranked-by-us-news-world-report/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-washington",
+        "https://www.betteredu.net/universityranking/529.html?page=1",
+        "https://www.betteredu.net/universityranking/503.html?page=1"
+      ]
+    },
+    {
+      "id": "bu",
+      "nameCn": "波士顿大学",
+      "nameEn": "Boston University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "波士顿",
+      "provinceCn": "马萨诸塞州",
+      "qs2027": 94,
+      "rankTie": false,
+      "rankChange": -6,
+      "score": 70.0,
+      "nationalRank": 25,
+      "founded": 1869,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#CC0000",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "经济与计量经济学",
+        "音乐",
+        "解剖与生理学",
+        "神学与宗教研究",
+        "牙科学",
+        "心理学"
+      ],
+      "metaSource": [
+        "https://www.bu.edu/about/",
+        "https://www.bu.edu/academics/schools-colleges/",
+        "https://bu.edu/metinternational/about-us/boston-university"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/boston-university",
+        "https://www.betteredu.net/universityranking/513.html?page=1",
+        "https://www.betteredu.net/universityranking/534.html?page=1"
+      ]
+    },
+    {
+      "id": "purdue",
+      "nameCn": "普渡大学",
+      "nameEn": "Purdue University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "西拉法叶",
+      "provinceCn": "印第安纳州",
+      "qs2027": 100,
+      "rankTie": true,
+      "rankChange": -12,
+      "score": 68.7,
+      "nationalRank": 26,
+      "founded": 1869,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#7A6A3A",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "农学与林业",
+        "机械工程",
+        "土木工程",
+        "药剂与药理学",
+        "统计与运筹学",
+        "化学工程"
+      ],
+      "metaSource": [
+        "https://www.purdue.edu/home/about/",
+        "https://www.purdue.edu/home/about/history/",
+        "https://engineering.purdue.edu/Engr/AboutUs/FactsFigures/Rankings/graduate"
+      ],
+      "strengthsSource": [
+        "https://www.betteredu.net/universityranking/506.html?page=1",
+        "https://www.betteredu.net/universityranking/499.html?page=1",
+        "https://www.betteredu.net/universityranking/496.html?page=1",
+        "https://www.betteredu.net/universityranking/512.html?page=1"
+      ]
+    },
+    {
+      "id": "rice",
+      "nameCn": "莱斯大学",
+      "nameEn": "Rice University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "休斯顿",
+      "provinceCn": "得克萨斯州",
+      "qs2027": 122,
+      "rankTie": false,
+      "rankChange": null,
+      "score": 65.5,
+      "nationalRank": 27,
+      "founded": 1912,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#00205B",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "工程学",
+        "自然科学",
+        "建筑学",
+        "音乐",
+        "商科"
+      ],
+      "metaSource": [
+        "https://www.rice.edu/about"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "wisc",
+      "nameCn": "威斯康星大学麦迪逊分校",
+      "nameEn": "University of Wisconsin-Madison",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "麦迪逊",
+      "provinceCn": "威斯康星州",
+      "qs2027": 131,
+      "rankTie": true,
+      "rankChange": null,
+      "score": 64.3,
+      "nationalRank": 28,
+      "founded": 1848,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C5050C",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "社会学",
+        "传媒学",
+        "教育学",
+        "农学与林业",
+        "兽医学",
+        "地理学"
+      ],
+      "metaSource": [
+        "https://www.wisc.edu/about/",
+        "https://www.wisc.edu/about/facts/",
+        "https://news.wisc.edu/?p=78340"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-wisconsin-madison",
+        "https://www.betteredu.net/universityranking/506.html?page=1",
+        "https://www.betteredu.net/universityranking/517.html?page=1"
+      ]
+    },
+    {
+      "id": "ucdavis",
+      "nameCn": "加州大学戴维斯分校",
+      "nameEn": "University of California, Davis",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "戴维斯",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 137,
+      "rankTie": false,
+      "rankChange": null,
+      "score": 63.0,
+      "nationalRank": 29,
+      "founded": 1908,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#022851",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "农学与林业",
+        "兽医学",
+        "环境科学",
+        "生物科学",
+        "农业与林业"
+      ],
+      "metaSource": [
+        "https://www.ucdavis.edu/about",
+        "https://www.ucdavis.edu/academics"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-california-davis",
+        "https://www.betteredu.net/universityranking/506.html?page=1",
+        "https://www.betteredu.net/universityranking/505.html?page=1"
+      ]
+    },
+    {
+      "id": "gatech",
+      "nameCn": "佐治亚理工学院",
+      "nameEn": "Georgia Institute of Technology",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "亚特兰大",
+      "provinceCn": "佐治亚州",
+      "qs2027": 142,
+      "rankTie": true,
+      "rankChange": null,
+      "score": 62.5,
+      "nationalRank": 30,
+      "founded": 1885,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#8A7B4E",
+        "shape": "blocks"
+      },
+      "campuses": [],
+      "strengths": [
+        "统计与运筹学",
+        "材料科学",
+        "电子电气工程",
+        "机械工程",
+        "化学工程",
+        "土木工程"
+      ],
+      "metaSource": [
+        "https://www.gatech.edu/about"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/georgia-institute-of-technology",
+        "https://www.betteredu.net/universityranking/499.html?page=1",
+        "https://www.betteredu.net/universityranking/497.html?page=1"
+      ]
+    },
+    {
+      "id": "usc",
+      "nameCn": "南加州大学",
+      "nameEn": "University of Southern California",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "洛杉矶",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 153,
+      "rankTie": false,
+      "rankChange": null,
+      "score": 61.3,
+      "nationalRank": 31,
+      "founded": 1880,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#990000",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "传媒学",
+        "音乐",
+        "哲学",
+        "表演艺术",
+        "石油工程",
+        "解剖与生理学"
+      ],
+      "metaSource": [
+        "https://www.usc.edu/we-are-usc/the-university/",
+        "https://www.usc.edu/we-are-usc/the-university/facts-and-stats/",
+        "https://today.usc.edu/usc-graduate-programs/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-southern-california",
+        "https://www.betteredu.net/universityranking/525.html?page=1",
+        "https://www.betteredu.net/universityranking/513.html?page=1"
+      ]
+    },
+    {
+      "id": "unc",
+      "nameCn": "北卡罗来纳大学教堂山分校",
+      "nameEn": "University of North Carolina at Chapel Hill",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "教堂山",
+      "provinceCn": "北卡罗来纳州",
+      "qs2027": 158,
+      "rankTie": true,
+      "rankChange": null,
+      "score": 60.6,
+      "nationalRank": 32,
+      "founded": 1789,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#13294B",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "图书馆与信息管理",
+        "药剂与药理学",
+        "护理学",
+        "牙科学",
+        "社会学",
+        "体育相关学科"
+      ],
+      "metaSource": [
+        "https://www.unc.edu/about/",
+        "https://www.unc.edu/academics/",
+        "https://www.unc.edu/schools/",
+        "https://www.unc.edu/posts/2026/04/07/unc-chapel-hill-earns-top-national-rankings-for-graduate-education/"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-north-carolina-at-chapel-hill",
+        "https://www.betteredu.net/universityranking/512.html?page=1",
+        "https://www.betteredu.net/universityranking/509.html?page=1"
+      ]
+    },
+    {
+      "id": "tamu",
+      "nameCn": "得克萨斯农工大学",
+      "nameEn": "Texas A&M University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "大学城",
+      "provinceCn": "得克萨斯州",
+      "qs2027": 169,
+      "rankTie": false,
+      "rankChange": null,
+      "score": 59.5,
+      "nationalRank": 33,
+      "founded": 1876,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#500000",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "石油工程",
+        "兽医学",
+        "农学与林业",
+        "土木工程",
+        "地球与海洋科学",
+        "机械工程"
+      ],
+      "metaSource": [
+        "https://www.tamu.edu/about/",
+        "https://www.tamu.edu/about/facts.html",
+        "https://abpa.tamu.edu/accountability-rankings/index.html"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/texas-am-university",
+        "https://www.betteredu.net/universityranking/501.html?page=1",
+        "https://www.betteredu.net/universityranking/505.html?page=1"
+      ]
+    },
+    {
+      "id": "asu",
+      "nameCn": "亚利桑那州立大学",
+      "nameEn": "Arizona State University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "坦佩",
+      "provinceCn": "亚利桑那州",
+      "qs2027": 172,
+      "rankTie": false,
+      "rankChange": null,
+      "score": 58.4,
+      "nationalRank": 34,
+      "founded": 1885,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#8C1D40",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "考古学",
+        "人类学",
+        "图书馆与信息管理",
+        "教育学",
+        "环境科学",
+        "地球与海洋科学"
+      ],
+      "metaSource": [
+        "https://www.asu.edu/about",
+        "https://www.asu.edu/about/rankings"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/arizona-state-university",
+        "https://www.betteredu.net/universityranking/490.html?page=1",
+        "https://www.betteredu.net/universityranking/523.html?page=1"
+      ]
+    },
+    {
+      "id": "ucsb",
+      "nameCn": "加州大学圣巴巴拉分校",
+      "nameEn": "University of California, Santa Barbara",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "圣巴巴拉",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 173,
+      "rankTie": false,
+      "rankChange": null,
+      "score": 58.3,
+      "nationalRank": 35,
+      "founded": 1891,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#003660",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "材料科学",
+        "物理学与天文学",
+        "语言学",
+        "传媒学",
+        "工程学",
+        "物理学"
+      ],
+      "metaSource": [
+        "https://www.ucsb.edu/about",
+        "https://www.ucsb.edu/about/facts-and-figures"
+      ],
+      "strengthsSource": [
+        "https://www.qschina.cn/en/universities/university-of-california-santa-barbara",
+        "https://www.betteredu.net/universityranking/519.html?page=1",
+        "https://www.betteredu.net/universityranking/483.html?page=1"
+      ]
+    },
+    {
+      "id": "saskatchewan",
+      "nameCn": "萨斯喀彻温大学",
+      "nameEn": "University of Saskatchewan",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "萨斯卡通",
+      "provinceCn": "萨斯喀彻温省",
+      "qs2027": 411,
+      "rankTie": true,
+      "rankChange": null,
+      "score": 37.1,
+      "nationalRank": 16,
+      "founded": 1907,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#B6922E",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "兽医学",
+        "农学",
+        "农业与农业食品",
+        "食品与水资源安全",
+        "疫苗与传染病研究",
+        "核科学与同步辐射"
+      ],
+      "metaSource": [
+        "https://www.usask.ca/about/",
+        "https://library.usask.ca/uasc/campus-history/brief-chronology.php",
+        "https://www.usask.ca/calendar/archive/2007_03JUL/about/history/index.html"
+      ],
+      "strengthsSource": [
+        "https://leadership.usask.ca/documents/about/reporting/rankings/2026-qs-subject-rankings-fact-sheet.pdf",
+        "https://news.usask.ca/articles/research/2026/usask-earns-high-marks-in-world-university-subject-rankings.php",
+        "https://agbio.usask.ca/about/about-agbio.php"
+      ]
+    },
+    {
+      "id": "concordia",
+      "nameCn": "康考迪亚大学",
+      "nameEn": "Concordia University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "蒙特利尔",
+      "provinceCn": "魁北克省",
+      "qs2027": 497,
+      "rankTie": true,
+      "rankChange": null,
+      "score": 32.5,
+      "nationalRank": 17,
+      "founded": 1974,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#8C1A2B",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "艺术与设计",
+        "影视制作",
+        "商科",
+        "土木工程",
+        "软件工程",
+        "可持续发展"
+      ],
+      "metaSource": [
+        "https://www.concordia.ca/about/history.html",
+        "https://www.concordia.ca/about/rankings.html",
+        "https://www.concordia.ca/about.html"
+      ],
+      "strengthsSource": [
+        "https://www.concordia.ca/campaign/faculties-and-schools.html",
+        "https://concordia.ca/campaign/impact/media-design-culture.html"
+      ]
+    },
+    {
+      "id": "laval",
+      "nameCn": "拉瓦尔大学",
+      "nameEn": "Université Laval",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "魁北克城",
+      "provinceCn": "魁北克省",
+      "qs2027": 526,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 18,
+      "founded": 1663,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C8102E",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "光学与光子学",
+        "林学",
+        "农业与食品科学",
+        "林业与木材科学"
+      ],
+      "metaSource": [
+        "https://www.ulaval.ca/en/about-us/origin-and-history",
+        "https://www.ulaval.ca/en/about-us/universite-laval-at-a-glance",
+        "https://www.fsaa.ulaval.ca/",
+        "https://www.ulaval.ca/en/research/intelligent-communities-and-their-technology-and-logistics"
+      ],
+      "strengthsSource": [
+        "https://www.ulaval.ca/en/research/research-units/recognized-research-centres/centre-for-optics-photonics-and-laserscopl-laval",
+        "https://www.ffgg.ulaval.ca/etudes/disciplines/genie-forestier-et-sciences-forestieres",
+        "https://www.ffgg.ulaval.ca/"
+      ]
+    },
+    {
+      "id": "windsor",
+      "nameCn": "温莎大学",
+      "nameEn": "University of Windsor",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "温莎",
+      "provinceCn": "安大略省",
+      "qs2027": 537,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 19,
+      "founded": 1857,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#005B99",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "汽车工程"
+      ],
+      "metaSource": [
+        "https://www.uwindsor.ca/our-history",
+        "https://www.uwindsor.ca/about/",
+        "https://www.uwindsor.ca/engineering/mame/node/388"
+      ],
+      "strengthsSource": [
+        "https://www.uwindsor.ca/news/node/1262",
+        "https://www.uwindsor.ca/dailynews/node/122823",
+        "https://uwindsor.ca/engineering/"
+      ]
+    },
+    {
+      "id": "guelph",
+      "nameCn": "圭尔夫大学",
+      "nameEn": "University of Guelph",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "圭尔夫",
+      "provinceCn": "安大略省",
+      "qs2027": 546,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 20,
+      "founded": 1964,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C20430",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "农学",
+        "兽医学",
+        "食品科学与技术",
+        "农业科学",
+        "生物技术",
+        "酒店与旅游管理"
+      ],
+      "metaSource": [
+        "https://www.uoguelph.ca/about/",
+        "https://www.uoguelph.ca/graduatestudies/future/international",
+        "https://news.uoguelph.ca/u-of-g-veterinary-agriculture-sciences-rank-among-best-in-world-in-new-rankings"
+      ],
+      "strengthsSource": [
+        "https://news.uoguelph.ca/u-of-g-veterinary-agriculture-sciences-rank-among-best-in-world-in-new-rankings",
+        "https://www.uoguelph.ca/cbs/news/2026/03/university-guelph-retains-global-ranking-biological-sciences-anatomy-physiology-2026-qs",
+        "https://ovc.uoguelph.ca/"
+      ]
+    },
+    {
+      "id": "manitoba",
+      "nameCn": "曼尼托巴大学",
+      "nameEn": "University of Manitoba",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "温尼伯",
+      "provinceCn": "曼尼托巴省",
+      "qs2027": 560,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 21,
+      "founded": 1877,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C6002B",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "农学",
+        "农业与食品科学",
+        "医学",
+        "工程",
+        "北极系统科学与气候变化",
+        "免疫与传染病学"
+      ],
+      "metaSource": [
+        "https://umanitoba.ca/about-um",
+        "https://umanitoba.ca/150-years-um",
+        "https://umanitoba.ca/about-um/economicimpact"
+      ],
+      "strengthsSource": [
+        "https://www.umanitoba.ca/afs",
+        "https://www.umanitoba.ca/faculties"
+      ]
+    },
+    {
+      "id": "torontomet",
+      "nameCn": "多伦多都会大学",
+      "nameEn": "Toronto Metropolitan University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "多伦多",
+      "provinceCn": "安大略省",
+      "qs2027": 669,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 22,
+      "founded": 1948,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#004C9E",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "新闻学",
+        "艺术与设计",
+        "建筑与建成环境",
+        "法学",
+        "计算机科学",
+        "商科"
+      ],
+      "metaSource": [
+        "https://www.torontomu.ca/about/history/",
+        "https://www.torontomu.ca/about/rankings/",
+        "https://www.torontomu.ca/about/"
+      ],
+      "strengthsSource": [
+        "https://www.torontomu.ca/graduate/programs/journalism/",
+        "https://www.torontomu.ca/content/dam/the-creative-school/images/academic-programs/program-brochures/MJ_Journalism_brochure.pdf"
+      ]
+    },
+    {
+      "id": "unb",
+      "nameCn": "新不伦瑞克大学",
+      "nameEn": "University of New Brunswick",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "弗雷德里克顿",
+      "provinceCn": "新不伦瑞克省",
+      "qs2027": 677,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 23,
+      "founded": 1785,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#C8102E",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "林学",
+        "工程学",
+        "计算机科学",
+        "工程",
+        "法学"
+      ],
+      "metaSource": [
+        "https://www.unb.ca/aboutunb/quickfacts.html",
+        "https://unb.ca/academics/calendar/undergraduate/current/historicalsketch/frederictonhistoricalsketch.html"
+      ],
+      "strengthsSource": [
+        "https://www.unb.ca/aboutunb/quickfacts.html",
+        "https://unb.ca/fredericton/forestry/about/index.html"
+      ]
+    },
+    {
+      "id": "memorial",
+      "nameCn": "纽芬兰纪念大学",
+      "nameEn": "Memorial University of Newfoundland",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "圣约翰斯",
+      "provinceCn": "纽芬兰与拉布拉多省",
+      "qs2027": 721,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 24,
+      "founded": 1925,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#822433",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "船舶与海洋工程",
+        "海洋科学",
+        "船舶与海洋建筑工程",
+        "考古学",
+        "语言学",
+        "乡村健康"
+      ],
+      "metaSource": [
+        "https://www.mun.ca/main/about/",
+        "https://www.mun.ca/main/history/",
+        "https://www.mun.ca/main/campuses/"
+      ],
+      "strengthsSource": [
+        "https://mun.ca/undergrad/programs/engineering/ocean-naval-architectural-engineering",
+        "https://mun.ca/engineering/ona/future-students",
+        "https://www.mun.ca/engineering/ona"
+      ],
+      "qsRange": "721-730"
+    },
+    {
+      "id": "carleton",
+      "nameCn": "卡尔顿大学",
+      "nameEn": "Carleton University",
+      "region": "ca",
+      "countryCn": "加拿大",
+      "cityCn": "渥太华",
+      "provinceCn": "安大略省",
+      "qs2027": 801,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 25,
+      "founded": 1942,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#B3122B",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "新闻学",
+        "国际事务",
+        "公共事务",
+        "工程",
+        "建筑学",
+        "高科技"
+      ],
+      "metaSource": [
+        "https://carleton.ca/about/history/",
+        "https://carleton.ca/about/"
+      ],
+      "strengthsSource": [
+        "https://carleton.ca/sjc/journalism/why-study-here",
+        "https://carleton.ca/npsia/directors-message",
+        "https://carleton.ca/cu75/75-years-impact-imagination-innovation"
+      ],
+      "qsRange": "801-850"
+    },
+    {
+      "id": "msu",
+      "nameCn": "密歇根州立大学",
+      "nameEn": "Michigan State University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "东兰辛",
+      "provinceCn": "密歇根州",
+      "qs2027": 182,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 36,
+      "founded": 1855,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#18453B",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "农业与林业",
+        "兽医学",
+        "教育学",
+        "传播学与媒体研究",
+        "语言学",
+        "酒店与旅游管理"
+      ],
+      "metaSource": [
+        "https://msu.edu/about/history",
+        "https://www.qschina.cn/universities/michigan-state-university/postgrad"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "emory",
+      "nameCn": "埃默里大学",
+      "nameEn": "Emory University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "亚特兰大",
+      "provinceCn": "佐治亚州",
+      "qs2027": 183,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 37,
+      "founded": 1836,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#012169",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "护理学",
+        "公共卫生",
+        "神学与宗教研究"
+      ],
+      "metaSource": [
+        "https://www.emory.edu/about/history",
+        "https://www.qschina.cn/universities/emory-university/postgrad"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "osu",
+      "nameCn": "俄亥俄州立大学",
+      "nameEn": "The Ohio State University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "哥伦布",
+      "provinceCn": "俄亥俄州",
+      "qs2027": 201,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 38,
+      "founded": 1870,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#BB0000",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "兽医学",
+        "语言学",
+        "体育相关学科",
+        "农业与林业",
+        "护理学",
+        "传播学与媒体研究"
+      ],
+      "metaSource": [
+        "https://library.osu.edu/node/19300",
+        "https://www.qschina.cn/universities/the-ohio-state-university/postgrad"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "ufl",
+      "nameCn": "佛罗里达大学",
+      "nameEn": "University of Florida",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "盖恩斯维尔",
+      "provinceCn": "佛罗里达州",
+      "qs2027": 228,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 39,
+      "founded": 1853,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#0021A5",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "体育相关学科",
+        "农业与林业",
+        "兽医学",
+        "药学"
+      ],
+      "metaSource": [
+        "https://www.ufl.edu/about/",
+        "https://www.qschina.cn/universities/university-of-florida/postgrad"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "rochester",
+      "nameCn": "罗切斯特大学",
+      "nameEn": "University of Rochester",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "罗切斯特",
+      "provinceCn": "纽约州",
+      "qs2027": 251,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 40,
+      "founded": 1850,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#003B71",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "音乐",
+        "表演艺术"
+      ],
+      "metaSource": [
+        "https://www.rochester.edu/about/",
+        "https://www.qschina.cn/universities/university-of-rochester/postgrad"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "uci",
+      "nameCn": "加州大学尔湾分校",
+      "nameEn": "University of California, Irvine",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "尔湾",
+      "provinceCn": "加利福尼亚州",
+      "qs2027": 252,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 41,
+      "founded": 1965,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#0064A4",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "哲学"
+      ],
+      "metaSource": [
+        "https://uci.edu/about/",
+        "https://www.qschina.cn/universities/university-california-irvine/postgrad"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "umd",
+      "nameCn": "马里兰大学帕克分校",
+      "nameEn": "University of Maryland, College Park",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "学院公园",
+      "provinceCn": "马里兰州",
+      "qs2027": 252,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 42,
+      "founded": 1856,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#E21833",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "计算机科学",
+        "物理学",
+        "犯罪学与刑事司法",
+        "工程学",
+        "数学",
+        "公共卫生"
+      ],
+      "metaSource": [
+        "https://umd.edu/about/history",
+        "https://today.umd.edu/umd-graduate-programs-earn-high-rankings-from-u-s-news",
+        "https://cmns.umd.edu/news-events/news/umd-rises-three-spots-computer-science-undergraduate-program-rankings"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "umn",
+      "nameCn": "明尼苏达大学双城分校",
+      "nameEn": "University of Minnesota Twin Cities",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "明尼阿波利斯-圣保罗（双城）",
+      "provinceCn": "明尼苏达州",
+      "qs2027": 255,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 43,
+      "founded": 1851,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#7A0019",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "兽医学",
+        "化学工程",
+        "农业与林业",
+        "心理学"
+      ],
+      "metaSource": [
+        "https://twin-cities.umn.edu/about-us/history",
+        "https://uni.menggy.com/s/2799/university-of-minnesota-twin-cities"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "umass",
+      "nameCn": "马萨诸塞大学阿默斯特分校",
+      "nameEn": "University of Massachusetts Amherst",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "阿默斯特",
+      "provinceCn": "马萨诸塞州",
+      "qs2027": 260,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 44,
+      "founded": 1863,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#881C1C",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "语言学",
+        "发展研究",
+        "农业与林业",
+        "体育相关学科",
+        "酒店与休闲管理",
+        "传播与媒体研究"
+      ],
+      "metaSource": [
+        "https://www.umass.edu/hr/new-employees-guide/about-umass-amherst",
+        "https://digitalhumanities.umass.edu/news/article/umass-amherst-among-top-10-us-four-academic-subject-categories-new-qs-world-university"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "virginia",
+      "nameCn": "弗吉尼亚大学",
+      "nameEn": "University of Virginia",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "夏洛茨维尔",
+      "provinceCn": "弗吉尼亚州",
+      "qs2027": 268,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 45,
+      "founded": 1819,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#232D4B",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "法学",
+        "商学",
+        "医学与健康科学"
+      ],
+      "metaSource": [
+        "https://www.virginia.edu/facts-figures"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "pitt",
+      "nameCn": "匹兹堡大学",
+      "nameEn": "University of Pittsburgh",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "匹兹堡",
+      "provinceCn": "宾夕法尼亚州",
+      "qs2027": 279,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 46,
+      "founded": 1787,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#003594",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "哲学",
+        "护理学",
+        "图书与信息管理",
+        "医学"
+      ],
+      "metaSource": [
+        "https://www.pitt.edu/about/history-and-achievements",
+        "https://www.as.pitt.edu/node/3153",
+        "https://www.nursing.pitt.edu/?p=12714/"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "nd",
+      "nameCn": "圣母大学",
+      "nameEn": "University of Notre Dame",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "圣母镇（毗邻南本德 South Bend）",
+      "provinceCn": "印第安纳州",
+      "qs2027": 300,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 47,
+      "founded": 1842,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#0C2340",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "神学、宗教与神学研究",
+        "哲学"
+      ],
+      "metaSource": [
+        "https://nd.edu/about/history",
+        "https://giving.nd.edu/department-of-theology-ranked-best-in-the-world",
+        "https://catalog.nd.edu/undergraduate/general-information"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "arizona",
+      "nameCn": "亚利桑那大学",
+      "nameEn": "The University of Arizona",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "图森",
+      "provinceCn": "亚利桑那州",
+      "qs2027": 313,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 48,
+      "founded": 1885,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#AB0520",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "天文学与天体物理",
+        "管理信息系统",
+        "空间科学",
+        "地球科学",
+        "水资源",
+        "光学"
+      ],
+      "metaSource": [
+        "http://calendar.arizona.edu/resources-media/university-facts",
+        "https://president.arizona.edu/content/highlights-and-rankings",
+        "https://www.arizona.edu/admissions/student-stories/study-astronomy-u-bs-nasa-backed-research-opportunities",
+        "https://news.arizona.edu/news/u-space-science-ranks-no-1-among-public-universities-latest-us-news-global-ranking",
+        "https://news.arizona.edu/news/mis-nursing-legal-writing-excel-latest-us-news-rankings-graduate-programs",
+        "https://grad.arizona.edu/news/u-earns-several-top-marks-latest-us-news-ranking-grad-programs"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "rutgers",
+      "nameCn": "罗格斯大学新布朗斯维克分校",
+      "nameEn": "Rutgers University-New Brunswick",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "新布朗斯维克",
+      "provinceCn": "新泽西州",
+      "qs2027": 314,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 49,
+      "founded": 1766,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#CC0033",
+        "shape": "shield"
+      },
+      "campuses": [],
+      "strengths": [
+        "哲学",
+        "食品科学与技术",
+        "供应链管理",
+        "离散数学与组合数学",
+        "数学",
+        "海洋学"
+      ],
+      "metaSource": [
+        "https://catalogs.rutgers.edu/generated/smlr_1820/pg1.html",
+        "https://www.rutgers.edu/sites/default/files/greatthings2022_spread.pdf",
+        "https://prelaunch.newbrunswick.rutgers.edu/discover-rutgers/rutgers-roots"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "ncsu",
+      "nameCn": "北卡罗来纳州立大学",
+      "nameEn": "North Carolina State University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "罗利",
+      "provinceCn": "北卡罗来纳州",
+      "qs2027": 320,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 50,
+      "founded": 1887,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#CC0000",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "兽医学",
+        "纺织工程",
+        "农业科学",
+        "统计学",
+        "核工程",
+        "生物与农业工程"
+      ],
+      "metaSource": [
+        "https://catalog.ncsu.edu/about/",
+        "http://applygrad.ncsu.edu/",
+        "https://chancellor.ncsu.edu/wp-content/uploads/sites/3/2024/12/nc-state-chancellor-leadership-profile.pdf"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "cuboulder",
+      "nameCn": "科罗拉多大学博尔德分校",
+      "nameEn": "University of Colorado Boulder",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "博尔德",
+      "provinceCn": "科罗拉多州",
+      "qs2027": 320,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 51,
+      "founded": 1876,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#8A7B4E",
+        "shape": "blocks"
+      },
+      "campuses": [],
+      "strengths": [
+        "航空航天工程",
+        "物理学",
+        "地球科学",
+        "工程学",
+        "环境法",
+        "房地产"
+      ],
+      "metaSource": [
+        "https://www.colorado.edu/about/rankings-achievements",
+        "https://catalog.colorado.edu/about-cu-boulder",
+        "https://www.colorado.edu/150/150-years-transforming-lives"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "casewestern",
+      "nameCn": "凯斯西储大学",
+      "nameEn": "Case Western Reserve University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "克利夫兰",
+      "provinceCn": "俄亥俄州",
+      "qs2027": 326,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 52,
+      "founded": 1826,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#0A304E",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "生物医学工程",
+        "高分子科学与工程",
+        "电化学工程",
+        "机器人学",
+        "医学",
+        "护理学"
+      ],
+      "metaSource": [
+        "https://bulletin.case.edu/about-university/",
+        "https://engineering.case.edu/conference/tesconf-2019/about-cwru",
+        "https://case.edu/international/sites/case.edu.international/files/2017-11/Exchange-Partner-Guide-2016.pdf"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "tufts",
+      "nameCn": "塔夫茨大学",
+      "nameEn": "Tufts University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "梅德福",
+      "provinceCn": "马萨诸塞州",
+      "qs2027": 338,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 53,
+      "founded": 1852,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#3E8EDE",
+        "shape": "leaf"
+      },
+      "campuses": [],
+      "strengths": [
+        "国际关系",
+        "兽医学",
+        "营养科学"
+      ],
+      "metaSource": [
+        "https://www.tufts.edu/about",
+        "https://fletchergraduates.tufts.edu/global-affairs/",
+        "https://alumniandfriends.tufts.edu/brighterworld/cause/global-security",
+        "https://vetprofiles.tufts.edu/news-events/news/canine-physical-therapy-enthusiast",
+        "https://grad.tufts.edu/friedman-masters-nutrition/"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "miami",
+      "nameCn": "迈阿密大学",
+      "nameEn": "University of Miami",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "科勒尔盖布尔斯",
+      "provinceCn": "佛罗里达州",
+      "qs2027": 338,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 54,
+      "founded": 1925,
+      "type": "私立研究型",
+      "crest": {
+        "color": "#005030",
+        "shape": "arch"
+      },
+      "campuses": [],
+      "strengths": [
+        "海洋科学",
+        "大气科学",
+        "音乐",
+        "医学"
+      ],
+      "metaSource": [
+        "https://welcome.miami.edu/about-um/history/index.html",
+        "https://welcome.miami.edu/about-um/index.html",
+        "https://www.rsmas.miami.edu/",
+        "https://news.miami.edu/frost/stories/2024/01/bestof.html",
+        "https://admissions.frost.miami.edu/"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "iu",
+      "nameCn": "印第安纳大学伯明顿分校",
+      "nameEn": "Indiana University Bloomington",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "布卢明顿",
+      "provinceCn": "印第安纳州",
+      "qs2027": 360,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 55,
+      "founded": 1820,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#990000",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "商科",
+        "公共事务与公共管理",
+        "音乐",
+        "信息学与计算机",
+        "教育学"
+      ],
+      "metaSource": [
+        "https://bloomington.iu.edu/about/history.html",
+        "https://kelley.iu.edu",
+        "https://news.iu.edu/live/news/49826-oneill-mpa-no-1-overall-kelley-mba-no-7-among",
+        "https://news.iu.edu/live/news/23492-us-news-and-world-report-and-qs-world-university",
+        "https://bloomington.iu.edu/"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "vpi",
+      "nameCn": "弗吉尼亚理工大学",
+      "nameEn": "Virginia Polytechnic Institute and State University",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "布莱克斯堡",
+      "provinceCn": "弗吉尼亚州",
+      "qs2027": 366,
+      "rankTie": false,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 56,
+      "founded": 1872,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#630031",
+        "shape": "blocks"
+      },
+      "campuses": [],
+      "strengths": [
+        "工业与系统工程",
+        "土木工程",
+        "环境工程",
+        "航空航天工程",
+        "机械工程",
+        "计算机科学"
+      ],
+      "metaSource": [
+        "https://history.unirel.vt.edu/",
+        "https://cpe.vt.edu/tcmi/vt.html",
+        "https://news.vt.edu/articles/2025/09/CM-USNews-Best-Colleges-2025.html"
+      ],
+      "strengthsSource": []
+    },
+    {
+      "id": "uic",
+      "nameCn": "伊利诺伊大学芝加哥分校",
+      "nameEn": "University of Illinois Chicago",
+      "region": "us",
+      "countryCn": "美国",
+      "cityCn": "芝加哥",
+      "provinceCn": "伊利诺伊州",
+      "qs2027": 370,
+      "rankTie": true,
+      "rankChange": null,
+      "score": null,
+      "nationalRank": 57,
+      "founded": 1982,
+      "type": "公立研究型",
+      "crest": {
+        "color": "#001E62",
+        "shape": "building"
+      },
+      "campuses": [],
+      "strengths": [
+        "健康科学",
+        "工程与技术",
+        "城市规划与公共管理",
+        "社会科学",
+        "商科"
+      ],
+      "metaSource": [
+        "https://www.uic.edu/about",
+        "http://uic.edu/about/history",
+        "https://engineering.uic.edu/undergraduate/undergraduate-admissions/"
+      ],
+      "strengthsSource": []
+    }
+  ]
+}

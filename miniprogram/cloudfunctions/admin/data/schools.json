@@ -1,0 +1,5338 @@
+[
+  {
+    "id": "mcgill",
+    "nameCn": "麦吉尔大学",
+    "nameEn": "McGill University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "蒙特利尔",
+    "provinceCn": "魁北克省",
+    "qs": 30,
+    "qsLabel": "QS 30",
+    "qsDisplay": "30",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -3,
+    "qsScore": 87.5,
+    "nationalRank": 1,
+    "founded": 1821,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C0392B",
+      "shape": "leaf"
+    },
+    "city": "蒙特利尔",
+    "province": "魁北克省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中三年成绩单 + 会考成绩（多数A/B）+ 高考成绩（须达本省一本线/特招线，热门专业更高）；未参加高考可用SAT/ACT替代。无统一官方最低均分；第三方建议平时均分85%–90%+，热门专业90%+。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0（教育/商科建议7.0）",
+      "toefl": 90,
+      "sat": "not_required",
+      "ap": "unknown",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+      "https://www.mcgill.ca/admissions/international"
+    ]
+  },
+  {
+    "id": "toronto",
+    "nameCn": "多伦多大学",
+    "nameEn": "University of Toronto",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "多伦多",
+    "provinceCn": "安大略省",
+    "qs": 32,
+    "qsLabel": "QS 32",
+    "qsDisplay": "32",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -3,
+    "qsScore": 86.8,
+    "nationalRank": 2,
+    "founded": 1827,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#0B4DA2",
+      "shape": "building"
+    },
+    "city": "多伦多",
+    "province": "安大略省",
+    "campuses": [
+      {
+        "id": "utm",
+        "nameCn": "多伦多大学密西沙加校区",
+        "nameEn": "University of Toronto Mississauga",
+        "shortEn": "UTM",
+        "cityCn": "密西沙加市",
+        "provinceCn": "安大略省",
+        "crest": {
+          "color": "#4A7BD4",
+          "shape": "cap"
+        }
+      },
+      {
+        "id": "utsc",
+        "nameCn": "多伦多大学士嘉堡校区",
+        "nameEn": "University of Toronto Scarborough",
+        "shortEn": "UTSC",
+        "cityCn": "多伦多市",
+        "provinceCn": "安大略省",
+        "crest": {
+          "color": "#3E8E7E",
+          "shape": "cap"
+        }
+      }
+    ],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：会考成绩（Huikao）+ 高考成绩（Gaokao，申请专业先修科目须达标）；若无高考须说明并提交对应先修科目的AP等成绩。无统一最低均分，按专业竞争录取。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 100,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "International Foundation Program (IFP)",
+          "type": "intl_year1",
+          "ielts": 5,
+          "desc": "国际预科+英语强化，完成后进入本科一年级；针对英语未达标但学术达标的学生。"
+        }
+      ]
+    },
+    "source": [
+      "https://future.utoronto.ca/apply/english-language-requirements",
+      "https://future.utoronto.ca/transfer-credits-high-school-students"
+    ]
+  },
+  {
+    "id": "ubc",
+    "nameCn": "英属哥伦比亚大学",
+    "nameEn": "University of British Columbia",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "温哥华",
+    "provinceCn": "不列颠哥伦比亚省",
+    "qs": 45,
+    "qsLabel": "QS =45",
+    "qsDisplay": "=45",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -5,
+    "qsScore": 83.9,
+    "nationalRank": 3,
+    "founded": 1908,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C94A4A",
+      "shape": "wave"
+    },
+    "city": "温哥华",
+    "province": "不列颠哥伦比亚省",
+    "campuses": [
+      {
+        "id": "ubco",
+        "nameCn": "英属哥伦比亚大学奥肯那根校区",
+        "nameEn": "UBC Okanagan",
+        "shortEn": "UBCO",
+        "cityCn": "基洛纳市",
+        "provinceCn": "不列颠哥伦比亚省",
+        "crest": {
+          "color": "#D4735E",
+          "shape": "cap"
+        }
+      }
+    ],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考/学业水平测试成绩 + 高考成绩（建议一本线以上）。无统一最低均分，按专业竞争录取；AP/IB可与高中课程合并计算录取均分。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 90,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Vantage One",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "国际学生本科一年级桥梁课程，含英语学术训练，完成后转入常规二年级。"
+        }
+      ]
+    },
+    "source": [
+      "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/",
+      "https://vancouver.calendar.ubc.ca/admissions/applicants-international-baccalaureate-and-advanced-placement-courses"
+    ]
+  },
+  {
+    "id": "alberta",
+    "nameCn": "阿尔伯塔大学",
+    "nameEn": "University of Alberta",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "埃德蒙顿",
+    "provinceCn": "阿尔伯塔省",
+    "qs": 96,
+    "qsLabel": "QS 96",
+    "qsDisplay": "96",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -2,
+    "qsScore": 69.3,
+    "nationalRank": 4,
+    "founded": 1908,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1F7A4D",
+      "shape": "arch"
+    },
+    "city": "埃德蒙顿",
+    "province": "阿尔伯塔省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：三年官方成绩单 + 会考成绩（多数A/B）；高考非强制但提交可加分。无统一最低均分，按专业竞争录取（官方称 competitive admission average，各专业每年浮动）。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 90,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Bridging Program (BP)",
+          "type": "language",
+          "ielts": 5,
+          "desc": "英语未达直录可入 bridging；Stage1 IELTS 5.0 / Stage2 5.5，完成后进入常规专业。"
+        }
+      ]
+    },
+    "source": [
+      "https://calendar.ualberta.ca/content.php?catoid=56&navoid=17355",
+      "https://www.ualberta.ca/admissions/international/resources/ualberta-and-your-country/china.html"
+    ]
+  },
+  {
+    "id": "waterloo",
+    "nameCn": "滑铁卢大学",
+    "nameEn": "University of Waterloo",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "滑铁卢",
+    "provinceCn": "安大略省",
+    "qs": 113,
+    "qsLabel": "QS =113",
+    "qsDisplay": "=113",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 6,
+    "qsScore": 66.6,
+    "nationalRank": 5,
+    "founded": 1957,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#D4A017",
+      "shape": "blocks"
+    },
+    "city": "滑铁卢",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议一本线以上）。按专业竞争录取，无统一最低均分；数学/计算机等热门专业要求更高。",
+      "ielts": 6.5,
+      "ieltsSub": 6.5,
+      "ieltsSubNote": "写作/口语6.5，阅读/听力6.0",
+      "toefl": 90,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "BASE (Bridge to Academic Success in English)",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语桥梁课程，完成后进入本科；工程等部分专业不授AP/IB转学分。"
+        }
+      ]
+    },
+    "source": [
+      "https://uwaterloo.ca/future-students/admissions/english-language-requirements",
+      "https://uwaterloo.ca/find-out-more/admissions/ap-transfer-credit-chart"
+    ]
+  },
+  {
+    "id": "western",
+    "nameCn": "韦仕敦大学",
+    "nameEn": "Western University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "伦敦",
+    "provinceCn": "安大略省",
+    "qs": 142,
+    "qsLabel": "QS =142",
+    "qsDisplay": "=142",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 9,
+    "qsScore": 62.5,
+    "nationalRank": 6,
+    "founded": 1878,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#6A3FA0",
+      "shape": "shield"
+    },
+    "city": "伦敦",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩；高考通常需提交（建议一本线以上）。各专业录取均分不同，无统一最低值。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 83,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English Boost Program",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语强化，针对英语接近直录要求的学生，可同步修读部分学术课程。"
+        }
+      ]
+    },
+    "source": [
+      "https://welcome.uwo.ca/next-steps/requirements/english-language-proficiency.html",
+      "https://welcome.uwo.ca/next-steps/requirements/international-high-school/advanced-placement.html"
+    ]
+  },
+  {
+    "id": "umontreal",
+    "nameCn": "蒙特利尔大学",
+    "nameEn": "Université de Montréal",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "蒙特利尔",
+    "provinceCn": "魁北克省",
+    "qs": 162,
+    "qsLabel": "QS =162",
+    "qsDisplay": "=162",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -6,
+    "qsScore": 60.4,
+    "nationalRank": 7,
+    "founded": 1878,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1B5FA8",
+      "shape": "arch"
+    },
+    "city": "蒙特利尔",
+    "province": "魁北克省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "以法语授课为主；申请法语授课专业须达到法语B2（如TFI 605+、DELF/DALF B2、TCF B2）。申请英语授课专业须提供英语成绩（详见英语要求）。无统一最低均分。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "not_required",
+      "ap": "unknown",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Programme intensif de français universitaire (PIFU)",
+          "type": "language",
+          "ielts": null,
+          "desc": "法语强化课程，帮助未达法语要求的学生提升并进入法语授课专业。"
+        }
+      ]
+    },
+    "source": [
+      "https://admission.umontreal.ca/"
+    ]
+  },
+  {
+    "id": "mcmaster",
+    "nameCn": "麦克马斯特大学",
+    "nameEn": "McMaster University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "汉密尔顿",
+    "provinceCn": "安大略省",
+    "qs": 174,
+    "qsLabel": "QS =174",
+    "qsDisplay": "=174",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 1,
+    "qsScore": 58.2,
+    "nationalRank": 8,
+    "founded": 1887,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#8E2B3F",
+      "shape": "shield"
+    },
+    "city": "汉密尔顿",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议一本线以上）。按专业竞争录取，无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": 5.5,
+      "ieltsSubNote": "单项不低于5.5",
+      "toefl": 86,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "MELD (English Language Diploma) / STEP",
+          "type": "language",
+          "ielts": 5,
+          "desc": "英语未达直录可入语言文凭/英语强化课程，完成后转入常规专业。"
+        }
+      ]
+    },
+    "source": [
+      "https://future.mcmaster.ca/admission/language/",
+      "https://future.mcmaster.ca/transfer-credits-highschool"
+    ]
+  },
+  {
+    "id": "queens",
+    "nameCn": "女王大学",
+    "nameEn": "Queen's University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "金斯顿",
+    "provinceCn": "安大略省",
+    "qs": 179,
+    "qsLabel": "QS =179",
+    "qsDisplay": "=179",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 12,
+    "qsScore": 57.6,
+    "nationalRank": 9,
+    "founded": 1841,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1E4E8C",
+      "shape": "star"
+    },
+    "city": "金斯顿",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：应届生通常不强制高考，往届生须提交高考（一本线以上）；均需高中成绩单 + 会考成绩。按专业竞争录取，无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 88,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "QBridge (English for Academic Purposes)",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语学术预备桥梁，完成后进入本科一年级。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.queensu.ca/admission/about-applying/english-language-requirements",
+      "https://www.queensu.ca/admission/applying/transfer-credits/high-school-transfer-credits.advanced-placement.science"
+    ]
+  },
+  {
+    "id": "ottawa",
+    "nameCn": "渥太华大学",
+    "nameEn": "University of Ottawa",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "渥太华",
+    "provinceCn": "安大略省",
+    "qs": 228,
+    "qsLabel": "QS =228",
+    "qsDisplay": "=228",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -9,
+    "qsScore": 53.1,
+    "nationalRank": 10,
+    "founded": 1848,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#2E7D6B",
+      "shape": "arch"
+    },
+    "city": "渥太华",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考/高考成绩（建议一本线以上）。双语大学（英/法），按专业竞争录取，无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": 6.5,
+      "ieltsSubNote": "写作不低于6.5",
+      "toefl": 86,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English Intensive Program (EIP)",
+          "type": "language",
+          "ielts": 5,
+          "desc": "英语强化课程，完成后满足英语要求进入本科。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.uottawa.ca/study/undergraduate-studies/language-requirements",
+      "https://www.uottawa.ca/study/undergraduate-studies/transfer-credits"
+    ]
+  },
+  {
+    "id": "calgary",
+    "nameCn": "卡尔加里大学",
+    "nameEn": "University of Calgary",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "卡尔加里",
+    "provinceCn": "阿尔伯塔省",
+    "qs": 249,
+    "qsLabel": "QS 249",
+    "qsDisplay": "249",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -38,
+    "qsScore": null,
+    "nationalRank": 11,
+    "founded": 1966,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C0392B",
+      "shape": "blocks"
+    },
+    "city": "卡尔加里",
+    "province": "阿尔伯塔省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考/高考成绩。按专业竞争录取，无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 86,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English Language Foundation / Conditional Admission",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语未达直录可获有条件录取并先修英语课程。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.ucalgary.ca/future-students/undergraduate/elp-exempt-countries",
+      "https://ucalgary.ca/future-students/undergraduate/transfer-credit/high-school"
+    ]
+  },
+  {
+    "id": "dalhousie",
+    "nameCn": "达尔豪斯大学",
+    "nameEn": "Dalhousie University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "哈利法克斯",
+    "provinceCn": "新斯科舍省",
+    "qs": 298,
+    "qsLabel": "QS 298",
+    "qsDisplay": "298",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -15,
+    "qsScore": null,
+    "nationalRank": 12,
+    "founded": 1818,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1F4E79",
+      "shape": "shield"
+    },
+    "city": "哈利法克斯",
+    "province": "新斯科舍省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议一本线以上）。按专业竞争录取，无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 90,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English for Academic Purposes (EAP)",
+          "type": "language",
+          "ielts": 5,
+          "desc": "英语学术预备课程，完成后满足英语要求进入本科。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.dal.ca/admissions/undergraduate/english-requirements.html",
+      "https://www.dal.ca/admissions/undergraduate/specific-course-requirements/ap.html"
+    ]
+  },
+  {
+    "id": "sfu",
+    "nameCn": "西蒙菲莎大学",
+    "nameEn": "Simon Fraser University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "本拿比",
+    "provinceCn": "不列颠哥伦比亚省",
+    "qs": 312,
+    "qsLabel": "QS 312",
+    "qsDisplay": "312",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -4,
+    "qsScore": null,
+    "nationalRank": 13,
+    "founded": 1965,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#B03A2E",
+      "shape": "building"
+    },
+    "city": "本拿比",
+    "province": "不列颠哥伦比亚省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：主要审高中平时成绩（均分建议85%+）+ 会考成绩；高考建议一本线以上可加分。无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 88,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Fraser International College (FIC)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "桥梁学院，完成UTP Stage II后转入SFU二年级。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.sfu.ca/students/admission/admission-requirements/english-language-requirement.html",
+      "https://www.sfu.ca/students/admission/admission-requirements/advanced-placement.html"
+    ]
+  },
+  {
+    "id": "york",
+    "nameCn": "约克大学",
+    "nameEn": "York University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "多伦多",
+    "provinceCn": "安大略省",
+    "qs": 322,
+    "qsLabel": "QS =322",
+    "qsDisplay": "=322",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -11,
+    "qsScore": null,
+    "nationalRank": 14,
+    "founded": 1959,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#A93226",
+      "shape": "star"
+    },
+    "city": "多伦多",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议二本线以上，一本更具竞争力）。按专业竞争录取，无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 88,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "YUELI (York University English Language Institute)",
+          "type": "language",
+          "ielts": 5,
+          "desc": "英语语言课程，完成后满足英语要求进入本科。"
+        }
+      ]
+    },
+    "source": [
+      "https://futurestudents.yorku.ca/requirements/language-tests",
+      "https://futurestudents.yorku.ca/requirements/advancedplacement"
+    ]
+  },
+  {
+    "id": "uvic",
+    "nameCn": "维多利亚大学",
+    "nameEn": "University of Victoria",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "维多利亚",
+    "provinceCn": "不列颠哥伦比亚省",
+    "qs": 370,
+    "qsLabel": "QS =370",
+    "qsDisplay": "=370",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -12,
+    "qsScore": null,
+    "nationalRank": 15,
+    "founded": 1963,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1B6CA8",
+      "shape": "wave"
+    },
+    "city": "维多利亚",
+    "province": "不列颠哥伦比亚省",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "中国普高：需高考成绩（建议500分以上/二本线，一本更具竞争力）+ 高中平时成绩（均分建议85%+）+ 会考合格。按专业竞争录取，无统一最低均分。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于6.0",
+      "toefl": 88,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "University Admission Pathway (UAP) / University Pathway Program",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语学术桥梁课程，完成后进入本科。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.uvic.ca/elr",
+      "https://www.uvic.ca/undergraduate/admissions/transfer-credit/index.php"
+    ]
+  },
+  {
+    "id": "unsw",
+    "nameCn": "新南威尔士大学",
+    "nameEn": "UNSW Sydney",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "悉尼",
+    "provinceCn": "新南威尔士州",
+    "qs": 19,
+    "qsLabel": "QS 19",
+    "qsDisplay": "19",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 1,
+    "qsScore": null,
+    "nationalRank": 1,
+    "founded": 1949,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#F0A500",
+      "shape": "shield"
+    },
+    "city": "悉尼",
+    "province": "新南威尔士州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "接受中国高考直录，按专业要求高考满分（750 分制）约 70%–91%：文学/理学 70%，工程 75%，商科 80%，精算/医学 90–91%。依据 UNSW 2027 本科直录成绩表（Gao Kao 列）。另接受 IB、A-Level、AP 等。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 90,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "UNSW College Foundation Studies",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科，衔接 UNSW 本科一年级"
+        },
+        {
+          "name": "UNSW College Diploma",
+          "type": "intl_year1",
+          "ielts": 6,
+          "desc": "国际大一（文凭课程），完成后升入本科二年级"
+        },
+        {
+          "name": "University English Entry Course (UEEC)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班，未达语言要求可配语言课"
+        }
+      ]
+    },
+    "source": [
+      "https://china.unsw.edu.au/entry-requirements",
+      "https://www.unsw.edu.au/study/international-students/entry-requirements"
+    ]
+  },
+  {
+    "id": "melbourne",
+    "nameCn": "墨尔本大学",
+    "nameEn": "University of Melbourne",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "墨尔本",
+    "provinceCn": "维多利亚州",
+    "qs": 22,
+    "qsLabel": "QS =22",
+    "qsDisplay": "=22",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -3,
+    "qsScore": null,
+    "nationalRank": 2,
+    "founded": 1853,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1D3A6B",
+      "shape": "blocks"
+    },
+    "city": "墨尔本",
+    "province": "维多利亚州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "墨尔本大学不接受中国高考直录。中国学生须通过 Trinity College Foundation Studies 预科，或凭 IB / A-Level / 美高文凭（AP+SAT）等国际资格直录。预科毕业方可入读本科一年级。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Trinity College Foundation Studies",
+          "type": "foundation",
+          "ielts": 6,
+          "desc": "墨尔本大学指定预科（墨大不接受高考直录，须读预科）"
+        },
+        {
+          "name": "Hawthorn-Melbourne / UMELBP",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（University of Melbourne English Language Bridging Program）"
+        }
+      ]
+    },
+    "source": [
+      "https://study.unimelb.edu.au/connect-with-us/international/china",
+      "https://study.unimelb.edu.au/how-to-apply/undergraduate"
+    ]
+  },
+  {
+    "id": "sydney",
+    "nameCn": "悉尼大学",
+    "nameEn": "University of Sydney",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "悉尼",
+    "provinceCn": "新南威尔士州",
+    "qs": 28,
+    "qsLabel": "QS 28",
+    "qsDisplay": "28",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -3,
+    "qsScore": null,
+    "nationalRank": 3,
+    "founded": 1850,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#7B61C9",
+      "shape": "blocks"
+    },
+    "city": "悉尼",
+    "province": "新南威尔士州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "接受中国高考直录，总分约 70%–85%：多数专业 70%，商科 75–85%，建筑/法学等更高（部分 90%）。亦接受 IB（31–38）、A-Level、AP 直录。高考分见悉尼大学国际招生指南。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 85,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Taylors College Sydney Foundation Program",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "悉尼大学预科（Taylors College 承办）"
+        },
+        {
+          "name": "Centre for English Teaching (CET)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（悉尼大学英语教学中心）"
+        }
+      ]
+    },
+    "source": [
+      "https://www.sydney.edu.au/study/applying/how-to-apply/undergraduate/recognised-qualifications.html",
+      "https://www.sydney.edu.au/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"
+    ]
+  },
+  {
+    "id": "anu",
+    "nameCn": "澳大利亚国立大学",
+    "nameEn": "Australian National University",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "堪培拉",
+    "provinceCn": "首都领地",
+    "qs": 29,
+    "qsLabel": "QS 29",
+    "qsDisplay": "29",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 3,
+    "qsScore": null,
+    "nationalRank": 4,
+    "founded": 1946,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1B4F8A",
+      "shape": "shield"
+    },
+    "city": "堪培拉",
+    "province": "首都领地",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "接受中国高考直录，满分 70% 起（525/750）；商科约 73%、工程约 76%，法学/精算等热门专业 80%+。亦接受 AP+普高毕业证（最少 3 门 AP、单门 3 分+），或 IB/A-Level。ANU 无本校预科/国际大一，未达直录可通过合作机构预科衔接。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": 3,
+      "pathways": []
+    },
+    "source": [
+      "https://study.anu.edu.au/apply/international-applications/indicative-entry-requirement/advanced-placement-ap-applications",
+      "https://study.anu.edu.au/node/3270"
+    ]
+  },
+  {
+    "id": "monash",
+    "nameCn": "蒙纳士大学",
+    "nameEn": "Monash University",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "墨尔本",
+    "provinceCn": "维多利亚州",
+    "qs": 31,
+    "qsLabel": "QS 31",
+    "qsDisplay": "31",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 5,
+    "qsScore": null,
+    "nationalRank": 5,
+    "founded": 1958,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#2E5C9A",
+      "shape": "arch"
+    },
+    "city": "墨尔本",
+    "province": "维多利亚州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 60,
+      "gpaNote": "接受中国高考直录，满分约 60%–80%：多数专业 60–70%，工程 75%，法学 80%。亦接受 IB、A-Level、AP 直录；或高中三年均分达标直申部分课程。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Monash College Foundation Year",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（Monash College 承办）"
+        },
+        {
+          "name": "Monash College Diploma",
+          "type": "intl_year1",
+          "ielts": 6,
+          "desc": "国际大一，完成后升本科二年级"
+        },
+        {
+          "name": "Monash English",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班"
+        }
+      ]
+    },
+    "source": [
+      "https://www.monashuniversity.cn/how-to-apply/entry-requirements/undergraduate",
+      "https://www.monash.edu/study/courses/apply/international"
+    ]
+  },
+  {
+    "id": "uq",
+    "nameCn": "昆士兰大学",
+    "nameEn": "University of Queensland",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "布里斯班",
+    "provinceCn": "昆士兰州",
+    "qs": 40,
+    "qsLabel": "QS =40",
+    "qsDisplay": "=40",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 2,
+    "qsScore": null,
+    "nationalRank": 6,
+    "founded": 1909,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#4A2E82",
+      "shape": "shield"
+    },
+    "city": "布里斯班",
+    "province": "昆士兰州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "接受中国高考直录，分数转换为百分比：多数专业约 70%，部分 75%，热门专业（如牙医）80%。亦接受 IB、A-Level、AP 等。具体见各专业页最低入学分。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 87,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "UQ College Foundation Studies",
+          "type": "foundation",
+          "ielts": 5,
+          "desc": "预科（UQ College 承办）"
+        },
+        {
+          "name": "ICTE-UQ",
+          "type": "language",
+          "ielts": null,
+          "desc": "昆士兰大学语言中心（Institute of Continuing & TESOL Education）"
+        }
+      ]
+    },
+    "source": [
+      "https://china.uq.edu.au/how-to-apply/eligibility",
+      "https://study.uq.edu.au/study-options/programs/bachelor-science-2461"
+    ]
+  },
+  {
+    "id": "uwa",
+    "nameCn": "西澳大学",
+    "nameEn": "University of Western Australia",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "珀斯",
+    "provinceCn": "西澳大利亚州",
+    "qs": 77,
+    "qsLabel": "QS =77",
+    "qsDisplay": "=77",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 0,
+    "qsScore": null,
+    "nationalRank": 7,
+    "founded": 1911,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1B5E9C",
+      "shape": "wave"
+    },
+    "city": "珀斯",
+    "province": "西澳大利亚州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 65,
+      "gpaNote": "接受中国高考直录，按省份满分折算：最低 65%（对应 ATAR 70），525/750=70%，部分专业 72.5%–90%（对应 ATAR 85–98）。依据 UWA 官方国际学历对照表。亦接受 IB、A-Level、AP。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 82,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "UWA College Foundation Program",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（UWA College 承办）"
+        },
+        {
+          "name": "UWA College Diploma",
+          "type": "intl_year1",
+          "ielts": 6,
+          "desc": "国际大一（Diploma in Commerce/Computer/Engineering），完成后升本科二年级"
+        },
+        {
+          "name": "UWA Centre for English Language Teaching (CELT)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班"
+        }
+      ]
+    },
+    "source": [
+      "https://uwa.edu.au/study/how-to-apply/international-and-overseas-qualifications",
+      "https://uwa.edu.au/study/how-to-apply/pathways-and-eligibility/entry-pathways/international-student-pathways"
+    ]
+  },
+  {
+    "id": "adelaide",
+    "nameCn": "阿德莱德大学",
+    "nameEn": "Adelaide University",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "阿德莱德",
+    "provinceCn": "南澳大利亚州",
+    "qs": 79,
+    "qsLabel": "QS 79",
+    "qsDisplay": "79",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 3,
+    "qsScore": null,
+    "nationalRank": 8,
+    "founded": 1874,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#7A2E3E",
+      "shape": "arch"
+    },
+    "city": "阿德莱德",
+    "province": "南澳大利亚州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 60,
+      "gpaNote": "接受中国高考直录，满分约 60%–75%：文学/农学/商科/IT/护理 60%，工程/计算机 65–70%，法学/药学 75%，医学/口腔等健康类 80%+。具体见各专业页。亦接受 IB、A-Level、AP。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Adelaide College Foundation Program",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（Adelaide University College 承办）"
+        },
+        {
+          "name": "Degree Transfer Program",
+          "type": "intl_year1",
+          "ielts": null,
+          "desc": "国际大一，高三均分 70%+ 可申，完成后升本科二年级"
+        }
+      ]
+    },
+    "source": [
+      "https://www.adelaide.edu.au/study/how-to-apply/entry-requirements",
+      "https://adelaide.edu.au/study/degrees/bachelor-of-laws-honours-bachelor-of-criminology-and-criminal-justice"
+    ]
+  },
+  {
+    "id": "uts",
+    "nameCn": "悉尼科技大学",
+    "nameEn": "University of Technology Sydney",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "悉尼",
+    "provinceCn": "新南威尔士州",
+    "qs": 87,
+    "qsLabel": "QS =87",
+    "qsDisplay": "=87",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 9,
+    "qsScore": null,
+    "nationalRank": 9,
+    "founded": 1988,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#D64541",
+      "shape": "blocks"
+    },
+    "city": "悉尼",
+    "province": "新南威尔士州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": null,
+      "gpaNote": "接受中国高考直录（Gaokao），各专业最低分数见 UTS 本科直录成绩表（Direct entry scores PDF），本次未逐一提取精确百分比；语言要求 IELTS 6.5（写 6.0）/ TOEFL 79。亦接受 IB、A-Level、AP。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "UTS College Foundation Studies",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（UTS College 承办，含延伸/标准/加速）"
+        },
+        {
+          "name": "UTS College Diploma",
+          "type": "intl_year1",
+          "ielts": 6,
+          "desc": "国际大一，完成后衔接 UTS 本科二年级"
+        },
+        {
+          "name": "UTS College English",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（学术英语）"
+        }
+      ]
+    },
+    "source": [
+      "https://www.uts.edu.au/for-students/admissions-entry/how-to-apply/international-applicants/academic-entry-requirements",
+      "https://utsaustralia.cn/study-at-uts/pathways/"
+    ]
+  },
+  {
+    "id": "rmit",
+    "nameCn": "皇家墨尔本理工大学",
+    "nameEn": "RMIT University",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "墨尔本",
+    "provinceCn": "维多利亚州",
+    "qs": 119,
+    "qsLabel": "QS =119",
+    "qsDisplay": "=119",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 6,
+    "qsScore": null,
+    "nationalRank": 10,
+    "founded": 1887,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C0392B",
+      "shape": "star"
+    },
+    "city": "墨尔本",
+    "province": "维多利亚州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 65,
+      "gpaNote": "接受中国高考直录，满分约 65% 起（多数专业），商科等约 80%；或高中三年均分 75–80% 可免高考直申部分课程。亦接受 IB、A-Level、AP。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "RMIT Foundation Studies",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科"
+        },
+        {
+          "name": "RMIT College Diploma",
+          "type": "intl_year1",
+          "ielts": 6,
+          "desc": "国际大一（文凭课程）"
+        },
+        {
+          "name": "RMIT UP English",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（RMIT University Pathways 学术英语）"
+        }
+      ]
+    },
+    "source": [
+      "https://www.rmit.edu.au/study-with-us/levels-of-study/undergraduate-study/bachelor-degrees/bachelor-of-commerce-bp357",
+      "https://rmit.edu.au/study-with-us/international-students/study/bachelors-in-australia"
+    ]
+  },
+  {
+    "id": "macquarie",
+    "nameCn": "麦考瑞大学",
+    "nameEn": "Macquarie University",
+    "region": "au",
+    "countryCn": "澳大利亚",
+    "cityCn": "悉尼",
+    "provinceCn": "新南威尔士州",
+    "qs": 126,
+    "qsLabel": "QS =126",
+    "qsDisplay": "=126",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 12,
+    "qsScore": null,
+    "nationalRank": 11,
+    "founded": 1964,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#2E8B7A",
+      "shape": "star"
+    },
+    "city": "悉尼",
+    "province": "新南威尔士州",
+    "campuses": [],
+    "strengths": [],
+    "require": {
+      "gpa": 60,
+      "gpaNote": "接受中国高考直录，满分约 56%–73%：多数专业 60–65%，传媒/IT/商科较低（约 56–63%），临床相关 73%。亦接受 IB、A-Level、AP（通常 3 门 3 分+）。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 83,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": 3,
+      "pathways": [
+        {
+          "name": "Macquarie University College Foundation",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（MQ College 承办）"
+        },
+        {
+          "name": "Macquarie University College Diploma",
+          "type": "intl_year1",
+          "ielts": 6,
+          "desc": "国际大一，完成后升本科二年级"
+        },
+        {
+          "name": "Macquarie English Language Program",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班"
+        }
+      ]
+    },
+    "source": [
+      "https://www.mq.edu.au/study/admissions-and-entry/apply/international/international-academic-requirements",
+      "https://www.mq.edu.au/study/admissions-and-entry/apply/international"
+    ]
+  },
+  {
+    "id": "imperial",
+    "nameCn": "帝国理工学院",
+    "nameEn": "Imperial College London",
+    "region": "uk",
+    "countryCn": "英国",
+    "cityCn": "伦敦",
+    "provinceCn": "英格兰",
+    "qs": 2,
+    "qsLabel": "QS =2",
+    "qsDisplay": "=2",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 0,
+    "qsScore": 99.2,
+    "nationalRank": 1,
+    "founded": 1907,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#E08A2E",
+      "shape": "shield"
+    },
+    "city": "伦敦",
+    "province": "英格兰",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "oxford",
+    "nameCn": "牛津大学",
+    "nameEn": "University of Oxford",
+    "region": "uk",
+    "countryCn": "英国",
+    "cityCn": "牛津",
+    "provinceCn": "英格兰",
+    "qs": 4,
+    "qsLabel": "QS 4",
+    "qsDisplay": "4",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 0,
+    "qsScore": 98.6,
+    "nationalRank": 2,
+    "founded": 1096,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#1B3A6B",
+      "shape": "building"
+    },
+    "city": "牛津",
+    "province": "英格兰",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "cambridge",
+    "nameCn": "剑桥大学",
+    "nameEn": "University of Cambridge",
+    "region": "uk",
+    "countryCn": "英国",
+    "cityCn": "剑桥",
+    "provinceCn": "英格兰",
+    "qs": 6,
+    "qsLabel": "QS 6",
+    "qsDisplay": "6",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 0,
+    "qsScore": 97.1,
+    "nationalRank": 3,
+    "founded": 1209,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#A62B3A",
+      "shape": "shield"
+    },
+    "city": "剑桥",
+    "province": "英格兰",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "ucl",
+    "nameCn": "伦敦大学学院",
+    "nameEn": "University College London",
+    "region": "uk",
+    "countryCn": "英国",
+    "cityCn": "伦敦",
+    "provinceCn": "英格兰",
+    "qs": 8,
+    "qsLabel": "QS =8",
+    "qsDisplay": "=8",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 1,
+    "qsScore": 96.3,
+    "nationalRank": 4,
+    "founded": 1826,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#2C3E6B",
+      "shape": "arch"
+    },
+    "city": "伦敦",
+    "province": "英格兰",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "edinburgh",
+    "nameCn": "爱丁堡大学",
+    "nameEn": "University of Edinburgh",
+    "region": "uk",
+    "countryCn": "英国",
+    "cityCn": "爱丁堡",
+    "provinceCn": "苏格兰",
+    "qs": 35,
+    "qsLabel": "QS 35",
+    "qsDisplay": "35",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -1,
+    "qsScore": 85.9,
+    "nationalRank": 5,
+    "founded": 1583,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#2E9E63",
+      "shape": "shield"
+    },
+    "city": "爱丁堡",
+    "province": "苏格兰",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "manchester",
+    "nameCn": "曼彻斯特大学",
+    "nameEn": "University of Manchester",
+    "region": "uk",
+    "countryCn": "英国",
+    "cityCn": "曼彻斯特",
+    "provinceCn": "英格兰",
+    "qs": 40,
+    "qsLabel": "QS =40",
+    "qsDisplay": "=40",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -5,
+    "qsScore": 84.6,
+    "nationalRank": 6,
+    "founded": 1824,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#2AA5B8",
+      "shape": "arch"
+    },
+    "city": "曼彻斯特",
+    "province": "英格兰",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "mit",
+    "nameCn": "麻省理工学院",
+    "nameEn": "Massachusetts Institute of Technology",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "剑桥市",
+    "provinceCn": "马萨诸塞州",
+    "qs": 1,
+    "qsLabel": "QS 1",
+    "qsDisplay": "1",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 0,
+    "qsScore": 100,
+    "nationalRank": 1,
+    "founded": 1861,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#A31F34",
+      "shape": "building"
+    },
+    "city": "剑桥市",
+    "province": "马萨诸塞州",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "stanford",
+    "nameCn": "斯坦福大学",
+    "nameEn": "Stanford University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "斯坦福",
+    "provinceCn": "加利福尼亚州",
+    "qs": 2,
+    "qsLabel": "QS =2",
+    "qsDisplay": "=2",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 1,
+    "qsScore": 99.2,
+    "nationalRank": 2,
+    "founded": 1885,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#8C1515",
+      "shape": "arch"
+    },
+    "city": "斯坦福",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "harvard",
+    "nameCn": "哈佛大学",
+    "nameEn": "Harvard University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "剑桥市",
+    "provinceCn": "马萨诸塞州",
+    "qs": 5,
+    "qsLabel": "QS 5",
+    "qsDisplay": "5",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 0,
+    "qsScore": 97.4,
+    "nationalRank": 3,
+    "founded": 1636,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#A51C30",
+      "shape": "shield"
+    },
+    "city": "剑桥市",
+    "province": "马萨诸塞州",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "caltech",
+    "nameCn": "加州理工学院",
+    "nameEn": "California Institute of Technology",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "帕萨迪纳",
+    "provinceCn": "加利福尼亚州",
+    "qs": 7,
+    "qsLabel": "QS 7",
+    "qsDisplay": "7",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 3,
+    "qsScore": 96.6,
+    "nationalRank": 4,
+    "founded": 1891,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#FF6C0C",
+      "shape": "blocks"
+    },
+    "city": "帕萨迪纳",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [],
+    "require": null,
+    "source": []
+  },
+  {
+    "id": "upenn",
+    "nameCn": "宾夕法尼亚大学",
+    "nameEn": "University of Pennsylvania",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "费城",
+    "provinceCn": "宾夕法尼亚州",
+    "qs": 15,
+    "qsLabel": "QS 15",
+    "qsDisplay": "15",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 0,
+    "qsScore": 91.7,
+    "nationalRank": 5,
+    "founded": 1740,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#011F5B",
+      "shape": "shield"
+    },
+    "city": "费城",
+    "province": "宾夕法尼亚州",
+    "campuses": [],
+    "strengths": [
+      "商科",
+      "护理学",
+      "医学",
+      "法学",
+      "经济学",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "宾大不公布最低均分，也不公布最低语言分，全部按整体评估（comprehensive review）。学术上要求提交高中四年（9–12 年级）全部成绩单，并结合所在学校的课程难度来判断准备度；官网对 SAT/ACT 亦写明「There is no minimum score required to apply to Penn」。语言要求：母语非英语、且高中不是以英语为主要授课语言者，必须提交 TOEFL / IELTS / Duolingo 三者之一（明确不接受 IELTS Indicator，也不接受托福 MyBest 拼分），但官网未给出任何最低分或建议分。Duolingo English Test（DET）被接受；PTE 未出现在官方接受的考试列表中。SAT/ACT 为必需项（2026–27 申请季起恢复强制，本土/国际/转学申请者一视同仁，确有困难者可提交 waiver 申请豁免）。官网未提及接受中国高考。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "required",
+      "ap": "unknown",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Penn English Language Programs – University Connection (宾大英语语言项目·大学衔接课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "宾大官方英语语言项目（ELP）下的英语强化+美国大学申请辅导课程，面向计划申请美国本科/研究生的国际学生。注意：宾大 ELP 官网 FAQ 明确写「Do you offer conditional admission to Penn? No, we do not offer conditional admission to Penn.」——这不是条件录取通道，读完既不保证也不直接衔接宾大本科录取，只可作为提高英语与了解申请流程的途径。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+      "https://admissions.upenn.edu/how-to-apply/international-applicants/international-advanced-standing",
+      "https://ask.admissions.upenn.edu/support/solutions/articles/157000361162-are-international-students-required-to-take-the-toefl-ielts-or-duolingo-english-test-",
+      "https://www.elp.upenn.edu/about/faq"
+    ]
+  },
+  {
+    "id": "cornell",
+    "nameCn": "康奈尔大学",
+    "nameEn": "Cornell University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "伊萨卡",
+    "provinceCn": "纽约州",
+    "qs": 16,
+    "qsLabel": "QS =16",
+    "qsDisplay": "=16",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 0,
+    "qsScore": 91.5,
+    "nationalRank": 6,
+    "founded": 1865,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#B31B1B",
+      "shape": "leaf"
+    },
+    "city": "伊萨卡",
+    "province": "纽约州",
+    "campuses": [],
+    "strengths": [
+      "兽医学",
+      "农业与林业",
+      "酒店与休闲管理",
+      "计算机科学",
+      "建筑学",
+      "商科"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "康奈尔不公布最低均分，按整体评估。国际生须提交中学成绩单与 School Report（由升学指导提交），并强烈建议提交高三年级（Senior Year Grade Report）成绩。英语能力要求（康奈尔官网把下列分数表述为「to be most competitive in our admissions review process」，即竞争性参考线，并非绝对硬性最低分）：TOEFL iBT 100 分（2026 年 1 月 21 日起托福改用 1–6 分制，官方对应最低 5.0、建议 5.5）、IELTS 7.5、Duolingo English Test 130、Cambridge C1 Advanced / C2 Proficiency 191；另接受 iTEP 5.5、PTE Academic 70 等。免语言成绩的条件为：母语为英语 / 中学全程英语授课 / SAT 阅读 35 或 ACT 阅读与英语均达 30。SAT/ACT 为必需项（对 2026 年秋季及以后入学的申请者全面恢复要求）。官网未提及接受中国高考。",
+      "ielts": 7.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "required",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.cornell.edu/how-to-apply/first-year-international-applicants",
+      "https://www.engr.cornell.edu/admissions/undergraduate-admissions/admitted-students",
+      "https://sce.cornell.edu/nds-reg-intl-elp/",
+      "https://faq.enrollment.cornell.edu/kb/article/302-how-do-i-apply-as-an-international-student/",
+      "https://business.cornell.edu/admissions/undergraduate/bs-hotel-administration/application-requirements/"
+    ]
+  },
+  {
+    "id": "yale",
+    "nameCn": "耶鲁大学",
+    "nameEn": "Yale University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "纽黑文",
+    "provinceCn": "康涅狄格州",
+    "qs": 16,
+    "qsLabel": "QS =16",
+    "qsDisplay": "=16",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 5,
+    "qsScore": 91.5,
+    "nationalRank": 7,
+    "founded": 1701,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#00356B",
+      "shape": "arch"
+    },
+    "city": "纽黑文",
+    "province": "康涅狄格州",
+    "campuses": [],
+    "strengths": [
+      "法学",
+      "心理学",
+      "政治学",
+      "经济学",
+      "医学",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "耶鲁不公布最低均分，按整体评估（holistic review）；官方要求提交 School Report（含成绩单）、推荐信以及 SAT/ACT 成绩。英语要求：母语非英语且未在英语授课学校读满 2 年者，必须在 SAT/ACT 之外再提交语言成绩。官网给出的是「Yale's most competitive applicants typically earn…」——即最具竞争力申请者的参考值，不是硬性最低分：TOEFL iBT 旧制 100 分（2026 年 1 月 21 日起托福改为 1–6 分制，官方参考值为 5 分及以上）、IELTS 7.0、Duolingo English Test 120、Cambridge English（C1 Advanced / C2 Proficiency / B2 First）185；另可用 InitialView 面试作为补充材料。SAT/ACT 为必需项，不能用 AP/IB 替代。官网未提及接受中国高考。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "required",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Yale Summer Session – English Language Institute (ELI)（耶鲁暑期语言学院）",
+          "type": "language",
+          "ielts": null,
+          "desc": "耶鲁暑期学院开设的英语语言项目，含 Intensive English Program 以及面向国际高中生的 University Preparation（5 周美国大学升学预备）等方向，官网写明申请 ELI 无需提交英语能力证明。属于暑期语言/预备课程，不是条件录取：完成项目不发学位、不保证也不直接衔接耶鲁本科录取。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.yale.edu/standardized-testing",
+      "https://summer.yale.edu/academics/english-language-institute"
+    ]
+  },
+  {
+    "id": "jhu",
+    "nameCn": "约翰霍普金斯大学",
+    "nameEn": "Johns Hopkins University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "巴尔的摩",
+    "provinceCn": "马里兰州",
+    "qs": 20,
+    "qsLabel": "QS =20",
+    "qsDisplay": "=20",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": 4,
+    "qsScore": 89.7,
+    "nationalRank": 8,
+    "founded": 1876,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#002D72",
+      "shape": "shield"
+    },
+    "city": "巴尔的摩",
+    "province": "马里兰州",
+    "campuses": [],
+    "strengths": [
+      "医学",
+      "护理学",
+      "药学",
+      "生物科学",
+      "统计学与运筹学",
+      "教育学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "JHU 不公布最低均分，本科按整体评估（holistic review），官网明确把 SAT/ACT 与成绩单、AP/IB 分数、课程难度放在一起综合判断。语言要求：如果母语不是英语、或最近三年未在英语授课学校就读，官方建议提交 TOEFL / IELTS / Duolingo(DET) / Cambridge English 之一；官网给的表述是「To be competitive, applicants should typically receive...」（竞争性参考值）：TOEFL iBT 新 1–6 分制最低 5 分（建议单项 Reading 5.5 / Listening 5.5 / Writing 5 / Speaking 5），对应旧制为总分 100、单项 26/26/22/25；IELTS 7.0 且每一项 band 不低于 7.0；DET 总分 120（建议单项 Literacy 125 / Conversation 120 / Comprehension 135 / Production 105）；Cambridge C1 Advanced 或 C2 Proficiency 185。SAT/ACT 为必需项（本科一年级申请者须提交 SAT 数学+EBRW 或 ACT 数学+阅读+英语，转学申请者不需要）。官网未提及接受中国高考。",
+      "ielts": 7,
+      "ieltsSub": 7,
+      "ieltsSubNote": "7.0 or above on each band（每一项不低于 7.0）",
+      "toefl": 100,
+      "sat": "required",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+      "https://krieger.jhu.edu/cle/language-programs/esl/"
+    ]
+  },
+  {
+    "id": "berkeley",
+    "nameCn": "加州大学伯克利分校",
+    "nameEn": "University of California, Berkeley",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "伯克利",
+    "provinceCn": "加利福尼亚州",
+    "qs": 20,
+    "qsLabel": "QS =20",
+    "qsDisplay": "=20",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -3,
+    "qsScore": 89.7,
+    "nationalRank": 9,
+    "founded": 1868,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#003262",
+      "shape": "building"
+    },
+    "city": "伯克利",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [
+      "计算机科学",
+      "电气与电子工程",
+      "土木与结构工程",
+      "统计学与运筹学",
+      "化学",
+      "经济学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "伯克利不公布中国百分制均分要求。UC 系统只规定 A–G 课程的最低 GPA：加州居民 3.0、非居民（含国际生）3.4（4.0 制，只看 10–11 年级的 A–G 课程，且不得有低于 C 的成绩）；因官网用 4.0 制，不做百分制换算。国际生须完成中学并取得可升入本国大学的毕业资格；若课程体系另有外部考试（A-Level、IB、ATAR、French Bac 等），录取后须提交成绩。仅完成 IGCSE/O-Level 不满足要求，须再读完两年 A-Level（至少 3 门学术考试）或 IB 文凭。英语能力最低分（官方数字）：TOEFL 90（或新 1–6 分制 4.5）、IELTS 6.5、Duolingo English Test 115；也可用 AP 英语语言与写作/英语文学 3 分以上、IB 英语 A（SL 6–7 / HL 5–7）、ACT ELA 24、SAT Writing and Language 31 来满足，或 3 年以上全英文授课经历。UC 明确不把 SAT/ACT 用于录取决定（test-free），但分数可作为满足英语能力要求或入学后课程分级的替代凭证。官网未提及接受中国高考。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 90,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "California Community College → UC Berkeley transfer (加州社区学院 2+2 转学)",
+          "type": "intl_year1",
+          "ielts": null,
+          "desc": "在加州社区学院（CCC）读满 60 个 UC 可转学分（学期制）并完成 7 门课程模式后，以转学生身份申请伯克利大三入学。国际生同样适用转学要求，且转学时不再需要 TOEFL/IELTS（完成 7-Course Pattern 即视为具备英语能力）。注意：伯克利不参加 UC 的转学保证录取项目 TAG（TAG 仅覆盖 Davis、Irvine、Merced、Riverside、Santa Barbara、Santa Cruz 六校），因此 2+2 到伯克利是真实路径但无保证录取。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.berkeley.edu/requirements-for-international-students/",
+      "https://admission.universityofcalifornia.edu/counselors/preparing-freshman-students/freshman-requirements.html",
+      "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/uc-transfer-programs/transfer-admission-guarantee-tag.html",
+      "https://www.universityofcalifornia.edu/press-room/university-california-board-regents-unanimously-approved-changes-standardized-testing"
+    ]
+  },
+  {
+    "id": "uchicago",
+    "nameCn": "芝加哥大学",
+    "nameEn": "University of Chicago",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "芝加哥",
+    "provinceCn": "伊利诺伊州",
+    "qs": 24,
+    "qsLabel": "QS 24",
+    "qsDisplay": "24",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -11,
+    "qsScore": 89.2,
+    "nationalRank": 10,
+    "founded": 1890,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#800000",
+      "shape": "arch"
+    },
+    "city": "芝加哥",
+    "province": "伊利诺伊州",
+    "campuses": [],
+    "strengths": [
+      "经济学",
+      "商科",
+      "社会学",
+      "法学",
+      "物理学与天文学",
+      "数学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "芝大官网 FAQ 明确写「There is no minimum GPA or required test score」——不设最低均分，也不要求 SAT/ACT。SAT/ACT 为 Test-Optional，并叠加「No Harm」政策：提交的分数只有在有利于申请时才会被纳入审阅，可能拉低评价的分数不会被考虑。官网要求：如果学校不计 GPA 或排名，就留空，不要自行估算或换算。语言要求：官网称只录取英语能力极佳的学生，但「不强制提交」语言考试成绩（若申请材料已充分体现英语能力可不交）；接受 TOEFL / IELTS / Duolingo English Test（芝大官方公告确认新增接受 DET）等，未公布任何最低分。芝大官方明确「不为被录取学生提供 ESL 课程」，也没有条件录取通道。官网未提及接受中国高考。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://collegeadmissions.uchicago.edu/contact/faq",
+      "https://collegeadmissions.uchicago.edu/apply/application/international-applicants/",
+      "https://collegeadmissions.uchicago.edu/apply/application/required-materials/",
+      "https://prospects.uchicago.edu/register/intl-announcement"
+    ]
+  },
+  {
+    "id": "princeton",
+    "nameCn": "普林斯顿大学",
+    "nameEn": "Princeton University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "普林斯顿",
+    "provinceCn": "新泽西州",
+    "qs": 27,
+    "qsLabel": "QS 27",
+    "qsDisplay": "27",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -2,
+    "qsScore": 88.9,
+    "nationalRank": 11,
+    "founded": 1746,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#E77500",
+      "shape": "shield"
+    },
+    "city": "普林斯顿",
+    "province": "新泽西州",
+    "campuses": [],
+    "strengths": [
+      "政治学",
+      "社会学",
+      "数学",
+      "经济学",
+      "物理学与天文学",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "普林斯顿不公布最低均分；官网对标准化考试明确写「There are no minimum test score requirements for admission」，全部放整体评估（comprehensive review）中按个人背景判断。语言要求：母语非英语且所在高中非英语授课者，必须提交 TOEFL、IELTS Academic、Duolingo English Test(DET) 或 PTE Academic 之一，但官网未公布任何最低分或建议分。SAT/ACT：2026–27 申请季（2027 秋入学）仍为 Test-Optional，不提交不会处于劣势；自 2027–28 申请季（2028 秋入学）起恢复为必需（SAT 或 ACT）。AP/IB 成绩建议在申请中自行申报，入学后可用于高级学分/跳级（advanced placement）。官网未提及接受中国高考。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admission.princeton.edu/apply/standardized-testing",
+      "https://admission.princeton.edu/faqs?category%5B1021%5D=1021"
+    ]
+  },
+  {
+    "id": "columbia",
+    "nameCn": "哥伦比亚大学",
+    "nameEn": "Columbia University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "纽约",
+    "provinceCn": "纽约州",
+    "qs": 43,
+    "qsLabel": "QS =43",
+    "qsDisplay": "=43",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -5,
+    "qsScore": 84,
+    "nationalRank": 12,
+    "founded": 1754,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#1D4F91",
+      "shape": "building"
+    },
+    "city": "纽约",
+    "province": "纽约州",
+    "campuses": [],
+    "strengths": [
+      "法学",
+      "传播学与媒体研究",
+      "心理学",
+      "经济学",
+      "商科",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "哥大不公布最低高中均分／GPA，官网测试政策页明确 'There are no minimum test score requirements for admission.'，全部走整体评估（holistic review）。中国学生走国际生通道：接受所有高中课程体系（IB、Cambridge A-Level、各国国家课程等），审核时结合你所在课程体系的语境；A-Level、IB、法国Bac、AP 等「毕业所必需」的考试成绩必须提交，非毕业必需的可不交。非英文成绩单／推荐信须附官方英文翻译件。语言成绩：托福 iBT 105（2026-01-20 及之前考试）／新制 5.5（2026-01-21 起）；雅思 7.5；Duolingo 135；剑桥 C1/C2 191。官网未列雅思单项要求。另可用 SAT Reading and Writing 700+ 或 ACT English/Reading 29+ 豁免语言考试。竞争性录取实际远高于此，建议以年级前列为目标。",
+      "ielts": 7.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 105,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "American Language Program (ALP) — 哥伦比亚大学美国语言项目（英语强化课程）",
+          "type": "language",
+          "ielts": null,
+          "desc": "哥大 SPS 下设的强化英语课程（秋/春各 14 周，暑期 4/8/12 周），CEFR A2–C2 共八个级别，18 小时/周。属于非学分语言课程，不是有条件录取：读完后仍须单独申请哥大本科，不保证录取。适合语言分暂未达标、希望先赴美提升学术英语的国际学生。"
+        }
+      ]
+    },
+    "source": [
+      "https://undergrad.admissions.columbia.edu/english-proficiency",
+      "https://undergrad.admissions.columbia.edu/testing-policy",
+      "https://undergrad.admissions.columbia.edu/node/1065",
+      "https://sps.columbia.edu/academics/american-language-program"
+    ]
+  },
+  {
+    "id": "northwestern",
+    "nameCn": "西北大学",
+    "nameEn": "Northwestern University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "埃文斯顿",
+    "provinceCn": "伊利诺伊州",
+    "qs": 45,
+    "qsLabel": "QS =45",
+    "qsDisplay": "=45",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -3,
+    "qsScore": 83.8,
+    "nationalRank": 13,
+    "founded": 1851,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#4E2A84",
+      "shape": "arch"
+    },
+    "city": "埃文斯顿",
+    "province": "伊利诺伊州",
+    "campuses": [],
+    "strengths": [
+      "市场营销",
+      "材料科学",
+      "经济学",
+      "商科",
+      "化学",
+      "传播学与媒体研究"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "西北大学不公布最低高中均分／GPA，也不公布英语考试最低分。国际生 FAQ 官方口径原文：'While there is no minimum score required by Northwestern, competitive applicants demonstrate a high level of English proficiency and typically score in the high range on all sections of the exams we accept.'（即无最低分，但竞争性申请者通常在各项考试的各部分都拿到高分）。学校关注的是课程难度而非单一分数：招生委员会会明确留意你是否修读 accelerated、honors 或 Advanced Placement 课程。第一/母语非英语或中学授课语言非英语者必须提交英语成绩，且必须由考试机构官方送分（不接受自报）；接受 Duolingo、IELTS（含 IELTS Indicator）、TOEFL iBT（不接受 TOEFL ITP Plus for China），不接受 TOEFL MyBest / 拼分。国外学历须提供认证英文翻译件。所有申请仅限秋季（9月）入学。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.northwestern.edu/apply/requirements.html",
+      "https://admissions.northwestern.edu/faqs/international-applicants/index.html",
+      "https://admissions.northwestern.edu/faqs/high-school-courses/index.html",
+      "https://admissions.northwestern.edu/apply/identities/international.html"
+    ]
+  },
+  {
+    "id": "ucla",
+    "nameCn": "加州大学洛杉矶分校",
+    "nameEn": "University of California, Los Angeles",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "洛杉矶",
+    "provinceCn": "加利福尼亚州",
+    "qs": 49,
+    "qsLabel": "QS 49",
+    "qsDisplay": "49",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -3,
+    "qsScore": 82.7,
+    "nationalRank": 14,
+    "founded": 1919,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#2774AE",
+      "shape": "leaf"
+    },
+    "city": "洛杉矶",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [
+      "心理学",
+      "数学",
+      "医学",
+      "电气与电子工程",
+      "商科",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "UC 对国际生（非加州居民）要求：完成 15 门年制大学预备课程，并以 3.4 GPA（4.0 制）申请（加州本地生为 3.0）。官网以 4.0 制表述，按契约不做百分制换算，故 gpaMin 记 null。UCLA 完全不把 SAT/ACT 用于录取或奖学金（'UCLA does not consider SAT or ACT scores for admission or scholarship purposes.'），录取基于全面评估（课程难度、成绩、课外/领导力、个人见解问题）。英语要求注意区分两个口径：UC 系统最低线为雅思 6.5、托福 iBT 80（2026年1月起新制 4.5）、Duolingo 115、AP 英语语言/文学 3 分以上、IB SL 英语 6-7；而 UCLA 官方《International Admission Guide》给出更高标准——雅思 'A competitive score is 7.5 or higher'、Duolingo 'A competitive score is 135 or higher'（这两项官网明确标注为 competitive，属竞争性参考分而非硬性最低分）、托福 'A score of 5 (on new scale) or 100 or higher (on old scale)'。本记录取 UCLA 校方指南数值，实际竞争远高于 UC 底线。不接受 IELTS One Skill Retake 与 TOEFL MyBest。",
+      "ielts": 7.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "UCLA Transfer Alliance Program (TAP) — 加州社区学院荣誉课程转学通道",
+          "type": "intl_year1",
+          "ielts": null,
+          "desc": "在参与 TAP 的加州社区学院修完 honors/scholars 课程并由该项目辅导员认证后，以大三转学身份申请 UCLA 可获优先审核（适用于 College 多数专业，以及公共卫生、公共事务、教育与社会变革）。这不是双录也不保证录取，需先在加州社区学院读 2 年，是国际生进入 UCLA 的常见 2+2 路径；工程、艺术与建筑、音乐、护理、戏剧影视学院不参与 TAP。"
+        }
+      ]
+    },
+    "source": [
+      "https://admission.ucla.edu/sites/default/files/documents/UCLA-International-Admission-Guide-2026.pdf",
+      "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+      "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/index.html",
+      "https://admission.ucla.edu/apply/transfer/ucla-transfer-alliance-program"
+    ]
+  },
+  {
+    "id": "umich",
+    "nameCn": "密歇根大学安娜堡分校",
+    "nameEn": "University of Michigan-Ann Arbor",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "安娜堡",
+    "provinceCn": "密歇根州",
+    "qs": 51,
+    "qsLabel": "QS 51",
+    "qsDisplay": "51",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -6,
+    "qsScore": 82.2,
+    "nationalRank": 15,
+    "founded": 1817,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#00274C",
+      "shape": "building"
+    },
+    "city": "安娜堡",
+    "province": "密歇根州",
+    "campuses": [],
+    "strengths": [
+      "牙科学",
+      "心理学",
+      "机械工程",
+      "电气与电子工程",
+      "医学",
+      "商科"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "密歇根大学不公布最低高中均分／GPA，采用全面评估。国际生申请材料：Common App + $75 申请费、高中成绩单（非英文须附官方英文翻译，已毕业者需显示毕业日期）、School Report、1 封核心学科教师评价，并需解释任何教育空档；Counselor 推荐信为鼓励但非必须。SAT/ACT 为可选（官网原文 'SAT or ACT score, if available and you wish them to be considered'），不提交不会处于劣势。部分学院强烈建议提交 AP 成绩或大学先修课程成绩：LSA（自然科学/社会科学/世界语言）、工程学院（微积分/化学/物理）、罗斯商学院（数学/自然科学/社会科学）、护理与运动机能学院（任意 3 门组合）、音乐戏剧舞蹈/艺术设计/建筑（任意 2 门组合）。英语要求见下；学校明确不为条件录取提供密集英语补课（'we do not offer intensive English make-up course work for conditional admission'）。国际生持临时签证不可申请助学金，须准备全额费用。",
+      "ielts": 7,
+      "ieltsSub": 7,
+      "ieltsSubNote": "总分 7.0 档，单项 6.5+",
+      "toefl": 100,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.umich.edu/apply/international-applicants/exams-visas",
+      "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines",
+      "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines"
+    ]
+  },
+  {
+    "id": "cmu",
+    "nameCn": "卡内基梅隆大学",
+    "nameEn": "Carnegie Mellon University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "匹兹堡",
+    "provinceCn": "宾夕法尼亚州",
+    "qs": 55,
+    "qsLabel": "QS 55",
+    "qsDisplay": "55",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -3,
+    "qsScore": 81.4,
+    "nationalRank": 16,
+    "founded": 1900,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#C41230",
+      "shape": "blocks"
+    },
+    "city": "匹兹堡",
+    "province": "宾夕法尼亚州",
+    "campuses": [],
+    "strengths": [
+      "计算机科学",
+      "数据科学",
+      "统计学与运筹学",
+      "电气与电子工程",
+      "数学",
+      "艺术与设计"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "CMU 不公布最低高中均分／GPA，官网强调整体评估（'no single grade, score or activity guarantees or disqualifies any candidate'）。标准化考试政策因学院而异：计算机学院（SCS）要求必须提交 SAT 或 ACT；工程学院、Dietrich 人文社科学院、Heinz 信息系统、Mellon 理学院、Tepper 商学院为 test-flexible——必须提交考试成绩，但可在 SAT / ACT / IB（预测或实考）/ AP / Cambridge A-Level（预测或实考）/ 法国 Bac 中自选；艺术学院为 test-optional，需作品集或试镜。因此 AP 可直接用于满足录取所需的考试要求。非英语母语者必须提交 TOEFL / IELTS / Duolingo / Cambridge 官方成绩：雅思至少 7.5（单项 7.5 及以上会被重点考虑）、托福 iBT 至少 102（2026-01-21 起新制至少 5，单项 5 及以上）、TOEFL Essentials 11、Duolingo 135（四个分项均 135）、剑桥 191。成绩两年内有效，不接受 TOEFL MyBest。国际生不获助学金，需准备全额费用；IB/A-Level 学生建议提交预测成绩。",
+      "ielts": 7.5,
+      "ieltsSub": 7.5,
+      "ieltsSubNote": "总分 7.5，单项 7.5 及以上会被重点考虑",
+      "toefl": 102,
+      "sat": "required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://www.cmu.edu/admission/admission/international-applicants",
+      "https://www.cmu.edu/admission/admission/standardized-testing"
+    ]
+  },
+  {
+    "id": "nyu",
+    "nameCn": "纽约大学",
+    "nameEn": "New York University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "纽约",
+    "provinceCn": "纽约州",
+    "qs": 58,
+    "qsLabel": "QS 58",
+    "qsDisplay": "58",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -3,
+    "qsScore": 80.8,
+    "nationalRank": 17,
+    "founded": 1831,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#57068C",
+      "shape": "arch"
+    },
+    "city": "纽约",
+    "province": "纽约州",
+    "campuses": [],
+    "strengths": [
+      "哲学",
+      "法学",
+      "表演艺术",
+      "传播学与媒体研究",
+      "商科",
+      "经济学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "NYU 不公布最低高中均分／GPA，标准考试实施 test-optional（官网明确 'NYU will continue to remain test-optional through the 2027-2028 application cycle'），全申请季不提交也不影响。注意：语言成绩不设最低分，官网原文 'We don't have minimum score requirements, but competitive applicants will receive'——即下列分数是竞争性参考值，不是硬性门槛：托福 iBT 100 及以上（2026-01-20 及之前考试）／新制总分与各单项 5 及以上（2026-01-21 起）、Duolingo 135 及以上、雅思 Academic 7.5 及以上、PTE Academic 70 及以上、剑桥英语量尺 191 及以上。若母语非英语，且最近三个完整学年中修过非英语授课课程（世界语言课除外）、修过 ESL/ELL/IB English B 或就读双语课程，则必须提交语言成绩；SAT/ACT/AP/IB/A-Level 等考试不能用来豁免语言要求。若选择提交标准化考试，可用 AP 满足要求：需至少 3 门 AP，且 1 门人文 + 1 门数学或科学 + 1 门任选（Stern 与 Tandon 要求其中 1 门为数学）；A-Level 学生无论选何种考试都必须提交预测或最终成绩，且至少 3 门 A-Level 才具申请资格。不接受 IELTS One Skill Retake、TOEFL MyBest、IELTS Indicator 及 TOEFL ITP Plus for China。",
+      "ielts": 7.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": 3,
+      "pathways": []
+    },
+    "source": [
+      "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests/english-language-testing.html",
+      "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests.html",
+      "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/all-freshmen-applicants.html",
+      "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/international-applicants.html"
+    ]
+  },
+  {
+    "id": "brown",
+    "nameCn": "布朗大学",
+    "nameEn": "Brown University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "普罗维登斯",
+    "provinceCn": "罗德岛州",
+    "qs": 66,
+    "qsLabel": "QS 66",
+    "qsDisplay": "66",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": 3,
+    "qsScore": 77.4,
+    "nationalRank": 18,
+    "founded": 1764,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#4E3629",
+      "shape": "building"
+    },
+    "city": "普罗维登斯",
+    "province": "罗德岛州",
+    "campuses": [],
+    "strengths": [
+      "经济学",
+      "考古学",
+      "英语语言文学",
+      "历史学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "布朗不公布国际生本科最低均分或最低 GPA，也没有最低 SAT/ACT 分数，全部按整体评估（whole-person admission）审阅，官网原文为「There are no minimum scores required to be considered for admission」。中国学生为国际生通道，需提交高中完整成绩单（含 9–12 年级课程与分数）与学校报告；IB/A-Level 学生以课程成绩与预估分评阅，官网未给出任何百分制换算口径，故不做换算。英语能力必须在录取前达到：IELTS 8.0、TOEFL iBT 105（2026 年 1 月及以后考试成绩按新 6 分制为 5.5）、Duolingo 130、PTE 75、Cambridge C1 Advanced / C2 Proficiency 191；官网原文为「The following minimum scores are expected in most cases」。布朗本科不设 ESL 课程，官网明确「does not accept on a provisional basis students who are deficient in English」，即语言不达标不予录取。SAT/ACT 自 2024-25 申请季起恢复为第一年申请人必需项。",
+      "ielts": 8,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 105,
+      "sat": "required",
+      "ap": "unknown",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admission.brown.edu/international/english-proficiency",
+      "https://admission.brown.edu/first-year/standardized-tests"
+    ]
+  },
+  {
+    "id": "duke",
+    "nameCn": "杜克大学",
+    "nameEn": "Duke University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "达勒姆",
+    "provinceCn": "北卡罗来纳州",
+    "qs": 70,
+    "qsLabel": "QS 70",
+    "qsDisplay": "70",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -8,
+    "qsScore": 75.8,
+    "nationalRank": 19,
+    "founded": 1838,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#012169",
+      "shape": "shield"
+    },
+    "city": "达勒姆",
+    "province": "北卡罗来纳州",
+    "campuses": [],
+    "strengths": [
+      "护理学",
+      "医学",
+      "统计学与运筹学",
+      "经济学",
+      "商科",
+      "法学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "杜克不公布最低均分/GPA 门槛，采用整体评估，审阅高中课程难度、单科成绩、整体 GPA 与班级排名（如学校提供）。官网明确国际生没有额外申请要求，标化政策与本土申请人一致。语言成绩为「建议但不要求」提交（recommend but do not require），官网在英语能力部分列出「期望最低分」：TOEFL iBT 100（另有 revised paper-delivered TOEFL 75）、IELTS 7.0、Duolingo 130、PTE Academic 70、Cambridge C1 Advanced / C2 Proficiency 180；若多次考试取最高分。SAT/ACT 在 2026-2027 申请季为 test-optional，不提交不会处于劣势，AP/IB 成绩可选提交并会纳入审阅。建议高中修读 4 年英语及至少各 3 年数学、自然科学、外语、社会科学；申请 Pratt 工程学院要求修过微积分并强烈建议物理。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.duke.edu/apply/"
+    ]
+  },
+  {
+    "id": "utaustin",
+    "nameCn": "得克萨斯大学奥斯汀分校",
+    "nameEn": "University of Texas at Austin",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "奥斯汀",
+    "provinceCn": "得克萨斯州",
+    "qs": 72,
+    "qsLabel": "QS 72",
+    "qsDisplay": "72",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -4,
+    "qsScore": 75.3,
+    "nationalRank": 20,
+    "founded": 1883,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#BF5700",
+      "shape": "building"
+    },
+    "city": "奥斯汀",
+    "province": "得克萨斯州",
+    "campuses": [],
+    "strengths": [
+      "石油工程",
+      "传播学与媒体研究",
+      "土木工程",
+      "化学工程",
+      "会计与金融",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "UT Austin 不公布国际生最低均分或百分制 GPA 门槛。国际生按整体评估（holistic review）审阅高中成绩单、课程难度与文书，并须完成规定的高中先修课程（High School Prerequisites，官网另有专页逐项列出）。得州「高中班级前 6% 自动录取」政策仅适用于得州居民，中国国际学生不适用。成绩单须覆盖 9–12 年级完整课程与分数，并附会考/毕业考等外部考试成绩（如 A-Level、GCE O Level、毕业证书、大学入学考试）。英语能力（国际生专用口径，豁免仅限英语为唯一官方语言的国家或在美/豁免国完成至少三年高中者）：IELTS 学术类总分 6.5、TOEFL iBT 79（120 分制）或 4（2026 年起启用的 6 分制）、Duolingo 115；不接受 institutional TOEFL(ITP)、TOEFL Essentials、IELTS General Training。SAT/ACT 为必需项，须由考试机构直送官方成绩（SAT code 6882 / ACT code 4240）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "required",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.utexas.edu/info-for/international-students/",
+      "https://www.admissions.utexas.edu/apply/international-students/",
+      "https://testingservices.utexas.edu/search-undergraduate-exams"
+    ]
+  },
+  {
+    "id": "uiuc",
+    "nameCn": "伊利诺伊大学厄巴纳-香槟分校",
+    "nameEn": "University of Illinois Urbana-Champaign",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "厄巴纳-香槟",
+    "provinceCn": "伊利诺伊州",
+    "qs": 74,
+    "qsLabel": "QS 74",
+    "qsDisplay": "74",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -4,
+    "qsScore": 74.7,
+    "nationalRank": 21,
+    "founded": 1867,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#13294B",
+      "shape": "leaf"
+    },
+    "city": "厄巴纳-香槟",
+    "province": "伊利诺伊州",
+    "campuses": [],
+    "strengths": [
+      "图书馆与信息管理",
+      "土木工程",
+      "农学与林业",
+      "物理学与天文学",
+      "电子电气工程",
+      "心理学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "UIUC 不公布最低均分/GPA 门槛，按整体评估，并分学院/专业分别审阅；官网 Class Profile 显示已录取学生中间 50% 区间为 GPA 3.70–4.00（4.0 制，按契约不做百分制换算）。国际生须提交 9–12 年级（至少最近三年）中学修读记录与外部考试成绩，通过 STARS/myIllini 自报。英语能力：官网「第一年申请人英语能力」条款只规定——未在认可英语国家完成 10–12 年级者必须提交 TOEFL iBT、IELTS Academic、Duolingo 或 SAT/ACT 成绩，且该要求「cannot be waived」（不可豁免）；该页面未公布第一年申请人的具体最低分。同一官方页面在「转学生」条目下列出校级最低分：IELTS 学术类 7.5 且各单项 6.5+、TOEFL iBT 旧制 100（2026 年 1 月 21 日及以后考试为 5.0/6 分制且各单项 4.5+）、Duolingo 130（各单项 125+）；低于 full status 者入学后须参加英语分班考试（EPT）并可能修读 ESL。已录取学生中间 50% 语言区间（官方 Class Profile）：TOEFL 105–112、IELTS 7.5–8（各模块不低于 6）、Duolingo 135–145。官网及应用语言中心均明确「UIUC 不提供有条件录取」。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://www.admissions.illinois.edu/international-requirements/",
+      "https://www.admissions.illinois.edu/general-admission-policies/",
+      "https://www.admissions.illinois.edu/apply/freshman/profile",
+      "https://admissions.illinois.edu/college-credit/",
+      "https://iei.illinois.edu/frequently-asked-questions/"
+    ]
+  },
+  {
+    "id": "ucsd",
+    "nameCn": "加州大学圣地亚哥分校",
+    "nameEn": "University of California, San Diego",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "拉霍亚",
+    "provinceCn": "加利福尼亚州",
+    "qs": 81,
+    "qsLabel": "QS 81",
+    "qsDisplay": "81",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -15,
+    "qsScore": 73.3,
+    "nationalRank": 22,
+    "founded": 1960,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#182B49",
+      "shape": "blocks"
+    },
+    "city": "拉霍亚",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [
+      "生物科学",
+      "解剖与生理学",
+      "药剂与药理学",
+      "地球与海洋科学",
+      "医学",
+      "经济与计量经济学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "UCSD 不公布百分制最低均分。要求完成中学学业且「学术科目平均成绩优异（superior average）」，并取得可在本国升入大学的毕业资格（等同美国高中毕业证）；对部分国家（如日本、韩国）官方口径写为 overall 3.0（4.0 制）——按契约不换算为百分制，故此处记 null。加州大学系统对 SAT/ACT 实行 test-free，官网明确「UC San Diego will not consider SAT or ACT test scores as a factor in admissions decisions」，不作为录取因素。国际生英语能力（最低门槛，仅为获得审阅资格）：IELTS 学术类 7.0、TOEFL iBT 83（2026 年 1 月起启用 6 分制对应 4.5）、Duolingo 115；国际生须额外完成 A–G 类大学预备课程。另可用 AP 英语语言与写作或英语文学与写作 3 分及以上、IB 英语 A HL 5 分及以上满足英语要求。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 83,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.ucsd.edu/international/"
+    ]
+  },
+  {
+    "id": "psu",
+    "nameCn": "宾夕法尼亚州立大学",
+    "nameEn": "Pennsylvania State University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "大学公园",
+    "provinceCn": "宾夕法尼亚州",
+    "qs": 92,
+    "qsLabel": "QS =92",
+    "qsDisplay": "=92",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -10,
+    "qsScore": 70.2,
+    "nationalRank": 23,
+    "founded": 1855,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#041E42",
+      "shape": "shield"
+    },
+    "city": "大学公园",
+    "province": "宾夕法尼亚州",
+    "campuses": [],
+    "strengths": [
+      "矿物与采矿工程",
+      "酒店与休闲管理",
+      "石油工程",
+      "材料科学",
+      "体育相关学科",
+      "传媒学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "PSU 不公布国际生最低均分或百分制 GPA 门槛，采用整体评估，审阅最近三年中学修读记录（通过 STARS 自报系统）与课程难度；不要求推荐信。英语能力（国际生母语非英语者必须提供，成绩须两年内且由考试机构直送）可用任一方式满足：IELTS 学术类 6.5、TOEFL iBT 80（2026 年 1 月 21 日及以后考试为 4.5/6 分制；不接受 MyBest）、Duolingo 120、SAT Evidence-Based Reading and Writing 570、ACT English 24、GCSE/GCE 英语 A–C、IB 英语 A（语言与文学）5 分及以上、美国高中修读 4 年、或取得 PSU 强化英语交流项目 IECP 的官方认证。SAT/ACT 为 test-optional，提交与否不影响录取，但可用于满足上述语言要求。所有中学文件须为官方原件或盖章认证件，非英文材料须附逐行直译的认证英文翻译件。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "2+2 Plan (2+2 计划：分校区读两年后转入 University Park)",
+          "type": "conditional",
+          "ielts": 6.5,
+          "desc": "先在 Penn State 任一 Commonwealth 分校区（如 Altoona、Hazleton、Behrend、Harrisburg 等）完成前两年课程，修满学分并达到目标专业的 entrance-to-major 要求后，通过 change of campus 流程转入 University Park 主校区完成后两年，毕业证同为 Penn State 学位。无需重新申请录取，是全美学生最常走的 PSU 路径（超过半数学生从分校区起步）；申请时须同时选择第一志愿与备选起始校区，学术竞争力不足以直录主校区的学生常被录取到备选分校区，分校区学费与生活费也更低。"
+        },
+        {
+          "name": "Intensive English Communication Program (IECP，强化英语交流项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "PSU 官方认可的英语能力达标方式之一：官网明确国际生可通过取得 IECP 的官方认证（official certification）来满足语言能力要求。适用于语言成绩暂未达标、需要先修读强化英语课程的学生；官网未公布 IECP 自身的雅思门槛。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.psu.edu/resources/international-students/admission-requirements",
+      "https://www.psu.edu/admission/undergraduate/credit/ap-credit",
+      "https://altoona.psu.edu/node/67466",
+      "https://hazleton.psu.edu/international-student-faqs"
+    ]
+  },
+  {
+    "id": "uw",
+    "nameCn": "华盛顿大学",
+    "nameEn": "University of Washington",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "西雅图",
+    "provinceCn": "华盛顿州",
+    "qs": 92,
+    "qsLabel": "QS =92",
+    "qsDisplay": "=92",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -11,
+    "qsScore": 70.2,
+    "nationalRank": 24,
+    "founded": 1861,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#4B2E83",
+      "shape": "leaf"
+    },
+    "city": "西雅图",
+    "province": "华盛顿州",
+    "campuses": [],
+    "strengths": [
+      "图书馆与信息管理",
+      "地球与海洋科学",
+      "护理学",
+      "数据科学与人工智能",
+      "牙科学",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "公立校，不公布统一最低均分，采用整体评估（holistic review）。官网仅公布竞争性实际录取区间：2025 秋季录取新生高中 GPA 中间 50% 为 3.75–3.98（4.0 制），折合 100 分制约 95–100；工程直入（Direct to College）与计算机直入（Direct to Major）竞争更激烈（非华州居民 CS 直入三年平均录取率仅 2%）。国际生须完成中学全部课程并提供官方成绩单；无可用的 100 分制最低线，故 gpaMin 写 null。英语要求：必须提交 TOEFL / IELTS / Duolingo（DET）官方成绩，考试须在申请当年 12 月 31 日前完成；豁免仅限在澳大利亚、加拿大（英语省份）、英国、爱尔兰、新西兰、美国完成全部中小学教育者，在该国出生但在他处受教育不免。可用 SAT EBRW 580 或 ACT English 22 + 10–12 年级英语写作/文学课均分 B 替代语言考试（B 的常见换算：IB 5、100 分制 80、4.0 制 3.0、IGCSE C）。不接受 TOEFL MyBest，不拼分；ESL 或英语写作课不能豁免。AP 成绩不能用于豁免录取要求。",
+      "ielts": 6,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 76,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/",
+      "https://admit.washington.edu/apply/freshman/by-the-numbers",
+      "https://admit.washington.edu/apply/first-year/exams-for-credit/ap/"
+    ]
+  },
+  {
+    "id": "bu",
+    "nameCn": "波士顿大学",
+    "nameEn": "Boston University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "波士顿",
+    "provinceCn": "马萨诸塞州",
+    "qs": 94,
+    "qsLabel": "QS 94",
+    "qsDisplay": "94",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": -6,
+    "qsScore": 70,
+    "nationalRank": 25,
+    "founded": 1869,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#CC0000",
+      "shape": "building"
+    },
+    "city": "波士顿",
+    "province": "马萨诸塞州",
+    "campuses": [],
+    "strengths": [
+      "经济与计量经济学",
+      "音乐",
+      "解剖与生理学",
+      "神学与宗教研究",
+      "牙科学",
+      "心理学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "私立校，不公布最低均分或最低语言硬线，采用整体评估；国际生必须提交 TOEFL iBT / IELTS Academic / Duolingo 之一作为英语能力的主要评估依据。官网口径为竞争性参考值（非硬性门槛）：TOEFL 总分 90–100 且各单项不低于 20（2026 年 1 月 21 日起新制为总分 5.0 以上，同时审各分项一致性）；Duolingo 总分 125–135，且必须同时提交总分与全部小分；TOEFL Essentials 最低 9.0（其他项目不适用）。IELTS Academic 总分 7.0 及以上即为满足全部项目要求（官网明确的达标线）。可用英语豁免申请（English Proficiency Waiver Request，须在申请截止日前随完整申请提交，由招生委员会裁量）。不接受 IELTS Indicator、TOEFL ITP Plus、TOEFL Essentials（本科）与 IELTS One Skill Retake。可选提交 InitialView / Vericant 面试作为补充。SAT/ACT 为 test-optional（适用至 2028 秋季 / 2029 春季）。AP 多数科目 4 或 5 分可换学分（各学院政策不同）。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 90,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://www.bu.edu/admissions/apply/international/",
+      "https://www.bu.edu/admissions/apply/first-year/",
+      "https://www.bu.edu/celop/bridge-to-bu/",
+      "https://www.bu.edu/cgs/resources/policies/advanced-units/"
+    ]
+  },
+  {
+    "id": "purdue",
+    "nameCn": "普渡大学",
+    "nameEn": "Purdue University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "西拉法叶",
+    "provinceCn": "印第安纳州",
+    "qs": 100,
+    "qsLabel": "QS =100",
+    "qsDisplay": "=100",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": -12,
+    "qsScore": 68.7,
+    "nationalRank": 26,
+    "founded": 1869,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#7A6A3A",
+      "shape": "shield"
+    },
+    "city": "西拉法叶",
+    "province": "印第安纳州",
+    "campuses": [],
+    "strengths": [
+      "农学与林业",
+      "机械工程",
+      "土木工程",
+      "药剂与药理学",
+      "统计与运筹学",
+      "化学工程"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "公立校，不公布统一最低均分；官网仅要求「至少 3 个连续学年的课程与成绩」及高中毕业证明，录取按整体评估。竞争性参考（第三方整理，非官网硬线）：工程 / 计算机 / 商学院等热门学院建议 GPA 3.7–3.85（4.0 制），普通文理 / 农学约 3.5+。高中必修课：数学 4 年、英语 4 年、实验科学 3 年、社科 3 年、外语 2 年；工程方向须有化学，护理 / 药学 / 兽医护理须一年化学 + 一年生物。非英语母语国际生必须提交语言成绩，官网对 DET / IELTS 用「Generally, applicants have…」表述，属典型录取口径；TOEFL 为明确的 required minimum。可替代语言成绩的方式：SAT EBRW 600+、ACT English 26+、或在全英语课程体系完成至少 3 年且英语课均分达 B 且整体成绩优异、或在美国认证大学修满 24 个可转学分且 GPA≥3.0（含 6 学分非 ESL 英语写作/口语课程且 B 以上）。未提交语言考试者入学后可能需参加英语分级测试。AP 可换学分，但不用于豁免录取要求。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 88,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.purdue.edu/become-student/english-proficiency/",
+      "https://admissions.purdue.edu/become-student/international",
+      "https://admissions.purdue.edu/become-student/first-year-criteria",
+      "https://www.purdue.edu/admissions/academics/credit-by-exam.php"
+    ]
+  },
+  {
+    "id": "rice",
+    "nameCn": "莱斯大学",
+    "nameEn": "Rice University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "休斯顿",
+    "provinceCn": "得克萨斯州",
+    "qs": 122,
+    "qsLabel": "QS 122",
+    "qsDisplay": "122",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": 65.5,
+    "nationalRank": 27,
+    "founded": 1912,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#00205B",
+      "shape": "arch"
+    },
+    "city": "休斯顿",
+    "province": "得克萨斯州",
+    "campuses": [],
+    "strengths": [
+      "工程学",
+      "自然科学",
+      "建筑学",
+      "音乐",
+      "商科"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "私立校，不公布统一最低均分，按整体评估（committee review，每份申请至少两名招生官评议）。官网明确的最低要求只有高中课程门类与学分：英语 4、社科 2、数学 3、实验科学 2、外语 2、上述类别任选 3，合计 16 个学分；自然科学与工程方向最低须修三角或微积分预备，且同时修化学与物理（可用第二年化学或生物替代物理）。非英语母语申请人须满足以下二者之一：在英语授课体系完成至少 2 年全日制学习，或提交官方语言成绩（TOEFL 100，2026 年 1 月 21 日起新制 5.0；IELTS 7；Duolingo 130；Cambridge C1/C2 185）。TOEFL 接受 Home Edition，不接受 ITP Plus。SAT/ACT 为可选但官方建议提交（if available）。AP 4 或 5 分可换学分（Rice code 6609），AP 英语学分不能免除 Composition Examination。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admission.rice.edu/apply/first-year-international-applicants",
+      "https://admission.rice.edu/frequently-asked-questions",
+      "https://admission.rice.edu/apply/international-students",
+      "https://admission.rice.edu/apply/policies/transfer-credit-policy"
+    ]
+  },
+  {
+    "id": "wisc",
+    "nameCn": "威斯康星大学麦迪逊分校",
+    "nameEn": "University of Wisconsin-Madison",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "麦迪逊",
+    "provinceCn": "威斯康星州",
+    "qs": 131,
+    "qsLabel": "QS =131",
+    "qsDisplay": "=131",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": 64.3,
+    "nationalRank": 28,
+    "founded": 1848,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C5050C",
+      "shape": "building"
+    },
+    "city": "麦迪逊",
+    "province": "威斯康星州",
+    "campuses": [],
+    "strengths": [
+      "社会学",
+      "传媒学",
+      "教育学",
+      "农学与林业",
+      "兽医学",
+      "地理学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "公立校，不公布统一最低均分，按整体评估。最低门槛体现为高中课程要求：英语 4 年、数学 3 年（含代数、几何与进阶数学各一年）、社科 3 年、自然科学 3 年、任选 4 年，合计 17 学分；官网说明竞争性申请人通常在核心学科修更多高阶课程并保持高 GPA。首年国际生（非英语国家受教育）必须提交 TOEFL / IELTS / Duolingo，且官网明确 IB HL English、AP English、ACT、SAT、Cambridge English、PTE 均不能用于豁免该要求；唯一豁免条件为中学四年全部以英语为主要授课语言。学校不拼分，成绩报告不得超过申请时两年。不接受 TOEFL MyBest，不接受 TOEFL iTP Plus for China，接受 iBT Special Home Edition。SAT/ACT 至 2028 春季学期（截止 2027-10-01）为可选（test optional），只取最高总分、不做 superscore。AP 可换学分（registrar 学分认定），不用于录取豁免。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.wisc.edu/international/",
+      "https://admissions.wisc.edu/required-materials/",
+      "https://admissions.wisc.edu/prepare/homeschooled.php",
+      "https://registrar.wisc.edu/credit-by-exam/"
+    ]
+  },
+  {
+    "id": "ucdavis",
+    "nameCn": "加州大学戴维斯分校",
+    "nameEn": "University of California, Davis",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "戴维斯",
+    "provinceCn": "加利福尼亚州",
+    "qs": 137,
+    "qsLabel": "QS 137",
+    "qsDisplay": "137",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": 63,
+    "nationalRank": 29,
+    "founded": 1908,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#022851",
+      "shape": "leaf"
+    },
+    "city": "戴维斯",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [
+      "农学与林业",
+      "兽医学",
+      "环境科学",
+      "生物科学",
+      "农业与林业"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "公立校，UC 系统不按 100 分制公布最低均分，故 gpaMin 写 null。官方最低学术门槛为 A-G 课程：完成至少 15 门学年制大学预备课程（历史/社科 2、英语 4、数学 3、实验科学 2、外语 2、视觉与表演艺术 1、大学预备选修 1），且非加州居民申请人须在 10–11 年级 A-G 课程取得最低 3.40 GPA（4.0 制；加州居民为 3.00，按 SPEC 要求不做 100 分制换算）。官网明确 UC 与 UC Davis 不再将 SAT/ACT 用于录取决定或奖学金（可自行填报，仅可能用于满足最低学科要求或入学后课程分级）。国际生英语能力要求（须在高三 12 月前完成考试）：TOEFL iBT 80（2026 年 1 月起新制 4.5）、IELTS 6.5、Duolingo 115、AP 英语语言与写作或英语文学与写作 3/4/5、IB 英语（仅 Language A）SL 6–7 或 HL 5/6/7、ACT ELA 24、SAT Writing and Language 31、或 UC 可转的大学英语写作课程 C 以上；满足上述任一即同时满足 UC Entry Level Writing Requirement（ELWR）。UC 不接受 IELTS One Skill Retake、不接受 TOEFL MyBest，数字版 SAT Reading and Writing 未被批准用于满足英语要求。各校区可要求高于系统最低分。AP 3/4/5 分可换学分，其中 AP 英语可直接满足英语能力录取要求。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Transfer Admission Guarantee (TAG)（加州社区学院转学保证协议）",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "非 UC Davis 本校课程：在任一加州社区学院（California Community College）就读并满足约定的 GPA、学分与专业课要求后，通过 UC TAP 提交 TAG 申请（每年 9 月 30 日截止），可获得 UC Davis 的书面转学录取保证，随后以三年级身份进入 UC Davis。仅适用于加州社区学院学生，中国学生需先入读加州社区学院才可使用；国际生读完两年社区学院后按转学生身份申请。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.ucdavis.edu/admissions/undergraduate/international/exams-visas",
+      "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+      "https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements",
+      "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/gpa-requirement.html",
+      "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee",
+      "https://catalog.ucdavis.edu/academic-information-policies-regulations/academic-credit/advanced-placement-ap-examinations/"
+    ]
+  },
+  {
+    "id": "gatech",
+    "nameCn": "佐治亚理工学院",
+    "nameEn": "Georgia Institute of Technology",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "亚特兰大",
+    "provinceCn": "佐治亚州",
+    "qs": 142,
+    "qsLabel": "QS =142",
+    "qsDisplay": "=142",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": 62.5,
+    "nationalRank": 30,
+    "founded": 1885,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#8A7B4E",
+      "shape": "blocks"
+    },
+    "city": "亚特兰大",
+    "province": "佐治亚州",
+    "campuses": [],
+    "strengths": [
+      "统计与运筹学",
+      "材料科学",
+      "电子电气工程",
+      "机械工程",
+      "化学工程",
+      "土木工程"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布最低均分或最低 GPA，因此无法给出 100 分制数值；官网明确说明「许多教育体系不符合美国 GPA 结构」，按申请者所在课程体系整体评估。硬性材料要求：必须提交中学每一学年的成绩单；中国高中为 10-12 年级三年制者，入学前还须补交 9 年级（初三）成绩单。竞争性参考（官网原文）：IB 申请者「多数科目应为 6 分和 7 分」，无最低 IB 总分要求；A-Level 申请者「应至少完成 3 门完整 A-Level」。标化：SAT 或 ACT 为必需（见下）。英语：佐治亚理工学院不单独公布高于 USG 的本科分数线，官网指向 University System of Georgia 认可方式，即 TOEFL iBT 最低 3.5（2026-01-21 前考试为 69）、IELTS Academic 最低 6、PTE Academic 最低 53、SAT EBRW 480、ACT English 17；USG 允许各校设定更高分数，但 GT 本科官网未公布更高数值。Duolingo 英语测试：GT 明确「欢迎作为补充材料」，但「不能满足 USG 要求」，仅计入整体评估。",
+      "ielts": 6,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 69,
+      "sat": "required",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Georgia Tech Language Institute - Intensive English Program (GT 语言学院强化英语课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "Georgia Tech 语言学院的 CEA 认证强化英语课程，7 个级别（100-700）、每级 8 周。USG 政策把「完成受认可的 USG 校内 ESL 课程」列为满足英语能力要求的途径之一，因此可作为英语未达标者的语言补充路径；但 GT 语言学院官网明确「入读语言学院不等于被 Georgia Tech 学位项目录取」，GT 本科亦未公布有条件录取政策。官网未公布该课程自身的 IELTS/TOEFL 门槛，按到校分级测试定级。"
+        }
+      ]
+    },
+    "source": [
+      "https://visits.gatech.edu/international/first-year",
+      "https://visits.gatech.edu/first-year/standardized-tests",
+      "https://www.usg.edu/international-education/esl-programs/english-proficiency-requirements/",
+      "https://www.esl.gatech.edu/intensive-english-program/admission-considerations"
+    ]
+  },
+  {
+    "id": "usc",
+    "nameCn": "南加州大学",
+    "nameEn": "University of Southern California",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "洛杉矶",
+    "provinceCn": "加利福尼亚州",
+    "qs": 153,
+    "qsLabel": "QS 153",
+    "qsDisplay": "153",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": 61.3,
+    "nationalRank": 31,
+    "founded": 1880,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#990000",
+      "shape": "arch"
+    },
+    "city": "洛杉矶",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [
+      "传媒学",
+      "音乐",
+      "哲学",
+      "表演艺术",
+      "石油工程",
+      "解剖与生理学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "USC 为私立大学，不公布统一的最低均分或最低 GPA，采用整体评估（Comprehensive Admission Review），且官网明确「从国外申请的学生的入学审核与美国本土学生相同」，国际生不适用单独的低分线。材料要求：提交相当于美国 9-12 年级的完整官方成绩单（非英文须附认证翻译，由学校或考试机构直寄），并提交外部考试成绩或预估分（GCSE/IGCSE、IB 或 A-Level 预估、印度会考、ATAR 等）。英语口径（官网原文）：USC 列出「认可考试及建议最低分（recommended minimums）」——TOEFL iBT 最低 100（单项不低于 20；2026-01-21 及以后考试为新制 5 分、单项不低于 4）、IELTS 最低 7、PTE 68、Cambridge C1 Advanced 总分 185（单项 169+），或 SAT EBRW 650、或 ACT English 27；未考上述考试者可改考 Duolingo 英语测试，最低 130，用 Duolingo 录取的学生入学后须参加 USC American Language Institute 的 ISE 考试。官网同时说明「申请者低于建议最低分仍可被录取，但录取率降低」，且「最具竞争力的申请者分数显著高于最低分，录取学生托福 iBT 平均分高于 111、单项 25 以上」——即该组分数为官方口径的建议最低分而非绝对硬门槛。不要求面试；不接受中国 TOEFL ITP Plus。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admission.usc.edu/apply/international-students/",
+      "https://ali.usc.edu/english-language-requirement/"
+    ]
+  },
+  {
+    "id": "unc",
+    "nameCn": "北卡罗来纳大学教堂山分校",
+    "nameEn": "University of North Carolina at Chapel Hill",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "教堂山",
+    "provinceCn": "北卡罗来纳州",
+    "qs": 158,
+    "qsLabel": "QS =158",
+    "qsDisplay": "=158",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": 60.6,
+    "nationalRank": 32,
+    "founded": 1789,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#13294B",
+      "shape": "building"
+    },
+    "city": "教堂山",
+    "province": "北卡罗来纳州",
+    "campuses": [],
+    "strengths": [
+      "图书馆与信息管理",
+      "药剂与药理学",
+      "护理学",
+      "牙科学",
+      "社会学",
+      "体育相关学科"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布最低均分，也无法映射 100 分制。英语成绩口径特别提示：UNC 官方明确表示下列分数「不是最低分（these are not minimums）」，只是「强申请者通常达到的分数」，因此本记录 ieltsOverall/toefl 按契约写 null，此处如实转述建议值——TOEFL iBT 100 或以上（2026-01-21 及以后考试为新制 5 分或以上）、IELTS Academic 7.5 或以上、Duolingo 130 或以上、Cambridge C1 Advanced 185 或以上（另接受 C2 Proficiency）。UNC 不接受用 SAT/ACT 或英语课程成绩替代该英语能力要求；但若申请者在英语为主要语言的国家居住满 4 年，或在英语为主要授课语言的学校就读满 4 年，可申请豁免。标化：UNC System 政策规定，申请 2026-2027 学年及以后、加权 GPA ≥ 2.8（4.0 制）者无需提交 SAT/ACT；加权 GPA < 2.8 者必须提交 ACT 17+ 或 SAT 930+。官网补充：多数成功申请者（含国际生）核心课程成绩「远高于 B+ 平均」；若学校不提供 4.0 制加权 GPA 但成绩高于 B+，同样无需提交标化；A-Level 等外部考试成绩被用于判定该 GPA 门槛。国际生不获基于需求的经济资助，须准备全额费用；非美国认证院校的大学课程须做 WES 逐课认证。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.unc.edu/apply/types-of-applications/international/",
+      "https://admissions.unc.edu/faqs/how-does-unc-look-at-english-proficiency-exams-toefl-ielts-person/"
+    ]
+  },
+  {
+    "id": "tamu",
+    "nameCn": "得克萨斯农工大学",
+    "nameEn": "Texas A&M University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "大学城",
+    "provinceCn": "得克萨斯州",
+    "qs": 169,
+    "qsLabel": "QS 169",
+    "qsDisplay": "169",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": 59.5,
+    "nationalRank": 33,
+    "founded": 1876,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#500000",
+      "shape": "shield"
+    },
+    "city": "大学城",
+    "province": "得克萨斯州",
+    "campuses": [],
+    "strengths": [
+      "石油工程",
+      "兽医学",
+      "农学与林业",
+      "土木工程",
+      "地球与海洋科学",
+      "机械工程"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布 100 分制最低均分，也未公布最低 GPA 数值，因此写 null。官网原文口径：国际新生「成功的申请者将在本国教育体系中排名靠前（B 平均或以上），并在全国性考试中取得远高于平均的成绩」，并要求修读适当的大学预备课程。德州居民 Top 10% 自动录取政策不适用于国际生，国际新生全部走整体审核。标化：TAMU 为 Test-Optional，官网原文「Texas A&M University is test optional and will not require ACT or SAT scores for freshman applicants」，鼓励但非必须提交；提交与否不构成优势或劣势。英语口径（官网原文，国际新生页）：TOEFL iBT 最低 80（2026-01-21 前考试，两年内有效；2026-01-21 及以后为新制 4.5，且单项不低于 4.0）、IELTS Academic 最低 6.0 总分、TOEFL Essentials 最低 8.5、SAT EBRW 560、ACT English 21，或在美国高中完整就读 4 年；不接受 IELTS General Training，不接受 MyBest TOEFL。官网未列出 Duolingo 英语测试为可接受方式，故本记录未采用。申请须通过 STARS 自报成绩系统完成。",
+      "ielts": 6,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.tamu.edu/apply/freshman",
+      "https://admissions.tamu.edu/apply/international/international-freshman.html",
+      "https://catalog.tamu.edu/undergraduate/general-information/admission/"
+    ]
+  },
+  {
+    "id": "asu",
+    "nameCn": "亚利桑那州立大学",
+    "nameEn": "Arizona State University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "坦佩",
+    "provinceCn": "亚利桑那州",
+    "qs": 172,
+    "qsLabel": "QS 172",
+    "qsDisplay": "172",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": 58.4,
+    "nationalRank": 34,
+    "founded": 1885,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#8C1D40",
+      "shape": "leaf"
+    },
+    "city": "坦佩",
+    "province": "亚利桑那州",
+    "campuses": [],
+    "strengths": [
+      "考古学",
+      "人类学",
+      "图书馆与信息管理",
+      "教育学",
+      "环境科学",
+      "地球与海洋科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "ASU 官方公布的最低学术门槛是「中学 3.00 GPA（4.00 = A，即 B 或以上）」，为 4.0 制，按契约不得换算成 100 分制，故 gpaMin 写 null；官网页面同时说明部分专业要求更高。另需具备 3 年高中课程（在读生提供 9-11 年级、已毕业提供 10-12 年级）、提交毕业证或同等学历证明，并满足能力课程要求：数学 4 年（代数 I、几何、代数 II 及一门以代数 II 为先修的高阶课）、实验科学 3 年（生物/化学/地球科学/综合科学/物理中任选）。标化：ACT/SAT 为可选（官网申请步骤原文为「Submit your ACT or SAT scores (optional)」），部分专业可能参考 ACT/SAT 分数。英语口径（官网最低分，一般要求专业）：IELTS Academic 6.0 总分；TOEFL iBT 61（2026-01-21 前考试，须考试中心场次）或新制 3.5 总分（单项 3.5）；Duolingo 英语测试 95；PTE 53；Cambridge 170；亦可用 Global Launch 语言课程完成证明替代。分专业更高要求：护理 BSN 为 IELTS 6.5 / TOEFL 76（新制 4.0）/ Duolingo 100；Fulton 工程学院高要求专业为 IELTS 6.5 / TOEFL 79（新制 4.0）/ Duolingo 105 / PTE 58 / Cambridge 176；Walter Cronkite 新闻与大众传播学院高要求专业为 IELTS 7.0 / TOEFL 100（新制 5.0）/ Duolingo 120 / PTE 73 / Cambridge 185。ASU 不接受 TOEFL iBT Home Edition（2026-01-21 前考试）、TOEFL iBT Paper Edition 与 TOEFL Essentials；PTE Academic Online 亦不接受。",
+      "ielts": 6,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 61,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "ASU Conditional Admission (有条件录取)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "面向已满足 ASU 学术（aptitude）与能力课程要求、但英语尚未达标的国际本科申请者。收到有条件录取信后，有效期最长 3 个学期，期间须完成 Global Launch 英语课程，或考出合格的 TOEFL/IELTS/PTE 分数，即可转为正式录取。非独立课程，故无自身语言门槛。"
+        },
+        {
+          "name": "Global Launch English Language Program (ELP, 校内/线上沉浸式英语课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "ASU Global Launch 提供的沉浸式英语课程，分 6 级（Basic 到 Advanced）、每级 8 周，入学按分级测试定级。完成最高级 Advanced 2 可获得 TOEFL 豁免，即满足 ASU 本科英语要求并可完成正式录取；另设 8 周在线课程 English for Admission and Achievement。官网未公布 ELP 自身的 IELTS/TOEFL 门槛（按分级测试定级），课程完成结果有效期 2 年。适合英语明显未达标、需要长周期语言提升的学生。"
+        },
+        {
+          "name": "ASU-USA Pathways (国际大一衔接课程，含 1-term / 3-term / Earned Pathways)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "面向国际本科新生的衔接课程，在 ASU 西校区就读，修读语言+带学分课程，成绩合格后可升入 ASU 本科学位课程（衔接至大二）。高中 GPA 2.75 或以上入 1-term Pathways；GPA 低于 2.75 入 3-term Pathways；无合格语言成绩者先进入 Global Launch ELP（称为 Earned Pathways，完成 Intermediate 2 且全部 84% (B) 以上，或 Advanced 1 且全部 70% (C) 以上可进入）。合格语言线：IELTS 5.5 / Duolingo 90 / TOEFL iBT 55（2026-01-21 前考试）或 3.5（2026-01-21 及以后）。适合 GPA 与语言均略低于直录线的国际生。"
+        }
+      ]
+    },
+    "source": [
+      "https://admission.asu.edu/apply/international/first-year",
+      "https://admission.asu.edu/apply/international/undergrad/english-proficiency",
+      "https://globallaunch.asu.edu/conditional-admission",
+      "https://globallaunch.asu.edu/learn-english/asu-usa-pathways/eligibility?language_content_entity=en",
+      "https://catalog.asu.edu/credit_exam"
+    ]
+  },
+  {
+    "id": "ucsb",
+    "nameCn": "加州大学圣巴巴拉分校",
+    "nameEn": "University of California, Santa Barbara",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "圣巴巴拉",
+    "provinceCn": "加利福尼亚州",
+    "qs": 173,
+    "qsLabel": "QS 173",
+    "qsDisplay": "173",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": 58.3,
+    "nationalRank": 35,
+    "founded": 1891,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#003660",
+      "shape": "leaf"
+    },
+    "city": "圣巴巴拉",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [
+      "材料科学",
+      "物理学与天文学",
+      "语言学",
+      "传媒学",
+      "工程学",
+      "物理学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布 100 分制最低均分，因此写 null；加州大学系统以 4.0 制 A-G 课程 GPA 审核，本记录不做换算。官网原文口径：国际申请者须「已从中学毕业并取得可在本国升读大学的毕业证书」，且「成绩与考试成绩必须优异（your grades and exam scores must be excellent）」才具竞争力。国际课程具体要求：IB 需至少 6 门 IB 考试、其中 3 门为高级水平（HL），总分平均 5、单科不低于 4、并获 30 分以上文凭；英制需至少 5 门 GCSE/IGCSE (O-Level) 且 GPA 3.4 以上，以及至少 3 门 GCE (A-Level) 且非加权 GPA 3.0 以上、单科不低于 C，考试科目须对应 UC 的 A-G 课程体系。英语口径（国际生须以任一方式证明）：IELTS Academic 6.5 或以上；TOEFL iBT（含 Home Edition）2026 年 1 月前考试最低 80，2026 年 1 月及以后考试最低 4.5；Duolingo 英语测试最低 115；或 ACT ELA 24 以上；或 SAT Writing and Language 31 以上；或 AP 英语语言与写作 / 英语文学与写作 3、4、5 分；或 IB 英语（仅 Language A）SL 6-7 分 / HL 5-7 分；或完成一门 UC 可转学分的大学英语写作课并取得 C 以上。成绩须在入学前 12 月考试日期前完成，TOEFL/IELTS/DET 有效期 2 年。UC 不接受 IELTS One Skill Retake 和 MyBest TOEFL，只接受单次考试的最高总分；数字版 SAT 的 Reading and Writing 分数未被批准用于满足英语能力要求。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.sa.ucsb.edu/apply/international/ELP",
+      "https://admissions.sa.ucsb.edu/international-freshman-eligibility-selection"
+    ]
+  },
+  {
+    "id": "saskatchewan",
+    "nameCn": "萨斯喀彻温大学",
+    "nameEn": "University of Saskatchewan",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "萨斯卡通",
+    "provinceCn": "萨斯喀彻温省",
+    "qs": 411,
+    "qsLabel": "QS =411",
+    "qsDisplay": "=411",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": 37.1,
+    "nationalRank": 16,
+    "founded": 1907,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#B6922E",
+      "shape": "leaf"
+    },
+    "city": "萨斯卡通",
+    "province": "萨斯喀彻温省",
+    "campuses": [],
+    "strengths": [
+      "兽医学",
+      "农学",
+      "农业与农业食品",
+      "食品与水资源安全",
+      "疫苗与传染病研究",
+      "核科学与同步辐射"
+    ],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "官网对中国学生未单列换算表，按一般高中直录口径：完成高三（Grade 12 standing 或同等学历），以五门12年级科目计算均分，最低 70%（原文 “Minimum average of 70% on five subject high school average”）。分学院差异：文理学院、农业与生物资源学院、教育学院、运动机能学（Kin/Ed）均为 70%；护理学（BScN 前置）、牙科卫生等为 75%；生物医学（BMSC）要求化学/生物/数学/物理每门至少 70% 且不允许缺科。该校未把高考列为硬性要求，官网申请材料只要求高中毕业与成绩单，未提及会考；AP 课程可替代高三必修科目，AP 成绩可折算为均分（5→96、4→86、3→80）参与录取评估。注意：达到最低分不等于录取，各学院按均分竞争排序（Engineering、Edwards 商学院等热门方向实际录取明显高于 70%）。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 86,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "University of Saskatchewan Language Centre – English for Academic Purposes Level 4 (语言中心学术英语四级)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言中心 EAP 最高级（Level 4）结业即被视为满足 USask 英语能力要求；学术条件达标但英语不足者可申请 Language Centre 与六个直录学院（农业、文理、教育、Edwards 商学院、工程、运动机能学）的 joint admission（联合录取），先读语言再进入学位课程。"
+        },
+        {
+          "name": "University of Saskatchewan Transition Entrance Program – USTEP (过渡入学项目)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "面向五门30级科目均分 60.0%–69.9%、低于文理学院直录线（70%）的学生；先修最多18学分（含校内与校外授课点），均分达到 56% 后可继续留在文理学院正式修读学位。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.usask.ca/requirements/english-language-proficiency.php",
+      "https://programstest.usask.ca/programs/2026-27-admission-requirements.php",
+      "https://admissions.usask.ca/requirements/ap.php"
+    ]
+  },
+  {
+    "id": "concordia",
+    "nameCn": "康考迪亚大学",
+    "nameEn": "Concordia University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "蒙特利尔",
+    "provinceCn": "魁北克省",
+    "qs": 497,
+    "qsLabel": "QS =497",
+    "qsDisplay": "=497",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": 32.5,
+    "nationalRank": 17,
+    "founded": 1974,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#8C1A2B",
+      "shape": "arch"
+    },
+    "city": "蒙特利尔",
+    "province": "魁北克省",
+    "campuses": [],
+    "strengths": [
+      "艺术与设计",
+      "影视制作",
+      "商科",
+      "土木工程",
+      "软件工程",
+      "可持续发展"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网不用百分制最低线，而是按学院给「字母等第」门槛，因此 gpaMin 记 null。中国普通高中要求：完成高中三年课程并取得高中毕业证（普通高中毕业证书），官网明确「不要求高考、不要求会考」。分学院要求——文理学院：总平均 C+ 及以上（部分热门专业更高）；Gina Cody 工程与计算机科学学院：总平均 B- 及以上，且数学与理科 B- 及以上；John Molson 商学院：总平均 B 及以上，且数学 B 及以上；艺术学院：总平均 C+ 以上（多数专业需作品集或面试）；Computation Arts–Computer Science 要求总分至少 A-、数学至少 A-。官网给出百分制↔等第对照示例：90–100=A（含 A+/A-）、75–89=B（含 B+/B-）、60–74=C（含 C+/C-）、60 以下=D/F；若就读学校不使用字母等第，须随成绩单提交学校「评分系统」说明。注意：官网说明达标不代表录取，各专业实际 cut-off 随申请池浮动。",
+      "ielts": 6,
+      "ieltsSub": 5.5,
+      "ieltsSubNote": "",
+      "toefl": 70,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Intensive English Language Program (IELP) / conditional admission (强化英语语言课程·有条件录取通道)",
+          "type": "language",
+          "ielts": null,
+          "desc": "英语未达直录线且其他条件符合时，可获得 DESTINATION 语言有条件录取，先在 Continuing Education 语言学院（CCE/CELI）读 IELP，在最高级 Advanced 2 取得 70% 及以上即满足康考迪亚英语要求（入学后仍须参加 ESL 分班测试）。官网说明该通道覆盖 Gina Cody 工程学院、John Molson 商学院及部分文理学院专业，并非所有专业都提供。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html",
+      "https://www.concordia.ca/admissions/undergraduate/zh/undergraduate/ugrad-requirements.html",
+      "https://www.concordia.ca/admissions/undergraduate/international.html",
+      "https://www.concordia.ca/admissions/undergraduate/international/asia-pacific.html",
+      "https://www.concordia.ca/content/dam/concordia/offices/registrar/docs/calendar/21-22/sec13.pdf"
+    ]
+  },
+  {
+    "id": "laval",
+    "nameCn": "拉瓦尔大学",
+    "nameEn": "Université Laval",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "魁北克城",
+    "provinceCn": "魁北克省",
+    "qs": 526,
+    "qsLabel": "QS =526",
+    "qsDisplay": "=526",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 18,
+    "founded": 1663,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C8102E",
+      "shape": "shield"
+    },
+    "city": "魁北克城",
+    "province": "魁北克省",
+    "campuses": [],
+    "strengths": [
+      "光学与光子学",
+      "林学",
+      "农业与食品科学",
+      "林业与木材科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "Laval 以法语授课为主，官网不公布统一的百分制最低均分，因此 gpaMin 记 null；录取「主要基于学业成绩优秀程度」，各专业另有门槛。学历口径（官网 China 页）：中国学生申请本科须持有 12 年教育的高中毕业证（Gāozhōng）并完成 1 年高等教育；若不满足，须先读「资格课程（qualifying courses）」，即 30 学分、跨两个学期的资格年（最多 6 学分可计入所选本科专业），且资格年只对非限额专业开放。官网未把高考（NCEE）或会考列为要求，也未给出分数换算。语言口径：非法语母语者（小学与中学非法语授课）申请时必须提交 TCF tout public（法语知识测试）成绩，成绩两年内有效、须由 ETS 直接送分；TCF 分数用于判定需补修的法语二外课程数量，各专业门槛不同（官网举例：Computer Science 要求 TCF-TP 必修部分 ≥331/699 且写作 ≥8/20；Architecture 要求 ≥400/699 且写作 ≥14/20）。绝大多数法语授课本科专业不要求雅思/托福；仅少数英语授课专业要求英语成绩（如英语文学与语言学专业要求 IELTS 6.5，阅读/听力/口语 ≥6.5、写作 ≥6.0，或 TOEFL iBT 85 且读听 ≥22、写说 ≥20）。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "unknown",
+      "ap": "unknown",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "French Immersion Pathway (法语沉浸通道)",
+          "type": "language",
+          "ielts": null,
+          "desc": "面向母语非法语、已完成至少 12 年中小学教育并被非限额本科专业录取的学生：把法语二外课程嵌入本科学习，同时补修专业所需资格课程，帮助学生达到专业要求的法语水平；按法语起点不同，学制 4 至 6 年，法语二外课程学费有减免。申请时必须提交 TCF 成绩（未提交者按初学者处理）。"
+        },
+        {
+          "name": "Qualifying courses / qualifying year (资格补修课程·资格年)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "中国高中毕业为 12 年教育，未达魁省要求的 13 年（DCS 同等）学历，录取后须先完成 30 学分、为期两个学期的资格课程，其中最多 6 学分可计入所选本科专业；资格课程还用于补齐专业先修课与法语水平。仅适用于非限额（unlimited enrolment）专业，限额专业不接受带资格课程的录取。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.ulaval.ca/en/ulaval-experience/international-applicants/academic-equivalence/applicants-from-china",
+      "https://www.ulaval.ca/en/admission/prepare-your-application/french-proficiency",
+      "https://www.ulaval.ca/en/ulaval-experience/plan-your-studies/admission-requirements",
+      "https://ulaval.ca/en/ulaval-experience/plan-your-studies/support-for-french-language-learning/french-immersion-pathway",
+      "https://www.ulaval.ca/etudes/programmes/baccalaureat-en-litteratures-et-linguistique-anglaises"
+    ]
+  },
+  {
+    "id": "windsor",
+    "nameCn": "温莎大学",
+    "nameEn": "University of Windsor",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "温莎",
+    "provinceCn": "安大略省",
+    "qs": 537,
+    "qsLabel": "QS =537",
+    "qsDisplay": "=537",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 19,
+    "founded": 1857,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#005B99",
+      "shape": "building"
+    },
+    "city": "温莎",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [
+      "汽车工程"
+    ],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "官网按申请人来源单列，对「来自加拿大与美国境外的高中申请人（International）」给出最低均分为 70%（原文 “Minimum Average: 70%”），并按专业不同：文科/社科/理科多数专业 70%（如 Criminology、History、Communication Media & Film、Biology、Chemistry、Environmental Science 均为 70%）；商科（Business Administration 及组合学位）73%，Co-op 方向 78%；工程类（General/Civil/Electrical/Environmental/Industrial）74%，且须为数学与理科（不含生物）均分 74%；Law and Politics 85%；Interdisciplinary Arts and Science 80%。各专业页面同时公布「Mean Average」（实际录取学生均分）约 76%–92%，可作为竞争性区间参考。材料要求：提交官方高中毕业证与高中成绩单（非英文须公证翻译）。往届生与应届生均不强制高考；官网 Senate 政策仅要求提交中学教育官方文件并载明所修科目与成绩。SAT/ACT 不要求（仅美国高中申请人被鼓励提交，用于补充材料）。各专业有高三先修课要求（如工程需 Advanced Functions、化学、物理；商科需一门高三数学）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 83,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English Language Improvement Program (ELIP) (英语提升课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "共四个级别的强化学术英语，每级 12 周、每周 20 小时（每天 4 小时），提供线上（Brightspace）与线下两种模式，每年 1 月、5 月、9 月三次开课；完成 ELIP Level 3 且最终成绩 ≥75% 即满足温莎本科/研究生的英语要求。分班由剑桥式分级测试决定（有效语言考试成绩可辅助定级，12 个月内的成绩有效）。申请时不需要已有语言成绩。"
+        },
+        {
+          "name": "Conditional Admission via ELIP (ELIP 语言有条件录取)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "官网明确：申请时不必满足英语要求，对英语未达标者发放有条件录取信（conditional letter of admission），只要在开学前通过 ELIP Level 3 或其他方式满足英语要求即可进入学位课程。注意 ELIP 本身不保证被学位项目录取，仍须满足其余全部录取条件。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.future.uwindsor.ca/program-admission-requirements-search/",
+      "https://www.uwindsor.ca/englishpathway",
+      "https://future.uwindsor.ca/apply-international",
+      "https://future.uwindsor.ca/transfer",
+      "https://www.uwindsor.ca/nursing/sites/uwindsor.ca.nursing/files/admission_requirements_210901-pdel.pdf"
+    ]
+  },
+  {
+    "id": "guelph",
+    "nameCn": "圭尔夫大学",
+    "nameEn": "University of Guelph",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "圭尔夫",
+    "provinceCn": "安大略省",
+    "qs": 546,
+    "qsLabel": "QS =546",
+    "qsDisplay": "=546",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 20,
+    "founded": 1964,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C20430",
+      "shape": "leaf"
+    },
+    "city": "圭尔夫",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [
+      "农学",
+      "兽医学",
+      "食品科学与技术",
+      "农业科学",
+      "生物技术",
+      "酒店与旅游管理"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网对中国课程（Chinese Curriculum）只列材料与科目要求，未公布统一的百分制最低均分，因此 gpaMin 记 null。中国普高学生要求：提交高一、高二及「高三至少第一学期」的成绩单，并参加会考（Academic Proficiency Test / APT，即 Huikao），报考专业相关科目须全部取得「合格（qualified）」；已毕业学生还需提交高考（NCEE）成绩，含专业要求的科目，官网参考线为「约 500 分」（原文 “a minimum of approximately 500”）。高考与会考成绩须经学信网 CSSD（原 CHESICC）通过 CSSD-Parchment 通道认证，最终高中成绩单与毕业证由学校直接寄至 intdocs@uoguelph.ca。此外各专业有高三先修课要求（如工程需英语、微积分、化学、物理；商科需英语+高阶数学）。SAT/ACT：官网写明 2027 秋季入学周期 SAT/ACT 为可选（该条写在 American Curriculum 项下，针对美式课程申请人）；中国课程申请人不需要提交。达标不代表录取。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 89,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English Language Certificate Program (ELCP) (英语语言证书课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "由 School of Continuing Studies 开设的分级英语课程（Advanced Level 为 Level 9 与 10）；完成 Advanced Level 即满足圭尔夫大学（及 Guelph-Humber）本科入学的英语能力要求。另设 ELCP Advanced Short Program。"
+        },
+        {
+          "name": "English Language Communication & Culture (ELCC) Guaranteed Admission Pathway – GAP (保障录取通道)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "若英语能力与/或成绩未达直录要求，可通过「ELCP + Open Learning 学分课程」组合取得保障录取资格，保底专业为 Bachelor of Commerce 与 Bachelor of Arts。在 ELCP Level 7&8 或 8&9 取得 80% 及以上总均分后，可同步修读 Open Learning 学位学分课程；完成高级证书（Certificate of English Proficiency）即满足英语要求。该通道也可单独作为成绩不够时的补强途径。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.uoguelph.ca/admission/undergraduate/international/english-proficiency",
+      "https://www.uoguelph.ca/international/admission-requirements/",
+      "https://www.uoguelph.ca/admission/undergraduate/international/transfer-credits",
+      "https://www.uoguelph.ca/admission/undergraduate/advanced-standing",
+      "https://www.uoguelph.ca/admission/undergraduate/international/requirements"
+    ]
+  },
+  {
+    "id": "manitoba",
+    "nameCn": "曼尼托巴大学",
+    "nameEn": "University of Manitoba",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "温尼伯",
+    "provinceCn": "曼尼托巴省",
+    "qs": 560,
+    "qsLabel": "QS =560",
+    "qsDisplay": "=560",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 21,
+    "founded": 1877,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C6002B",
+      "shape": "shield"
+    },
+    "city": "温尼伯",
+    "province": "曼尼托巴省",
+    "campuses": [],
+    "strengths": [
+      "农学",
+      "农业与食品科学",
+      "医学",
+      "工程",
+      "北极系统科学与气候变化",
+      "免疫与传染病学"
+    ],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "官方直录口径：需高中毕业证书 + 5 门高三（senior level）学术课程（UM 通用入学要求，适用于非美式/非 GCE 课程的国际生）。按专业给最低均分：University 1、Arts、Agricultural and Food Sciences、Environmental Studies 等为 70%（每门不低于 60%）；Engineering 为 80%（每门不低于 70%）；Commerce 为 85%（每门不低于 70%）；Health Sciences / Health Studies / Kinesiology / Recreation Management 为 85%。官方注明申请人数超过名额时实际录取均分需高于最低线。中国学生提交高中成绩单+毕业证明即可，官网未把高考或会考列为必需材料。AP 也可用于满足英语要求（AP English Language & Composition 或 Literature & Composition 得 4 分及以上可豁免语言考试），AP 成绩 4 分起可申请转学分（AP: 4=B, 5=A，无学分上限，但需自行提交 Request for University Credit 表格，不自动转换）。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 86,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Intensive Academic English Program (IAEP)（强化学术英语课程／语言班）",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "曼尼托巴大学英语语言中心（ELC）开设的校内学术英语课程，共 6 级（Foundations + Level 1-5），每级 14 周、每周 24 小时。学术条件合格但英语未达直录要求者可获有条件录取，完成 Level 5 即视为满足 UM 多数本科专业的英语要求，可直接进入 University 1 / 文学院 / 理学院。Level 5 入学门槛：IELTS 5.5，或 TOEFL iBT 70（单项 16），或 CAEL 50，或 PTE 45，或 Duolingo 95。"
+        },
+        {
+          "name": "International College of Manitoba (ICM) International Year One – UTP Stage II（国际大一）",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "ICM 与曼尼托巴大学合作的国际大一课程（3 个学期、相当于本科第一年），在 UM Fort Garry 校内上课。中国学生要求：高三（Senior Middle 3）4 门学术课均分 60%；工程方向要求高三数学、化学、物理均分 75% 且单科不低于 70%。语言直录 IELTS 5.5（单项不低于 5.0），或 TOEFL iBT 69（单项不低于 15），或 Duolingo 95（单项不低于 80）。完成后 CGPA ≥ 2.0 且满足相关要求可申请转入 UM 对应专业二年级（商科、工程等竞争性专业按名额择优）。"
+        },
+        {
+          "name": "International College of Manitoba (ICM) Foundation – UTP Stage I（预科）",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "面向未完成高三或学术成绩未达国际大一要求的学生。中国学生要求：高二（Senior Middle 2）4 门学术课均分 70%。语言要求与 UTP Stage II 相同（IELTS 5.5，单项不低于 5.0）。完成预科后升入 ICM 国际大一（UTP Stage II）。"
+        }
+      ]
+    },
+    "source": [
+      "https://umanitoba.ca/explore/undergraduate-admissions/requirements/international-admission-requirements",
+      "https://umanitoba.ca/sites/default/files/2020-10/non-us-abc-curriculum-sheet_0.pdf",
+      "https://umanitoba.ca/explore/undergraduate-admissions/requirements/english-language-proficiency-requirements",
+      "https://umanitoba.ca/sites/default/files/2020-09/ap-and-ib-approved-courses-for-credit.pdf",
+      "https://umanitoba.ca/sites/default/files/2020-06/elc-english-flyer-web.pdf",
+      "https://www.icmanitoba.ca/admissions/english-language-requirements/",
+      "https://www.icmanitoba.ca/admissions/admission-requirements/"
+    ]
+  },
+  {
+    "id": "torontomet",
+    "nameCn": "多伦多都会大学",
+    "nameEn": "Toronto Metropolitan University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "多伦多",
+    "provinceCn": "安大略省",
+    "qs": 669,
+    "qsLabel": "QS 669",
+    "qsDisplay": "669",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 22,
+    "founded": 1948,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#004C9E",
+      "shape": "building"
+    },
+    "city": "多伦多",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [
+      "新闻学",
+      "艺术与设计",
+      "建筑与建成环境",
+      "法学",
+      "计算机科学",
+      "商科"
+    ],
+    "require": {
+      "gpa": 80,
+      "gpaNote": "官网中国（China）条目明确：需 Senior High School (Upper Middle School) Graduation Diploma（高中毕业证），至少 5 门高三（Senior 3/Grade 12）学术课程（须含所选专业的先修科目），总均分 80%，且每门先修科目不低于 80%；官网注明热门/竞争性专业要求更高。注意区分：安大略省本地 OSSD 体系的最低录取均分仅 70%，国际生按国别条目单独评估，门槛明显更高。不要求高考或会考；官网明确不接受 SAT/ACT 等标化考试替代学历要求，但鼓励提交 AP/SAT/ACT 作为补充评估材料。申请材料需含高一至高三成绩单（含评分标准），最终需由学校直接寄送官方成绩单，并通过中国学历认证（CSSD/学信网）提交高中毕业证验证报告。AP 可用于满足英语要求（AP English Language and Composition 或 Literature and Composition 得 4 分及以上可免语言考试），AP 考试成绩 4 分及以上可按个案申请转学分（工程专业核心课不适用）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 83,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English Boost Pathways（英语快速衔接课程）",
+          "type": "language",
+          "ielts": 6,
+          "desc": "8 周、每周 30 小时的密集语言衔接课程，无本科学分，学费较低；成功完成并达标后可进入 TMU 全部 55+ 个本科学位专业。直入英语 Boost 需 IELTS 6.0 / Duolingo 105-115 / TOEFL 4.0 iBT；若只有 IELTS 5.5 / Duolingo 95-100 / TOEFL 3.5 iBT，需先读 Pre-English Boost（与 English Boost 合计 16 周）。"
+        },
+        {
+          "name": "ESL Foundation Program Pathways（ESL 基础课程）",
+          "type": "language",
+          "ielts": 4.5,
+          "desc": "以学术英语（EAP/ESP）为核心的衔接课程，每周 25 小时，学费含最多 2 门本科学分课（可另付费加修 1 门）；成功完成并达标后可进入 TMU 全部 55+ 个本科学位专业。分档门槛：IELTS 4.5（Pre-ESL Foundation + ESL Foundation，共 40 周）/ IELTS 5.0（两学期，32 周）/ IELTS 6.0（一学期，16 周）；对应 Duolingo 65-75 / 80-90 / 105-115。"
+        }
+      ]
+    },
+    "source": [
+      "https://torontomu.ca/admissions/undergraduate/requirements/international/",
+      "https://torontomu.ca/admissions/undergraduate/requirements/english-language/",
+      "https://torontomu.ca/english-language-institute/programs/",
+      "https://torontomu.ca/content/ryerson/english-language-institute/apply.html"
+    ]
+  },
+  {
+    "id": "unb",
+    "nameCn": "新不伦瑞克大学",
+    "nameEn": "University of New Brunswick",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "弗雷德里克顿",
+    "provinceCn": "新不伦瑞克省",
+    "qs": 677,
+    "qsLabel": "QS =677",
+    "qsDisplay": "=677",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 23,
+    "founded": 1785,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#C8102E",
+      "shape": "arch"
+    },
+    "city": "弗雷德里克顿",
+    "province": "新不伦瑞克省",
+    "campuses": [],
+    "strengths": [
+      "林学",
+      "工程学",
+      "计算机科学",
+      "工程",
+      "法学"
+    ],
+    "require": {
+      "gpa": 75,
+      "gpaNote": "UNB 不设全校统一分数线，而是按专业公布「最低录取均分」——取所选专业指定的 6 门高三课程的总平均分（另在可接受范围内选取分数最高的选修课计入）。官网国际生专业要求页列出的最低均分为：Arts 65%（该校最低）；Business (BBA) 75%；Computer Science（Fredericton BCS / Saint John BScCS）75%；Science (BSc) 75%；Software Engineering 75%；Engineering (BScE) 75%；Applied Management (BAM/BAMAC) 70%。部分专业还对先修单科设分：如 BCS 要求高三数学（含预备微积分）≥65%、一门理科 ≥65%；BScE 要求英语、数学、化学、物理各 ≥70%。官网明确「达到最低要求不保证录取」。中国学生需提交高中成绩单与毕业证（非英文需公证翻译），官网未把高考或会考列为必需材料。本字段填多数专业适用的 75%，Arts 为 65%。语言特殊口径：Fredericton 校区 Nursing、Education、Arts 与 Saint John 校区 Nursing、Health Sciences 要求 IELTS 7.0（或同等）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 85,
+      "sat": "optional",
+      "ap": "unknown",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Program of Academic English Preparation (PAEP)（学术英语预备课程）",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "UNB Fredericton 校区的本科衔接课程，由 1950 年成立的 English Language Programme 授课。面向学术条件合格（academically admissible）但英语未达直录要求的学生；可用 IELTS 或同等成绩申请，也可到校后测试。IELTS 5.5-6.0 的 PAEP 学生可在读 EAP 的同时修读部分院系的学术课程；IELTS 5.5 以下先全日制读 EAP。完成 PAEP 可获得学术学分，并满足 UNB 的英语入学要求。"
+        },
+        {
+          "name": "Saint John College English for Academic Purposes (EAP)（学术英语课程）",
+          "type": "language",
+          "ielts": 3,
+          "desc": "UNB Saint John 校区（Saint John College）的 4 级全日制语言课程，每级 4 个月、每周 24 小时，面向 IELTS 约 2.0-5.5 的学生，入学按 Accuplacer 测试分级（Level 3 需 IELTS 3.0-4.0，Level 4 需 4.5-5.0，Level 5 需 5.5）。另设 ESL Support Program：一学期全日制，3 门高级 ESL 课程 + 1-2 门学术学分课。"
+        },
+        {
+          "name": "Conditional Admission（有条件录取）",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "暂无英语成绩或英语未达标的国际学生，可先获得本科有条件录取（conditional admission），条件是入学后先完成 UNB 的全日制英语培训（Fredericton 校区 PAEP 或 Saint John 校区 EAP/ESLS），再进入本科学位课程。有条件录取可用于申请加拿大学习许可。"
+        }
+      ]
+    },
+    "source": [
+      "https://unb.ca/international/admission/english.html",
+      "https://unb.ca/international/admission/program.html",
+      "https://unb.ca/international/apply/index.html",
+      "https://unb.ca/admissions/applying-to-unb/admission-and-scholarship-average.html",
+      "https://unb.ca/saintjohn/sjcollege/eslsupport/eap",
+      "https://unb.ca/fredericton/management/undergrad/eap.html"
+    ]
+  },
+  {
+    "id": "memorial",
+    "nameCn": "纽芬兰纪念大学",
+    "nameEn": "Memorial University of Newfoundland",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "圣约翰斯",
+    "provinceCn": "纽芬兰与拉布拉多省",
+    "qs": 721,
+    "qsLabel": "QS 721-730",
+    "qsDisplay": "721-730",
+    "qsRange": "721-730",
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 24,
+    "founded": 1925,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#822433",
+      "shape": "arch"
+    },
+    "city": "圣约翰斯",
+    "province": "纽芬兰与拉布拉多省",
+    "campuses": [],
+    "strengths": [
+      "船舶与海洋工程",
+      "海洋科学",
+      "船舶与海洋建筑工程",
+      "考古学",
+      "语言学",
+      "乡村健康"
+    ],
+    "require": {
+      "gpa": 75,
+      "gpaNote": "官网 China 课程条目明确：学历为 Senior Secondary School Certificate（高中毕业证）；先修学科需覆盖 5 个领域——英语、数学、一门实验科学（生物/化学/物理）、社会科学或现代/古典语言、一门选修；在高三（senior level）这些要求科目上最低均分 75，且每科须及格。英语水平必须通过标准化考试证明（中国高中不适用「三年英语授课免试」豁免）。官网未提及高考或会考要求。官网注明部分专业为竞争性录取，可能要求更高均分和/或补充材料。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "至少阅读 6、写作 6（官网原文：minimum overall band score of 6.5 ... with at least a band 6 in reading and writing）",
+      "toefl": 83,
+      "sat": "not_required",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Intensive English Program at Grenfell (IEP-G)（强化英语课程／非学分）",
+          "type": "language",
+          "ielts": 4.5,
+          "desc": "Grenfell 校区（Corner Brook）开设的语言课程，无需先获 Memorial 学位项目录取即可单独入读；也可作为达到 Memorial 学位项目英语要求的方式（此路径需先提交学位项目申请）。语言门槛：IELTS 4.5，或 TOEFL 纸考 440 / iBT 40，或 Duolingo 65。"
+        },
+        {
+          "name": "Intensive English Bridge Program at Grenfell (IEBP-G)（强化英语桥梁课程／带学分）",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "面向已获 Memorial 本科有条件录取（provisional acceptance）的学生，边修本科学分边完成英语要求，完成后可满足最终录取的语言条件。Level 1：IELTS 5.5（写作 5.5，单项不低于 5.0）／TOEFL iBT 58（写作 16）／Duolingo 95（写作 95），可同时修 1 门本科学分课；Level 2：IELTS 6.0（写作 6.0，单项不低于 5.5）／TOEFL iBT 70（写作 18）／Duolingo 105（写作 105），可同时修 2 门本科学分课。"
+        }
+      ]
+    },
+    "source": [
+      "https://mun.ca/undergrad/admissions/i-want-to-apply/international-high-school-curriculum-requirements/china",
+      "https://mun.ca/undergrad/admissions/i-want-to-apply/english-proficiency-tests/",
+      "https://mun.ca/undergrad/admissions/i-want-to-apply/english-language-requirement",
+      "https://mun.ca/grenfellcampus/programs--schools/english-as-an-additional-language/intensive-english-bridge-program--credit-bearing",
+      "https://mun.ca/grenfellcampus/programs--schools/english-as-an-additional-language/apply"
+    ]
+  },
+  {
+    "id": "carleton",
+    "nameCn": "卡尔顿大学",
+    "nameEn": "Carleton University",
+    "region": "ca",
+    "countryCn": "加拿大",
+    "cityCn": "渥太华",
+    "provinceCn": "安大略省",
+    "qs": 801,
+    "qsLabel": "QS 801-850",
+    "qsDisplay": "801-850",
+    "qsRange": "801-850",
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 25,
+    "founded": 1942,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#B3122B",
+      "shape": "building"
+    },
+    "city": "渥太华",
+    "province": "安大略省",
+    "campuses": [],
+    "strengths": [
+      "新闻学",
+      "国际事务",
+      "公共事务",
+      "工程",
+      "建筑学",
+      "高科技"
+    ],
+    "require": {
+      "gpa": 70,
+      "gpaNote": "中国高中（Chinese High School）口径：录取均分按学生所修最高层次的「全部 9 门学术科目」计算；先修科目须在 11 或 12 年级修读；需提交最终成绩与官方高中毕业证，毕业证须经 Center for Student Services and Development (CSSD／学信网) 验证。卡尔顿官方的一般最低录取均分为 70%（「An overall average of at least 70% is normally required to be considered for admission」），并明确 cut-off 均分逐年按专业竞争情况确定、可能远高于最低线，各专业实际要求约在 75%-90%。未提及高考或会考要求。AP 可用于满足英语要求（AP English Language & Composition 或 AP English Literature & Composition 得 4 分及以上可免 ESL 要求），AP 考试 4 分及以上可按个案获高级学分（最多 3 学分）。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 86,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Academic ESL / English as a Second Language Requirement (ESLR)（学术英语课程／带 ESL 要求的录取）",
+          "type": "language",
+          "ielts": 5,
+          "desc": "语言成绩未达直录标准的申请人可获「带 ESL 要求的录取」（ESLR），入学后须同时修 Academic ESL（ESLA）课程与少量学位课程，可同时获得学位课程学分（ESLA 1300 可修 0.5 学分、ESLA 1500 可修 1.0 学分、ESLA 1900 可修 1.5 学分），最多需 3 个学期完成。ESLR 语言门槛（Table 2）：IELTS 5.0（单项不低于 4.5），或 TOEFL iBT 51（2026-01-21 后考试为 3.0），或 Duolingo 80，或 PTE 31，或 CAEL 40，或 Cambridge 154。注意：以下专业不接受带 ESL 要求的录取——Architectural Studies、Health Sciences、Humanities、Industrial Design、Information Technology、International Business、Journalism、Journalism and Humanities、Media Production and Design、Nursing、Public Affairs and Policy Management，以及全部 Post-Baccalaureate Diploma。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.carleton.ca/esl",
+      "https://admissions.carleton.ca/international-homepage/",
+      "https://admissions.carleton.ca/guides/InternationalViewbook.pdf",
+      "https://carleton.ca/slals/esl/credit/esla-faq",
+      "https://calendar.carleton.ca/undergrad/regulations/admissions/"
+    ]
+  },
+  {
+    "id": "msu",
+    "nameCn": "密歇根州立大学",
+    "nameEn": "Michigan State University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "东兰辛",
+    "provinceCn": "密歇根州",
+    "qs": 182,
+    "qsLabel": "QS 182",
+    "qsDisplay": "182",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 36,
+    "founded": 1855,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#18453B",
+      "shape": "leaf"
+    },
+    "city": "东兰辛",
+    "province": "密歇根州",
+    "campuses": [],
+    "strengths": [
+      "农业与林业",
+      "兽医学",
+      "教育学",
+      "传播学与媒体研究",
+      "语言学",
+      "酒店与旅游管理"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网明确「Admission to Michigan State University is competitive, but there are no minimum requirements」（录取竞争激烈但不设统一最低要求）。Fall 2025 录取新生中间 50%：高中 GPA 3.5–4.0（4.0 制）、ACT 26–31、SAT 1100–1320，官网说明这不是最低标准。高中课程建议：4 年英语、3 年数学（含 2 年代数+1 年几何）、3 年社科、2 年科学、2 年同一外语；鼓励选修 Honors/AP/IB。中国学生须由学校直寄高中成绩单原件与官方英文翻译，且英语语言能力需另行证明（见 pathways）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Provisional Admission (临时/有条件录取)",
+          "type": "conditional",
+          "ielts": 6,
+          "desc": "语言成绩略低于常规线时可获临时录取：TOEFL iBT 60–78、IELTS 6.0、Duolingo 95–105、MSUELT 65–79、PTE 总分 46+。入学后须参加 MSUELT 测试，按结果分入①全学分课程②学术+语言混合课程③MSU English Language Center 全日制语言课程；开学前补交达标成绩可转为正式录取。临时录取期间仍为正式本科生、可住校并使用学校资源。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.msu.edu/apply/international/language-requirements",
+      "https://admissions.msu.edu/apply/international/admission-criteria",
+      "https://admissions.msu.edu/apply/international/apply-now"
+    ]
+  },
+  {
+    "id": "emory",
+    "nameCn": "埃默里大学",
+    "nameEn": "Emory University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "亚特兰大",
+    "provinceCn": "佐治亚州",
+    "qs": 183,
+    "qsLabel": "QS 183",
+    "qsDisplay": "183",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 37,
+    "founded": 1836,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#012169",
+      "shape": "arch"
+    },
+    "city": "亚特兰大",
+    "province": "佐治亚州",
+    "campuses": [],
+    "strengths": [
+      "护理学",
+      "公共卫生",
+      "神学与宗教研究"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "学校不设最低均分：录取为整体评估（holistic review），官网只公布录取新生的参考数据（Emory College 录取 Class of 2029 未加权 GPA 3.83）。英语要求同样是「不设硬线」——官网原文「While the university does not use strict score cutoffs, the following scores are recommended」，故本表语言分字段按要求填 null，官网口径如实转述如下：TOEFL iBT 旧 0–120 分制期望 100 分（not a strict cutoff），2026-01-21 起新 1–6 分制建议 5.5+；IELTS 期望总分 7.5（not a strict cutoff）；Duolingo 最具竞争力的申请人通常 130+（160 分制）；TOEFL ITP 需 CEFR C1 水平；TOEFL ITP Plus（仅中国大陆）各部分通常 63–68。满足以下任一条件可免交语言考试：SAT EBRW 700+、ACT 英语小分 30+、最近 4 年所有学术科目均为全英文授课。SAT/ACT 2026–2027 申请季为 test-optional（不提交不影响评审）。中国高考成绩可作为补充材料通过 CHESICC 认证提交，非必需。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://apply.emory.edu/apply/international",
+      "https://apply.emory.edu/apply/requirements/exams",
+      "https://apply.web.emory.edu/apply/first-year/tips/standardized-exam-policies.html"
+    ]
+  },
+  {
+    "id": "osu",
+    "nameCn": "俄亥俄州立大学",
+    "nameEn": "The Ohio State University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "哥伦布",
+    "provinceCn": "俄亥俄州",
+    "qs": 201,
+    "qsLabel": "QS =201",
+    "qsDisplay": "=201",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 38,
+    "founded": 1870,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#BB0000",
+      "shape": "building"
+    },
+    "city": "哥伦布",
+    "province": "俄亥俄州",
+    "campuses": [],
+    "strengths": [
+      "兽医学",
+      "语言学",
+      "体育相关学科",
+      "农业与林业",
+      "护理学",
+      "传播学与媒体研究"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网明确「Ohio State does not have minimum requirements for class rank or GPA」（不设最低 GPA 或班级排名门槛），录取采用整体评估。上一年度录取学生：50% 的 ACT 在 27–33、SAT 在 1280–1470；94% 毕业于高中前 25%、64% 前 10%。最低高中课程要求：英语 4 单元、数学 3（建议 4）、自然科学 3、社科 2（建议 3）、同一外语 2（建议 3）、视觉/表演艺术 1，另加任选 1 单元。中国学生须提交 9–12 年级共 4 年成绩单原件及英文翻译（不接受传真），成绩单可由学校通过 Common App/Naviance 或 ugdocs@osu.edu 提交。哥伦布校区要求 ACT 或 SAT 成绩必须由考试机构直送（大学不设最低 ACT/SAT 分数线）。AP/IB/Honors 等加速课程的修读情况会纳入评审并给予额外考虑。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "American Language Program (ALP 美国语言项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "俄亥俄州立大学下设的强化英语项目，语言暂不达标者可单独申请以提高英语水平。注意官网明确：「Ohio State does not offer conditional admission to students who enroll in the American Language Program」——入读 ALP 不等于获得本科有条件录取，仍需另行提交达标的英语成绩才能申请本科。"
+        }
+      ]
+    },
+    "source": [
+      "https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step",
+      "https://undergrad.osu.edu/apply/international-freshmen/who-gets-in"
+    ]
+  },
+  {
+    "id": "ufl",
+    "nameCn": "佛罗里达大学",
+    "nameEn": "University of Florida",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "盖恩斯维尔",
+    "provinceCn": "佛罗里达州",
+    "qs": 228,
+    "qsLabel": "QS =228",
+    "qsDisplay": "=228",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 39,
+    "founded": 1853,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#0021A5",
+      "shape": "shield"
+    },
+    "city": "盖恩斯维尔",
+    "province": "佛罗里达州",
+    "campuses": [],
+    "strengths": [
+      "体育相关学科",
+      "农业与林业",
+      "兽医学",
+      "药学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "UF 使用自算的 4.0 制核心加权 GPA（AP/IB/AICE 课程加 1.0 权重、Pre-AP/Pre-IB/Honors 加 0.5），按契约不做百分制换算。官网列的「最低要求」只有：学术核心课程累计 C 均（约 2.0）、完成 16 个学术单元（英语 4 年、数学 4 年、自然科学 3 年、社科 3 年、同一外语 2 年）；Class of 2030 录取中间 50% 为 GPA 4.5–4.7、ACT 32–35、SAT 1420–1520，官网强调「These are NOT minimum criteria」。SAT/ACT/CLT 为强制提交（佛罗里达州 Board of Governors 6.002 规定），国际生一视同仁。非美高课程须提交 course-by-course 学历认证（含 GPA 计算，NACES 成员机构）以及原件+逐字英文翻译；就读非美式评分体系高中的学生不填 STARS。语言最低分说明：UF 本科新生国际页面未公布语言考试最低分，本表 TOEFL 80 / IELTS 6.0 取自 UF 国际申请者（转学）页面明确标注的「Minimum acceptable scores」（TOEFL iBT 80、TOEFL PBT 550、IELTS Academic 6.0），请以招生办确认为准。",
+      "ielts": 6,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.ufl.edu/apply/freshman/international",
+      "https://admissions.ufl.edu/apply/freshman/requirements",
+      "https://admissions.ufl.edu/apply/transfer/international",
+      "https://admissions.ufl.edu/apply/freshman/student-profile"
+    ]
+  },
+  {
+    "id": "rochester",
+    "nameCn": "罗切斯特大学",
+    "nameEn": "University of Rochester",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "罗切斯特",
+    "provinceCn": "纽约州",
+    "qs": 251,
+    "qsLabel": "QS 251",
+    "qsDisplay": "251",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 40,
+    "founded": 1850,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#003B71",
+      "shape": "arch"
+    },
+    "city": "罗切斯特",
+    "province": "纽约州",
+    "campuses": [],
+    "strengths": [
+      "音乐",
+      "表演艺术"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "学校不设最低均分，采用整体评估。语言成绩官网只给「Recommended score」（建议值），并明确「Applicants whose test scores fall outside of the ranges displayed above are still encouraged to apply」，故本表语言分字段按要求填 null，官网口径如实转述：Duolingo 130、IELTS 7.5、TOEFL iBT 100（旧 0–120 分制）/ 5（2026-01-21 起新 1–6 分制）。不拼分、不看单项合并、不接受 TOEFL MyBest Score，只取单次考试的最高总分。可申请语言豁免的三种情形：①英语母语；②高中至少 3 年以英语为主要授课语言；③转学申请人完成 1 年以上美国大学课程且含 1 门写作密集型课程；豁免须在申请截止前提交申请并在提交申请与成绩单后审核。SAT/ACT 为 test-optional，国际生与本土生使用同一份 Common App/Coalition 申请。国际生还需提交 International Financial Support Form（不需助学金者）或 CSS Profile（需助学金者），无合格财力证明者不予录取。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "unknown",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English for Academic Purposes Program (EAPP 学术英语项目)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "由罗切斯特大学写作项目开设的两学期项目。若学校评估申请人的英语水平需要额外支持，可通过 EAPP 获得录取；学生第一学期即同时开始学位课程与 EAPP 课程，重点加强批判性阅读、推理、写作与研究能力。申请人不能直接申请 EAPP，由招生办在审核过程中决定。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.rochester.edu/applying/international/",
+      "https://admissions.rochester.edu/applying/international-students/"
+    ]
+  },
+  {
+    "id": "uci",
+    "nameCn": "加州大学尔湾分校",
+    "nameEn": "University of California, Irvine",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "尔湾",
+    "provinceCn": "加利福尼亚州",
+    "qs": 252,
+    "qsLabel": "QS =252",
+    "qsDisplay": "=252",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 41,
+    "founded": 1965,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#0064A4",
+      "shape": "leaf"
+    },
+    "city": "尔湾",
+    "province": "加利福尼亚州",
+    "campuses": [],
+    "strengths": [
+      "哲学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "UC 系统采用 4.0 制的 A-G 课程 GPA（只算 10–11 年级的 A-G 课程），按契约不做百分制换算：非加州居民/国际申请人最低 3.4，加州居民最低 3.0，且不允许低于 C 的成绩；须完成 15 门一年制 A-G 课程（其中 11 门须在 12 年级前完成）。UC 为 test-free：明确「UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships」，SAT/ACT 成绩仅可能用于满足最低资格要求或入学后课程分班。AP/IB/A-Level 成绩仍会纳入评审。实际录取竞争力远高于最低线。国际生学费与其他 UC 校区一致，申请须在 11 月 30 日前提交。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "not_required",
+      "ap": "direct",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.uci.edu/apply/international/index.php",
+      "https://admissions.uci.edu/apply/first-year-students/index.php",
+      "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+      "https://admission.universityofcalifornia.edu/counselors/preparing-freshman-students/freshman-requirements.html"
+    ]
+  },
+  {
+    "id": "umd",
+    "nameCn": "马里兰大学帕克分校",
+    "nameEn": "University of Maryland, College Park",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "学院公园",
+    "provinceCn": "马里兰州",
+    "qs": 252,
+    "qsLabel": "QS =252",
+    "qsDisplay": "=252",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 42,
+    "founded": 1856,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#E21833",
+      "shape": "shield"
+    },
+    "city": "学院公园",
+    "province": "马里兰州",
+    "campuses": [],
+    "strengths": [
+      "计算机科学",
+      "物理学",
+      "犯罪学与刑事司法",
+      "工程学",
+      "数学",
+      "公共卫生"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布中国学生（或本科生）的最低均分线；国际生必须提交 9–12 年级完整课程内部成绩单（不接受仅外部统考成绩，如 GCSE/GCE、CBSE 等只能作为补充），录取采用包含 23 项因素的整体评估，官方口径为成绩达「very good」至「excellent」方有竞争力。语言另接受 Duolingo 120 / IELTS 7.0 / TOEFL 95；UMD 不接受 TOEFL MyBest 拼分，IELTS 不接受纸质成绩单。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 95,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Maryland English Institute (MEI，马里兰英语学院语言课程)",
+          "type": "language",
+          "ielts": 6.5,
+          "desc": "语言未达直录线者的英语通道：官方规定 IELTS 6.5 及以下、TOEFL 94 及以下（新制 4.5 及以下）、Duolingo 115 及以下者进入 MEI 学习；部分申请者会被要求在开始学位课程前完成 MEI 课程，具体是否被要求会写在录取决定信里。适合学术达标但语言差半档的学生。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.admissions.umd.edu/apply/requirements/international/english-proficiency",
+      "https://www.admissions.umd.edu/apply/requirements/freshman",
+      "https://academiccatalog.umd.edu/undergraduate/requirements-application-procedures/international-student-admission"
+    ]
+  },
+  {
+    "id": "umn",
+    "nameCn": "明尼苏达大学双城分校",
+    "nameEn": "University of Minnesota Twin Cities",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "明尼阿波利斯-圣保罗（双城）",
+    "provinceCn": "明尼苏达州",
+    "qs": 255,
+    "qsLabel": "QS =255",
+    "qsDisplay": "=255",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 43,
+    "founded": 1851,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#7A0019",
+      "shape": "building"
+    },
+    "city": "明尼阿波利斯-圣保罗（双城）",
+    "province": "明尼苏达州",
+    "campuses": [],
+    "strengths": [
+      "兽医学",
+      "化学工程",
+      "农业与林业",
+      "心理学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网明确「不设自动录取标准或最低分数线（no automatic criteria or minimums/cut-offs）」，按学术准备与背景做整体评估；申请时自报 9–12 年级课程与成绩即可。语言要求（Spring 2027 申请季起为官方当前口径）：IELTS 学术类 6.5（写作 6.5）、TOEFL iBT 4.5（写作 4.5，新 1–6 分制；0–120 分制历史官方口径为 79、写作 21，见官方 2025 国际生 Fact Book）、PTE 59、剑桥 C1 Advanced 180、Duolingo 120，均不接受 MyBest 拼分。单科略低者可能获 AZ hold 并被要求修一门英语支持课程。",
+      "ielts": 6.5,
+      "ieltsSub": 6.5,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Conditional Admission for International Freshman (国际生有条件录取 + MELP 密集英语)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "面向学术合格、但语言成绩显示需要整年密集英语训练的国际新生（仅秋季入学、名额有限）：先在明尼苏达英语语言项目 MELP 读一年密集英语，一年后英语达标即转为下一秋季的正式学位生。转学生不适用。官方页面未公布该通道的最低语言分数。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.tc.umn.edu/admissions/international-admission/english-proficiency-information",
+      "https://admissions.tc.umn.edu/sites/admissions.tc.umn.edu/files/2025-10/2025%20INTL%20Undergrad%20Fact%20Book-WEB.pdf",
+      "https://admissions.tc.umn.edu/frequently-asked-questions-about-conditional-admission"
+    ]
+  },
+  {
+    "id": "umass",
+    "nameCn": "马萨诸塞大学阿默斯特分校",
+    "nameEn": "University of Massachusetts Amherst",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "阿默斯特",
+    "provinceCn": "马萨诸塞州",
+    "qs": 260,
+    "qsLabel": "QS 260",
+    "qsDisplay": "260",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 44,
+    "founded": 1863,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#881C1C",
+      "shape": "leaf"
+    },
+    "city": "阿默斯特",
+    "province": "马萨诸塞州",
+    "campuses": [],
+    "strengths": [
+      "语言学",
+      "发展研究",
+      "农业与林业",
+      "体育相关学科",
+      "酒店与休闲管理",
+      "传播与媒体研究"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布最低均分。自实行 Test-Optional 后，官方明确「不提交标化时高中 GPA 在量化评估中权重更大」，仍按holistic 整体评估；国际生须提交 9–11 年级成绩单（建议用 SRAR 自报），学校会复核课程难度与专业匹配度。语言接受 TOEFL 80（单项不低于 20；2026 年 1 月 21 日后考试为新 1–6 分制 4.5、单项不低于 4）、IELTS 6.5（单项不低于 6.0）、Duolingo 115、剑桥 B2 First/C1 Advanced/C2 Proficiency 合计 176（单项不低于 169）；不接受 IELTS Indicator、TOEFL ITP Plus for China、TOEFL Essentials、PTE Academic Online。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "单项不低于 6.0",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://www.umass.edu/admissions/english-language-proficiency",
+      "https://www.umass.edu/uww/resources/international-applicant-guide",
+      "http://umass.edu/registrar/advanced-placement-test-university-recommended-scorescredits",
+      "http://netreg.oit.umass.edu/admissions/undergraduate-admissions/connect/information-policies/test-optional-policy"
+    ]
+  },
+  {
+    "id": "virginia",
+    "nameCn": "弗吉尼亚大学",
+    "nameEn": "University of Virginia",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "夏洛茨维尔",
+    "provinceCn": "弗吉尼亚州",
+    "qs": 268,
+    "qsLabel": "QS 268",
+    "qsDisplay": "268",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 45,
+    "founded": 1819,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#232D4B",
+      "shape": "arch"
+    },
+    "city": "夏洛茨维尔",
+    "province": "弗吉尼亚州",
+    "campuses": [],
+    "strengths": [
+      "法学",
+      "商学",
+      "医学与健康科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布最低均分，也未在本科招生页设定最低语言分数：官方口径是「强烈鼓励母语非英语者参加英语测评」，TOEFL / IELTS / 剑桥 C1-C2 / Duolingo 的结果「可作为申请审核的一部分被考虑」，并建议提交 InitialView 或 Vericant 面试作为补充。因此本档语言分记 null（本科记录中出现的 90 分/7.0 表述为「被录取学生通常达到的水平」以及研究生项目要求，不能当作最低线）。学术要求为完成相当于美国高中文凭的课程，并按年份修满 4–5 门学术课程（英语、数学、历史、科学、外语）；官方 Facts 显示 2025 秋季本科新生收到约 6.4 万份申请、发出约 1 万份 offer，竞争激烈。国际生（外国国籍）不获学校奖学金或贷款，需自备全额资金证明（United World College 学生除外）。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admission.virginia.edu/i-am/international",
+      "https://admission.virginia.edu/faqs?combine=optional&field_category_target_id=All",
+      "https://admission.virginia.edu/node/361"
+    ]
+  },
+  {
+    "id": "pitt",
+    "nameCn": "匹兹堡大学",
+    "nameEn": "University of Pittsburgh",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "匹兹堡",
+    "provinceCn": "宾夕法尼亚州",
+    "qs": 279,
+    "qsLabel": "QS =279",
+    "qsDisplay": "=279",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 46,
+    "founded": 1787,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#003594",
+      "shape": "building"
+    },
+    "city": "匹兹堡",
+    "province": "宾夕法尼亚州",
+    "campuses": [],
+    "strengths": [
+      "哲学",
+      "护理学",
+      "图书与信息管理",
+      "医学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布统一最低均分，录取按整体评估（CDS 中将课程难度、学术 GPA、文书列为非常重要）；各一年级学院公布中位 50% 加权 GPA 区间，如护理 4.10–4.44、工程 3.97–4.46、文理 3.74–4.34（4.0 制加权，不做换算）。语言：学校政策规定国际生录取的最低标准为 TOEFL iBT 80 / IELTS 6.5（低于此不得录取）；但匹兹堡主校区实际竞争力线为 TOEFL 100+（新 1–6 分制 5.0+，小分 4.0+）、IELTS 7.0+（小分 6.0+）、Duolingo 125+。官方明确：TOEFL 80–89 或 IELTS 6.5 的申请者「通常会被考虑录到 Bradford / Greensburg / Johnstown 分校区」，因此申请表中可给分校区排序；TOEFL 90–99 且学术背景强者会被认真考虑。语言豁免不自动，需发邮件申请（条件如：美国高校修满 60 学分、在美高就读满四年、SAT EBRW ≥ 660 或 ACT 英语 ≥ 27、或来自豁免国家）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "English Language Institute (ELI，匹兹堡大学英语语言学院)",
+          "type": "language",
+          "ielts": null,
+          "desc": "1964 年设立的非学分密集英语课程（读、写、听、说、语法，含 TOEFL 备考），供语言未达标的国际学生就读。注意：官方明确「入读 ELI 不等于被匹兹堡大学录取」，ELI 只提供语言培训与申请指导；语言达标后仍需单独申请学位项目。官方未公布该通道的具体语言门槛。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.pitt.edu/international/toefl-ielts-duolingo/",
+      "https://www.provost.pitt.edu/assessment-english-language-proficiency-admission",
+      "https://admissions.pitt.edu/first-year-student",
+      "https://admissions.pitt.edu/credit/advanced-placement-music-listening-and-literature-345"
+    ]
+  },
+  {
+    "id": "nd",
+    "nameCn": "圣母大学",
+    "nameEn": "University of Notre Dame",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "圣母镇（毗邻南本德 South Bend）",
+    "provinceCn": "印第安纳州",
+    "qs": 300,
+    "qsLabel": "QS =300",
+    "qsDisplay": "=300",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 47,
+    "founded": 1842,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#0C2340",
+      "shape": "shield"
+    },
+    "city": "圣母镇（毗邻南本德 South Bend）",
+    "province": "印第安纳州",
+    "campuses": [],
+    "strengths": [
+      "神学、宗教与神学研究",
+      "哲学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布最低均分，录取为整体评估（need-blind，不看支付能力）。需提交中学官方成绩单与核心课程要求：英语 4 单元、数学 3 单元（代数 I、代数 II、几何，建议 4 单元）、外语 2 单元（建议 3–4）、科学 2 单元（建议 4）、历史/社科 2 单元（建议 3–4）；英制课程学生完成 GCSE 后通常须至少修读 3 门 A-Level。语言要求为硬性：母语非英语或中学非英语授课者「必须」提交 TOEFL / IELTS / DET / PTE，官网 Required Score 表列 TOEFL iBT 100（口语不低于 25，2026 年 2 月前旧制；新制为平均 5.5、各单项不低于 5.0）、IELTS 7.5、Duolingo 125。注意：圣母不接受 TOEFL iBT Special Home Edition；若所在国无法考试可用 Duolingo 替代。SAT EBRW ≥ 650 或 ACT 英语/阅读 ≥ 26 可免语言考试。",
+      "ielts": 7.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 100,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.nd.edu/apply/resources-for/international-applicants/application-information/",
+      "https://advising.nd.edu/first-year-and-incoming-students/requirements-and-credits/advanced-credit-and-placements/ap-exam-credit"
+    ]
+  },
+  {
+    "id": "arizona",
+    "nameCn": "亚利桑那大学",
+    "nameEn": "The University of Arizona",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "图森",
+    "provinceCn": "亚利桑那州",
+    "qs": 313,
+    "qsLabel": "QS 313",
+    "qsDisplay": "313",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 48,
+    "founded": 1885,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#AB0520",
+      "shape": "leaf"
+    },
+    "city": "图森",
+    "province": "亚利桑那州",
+    "campuses": [],
+    "strengths": [
+      "天文学与天体物理",
+      "管理信息系统",
+      "空间科学",
+      "地球科学",
+      "水资源",
+      "光学"
+    ],
+    "require": {
+      "gpa": 80,
+      "gpaNote": "中国学生走 International Admissions 通道。官网 Admission Criteria 写明「有竞争力的申请者最近三年学业重新计算后的 GPA 应不低于 3.0」；官网中国页同时给出官方折算表：中国高中成绩体系 3.0 GPA 等效于 80%（学校评分制允许给 D 时）或 75%（不设 D 时），故取 80% 为官方公布的等效均分线，非本任务换算。需提交 9–11 年级中英文成绩单（若高三上已结业则含 12 上；已高中毕业者提供 10–12 年级完整成绩单），申请时可用非正式成绩单或自报成绩，入学前须补交正式成绩单与高中毕业证。不要求高考、不要求会考成绩。SAT/ACT 明确「不是录取必需」，提交仅用于课程分级或补足核心能力要求；工程学院 Core GPA 门槛同样为 3.0（4.0 制）。英语能力另接受 Duolingo 110、PTE 60、剑桥英语 180/C1、CEPT 110、SAT EBRW 580、ACT English 21、AP 英语语言或文学 4 分。托福自 2026 年 1 月 21 日起改用 1–6 分制，新制最低 4 分（旧制 0–120 分制为 79）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "University Track / U-Track (CESL 大学桥梁课程，取得有条件录取后入读)",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "亚利桑那大学官方指定的英语桥梁通道：语言未达直录线（IELTS 6.5 / TOEFL 79 / Duolingo 110）的学生先提交本科申请并获得有条件录取（conditional admission，即学术上已可录取、只差英语），再进入 CESL 的 U-Track，一边强化英语一边修读可计入任何专业毕业要求的通识学分（约 3–6 学分）。官网要求 IELTS 5.5、TOEFL 59、Duolingo 90 即可申请；完成 U-Track 后由 CESL 出具英语认可（endorsement），即视为满足学校的英语入学要求，无需再考托福或雅思，随后进入本科学位课程。"
+        },
+        {
+          "name": "Center for English as a Second Language Intensive English Program (CESL 强化英语课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "针对完全达不到 U-Track 门槛（低于 IELTS 5.5 / TOEFL 59 / Duolingo 90）的学生，可直接申请 CESL 的强化英语课程。官方页面未公布该项目的最低入学分数，需通过 CESL 分级测试安置；读语言本身不要求先被大学录取。"
+        }
+      ]
+    },
+    "source": [
+      "https://international-admissions.arizona.edu/english-proficiency",
+      "https://international-admissions.arizona.edu/country-requirements?country=China",
+      "https://arizona.edu/admissions/undergraduate/first-year",
+      "https://cesl.arizona.edu/student-services/applying-university-arizona"
+    ]
+  },
+  {
+    "id": "rutgers",
+    "nameCn": "罗格斯大学新布朗斯维克分校",
+    "nameEn": "Rutgers University-New Brunswick",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "新布朗斯维克",
+    "provinceCn": "新泽西州",
+    "qs": 314,
+    "qsLabel": "QS 314",
+    "qsDisplay": "314",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 49,
+    "founded": 1766,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#CC0033",
+      "shape": "shield"
+    },
+    "city": "新布朗斯维克",
+    "province": "新泽西州",
+    "campuses": [],
+    "strengths": [
+      "哲学",
+      "食品科学与技术",
+      "供应链管理",
+      "离散数学与组合数学",
+      "数学",
+      "海洋学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布国际生（或本科生）的最低均分线，也无统一 GPA 门槛：录取采用整体评估，要求通过 STARS 系统自报 9–11 年级全部课程与成绩及 12 年级在读课程，申请阶段无需正式成绩单，入学前补交。Rutgers–New Brunswick 自 2024 年起实行 test-optional（官方明确延续至 2027 申请季），SAT/ACT 提交与否不影响录取评审，不提交不会被扣分。国际生英语要求独立于本土、按 New Brunswick 校区执行：IELTS 6.5、TOEFL iBT 79（2026 年 1 月 21 日前的 0–120 分制；1 月 22 日起新 1–6 分制要求 4.5）、Duolingo 115、PTE 53、MET 56、剑桥 B2，或 SAT EBRW 550、ACT English 21；Ernest Mario 药学院与护理学院要求更高（旧制 TOEFL 100、Duolingo 130）。在英语授课高中就读者可个案申请豁免，或修完受认可的美国大学英语写作课并取得 B 以上亦可豁免。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "RU-Path Program (罗格斯英语语言学院 RELI 本科桥梁年)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "由 Rutgers English Language Institute (RELI) 开设，面向语言未达直录线的国际学生：夏季开学、贯穿一个学年，读完后成绩合格可直接注册为 School of Arts and Sciences、Rutgers Business School 或 School of Environmental and Biological Sciences 的正式一年级学生（fully matriculated first-year）。完成条件为所有非学分英语课成绩 C 以上、含学分课程 GPA 不低于 2.5、通过一门大学级学术英语（EAP）课与一门含学分数学课并保持良好学籍。官方 Program Overview 未公布该项目的雅思/托福最低分门槛。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.rutgers.edu/apply/international-applicants",
+      "https://admissions.rutgers.edu/apply/first-year-applicants",
+      "https://reli.rutgers.edu/images/2024-2025_RU-Path_Program_Overview.pdf",
+      "https://catalogs.rutgers.edu/generated/nb-ug_1315/pg630.html"
+    ]
+  },
+  {
+    "id": "ncsu",
+    "nameCn": "北卡罗来纳州立大学",
+    "nameEn": "North Carolina State University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "罗利",
+    "provinceCn": "北卡罗来纳州",
+    "qs": 320,
+    "qsLabel": "QS =320",
+    "qsDisplay": "=320",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 50,
+    "founded": 1887,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#CC0000",
+      "shape": "building"
+    },
+    "city": "罗利",
+    "province": "北卡罗来纳州",
+    "campuses": [],
+    "strengths": [
+      "兽医学",
+      "纺织工程",
+      "农业科学",
+      "统计学",
+      "核工程",
+      "生物与农业工程"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网公布的是 4.0 制加权 GPA 门槛而非百分制均分，故不换算、写 null：加权 GPA ≥ 2.8（约 B-）即可 test-optional，不提交 SAT/ACT 不影响录取；加权 GPA 低于 2.8 则必须提交 SAT/ACT 才构成完整申请。国际新生另须满足 UNC 系统最低课程要求（MCR），官网强烈建议高中修到预备微积分，STEM 与商科方向以预备微积分为竞争线并尽量修微积分。国际生英语要求独立于本土且更高：IELTS Academic 6.5（单项不低于 6.0）、TOEFL iBT 80（单项不低于 18；2026 年 1 月 21 日起新 1–6 分制需 4.5、单项 4）、Duolingo 110、TOEFL Essentials 9.0（单项 8.0）、PTE 58。另接受 AS/A-Level 成绩换学分，但只认 Cambridge A 与 AS Level。AP 成绩明确不参与新生录取评审，仅在入学后按科目换学分（多数科目 3 分及以上即可获学分）。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Conditional Admission via NC State Intensive English Program (有条件录取 + IEP 强化英语课程)",
+          "type": "conditional",
+          "ielts": 5,
+          "desc": "学术条件达标但语言未达直录线的国际新生会被自动纳入有条件录取考虑，无需另行申请，录取决定信会写明。学生先入读 NC State Intensive English Program（IEP，共 4 级，一般一学期完成一级），修完后直接进入所录专业，无需重考托福/雅思/多邻国/PTE。官方公布的有条件录取语言门槛为 IELTS 5.0 / TOEFL iBT 42（2026 年 1 月 21 日起新制 3）/ Duolingo 80 / PTE 36；须注意一旦接受有条件录取，即使之后考出直录分数，仍必须完成 IEP 才能入学。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.ncsu.edu/apply/international/first-year/",
+      "https://admissions.ncsu.edu/apply/first-year/test-score-consideration-in-admission-decisions/",
+      "https://admissions.ncsu.edu/admitted/",
+      "https://catalog.ncsu.edu/about/"
+    ]
+  },
+  {
+    "id": "cuboulder",
+    "nameCn": "科罗拉多大学博尔德分校",
+    "nameEn": "University of Colorado Boulder",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "博尔德",
+    "provinceCn": "科罗拉多州",
+    "qs": 320,
+    "qsLabel": "QS =320",
+    "qsDisplay": "=320",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 51,
+    "founded": 1876,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#8A7B4E",
+      "shape": "blocks"
+    },
+    "city": "博尔德",
+    "province": "科罗拉多州",
+    "campuses": [],
+    "strengths": [
+      "航空航天工程",
+      "物理学",
+      "地球科学",
+      "工程学",
+      "环境法",
+      "房地产"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "国际生与本土生使用同一套学术评审标准，官网未公布百分制最低均分，故写 null。官方口径：录取采用整体评估（holistic review），高中 GPA 与课程难度是最重要指标，且因各校评分制不同，CU Boulder 会把成绩重新计算为标准化的 4.0 制加权 GPA（对荣誉、AP、IB、双学分课程加权）；同时推荐完成 HEAR 课程（未完成不影响录取，但入学后可能需补修才能毕业）。2025 年入学新生平均高中 GPA 为 3.77。SAT/ACT 明确「不要求」（test optional），只有主动提交才会被纳入考虑。英语能力为国际生独立要求：IELTS 6.5、TOEFL iBT 80（2026 年 1 月 21 日起新 1–6 分制为 4.0）、Duolingo 115、PTE 58、剑桥 C1/C2 180，或 AP 英语 4 分、IB HL 英语 A 5 分、IB SL 英语 A 6 分、GCSE/GCE 英语 B、SAT EBRW 580、ACT English 23；成绩须在开学前两年内取得，且多邻国/托福/雅思成绩不可拼分。语言未达标但学术合格者可获有条件录取并通过 Pathway to CU 补语言。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Pathway to CU Program (有条件录取 + 国际英语中心语言桥梁)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "CU Boulder 对学术达到录取标准、但英语未达标的国际生发放有条件录取：学生可先进 International English Center 的 Pathway to CU（8 周一期、全年多轮开学、每周 24 小时、共 8 级，对应 CEFR B1 以下至 C2）。完成全部级别、或在此期间另考出达标的托福/雅思/多邻国成绩，即可开始学位课程；英语达到中高级后可选修 1–2 门计学分的大学课程。官方页面未公布该项目的最低雅思分数，仅说明当季最低开设级别为低中级（CEFR B1-），低于该级别可能被转入其他项目。"
+        }
+      ]
+    },
+    "source": [
+      "https://www.colorado.edu/node/966",
+      "https://colorado.edu/admissions/process/international/admitted",
+      "http://iec.colorado.edu/programs/eabp",
+      "https://catalog.colorado.edu/undergraduate/admissions/admission-requirements/",
+      "https://www.colorado.edu/about/rankings-achievements"
+    ]
+  },
+  {
+    "id": "casewestern",
+    "nameCn": "凯斯西储大学",
+    "nameEn": "Case Western Reserve University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "克利夫兰",
+    "provinceCn": "俄亥俄州",
+    "qs": 326,
+    "qsLabel": "QS 326",
+    "qsDisplay": "326",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 52,
+    "founded": 1826,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#0A304E",
+      "shape": "arch"
+    },
+    "city": "克利夫兰",
+    "province": "俄亥俄州",
+    "campuses": [],
+    "strengths": [
+      "生物医学工程",
+      "高分子科学与工程",
+      "电化学工程",
+      "机器人学",
+      "医学",
+      "护理学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网明确「不设最低 GPA，也不设最低标化分数线」（no minimum GPA or test score），录取采用整体评估，故 gpaMin 写 null。官方公布的 Class of 2025 录取学生中间 50% 区间为：未加权 GPA 3.6–4.0、SAT 总分 1420–1510、ACT 综合 32–35，且 42% 的录取学生未提交标化（test-optional，提交者按单项最高分 superscore）。申请材料要求：高中成绩单、School Report、1 封升学指导推荐信、2 封任课老师推荐信、$75 申请费。国际生英语要求（非英语母语者必须提交，可先自报、入学时用官方成绩核验）：IELTS 7.0、TOEFL iBT 90（2026 年 1 月 21 日起新 1–6 分制为 4.5；旧制纸考 577）、Duolingo 115、PTE 61。满足以下任一条件可自动豁免英语成绩：在英语授课学校就读至毕业满两年、SAT EBRW ≥ 630、ACT English ≥ 26。",
+      "ielts": 7,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 90,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://case.edu/admission/apply/international-applicants",
+      "https://case.edu/admission/apply/first-year-applicants",
+      "https://case.edu/admission/apply/application-tips",
+      "https://bulletin.case.edu/undergraduate-academics/ap-ib-credit-equivalencies"
+    ]
+  },
+  {
+    "id": "tufts",
+    "nameCn": "塔夫茨大学",
+    "nameEn": "Tufts University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "梅德福",
+    "provinceCn": "马萨诸塞州",
+    "qs": 338,
+    "qsLabel": "QS =338",
+    "qsDisplay": "=338",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 53,
+    "founded": 1852,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#3E8EDE",
+      "shape": "leaf"
+    },
+    "city": "梅德福",
+    "province": "马萨诸塞州",
+    "campuses": [],
+    "strengths": [
+      "国际关系",
+      "兽医学",
+      "营养科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布最低均分/GPA 线，采用整体评估（holistic review），重点是在申请人所在国家教育体系内评估其学术表现（明确列举 GCSE/GCE A-Level、IB、法国高考、Abitur 等）与课程难度，不设统一换算线。语言：官网明确写「While Tufts has no score minimums（不设最低分）」，只给出『通常被录取者至少达到』的参考值——TOEFL iBT 100（2026-01-21 起新制 1–6 分制为 5.0+）、IELTS 7+、PTE Academic 68+、Duolingo 130+；因属竞争性参考值而非最低要求，本档 ieltsOverall / toefl 记 null，参考值在此如实转述。母语非英语者须提交语言成绩；在英语授课中学就读满 3 年可豁免，但中学阶段修过 ESOL 课程者可能被要求补充证明。不接受 TOEFL MyBest 拼分、TOEFL ITP Plus 与 IELTS Indicator。SAT/ACT 为 test-optional。AP 不作为录取硬性要求，仅用于入校后换学分/分级：文理学院（A&S）换学分最低需 4 分（多数科目要求 4 或 5 分，个别仅 5 分；3 分通常只给分级安置、不给学分），A&S 最多 5 门课等价学分，工学院最多 27 学分。",
+      "ielts": null,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": null,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 4,
+      "apCoursesMin": null,
+      "pathways": []
+    },
+    "source": [
+      "https://admissions.tufts.edu/apply/applying-as-an-international-s",
+      "https://admissions.tufts.edu/academics/pre-matriculation-credits",
+      "https://admissions.tufts.edu/discover-tufts/tufts-history/"
+    ]
+  },
+  {
+    "id": "miami",
+    "nameCn": "迈阿密大学",
+    "nameEn": "University of Miami",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "科勒尔盖布尔斯",
+    "provinceCn": "佛罗里达州",
+    "qs": 338,
+    "qsLabel": "QS =338",
+    "qsDisplay": "=338",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 54,
+    "founded": 1925,
+    "type": "私立研究型",
+    "crest": {
+      "color": "#005030",
+      "shape": "arch"
+    },
+    "city": "科勒尔盖布尔斯",
+    "province": "佛罗里达州",
+    "campuses": [],
+    "strengths": [
+      "海洋科学",
+      "大气科学",
+      "音乐",
+      "医学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布国际生或本科生的最低均分线，采用整体评估；官方 2025 秋季本科申请数据：录取者平均未加权 GPA 3.89/4.0、SAT 中位区间 1360–1480、ACT 30–34。学术上要求完成至少 3–4 年严谨的大学预科课程。标化：自 Fall 2026 起 UM 恢复 SAT/ACT 要求，但明确对「将在美国境外高中/中学毕业」的申请者例外——可自行选择是否提交（即中国学生可 test-optional），且 AP/IB 不能替代 SAT/ACT。语言：非英语母语者必须提交 TOEFL / IELTS / DET（不接受 TOEFL Essentials），官网口径为『有竞争力的申请者通常达到（competitive applicants generally score above）』TOEFL iBT 80（0–120 旧制；2026-01-21 起新制 1–6 分制为 4.5）、IELTS 6.5、DET 120；成绩两年有效。本档按该竞争性参考线填 ieltsOverall/toefl 并在 _notes 说明口径。可豁免语言成绩的情形：AP 或 IB HL 英语课程成绩 A/B、IB English A1 SL/HL 预测分 4+、IB English B HL 预测分 5+、IGCSE/GCE 英语第一语言 C 以上、SAT EBRW 650+（须官方送分）、ACT English 27+、在美国高中读满 3 年（含毕业年）、或在英语授课高中读满 3 年、或完成本校 IEP 第 5 级、或在美国高校修满 24 个以上学分（含 6 学分英语写作且 B 以上）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "University of Miami Intensive English Program (IEP，密集英语项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言未达竞争性分数者的官方语言通道：官方 FAQ 明确『本科招生办不发放有条件录取（does not grant conditional admission）』，但学术合格的申请者可在一年内完成 IEP 第 5 级（Level 5，成绩 70% 以上）后，获得下一学年入学的录取；申请时必须已提交官方 TOEFL/IELTS/DET 成绩，逾期未完成则撤销录取。官网未公布 IEP 入学的最低语言分数。"
+        }
+      ]
+    },
+    "source": [
+      "https://admissions.miami.edu/undergraduate/application-process/admission-requirements/english-proficiency-requirements/index.html",
+      "https://admissions.miami.edu/undergraduate/application-process/admission-requirements/testing-policy/index.html",
+      "https://bulletin.miami.edu/general-university-information/undergraduate-policies-and-procedures/admission/undergraduate-international-admission/",
+      "https://admissions.miami.edu/undergraduate/about/FAQs/international-applicants/",
+      "https://www.miami.edu/admission-information/undergraduate/"
+    ]
+  },
+  {
+    "id": "iu",
+    "nameCn": "印第安纳大学伯明顿分校",
+    "nameEn": "Indiana University Bloomington",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "布卢明顿",
+    "provinceCn": "印第安纳州",
+    "qs": 360,
+    "qsLabel": "QS 360",
+    "qsDisplay": "360",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 55,
+    "founded": 1820,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#990000",
+      "shape": "building"
+    },
+    "city": "布卢明顿",
+    "province": "印第安纳州",
+    "campuses": [],
+    "strengths": [
+      "商科",
+      "公共事务与公共管理",
+      "音乐",
+      "信息学与计算机",
+      "教育学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未给出中国学生的最低均分百分比，官方口径为「我们的学生高中成绩相当于 B 平均或以上（Our students have the equivalent of a B average or higher in secondary school）」；成绩持续高于平均或稳步上升者更受青睐，而最近一学期成绩偏低或课程强度不足常导致拒录。按契约不把「B average」折算成 85 等具体百分数，gpaMin 记 null。学术要求：需完成至少 34 个学分（或学期）的大学预科课程——英语/母语 8 学分（4 年，含文学、语法、写作）、数学 7 学分（3.5 年，含代数 4、几何 2、另 1 学分预微积分/三角/微积分）、社科 6 学分（3 年）、科学 6 学分（3 年，含至少 4 学分即 2 年实验科学）、第二外语 4 学分（2 年）、其他预科课程 3 学分以上。语言：国际本科生必须证明英语能力（两年内有效），可选 TOEFL iBT 79（纸考 550；TOEFL ITP+ China 543）、IELTS 6.5、Duolingo 115、Cambridge English 176、PTE 53、MET 53、SAT EBRW 560、ACT English 21，或完成 IU 密集英语项目 IEP 第 7 级，或提交课程类成绩——AP English and Composition / AP Literature and Composition 3 分以上、IB HL 英语 A 4 分以上、GCE A-Level 英语第一语言 A/B/C。SAT/ACT 为 test-optional（可不提交，提交则采用拼分 Superscore）。",
+      "ielts": 6.5,
+      "ieltsSub": null,
+      "ieltsSubNote": "",
+      "toefl": 79,
+      "sat": "optional",
+      "ap": "direct",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "Intensive English Program (IEP，IU 密集英语项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "IU 官方认可的语言通道：完成 IEP 最高级 Level 7 即可免除国际本科入学的英语考试成绩要求；IEP 共 7 级、每级每周 20–25 课时，入学有分级测试，官网未对 IEP 入学设定最低雅思/托福分数。适合学术达标但语言未达直录线（IELTS 6.5 / TOEFL 79）的学生。"
+        }
+      ]
+    },
+    "source": [
+      "https://bloomington.iu.edu/admissions/apply/international/english-proficiency.html",
+      "https://bloomington.iu.edu/admissions/apply/international/freshman/admission-standards.html",
+      "https://admissions.indiana.edu/apply/freshman/ap-exam-credit.html",
+      "https://linguistics.indiana.edu/intensive-english-program/program/index.html",
+      "https://admissions.indiana.edu/test-optional/index.html"
+    ]
+  },
+  {
+    "id": "vpi",
+    "nameCn": "弗吉尼亚理工大学",
+    "nameEn": "Virginia Polytechnic Institute and State University",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "布莱克斯堡",
+    "provinceCn": "弗吉尼亚州",
+    "qs": 366,
+    "qsLabel": "QS 366",
+    "qsDisplay": "366",
+    "qsRange": null,
+    "qsTie": false,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 56,
+    "founded": 1872,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#630031",
+      "shape": "blocks"
+    },
+    "city": "布莱克斯堡",
+    "province": "弗吉尼亚州",
+    "campuses": [],
+    "strengths": [
+      "工业与系统工程",
+      "土木工程",
+      "环境工程",
+      "航空航天工程",
+      "机械工程",
+      "计算机科学"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未公布最低均分线；官方口径是「多数被录取的学生完成了超出最低要求的课程，且 GPA 至少达到 B+（Most students who are selected for admission have completed more than the minimum requirements and have at least a B+ grade point average）」，按契约不折算为百分数，gpaMin 记 null。最低学术要求为课程门类：3 个单位数学（含代数 I、代数 II）、2 个单位实验科学（生物/化学/物理任选）、其余学术课程单位（强烈建议外语）；部分专业要求额外 1 年高阶数学或实验科学。需提交 9–11 年级全部课程与成绩，以及 12/13 年级在读课程与任何预估考试结果（可用 STARS 自报系统或成绩单复印件）。语言：母语非英语者不论国籍都须提交以下之一并达到最低分——TOEFL iBT 80（2026-01-21 前旧制；新制 1–6 分制为 4.5）且各单项不低于 16、IELTS 6.5 且各单项不低于 6.5、PTE 59、Duolingo 115、Cambridge English 176、SAT EBRW 550、ACT English 24、IGCSE/GCSE/GCE 英语第一语言 A/B/C 或 6–9、IB 英语 A（语言与文学）5 分以上；成绩两年内有效；不接受 TOEFL MyBest 拼分、TOEFL Essentials、TOEFL ITP Plus。SAT/ACT 对国际申请者不作要求（Optional）。AP 不作为录取依据，仅用于入校后换学分，最多可换 38 学分；官方 AP 换学分表中多数科目最低 3 分即可（部分科目需 4 或 5 分）。",
+      "ielts": 6.5,
+      "ieltsSub": 6.5,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": 3,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "AdvantageVT (弗吉尼亚理工国际生桥梁/国际大一项目，由语言与文化学院 VTLCI 运营)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "官方《国际招生指南》列出的 AdvantageVT 三档时长：3 学期（IELTS 5.5 且各单项不低于 5.5）、2 学期（IELTS 6.0 且各单项不低于 6.0）、1 学期（IELTS 6.5 且各单项不低于 6.0），另有 TOEFL、PTE、Duolingo、Cambridge 的对应门槛；覆盖 100 多个本科专业，学生读完并达到成绩要求后进入学位课程。适合语言或学术准备未达直录线的国际生（含 A-Level、普高背景）；该项目另有独立的 GPA 门槛（官方指南表格排版不清，未能可靠辨认具体数值，以校方为准）。"
+        },
+        {
+          "name": "Virginia Tech Language and Culture Institute (VTLCI，语言与文化学院英语项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "官方国际招生要求页写明：语言未达直录要求但其他录取条件合格的学生，可先入读 VTLCI 语言项目，达到所需语言水平后即被授予正式学位生（regular degree-seeking student）录取；官网未公布该语言项目本身的最低雅思分数。"
+        }
+      ]
+    },
+    "source": [
+      "https://vt.edu/admissions/international/requirements.html",
+      "https://lci.vt.edu/content/dam/lci_vt_edu/Intl-Admissions-Guide-25.pdf",
+      "https://www.registrar.vt.edu/content/dam/registrar_vt_edu/documents/Updates/ap_ib_clep/APCredit2025.pdf"
+    ]
+  },
+  {
+    "id": "uic",
+    "nameCn": "伊利诺伊大学芝加哥分校",
+    "nameEn": "University of Illinois Chicago",
+    "region": "us",
+    "countryCn": "美国",
+    "cityCn": "芝加哥",
+    "provinceCn": "伊利诺伊州",
+    "qs": 370,
+    "qsLabel": "QS =370",
+    "qsDisplay": "=370",
+    "qsRange": null,
+    "qsTie": true,
+    "qsChange": null,
+    "qsScore": null,
+    "nationalRank": 57,
+    "founded": 1982,
+    "type": "公立研究型",
+    "crest": {
+      "color": "#001E62",
+      "shape": "building"
+    },
+    "city": "芝加哥",
+    "province": "伊利诺伊州",
+    "campuses": [],
+    "strengths": [
+      "健康科学",
+      "工程与技术",
+      "城市规划与公共管理",
+      "社会科学",
+      "商科"
+    ],
+    "require": {
+      "gpa": null,
+      "gpaNote": "官网未设国际生统一最低均分线，采用整体评估（holistic review）。官方公布的 Test-Optional 录取中位区间（未加权 4.0 制）按学院分别为：应用健康科学 3.2–3.7、建筑/设计与艺术 3.2–3.8、商科 3.2–3.7、教育 3.0–3.6、工程 3.3–3.8、文理 3.3–3.7、护理 3.6–4.0、城市规划与公共事务 2.9–3.6、公共卫生 3.1–3.5；官网给的是 4.0 制 GPA 区间，按契约不换算成百分制，gpaMin 记 null。语言要求适用于全体申请者：可用 TOEFL iBT 80（2026-01-21 起新制 1–6 分制为 4.5）且阅读 19/听力 17/口语 20/写作 21，或 IELTS Academic 6.5 且阅读/听力/口语/写作各 6.0，或 PTE Academic 54（阅读 51/听力 47/口语 53/写作 56）；成绩两年内有效；部分专业与学院要求更高分。2026 官方本科语言表格未列出 Duolingo（校方说明 Duolingo 仅供研究生、且自 Fall 2027 起接受），故本档不填 DET。若在英语为唯一官方语言的国家完成至少 2 年全日制中学或大学学习，或有该国 1 年以上全职工作证明（需雇主信），可免语言成绩；此外招生主任与院长可基于 ACT/SAT/AP/IB 或 GCSE/IGCSE 成绩个案批准豁免。SAT/ACT 为 Test-Optional：自 2027 申请周期起申请人不再需要选择测试方案，提交的分数仅在有利于申请时才被纳入评估。",
+      "ielts": 6.5,
+      "ieltsSub": 6,
+      "ieltsSubNote": "",
+      "toefl": 80,
+      "sat": "optional",
+      "ap": "credit_only",
+      "apMin": null,
+      "apCoursesMin": null,
+      "pathways": [
+        {
+          "name": "UIC Global Academic Accelerator Program (AAP，学术加速器项目)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "UIC 官方国际通道 UIC Global（与 Shorelight 合作）的 2 学期课程：GPA 2.5、IELTS 5.5（各单项不低于 5.0）或 TOEFL 68（各单项不低于 14）或 Cambridge B2 First 单项不低于 155；完成后达到 GPA 2.5 并修完 English 160，即可进入多数学院的学位课程。适合语言差半档的国际生。"
+        },
+        {
+          "name": "UIC Global Extended Accelerator Program (EAP，扩展加速器项目)",
+          "type": "intl_year1",
+          "ielts": 5,
+          "desc": "同一通道的 3 学期加长版：GPA 2.5、IELTS 5.0（各单项不低于 4.5）或 TOEFL 60（各单项不低于 12）或 Cambridge B2 First 单项不低于 150；完成后达到 GPA 2.5 并修完 English 160 可升学。适合语言基础较弱、需要更长适应期的国际生。"
+        }
+      ]
+    },
+    "source": [
+      "https://catalog.uic.edu/ucat/admissions-registration-finances/admissions/",
+      "https://www.uic.edu/depts/oar/undergrad/freshman_requirements_undergrad.html",
+      "http://gppa.uic.edu/prospective-students/prospective-students-application-guide/",
+      "https://global.uic.edu?p=95/"
+    ]
+  }
+]

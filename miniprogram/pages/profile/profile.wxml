@@ -1,0 +1,123 @@
+<!-- ============================================================
+     个人资料（10）
+     头像 / 昵称 / 邮箱 / 年级 / 城市 + 只读账号信息
+     未登录不设墙：页面可看、可填，保存按运行模式如实反馈
+     ⚠️ 所有文案取自内容层 c.profile，本文件不写死任何一个字
+     ⚠️ 绑定表达式里不出现函数调用（WXML 求值不出来且不报错），
+        需要合成的数据一律在 profile.js 里预先算好
+     ============================================================ -->
+<view class="page page--cta prof">
+  <nav-bar title="{{c.nav.profile}}" back="{{true}}" fallback-url="/pages/account/account" />
+
+  <view class="prof__body">
+    <!-- ============ 头像 ============
+         微信 2022 年回收了 getUserProfile，头像只能由用户经
+         open-type="chooseAvatar" 主动提供，这是唯一合法途径 -->
+    <button class="av" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+      <view class="av__box">
+        <image wx:if="{{form.avatarUrl}}" class="av__img" src="{{form.avatarUrl}}" mode="aspectFill" />
+        <view wx:else class="av__ph">
+          <icon name="tab-me" size="{{34}}" color="mute" />
+        </view>
+        <view class="av__edit">
+          <icon name="plus" size="{{11}}" color="white" />
+        </view>
+      </view>
+      <text class="av__hint">{{avatarUploading ? c.profile.avatarUploading : c.profile.avatarHint}}</text>
+    </button>
+
+    <!-- ============ 未登录引导 ============
+         不阻断填写：本地模式下这里的资料会真的存到本机。
+         登录入口由用户主动点击触发，符合微信登录规范 -->
+    <view wx:if="{{!signedIn}}" class="nudge">
+      <view class="nudge__body">
+        <text class="nudge__title">{{c.profile.notSignedInTitle}}</text>
+        <text class="nudge__sub">{{c.profile.notSignedInSub}}</text>
+      </view>
+      <button class="btn btn--primary nudge__btn" bindtap="onSignIn">
+        <icon name="wechat" size="{{18}}" color="white" style="margin-right:6px" />
+        <text>{{c.profile.signIn}}</text>
+      </button>
+    </view>
+
+    <!-- ============ 基本信息 ============
+         ⚠️ 行间分割线用显式的 `frow--sep`，**不用** `.frow + .frow` 相邻选择器：
+            「年级」那一行被 <picker> 包着，相邻关系被打断，选择器会静默失效
+            （表现是那两行凭空少一条线）。新增字段行时记得给非首行加 frow--sep -->
+    <text class="prof__group">{{c.profile.sections.basic}}</text>
+    <view class="card prof__card">
+      <view class="frow">
+        <text class="frow__label">{{c.profile.fields.nickname}}</text>
+        <input
+          class="frow__input"
+          type="nickname"
+          value="{{form.nickname}}"
+          maxlength="{{c.profile.nicknameMax}}"
+          placeholder="{{c.profile.nicknamePlaceholder}}"
+          placeholder-class="frow__ph"
+          bindinput="onNicknameInput"
+        />
+      </view>
+
+      <view class="frow frow--sep">
+        <text class="frow__label">{{c.profile.fields.email}}</text>
+        <input
+          class="frow__input"
+          type="text"
+          value="{{form.email}}"
+          maxlength="{{c.profile.emailMax}}"
+          placeholder="{{c.profile.emailPlaceholder}}"
+          placeholder-class="frow__ph"
+          bindinput="onEmailInput"
+        />
+      </view>
+
+      <picker mode="selector" range="{{grades}}" value="{{gradeIndex}}" bindchange="onGradeChange">
+        <view class="frow frow--sep">
+          <text class="frow__label">{{c.profile.fields.grade}}</text>
+          <view class="frow__right">
+            <text class="frow__value {{form.grade ? '' : 'frow__value--ph'}}">{{form.grade || c.profile.gradeUnset}}</text>
+            <icon name="chevron-right" size="{{16}}" color="line" style="margin-left:6px" />
+          </view>
+        </view>
+      </picker>
+
+      <view class="frow frow--sep">
+        <text class="frow__label">{{c.profile.fields.city}}</text>
+        <input
+          class="frow__input"
+          type="text"
+          value="{{form.city}}"
+          maxlength="{{c.profile.cityMax}}"
+          placeholder="{{c.profile.cityPlaceholder}}"
+          placeholder-class="frow__ph"
+          bindinput="onCityInput"
+        />
+      </view>
+    </view>
+
+    <!-- ============ 账号信息（只读） ============
+         仅在远端模式下渲染：本地档案的 id 是 local-<时间戳>，
+         摆出来会让人误以为「我已经有账号了」 -->
+    <block wx:if="{{hasMeta}}">
+      <text class="prof__group">{{c.profile.sections.account}}</text>
+      <view class="card prof__card">
+        <view wx:for="{{meta}}" wx:key="key" class="mrow">
+          <text class="mrow__label">{{item.label}}</text>
+          <text class="mrow__value">{{item.value}}</text>
+        </view>
+      </view>
+    </block>
+
+    <!-- 资料存在哪里，如实告知，不含糊 -->
+    <text class="prof__foot">{{remote ? c.profile.remoteTip : c.profile.localTip}}</text>
+  </view>
+
+  <!-- ============ 底部保存 ============
+       本页是二级页、没有标签栏，因此用 .cta-bar 而不是 .cta-bar--tab -->
+  <view class="cta-bar">
+    <button class="btn btn--primary {{saving ? 'btn--disabled' : ''}}" bindtap="onSave">
+      <text>{{saving ? c.profile.saving : c.profile.save}}</text>
+    </button>
+  </view>
+</view>

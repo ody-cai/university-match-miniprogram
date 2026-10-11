@@ -1,0 +1,336 @@
+/* ==================================================================
+   吉祥物
+   几何基准 132（设计稿尺寸），全部换算成百分比以便任意缩放。
+   动画参数取自 Bloub 官方 measurements：
+     静止眨眼 0.18s ｜ 形变前强制眨眼 0.2s ｜ 缓动 exponential ease-out
+   ================================================================== */
+
+.mascot {
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* 外发光：钴蓝径向，营造浮起感（与「不浮动」不冲突，这是静态光晕） */
+.mascot--glow::before {
+  content: "";
+  position: absolute;
+  left: -29%;
+  top: -29%;
+  width: 158%;
+  height: 158%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 100, 224, 0.16) 0%,
+    rgba(0, 100, 224, 0.05) 55%,
+    rgba(0, 100, 224, 0) 72%
+  );
+  pointer-events: none;
+}
+
+/* 投影独立于形体：形变时不跟着位移，保持「贴地」的观感 */
+.mascot__shadow {
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  bottom: -4%;
+  height: 12%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(0, 71, 159, 0.28) 0%,
+    rgba(0, 71, 159, 0) 70%
+  );
+  filter: blur(2px);
+}
+
+/* ---------------- 主体：正圆 + 钴蓝顶到底渐变 ---------------- */
+.mascot__body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #2e86ee 0%, #0064e0 55%, #00479f 100%);
+  box-shadow: 0 14px 32px -6px rgba(0, 100, 224, 0.3);
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+
+/* ---------------- 视线层：整体平移 = 视线漂移 ---------------- */
+.mascot__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  will-change: transform;
+}
+
+/* ---------------- 眼睛：倾斜胶囊，倾角 26°（实测值，勿改成 //） ----------------
+ * 宽 15 / 高 30 / 距顶 47，以 132 为基准换算：
+ *   宽 11.36%  高 22.73%  顶部 35.6%
+ *   左眼 left 32.95%   右眼 left 55.68%（两眼中距 30）
+ */
+.mascot__eye {
+  position: absolute;
+  top: 35.6%;
+  width: 11.36%;
+  height: 22.73%;
+  border-radius: 100px;
+  background: #ffffff;
+  transform: rotate(26deg);
+  transform-origin: 50% 50%;
+  will-change: transform;
+}
+.mascot__eye--l {
+  left: 32.95%;
+}
+.mascot__eye--r {
+  left: 55.68%;
+}
+
+/* ==================================================================
+   idle —— 待机
+   要点：身体几乎不动（仅 0.5% 呼吸），生气来自视线漂移 + 不定时眨眼
+   ================================================================== */
+.mascot--idle .mascot__body {
+  animation: mascot-breath 4.4s ease-in-out infinite;
+}
+.mascot--idle .mascot__face {
+  animation: mascot-gaze 8.4s ease-in-out infinite;
+}
+.mascot--idle .mascot__eye {
+  /* 8s 一轮，眨眼占 2.25%（= 0.18s） */
+  animation: mascot-blink 8s steps(1, end) infinite;
+}
+
+@keyframes mascot-breath {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.005, 1.005);
+  }
+}
+
+/* 视线漂移：在四个位置之间缓慢游走，幅度约 ±2.5%（相对直径） */
+@keyframes mascot-gaze {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  18% {
+    transform: translate(2.4%, -1.4%);
+  }
+  38% {
+    transform: translate(1%, 2%);
+  }
+  58% {
+    transform: translate(-2.2%, 0.6%);
+  }
+  78% {
+    transform: translate(-0.6%, -1.6%);
+  }
+}
+
+/* 眨眼：一次 0.18s。steps 让开合是瞬时切换，接近真人眨眼而非渐变 */
+@keyframes mascot-blink {
+  0%,
+  40% {
+    transform: rotate(26deg) scaleY(1);
+  }
+  40.01%,
+  42.25% {
+    transform: rotate(26deg) scaleY(0.08);
+  }
+  42.26%,
+  84% {
+    transform: rotate(26deg) scaleY(1);
+  }
+  84.01%,
+  86.25% {
+    transform: rotate(26deg) scaleY(0.08);
+  }
+  86.26%,
+  100% {
+    transform: rotate(26deg) scaleY(1);
+  }
+}
+
+/* ==================================================================
+   search —— 搜索中
+   形体在三种形态间循环，**每次形变都落在眨眼期间**，所以看不出「跳变」
+   ================================================================== */
+.mascot--search .mascot__body {
+  animation: mascot-morph 2.7s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+.mascot--search .mascot__face {
+  animation: mascot-gaze-fast 3.6s ease-in-out infinite;
+}
+.mascot--search .mascot__eye {
+  animation: mascot-blink-morph 2.7s steps(1, end) infinite;
+}
+
+/* 形变：圆形 → 横向压扁 → 纵向拉伸 → 回到圆形
+ * 关键时刻（35% / 70%）与下面的眨眼区间对齐，形变被眨眼遮住 */
+@keyframes mascot-morph {
+  0%,
+  26% {
+    transform: scale(1, 1);
+  }
+  36% {
+    transform: scale(1.15, 0.87);
+  }
+  60% {
+    transform: scale(1.11, 0.9);
+  }
+  70% {
+    transform: scale(0.89, 1.14);
+  }
+  92% {
+    transform: scale(0.93, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes mascot-gaze-fast {
+  0%,
+  100% {
+    transform: translate(-2%, -1%);
+  }
+  25% {
+    transform: translate(2.6%, 1.4%);
+  }
+  50% {
+    transform: translate(1.8%, -1.8%);
+  }
+  75% {
+    transform: translate(-1.6%, 2%);
+  }
+}
+
+/* 眨眼区间与形变时刻对齐：27.4%~34.8%（≈0.2s）、61.4%~68.8%、94%~100% */
+@keyframes mascot-blink-morph {
+  0%,
+  27.4% {
+    transform: rotate(26deg) scaleY(1);
+  }
+  27.41%,
+  34.8% {
+    transform: rotate(26deg) scaleY(0.08);
+  }
+  34.81%,
+  61.4% {
+    transform: rotate(26deg) scaleY(1);
+  }
+  61.41%,
+  68.8% {
+    transform: rotate(26deg) scaleY(0.08);
+  }
+  68.81%,
+  94% {
+    transform: rotate(26deg) scaleY(1);
+  }
+  94.01%,
+  100% {
+    transform: rotate(26deg) scaleY(0.08);
+  }
+}
+
+/* ==================================================================
+   celebrate —— 完成
+   短促的两次压缩，仍不过冲（ease-out 收尾）
+   ================================================================== */
+.mascot--celebrate .mascot__body {
+  animation: mascot-celebrate 1.1s cubic-bezier(0.16, 1, 0.3, 1) 2;
+}
+.mascot--celebrate .mascot__eye {
+  animation: mascot-blink 1.1s steps(1, end) 2;
+}
+
+@keyframes mascot-celebrate {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.12, 0.9);
+  }
+  42% {
+    transform: scale(0.94, 1.08);
+  }
+  64% {
+    transform: scale(1.05, 0.96);
+  }
+  84% {
+    transform: scale(0.99, 1.01);
+  }
+}
+
+/* ==================================================================
+   表情（mood）—— 与 motion 正交：motion 管形体，mood 只管脸
+   ------------------------------------------------------------------
+   ⚠️ 三条约束，改动前必读：
+
+   1) **默认态在这里不写任何规则**。`mascot--default` 没有任何样式，
+      直接继承上面 `.mascot__eye` 的基础胶囊形 —— 那是首页 / 条款页 /
+      登录页 / 匹配中的现有外观。一旦在这里覆盖它，四个页面会一起变样。
+
+   2) **表情态必须 `animation: none` 关掉眨眼**。因为 `@keyframes mascot-blink`
+      里写死了 `rotate(26deg)`（那是为倾斜胶囊眼定制的量），
+      套到弧形眼上会把弧掰斜、看着像坏了。
+      关掉眨眼不会变呆：生气仍来自 face 层的视线漂移 + body 层的呼吸。
+
+   3) 弧形用「单边 border + 大圆角」实现：只留 border-top 即 ∩，
+      只留 border-bottom 即 ∪。不需要任何图片资源，
+      也就不会踩「真机不支持 CSS SVG data URI」那个坑。
+   ================================================================== */
+
+/* 嘴巴默认不显示，仅 happy / sad 打开 */
+.mascot__mouth {
+  display: none;
+  position: absolute;
+  left: 50%;
+  width: 17%;
+  height: 8.5%;
+  margin-left: -8.5%;
+  top: 63%;
+}
+
+/* ---------------- happy：弯月眼 ∩∩ + 微笑嘴 ∪（反馈提交成功） ---------------- */
+.mascot--happy .mascot__eye {
+  animation: none;
+  background: transparent;
+  height: 8%;
+  top: 42%;
+  transform: none;
+  border-top: 3px solid #fff;
+  border-radius: 100px 100px 0 0;
+}
+.mascot--happy .mascot__mouth {
+  display: block;
+  border-bottom: 3px solid #fff;
+  border-radius: 0 0 100px 100px;
+}
+
+/* ---------------- sad：下垂眼 ∪∪ + 撇嘴 ∩（反馈提交失败） ---------------- */
+.mascot--sad .mascot__eye {
+  animation: none;
+  background: transparent;
+  height: 8%;
+  top: 44%;
+  transform: none;
+  border-bottom: 3px solid #fff;
+  border-radius: 0 0 100px 100px;
+}
+.mascot--sad .mascot__mouth {
+  display: block;
+  border-top: 3px solid #fff;
+  border-radius: 100px 100px 0 0;
+  top: 67%;
+}

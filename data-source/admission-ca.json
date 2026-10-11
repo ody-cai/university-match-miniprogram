@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "region": "ca",
+    "collectedAt": "2026-09-15",
+    "method": "官方招生网站人工采集",
+    "disclaimer": "录取要求以各校官网最新公布为准，此处为采集时点快照",
+    "note": "TOEFL 口径：ETS 自 2026-01-21 起将托福 iBT 改为 1–6 分制（0.5 分一档），并设两年过渡期在成绩单上同时给出 0–120 可比分。本分片 toefl 字段统一存 0–120 可比分，与既有数据口径一致；若该校官网已改用新制（如萨斯喀彻温大学主展示 4.5、旧制 86 移入注释），对应说明写在 gpaNote 中。toefl 字段目前不在小程序界面上展示，仅供后续功能使用。",
+    "checkedAt": "2026-09-15"
+  },
+  "schools": [
+    {
+      "id": "mcgill",
+      "nameEn": "McGill University",
+      "nameCn": "麦吉尔大学",
+      "qs2027": 30,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中三年成绩单 + 会考成绩（多数A/B）+ 高考成绩（须达本省一本线/特招线，热门专业更高）；未参加高考可用SAT/ACT替代。无统一官方最低均分；第三方建议平时均分85%–90%+，热门专业90%+。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0（教育/商科建议7.0）",
+      "toefl": 90,
+      "satRequired": "not_required",
+      "apAccepted": "unknown",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://www.mcgill.ca/undergraduate-admissions/apply/english-proficiency",
+        "https://www.mcgill.ca/admissions/international"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "utoronto",
+      "nameEn": "University of Toronto",
+      "nameCn": "多伦多大学",
+      "qs2027": 32,
+      "gpaMin": null,
+      "gpaNote": "中国普高：会考成绩（Huikao）+ 高考成绩（Gaokao，申请专业先修科目须达标）；若无高考须说明并提交对应先修科目的AP等成绩。无统一最低均分，按专业竞争录取。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 100,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "International Foundation Program (IFP)",
+          "type": "intl_year1",
+          "ielts": 5.0,
+          "desc": "国际预科+英语强化，完成后进入本科一年级；针对英语未达标但学术达标的学生。"
+        }
+      ],
+      "source": [
+        "https://future.utoronto.ca/apply/english-language-requirements",
+        "https://future.utoronto.ca/transfer-credits-high-school-students"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "ubc",
+      "nameEn": "University of British Columbia",
+      "nameCn": "不列颠哥伦比亚大学",
+      "qs2027": 45,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考/学业水平测试成绩 + 高考成绩（建议一本线以上）。无统一最低均分，按专业竞争录取；AP/IB可与高中课程合并计算录取均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 90,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Vantage One",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "国际学生本科一年级桥梁课程，含英语学术训练，完成后转入常规二年级。"
+        }
+      ],
+      "source": [
+        "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/",
+        "https://vancouver.calendar.ubc.ca/admissions/applicants-international-baccalaureate-and-advanced-placement-courses"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "ualberta",
+      "nameEn": "University of Alberta",
+      "nameCn": "阿尔伯塔大学",
+      "qs2027": 96,
+      "gpaMin": null,
+      "gpaNote": "中国普高：三年官方成绩单 + 会考成绩（多数A/B）；高考非强制但提交可加分。无统一最低均分，按专业竞争录取（官方称 competitive admission average，各专业每年浮动）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 90,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "Bridging Program (BP)",
+          "type": "language",
+          "ielts": 5.0,
+          "desc": "英语未达直录可入 bridging；Stage1 IELTS 5.0 / Stage2 5.5，完成后进入常规专业。"
+        }
+      ],
+      "source": [
+        "https://calendar.ualberta.ca/content.php?catoid=56&navoid=17355",
+        "https://www.ualberta.ca/admissions/international/resources/ualberta-and-your-country/china.html"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "uwaterloo",
+      "nameEn": "University of Waterloo",
+      "nameCn": "滑铁卢大学",
+      "qs2027": 113,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议一本线以上）。按专业竞争录取，无统一最低均分；数学/计算机等热门专业要求更高。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "写作/口语6.5，阅读/听力6.0",
+      "toefl": 90,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "BASE (Bridge to Academic Success in English)",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语桥梁课程，完成后进入本科；工程等部分专业不授AP/IB转学分。"
+        }
+      ],
+      "source": [
+        "https://uwaterloo.ca/future-students/admissions/english-language-requirements",
+        "https://uwaterloo.ca/find-out-more/admissions/ap-transfer-credit-chart"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "uwo",
+      "nameEn": "Western University",
+      "nameCn": "韦仕敦大学（西安大略大学）",
+      "qs2027": 142,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩；高考通常需提交（建议一本线以上）。各专业录取均分不同，无统一最低值。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 83,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "English Boost Program",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语强化，针对英语接近直录要求的学生，可同步修读部分学术课程。"
+        }
+      ],
+      "source": [
+        "https://welcome.uwo.ca/next-steps/requirements/english-language-proficiency.html",
+        "https://welcome.uwo.ca/next-steps/requirements/international-high-school/advanced-placement.html"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "umontreal",
+      "nameEn": "Université de Montréal",
+      "nameCn": "蒙特利尔大学",
+      "qs2027": 162,
+      "gpaMin": null,
+      "gpaNote": "以法语授课为主；申请法语授课专业须达到法语B2（如TFI 605+、DELF/DALF B2、TCF B2）。申请英语授课专业须提供英语成绩（详见英语要求）。无统一最低均分。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "not_required",
+      "apAccepted": "unknown",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Programme intensif de français universitaire (PIFU)",
+          "type": "language",
+          "ielts": null,
+          "desc": "法语强化课程，帮助未达法语要求的学生提升并进入法语授课专业。"
+        }
+      ],
+      "source": [
+        "https://admission.umontreal.ca/"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "mcmaster",
+      "nameEn": "McMaster University",
+      "nameCn": "麦克马斯特大学",
+      "qs2027": 174,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议一本线以上）。按专业竞争录取，无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于5.5",
+      "toefl": 86,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "MELD (English Language Diploma) / STEP",
+          "type": "language",
+          "ielts": 5.0,
+          "desc": "英语未达直录可入语言文凭/英语强化课程，完成后转入常规专业。"
+        }
+      ],
+      "source": [
+        "https://future.mcmaster.ca/admission/language/",
+        "https://future.mcmaster.ca/transfer-credits-highschool"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "queens",
+      "nameEn": "Queen's University",
+      "nameCn": "女王大学",
+      "qs2027": 179,
+      "gpaMin": null,
+      "gpaNote": "中国普高：应届生通常不强制高考，往届生须提交高考（一本线以上）；均需高中成绩单 + 会考成绩。按专业竞争录取，无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 88,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "QBridge (English for Academic Purposes)",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语学术预备桥梁，完成后进入本科一年级。"
+        }
+      ],
+      "source": [
+        "https://www.queensu.ca/admission/about-applying/english-language-requirements",
+        "https://www.queensu.ca/admission/applying/transfer-credits/high-school-transfer-credits.advanced-placement.science"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "uottawa",
+      "nameEn": "University of Ottawa",
+      "nameCn": "渥太华大学",
+      "qs2027": 228,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考/高考成绩（建议一本线以上）。双语大学（英/法），按专业竞争录取，无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "写作不低于6.5",
+      "toefl": 86,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "English Intensive Program (EIP)",
+          "type": "language",
+          "ielts": 5.0,
+          "desc": "英语强化课程，完成后满足英语要求进入本科。"
+        }
+      ],
+      "source": [
+        "https://www.uottawa.ca/study/undergraduate-studies/language-requirements",
+        "https://www.uottawa.ca/study/undergraduate-studies/transfer-credits"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "ucalgary",
+      "nameEn": "University of Calgary",
+      "nameCn": "卡尔加里大学",
+      "qs2027": 249,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考/高考成绩。按专业竞争录取，无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 86,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "English Language Foundation / Conditional Admission",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语未达直录可获有条件录取并先修英语课程。"
+        }
+      ],
+      "source": [
+        "https://www.ucalgary.ca/future-students/undergraduate/elp-exempt-countries",
+        "https://ucalgary.ca/future-students/undergraduate/transfer-credit/high-school"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "dal",
+      "nameEn": "Dalhousie University",
+      "nameCn": "戴尔豪斯大学",
+      "qs2027": 298,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议一本线以上）。按专业竞争录取，无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 90,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "English for Academic Purposes (EAP)",
+          "type": "language",
+          "ielts": 5.0,
+          "desc": "英语学术预备课程，完成后满足英语要求进入本科。"
+        }
+      ],
+      "source": [
+        "https://www.dal.ca/admissions/undergraduate/english-requirements.html",
+        "https://www.dal.ca/admissions/undergraduate/specific-course-requirements/ap.html"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "sfu",
+      "nameEn": "Simon Fraser University",
+      "nameCn": "西蒙菲莎大学",
+      "qs2027": 312,
+      "gpaMin": null,
+      "gpaNote": "中国普高：主要审高中平时成绩（均分建议85%+）+ 会考成绩；高考建议一本线以上可加分。无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 88,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "Fraser International College (FIC)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "桥梁学院，完成UTP Stage II后转入SFU二年级。"
+        }
+      ],
+      "source": [
+        "https://www.sfu.ca/students/admission/admission-requirements/english-language-requirement.html",
+        "https://www.sfu.ca/students/admission/admission-requirements/advanced-placement.html"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "york",
+      "nameEn": "York University",
+      "nameCn": "约克大学",
+      "qs2027": 322,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高中成绩单 + 会考成绩 + 高考成绩（建议二本线以上，一本更具竞争力）。按专业竞争录取，无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 88,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "YUELI (York University English Language Institute)",
+          "type": "language",
+          "ielts": 5.0,
+          "desc": "英语语言课程，完成后满足英语要求进入本科。"
+        }
+      ],
+      "source": [
+        "https://futurestudents.yorku.ca/requirements/language-tests",
+        "https://futurestudents.yorku.ca/requirements/advancedplacement"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "uvic",
+      "nameEn": "University of Victoria",
+      "nameCn": "维多利亚大学",
+      "qs2027": 370,
+      "gpaMin": null,
+      "gpaNote": "中国普高：需高考成绩（建议500分以上/二本线，一本更具竞争力）+ 高中平时成绩（均分建议85%+）+ 会考合格。按专业竞争录取，无统一最低均分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于6.0",
+      "toefl": 88,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "University Admission Pathway (UAP) / University Pathway Program",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "英语学术桥梁课程，完成后进入本科。"
+        }
+      ],
+      "source": [
+        "https://www.uvic.ca/elr",
+        "https://www.uvic.ca/undergraduate/admissions/transfer-credit/index.php"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "saskatchewan",
+      "nameCn": "萨斯喀彻温大学",
+      "nameEn": "University of Saskatchewan",
+      "gpaMin": 70,
+      "gpaNote": "官网对中国学生未单列换算表，按一般高中直录口径：完成高三（Grade 12 standing 或同等学历），以五门12年级科目计算均分，最低 70%（原文 “Minimum average of 70% on five subject high school average”）。分学院差异：文理学院、农业与生物资源学院、教育学院、运动机能学（Kin/Ed）均为 70%；护理学（BScN 前置）、牙科卫生等为 75%；生物医学（BMSC）要求化学/生物/数学/物理每门至少 70% 且不允许缺科。该校未把高考列为硬性要求，官网申请材料只要求高中毕业与成绩单，未提及会考；AP 课程可替代高三必修科目，AP 成绩可折算为均分（5→96、4→86、3→80）参与录取评估。注意：达到最低分不等于录取，各学院按均分竞争排序（Engineering、Edwards 商学院等热门方向实际录取明显高于 70%）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6,
+      "toefl": 86,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "University of Saskatchewan Language Centre – English for Academic Purposes Level 4 (语言中心学术英语四级)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言中心 EAP 最高级（Level 4）结业即被视为满足 USask 英语能力要求；学术条件达标但英语不足者可申请 Language Centre 与六个直录学院（农业、文理、教育、Edwards 商学院、工程、运动机能学）的 joint admission（联合录取），先读语言再进入学位课程。"
+        },
+        {
+          "name": "University of Saskatchewan Transition Entrance Program – USTEP (过渡入学项目)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "面向五门30级科目均分 60.0%–69.9%、低于文理学院直录线（70%）的学生；先修最多18学分（含校内与校外授课点），均分达到 56% 后可继续留在文理学院正式修读学位。"
+        }
+      ],
+      "source": [
+        "https://admissions.usask.ca/requirements/english-language-proficiency.php",
+        "https://programstest.usask.ca/programs/2026-27-admission-requirements.php",
+        "https://admissions.usask.ca/requirements/ap.php"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "concordia",
+      "nameCn": "康考迪亚大学",
+      "nameEn": "Concordia University",
+      "gpaMin": null,
+      "gpaNote": "官网不用百分制最低线，而是按学院给「字母等第」门槛，因此 gpaMin 记 null。中国普通高中要求：完成高中三年课程并取得高中毕业证（普通高中毕业证书），官网明确「不要求高考、不要求会考」。分学院要求——文理学院：总平均 C+ 及以上（部分热门专业更高）；Gina Cody 工程与计算机科学学院：总平均 B- 及以上，且数学与理科 B- 及以上；John Molson 商学院：总平均 B 及以上，且数学 B 及以上；艺术学院：总平均 C+ 以上（多数专业需作品集或面试）；Computation Arts–Computer Science 要求总分至少 A-、数学至少 A-。官网给出百分制↔等第对照示例：90–100=A（含 A+/A-）、75–89=B（含 B+/B-）、60–74=C（含 C+/C-）、60 以下=D/F；若就读学校不使用字母等第，须随成绩单提交学校「评分系统」说明。注意：官网说明达标不代表录取，各专业实际 cut-off 随申请池浮动。",
+      "ieltsOverall": 6,
+      "ieltsSub": 5.5,
+      "toefl": 70,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Intensive English Language Program (IELP) / conditional admission (强化英语语言课程·有条件录取通道)",
+          "type": "language",
+          "ielts": null,
+          "desc": "英语未达直录线且其他条件符合时，可获得 DESTINATION 语言有条件录取，先在 Continuing Education 语言学院（CCE/CELI）读 IELP，在最高级 Advanced 2 取得 70% 及以上即满足康考迪亚英语要求（入学后仍须参加 ESL 分班测试）。官网说明该通道覆盖 Gina Cody 工程学院、John Molson 商学院及部分文理学院专业，并非所有专业都提供。"
+        }
+      ],
+      "source": [
+        "https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html",
+        "https://www.concordia.ca/admissions/undergraduate/zh/undergraduate/ugrad-requirements.html",
+        "https://www.concordia.ca/admissions/undergraduate/international.html",
+        "https://www.concordia.ca/admissions/undergraduate/international/asia-pacific.html",
+        "https://www.concordia.ca/content/dam/concordia/offices/registrar/docs/calendar/21-22/sec13.pdf"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "laval",
+      "nameCn": "拉瓦尔大学",
+      "nameEn": "Université Laval",
+      "gpaMin": null,
+      "gpaNote": "Laval 以法语授课为主，官网不公布统一的百分制最低均分，因此 gpaMin 记 null；录取「主要基于学业成绩优秀程度」，各专业另有门槛。学历口径（官网 China 页）：中国学生申请本科须持有 12 年教育的高中毕业证（Gāozhōng）并完成 1 年高等教育；若不满足，须先读「资格课程（qualifying courses）」，即 30 学分、跨两个学期的资格年（最多 6 学分可计入所选本科专业），且资格年只对非限额专业开放。官网未把高考（NCEE）或会考列为要求，也未给出分数换算。语言口径：非法语母语者（小学与中学非法语授课）申请时必须提交 TCF tout public（法语知识测试）成绩，成绩两年内有效、须由 ETS 直接送分；TCF 分数用于判定需补修的法语二外课程数量，各专业门槛不同（官网举例：Computer Science 要求 TCF-TP 必修部分 ≥331/699 且写作 ≥8/20；Architecture 要求 ≥400/699 且写作 ≥14/20）。绝大多数法语授课本科专业不要求雅思/托福；仅少数英语授课专业要求英语成绩（如英语文学与语言学专业要求 IELTS 6.5，阅读/听力/口语 ≥6.5、写作 ≥6.0，或 TOEFL iBT 85 且读听 ≥22、写说 ≥20）。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "unknown",
+      "apAccepted": "unknown",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "French Immersion Pathway (法语沉浸通道)",
+          "type": "language",
+          "ielts": null,
+          "desc": "面向母语非法语、已完成至少 12 年中小学教育并被非限额本科专业录取的学生：把法语二外课程嵌入本科学习，同时补修专业所需资格课程，帮助学生达到专业要求的法语水平；按法语起点不同，学制 4 至 6 年，法语二外课程学费有减免。申请时必须提交 TCF 成绩（未提交者按初学者处理）。"
+        },
+        {
+          "name": "Qualifying courses / qualifying year (资格补修课程·资格年)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "中国高中毕业为 12 年教育，未达魁省要求的 13 年（DCS 同等）学历，录取后须先完成 30 学分、为期两个学期的资格课程，其中最多 6 学分可计入所选本科专业；资格课程还用于补齐专业先修课与法语水平。仅适用于非限额（unlimited enrolment）专业，限额专业不接受带资格课程的录取。"
+        }
+      ],
+      "source": [
+        "https://www.ulaval.ca/en/ulaval-experience/international-applicants/academic-equivalence/applicants-from-china",
+        "https://www.ulaval.ca/en/admission/prepare-your-application/french-proficiency",
+        "https://www.ulaval.ca/en/ulaval-experience/plan-your-studies/admission-requirements",
+        "https://ulaval.ca/en/ulaval-experience/plan-your-studies/support-for-french-language-learning/french-immersion-pathway",
+        "https://www.ulaval.ca/etudes/programmes/baccalaureat-en-litteratures-et-linguistique-anglaises"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "windsor",
+      "nameCn": "温莎大学",
+      "nameEn": "University of Windsor",
+      "gpaMin": 70,
+      "gpaNote": "官网按申请人来源单列，对「来自加拿大与美国境外的高中申请人（International）」给出最低均分为 70%（原文 “Minimum Average: 70%”），并按专业不同：文科/社科/理科多数专业 70%（如 Criminology、History、Communication Media & Film、Biology、Chemistry、Environmental Science 均为 70%）；商科（Business Administration 及组合学位）73%，Co-op 方向 78%；工程类（General/Civil/Electrical/Environmental/Industrial）74%，且须为数学与理科（不含生物）均分 74%；Law and Politics 85%；Interdisciplinary Arts and Science 80%。各专业页面同时公布「Mean Average」（实际录取学生均分）约 76%–92%，可作为竞争性区间参考。材料要求：提交官方高中毕业证与高中成绩单（非英文须公证翻译）。往届生与应届生均不强制高考；官网 Senate 政策仅要求提交中学教育官方文件并载明所修科目与成绩。SAT/ACT 不要求（仅美国高中申请人被鼓励提交，用于补充材料）。各专业有高三先修课要求（如工程需 Advanced Functions、化学、物理；商科需一门高三数学）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 83,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "English Language Improvement Program (ELIP) (英语提升课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "共四个级别的强化学术英语，每级 12 周、每周 20 小时（每天 4 小时），提供线上（Brightspace）与线下两种模式，每年 1 月、5 月、9 月三次开课；完成 ELIP Level 3 且最终成绩 ≥75% 即满足温莎本科/研究生的英语要求。分班由剑桥式分级测试决定（有效语言考试成绩可辅助定级，12 个月内的成绩有效）。申请时不需要已有语言成绩。"
+        },
+        {
+          "name": "Conditional Admission via ELIP (ELIP 语言有条件录取)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "官网明确：申请时不必满足英语要求，对英语未达标者发放有条件录取信（conditional letter of admission），只要在开学前通过 ELIP Level 3 或其他方式满足英语要求即可进入学位课程。注意 ELIP 本身不保证被学位项目录取，仍须满足其余全部录取条件。"
+        }
+      ],
+      "source": [
+        "https://www.future.uwindsor.ca/program-admission-requirements-search/",
+        "https://www.uwindsor.ca/englishpathway",
+        "https://future.uwindsor.ca/apply-international",
+        "https://future.uwindsor.ca/transfer",
+        "https://www.uwindsor.ca/nursing/sites/uwindsor.ca.nursing/files/admission_requirements_210901-pdel.pdf"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "guelph",
+      "nameCn": "圭尔夫大学",
+      "nameEn": "University of Guelph",
+      "gpaMin": null,
+      "gpaNote": "官网对中国课程（Chinese Curriculum）只列材料与科目要求，未公布统一的百分制最低均分，因此 gpaMin 记 null。中国普高学生要求：提交高一、高二及「高三至少第一学期」的成绩单，并参加会考（Academic Proficiency Test / APT，即 Huikao），报考专业相关科目须全部取得「合格（qualified）」；已毕业学生还需提交高考（NCEE）成绩，含专业要求的科目，官网参考线为「约 500 分」（原文 “a minimum of approximately 500”）。高考与会考成绩须经学信网 CSSD（原 CHESICC）通过 CSSD-Parchment 通道认证，最终高中成绩单与毕业证由学校直接寄至 intdocs@uoguelph.ca。此外各专业有高三先修课要求（如工程需英语、微积分、化学、物理；商科需英语+高阶数学）。SAT/ACT：官网写明 2027 秋季入学周期 SAT/ACT 为可选（该条写在 American Curriculum 项下，针对美式课程申请人）；中国课程申请人不需要提交。达标不代表录取。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6,
+      "toefl": 89,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "English Language Certificate Program (ELCP) (英语语言证书课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "由 School of Continuing Studies 开设的分级英语课程（Advanced Level 为 Level 9 与 10）；完成 Advanced Level 即满足圭尔夫大学（及 Guelph-Humber）本科入学的英语能力要求。另设 ELCP Advanced Short Program。"
+        },
+        {
+          "name": "English Language Communication & Culture (ELCC) Guaranteed Admission Pathway – GAP (保障录取通道)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "若英语能力与/或成绩未达直录要求，可通过「ELCP + Open Learning 学分课程」组合取得保障录取资格，保底专业为 Bachelor of Commerce 与 Bachelor of Arts。在 ELCP Level 7&8 或 8&9 取得 80% 及以上总均分后，可同步修读 Open Learning 学位学分课程；完成高级证书（Certificate of English Proficiency）即满足英语要求。该通道也可单独作为成绩不够时的补强途径。"
+        }
+      ],
+      "source": [
+        "https://www.uoguelph.ca/admission/undergraduate/international/english-proficiency",
+        "https://www.uoguelph.ca/international/admission-requirements/",
+        "https://www.uoguelph.ca/admission/undergraduate/international/transfer-credits",
+        "https://www.uoguelph.ca/admission/undergraduate/advanced-standing",
+        "https://www.uoguelph.ca/admission/undergraduate/international/requirements"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "manitoba",
+      "nameCn": "曼尼托巴大学",
+      "nameEn": "University of Manitoba",
+      "gpaMin": 70,
+      "gpaNote": "官方直录口径：需高中毕业证书 + 5 门高三（senior level）学术课程（UM 通用入学要求，适用于非美式/非 GCE 课程的国际生）。按专业给最低均分：University 1、Arts、Agricultural and Food Sciences、Environmental Studies 等为 70%（每门不低于 60%）；Engineering 为 80%（每门不低于 70%）；Commerce 为 85%（每门不低于 70%）；Health Sciences / Health Studies / Kinesiology / Recreation Management 为 85%。官方注明申请人数超过名额时实际录取均分需高于最低线。中国学生提交高中成绩单+毕业证明即可，官网未把高考或会考列为必需材料。AP 也可用于满足英语要求（AP English Language & Composition 或 Literature & Composition 得 4 分及以上可豁免语言考试），AP 成绩 4 分起可申请转学分（AP: 4=B, 5=A，无学分上限，但需自行提交 Request for University Credit 表格，不自动转换）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6,
+      "toefl": 86,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "Intensive Academic English Program (IAEP)（强化学术英语课程／语言班）",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "曼尼托巴大学英语语言中心（ELC）开设的校内学术英语课程，共 6 级（Foundations + Level 1-5），每级 14 周、每周 24 小时。学术条件合格但英语未达直录要求者可获有条件录取，完成 Level 5 即视为满足 UM 多数本科专业的英语要求，可直接进入 University 1 / 文学院 / 理学院。Level 5 入学门槛：IELTS 5.5，或 TOEFL iBT 70（单项 16），或 CAEL 50，或 PTE 45，或 Duolingo 95。"
+        },
+        {
+          "name": "International College of Manitoba (ICM) International Year One – UTP Stage II（国际大一）",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "ICM 与曼尼托巴大学合作的国际大一课程（3 个学期、相当于本科第一年），在 UM Fort Garry 校内上课。中国学生要求：高三（Senior Middle 3）4 门学术课均分 60%；工程方向要求高三数学、化学、物理均分 75% 且单科不低于 70%。语言直录 IELTS 5.5（单项不低于 5.0），或 TOEFL iBT 69（单项不低于 15），或 Duolingo 95（单项不低于 80）。完成后 CGPA ≥ 2.0 且满足相关要求可申请转入 UM 对应专业二年级（商科、工程等竞争性专业按名额择优）。"
+        },
+        {
+          "name": "International College of Manitoba (ICM) Foundation – UTP Stage I（预科）",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "面向未完成高三或学术成绩未达国际大一要求的学生。中国学生要求：高二（Senior Middle 2）4 门学术课均分 70%。语言要求与 UTP Stage II 相同（IELTS 5.5，单项不低于 5.0）。完成预科后升入 ICM 国际大一（UTP Stage II）。"
+        }
+      ],
+      "source": [
+        "https://umanitoba.ca/explore/undergraduate-admissions/requirements/international-admission-requirements",
+        "https://umanitoba.ca/sites/default/files/2020-10/non-us-abc-curriculum-sheet_0.pdf",
+        "https://umanitoba.ca/explore/undergraduate-admissions/requirements/english-language-proficiency-requirements",
+        "https://umanitoba.ca/sites/default/files/2020-09/ap-and-ib-approved-courses-for-credit.pdf",
+        "https://umanitoba.ca/sites/default/files/2020-06/elc-english-flyer-web.pdf",
+        "https://www.icmanitoba.ca/admissions/english-language-requirements/",
+        "https://www.icmanitoba.ca/admissions/admission-requirements/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "torontomet",
+      "nameCn": "多伦多都会大学",
+      "nameEn": "Toronto Metropolitan University",
+      "gpaMin": 80,
+      "gpaNote": "官网中国（China）条目明确：需 Senior High School (Upper Middle School) Graduation Diploma（高中毕业证），至少 5 门高三（Senior 3/Grade 12）学术课程（须含所选专业的先修科目），总均分 80%，且每门先修科目不低于 80%；官网注明热门/竞争性专业要求更高。注意区分：安大略省本地 OSSD 体系的最低录取均分仅 70%，国际生按国别条目单独评估，门槛明显更高。不要求高考或会考；官网明确不接受 SAT/ACT 等标化考试替代学历要求，但鼓励提交 AP/SAT/ACT 作为补充评估材料。申请材料需含高一至高三成绩单（含评分标准），最终需由学校直接寄送官方成绩单，并通过中国学历认证（CSSD/学信网）提交高中毕业证验证报告。AP 可用于满足英语要求（AP English Language and Composition 或 Literature and Composition 得 4 分及以上可免语言考试），AP 考试成绩 4 分及以上可按个案申请转学分（工程专业核心课不适用）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 83,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "English Boost Pathways（英语快速衔接课程）",
+          "type": "language",
+          "ielts": 6.0,
+          "desc": "8 周、每周 30 小时的密集语言衔接课程，无本科学分，学费较低；成功完成并达标后可进入 TMU 全部 55+ 个本科学位专业。直入英语 Boost 需 IELTS 6.0 / Duolingo 105-115 / TOEFL 4.0 iBT；若只有 IELTS 5.5 / Duolingo 95-100 / TOEFL 3.5 iBT，需先读 Pre-English Boost（与 English Boost 合计 16 周）。"
+        },
+        {
+          "name": "ESL Foundation Program Pathways（ESL 基础课程）",
+          "type": "language",
+          "ielts": 4.5,
+          "desc": "以学术英语（EAP/ESP）为核心的衔接课程，每周 25 小时，学费含最多 2 门本科学分课（可另付费加修 1 门）；成功完成并达标后可进入 TMU 全部 55+ 个本科学位专业。分档门槛：IELTS 4.5（Pre-ESL Foundation + ESL Foundation，共 40 周）/ IELTS 5.0（两学期，32 周）/ IELTS 6.0（一学期，16 周）；对应 Duolingo 65-75 / 80-90 / 105-115。"
+        }
+      ],
+      "source": [
+        "https://torontomu.ca/admissions/undergraduate/requirements/international/",
+        "https://torontomu.ca/admissions/undergraduate/requirements/english-language/",
+        "https://torontomu.ca/english-language-institute/programs/",
+        "https://torontomu.ca/content/ryerson/english-language-institute/apply.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "unb",
+      "nameCn": "新不伦瑞克大学",
+      "nameEn": "University of New Brunswick",
+      "gpaMin": 75,
+      "gpaNote": "UNB 不设全校统一分数线，而是按专业公布「最低录取均分」——取所选专业指定的 6 门高三课程的总平均分（另在可接受范围内选取分数最高的选修课计入）。官网国际生专业要求页列出的最低均分为：Arts 65%（该校最低）；Business (BBA) 75%；Computer Science（Fredericton BCS / Saint John BScCS）75%；Science (BSc) 75%；Software Engineering 75%；Engineering (BScE) 75%；Applied Management (BAM/BAMAC) 70%。部分专业还对先修单科设分：如 BCS 要求高三数学（含预备微积分）≥65%、一门理科 ≥65%；BScE 要求英语、数学、化学、物理各 ≥70%。官网明确「达到最低要求不保证录取」。中国学生需提交高中成绩单与毕业证（非英文需公证翻译），官网未把高考或会考列为必需材料。本字段填多数专业适用的 75%，Arts 为 65%。语言特殊口径：Fredericton 校区 Nursing、Education、Arts 与 Saint John 校区 Nursing、Health Sciences 要求 IELTS 7.0（或同等）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 85,
+      "satRequired": "optional",
+      "apAccepted": "unknown",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Program of Academic English Preparation (PAEP)（学术英语预备课程）",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "UNB Fredericton 校区的本科衔接课程，由 1950 年成立的 English Language Programme 授课。面向学术条件合格（academically admissible）但英语未达直录要求的学生；可用 IELTS 或同等成绩申请，也可到校后测试。IELTS 5.5-6.0 的 PAEP 学生可在读 EAP 的同时修读部分院系的学术课程；IELTS 5.5 以下先全日制读 EAP。完成 PAEP 可获得学术学分，并满足 UNB 的英语入学要求。"
+        },
+        {
+          "name": "Saint John College English for Academic Purposes (EAP)（学术英语课程）",
+          "type": "language",
+          "ielts": 3.0,
+          "desc": "UNB Saint John 校区（Saint John College）的 4 级全日制语言课程，每级 4 个月、每周 24 小时，面向 IELTS 约 2.0-5.5 的学生，入学按 Accuplacer 测试分级（Level 3 需 IELTS 3.0-4.0，Level 4 需 4.5-5.0，Level 5 需 5.5）。另设 ESL Support Program：一学期全日制，3 门高级 ESL 课程 + 1-2 门学术学分课。"
+        },
+        {
+          "name": "Conditional Admission（有条件录取）",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "暂无英语成绩或英语未达标的国际学生，可先获得本科有条件录取（conditional admission），条件是入学后先完成 UNB 的全日制英语培训（Fredericton 校区 PAEP 或 Saint John 校区 EAP/ESLS），再进入本科学位课程。有条件录取可用于申请加拿大学习许可。"
+        }
+      ],
+      "source": [
+        "https://unb.ca/international/admission/english.html",
+        "https://unb.ca/international/admission/program.html",
+        "https://unb.ca/international/apply/index.html",
+        "https://unb.ca/admissions/applying-to-unb/admission-and-scholarship-average.html",
+        "https://unb.ca/saintjohn/sjcollege/eslsupport/eap",
+        "https://unb.ca/fredericton/management/undergrad/eap.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "memorial",
+      "nameCn": "纽芬兰纪念大学",
+      "nameEn": "Memorial University of Newfoundland",
+      "gpaMin": 75,
+      "gpaNote": "官网 China 课程条目明确：学历为 Senior Secondary School Certificate（高中毕业证）；先修学科需覆盖 5 个领域——英语、数学、一门实验科学（生物/化学/物理）、社会科学或现代/古典语言、一门选修；在高三（senior level）这些要求科目上最低均分 75，且每科须及格。英语水平必须通过标准化考试证明（中国高中不适用「三年英语授课免试」豁免）。官网未提及高考或会考要求。官网注明部分专业为竞争性录取，可能要求更高均分和/或补充材料。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "至少阅读 6、写作 6（官网原文：minimum overall band score of 6.5 ... with at least a band 6 in reading and writing）",
+      "toefl": 83,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Intensive English Program at Grenfell (IEP-G)（强化英语课程／非学分）",
+          "type": "language",
+          "ielts": 4.5,
+          "desc": "Grenfell 校区（Corner Brook）开设的语言课程，无需先获 Memorial 学位项目录取即可单独入读；也可作为达到 Memorial 学位项目英语要求的方式（此路径需先提交学位项目申请）。语言门槛：IELTS 4.5，或 TOEFL 纸考 440 / iBT 40，或 Duolingo 65。"
+        },
+        {
+          "name": "Intensive English Bridge Program at Grenfell (IEBP-G)（强化英语桥梁课程／带学分）",
+          "type": "language",
+          "ielts": 5.5,
+          "desc": "面向已获 Memorial 本科有条件录取（provisional acceptance）的学生，边修本科学分边完成英语要求，完成后可满足最终录取的语言条件。Level 1：IELTS 5.5（写作 5.5，单项不低于 5.0）／TOEFL iBT 58（写作 16）／Duolingo 95（写作 95），可同时修 1 门本科学分课；Level 2：IELTS 6.0（写作 6.0，单项不低于 5.5）／TOEFL iBT 70（写作 18）／Duolingo 105（写作 105），可同时修 2 门本科学分课。"
+        }
+      ],
+      "source": [
+        "https://mun.ca/undergrad/admissions/i-want-to-apply/international-high-school-curriculum-requirements/china",
+        "https://mun.ca/undergrad/admissions/i-want-to-apply/english-proficiency-tests/",
+        "https://mun.ca/undergrad/admissions/i-want-to-apply/english-language-requirement",
+        "https://mun.ca/grenfellcampus/programs--schools/english-as-an-additional-language/intensive-english-bridge-program--credit-bearing",
+        "https://mun.ca/grenfellcampus/programs--schools/english-as-an-additional-language/apply"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "carleton",
+      "nameCn": "卡尔顿大学",
+      "nameEn": "Carleton University",
+      "gpaMin": 70,
+      "gpaNote": "中国高中（Chinese High School）口径：录取均分按学生所修最高层次的「全部 9 门学术科目」计算；先修科目须在 11 或 12 年级修读；需提交最终成绩与官方高中毕业证，毕业证须经 Center for Student Services and Development (CSSD／学信网) 验证。卡尔顿官方的一般最低录取均分为 70%（「An overall average of at least 70% is normally required to be considered for admission」），并明确 cut-off 均分逐年按专业竞争情况确定、可能远高于最低线，各专业实际要求约在 75%-90%。未提及高考或会考要求。AP 可用于满足英语要求（AP English Language & Composition 或 AP English Literature & Composition 得 4 分及以上可免 ESL 要求），AP 考试 4 分及以上可按个案获高级学分（最多 3 学分）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6,
+      "toefl": 86,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "Academic ESL / English as a Second Language Requirement (ESLR)（学术英语课程／带 ESL 要求的录取）",
+          "type": "language",
+          "ielts": 5.0,
+          "desc": "语言成绩未达直录标准的申请人可获「带 ESL 要求的录取」（ESLR），入学后须同时修 Academic ESL（ESLA）课程与少量学位课程，可同时获得学位课程学分（ESLA 1300 可修 0.5 学分、ESLA 1500 可修 1.0 学分、ESLA 1900 可修 1.5 学分），最多需 3 个学期完成。ESLR 语言门槛（Table 2）：IELTS 5.0（单项不低于 4.5），或 TOEFL iBT 51（2026-01-21 后考试为 3.0），或 Duolingo 80，或 PTE 31，或 CAEL 40，或 Cambridge 154。注意：以下专业不接受带 ESL 要求的录取——Architectural Studies、Health Sciences、Humanities、Industrial Design、Information Technology、International Business、Journalism、Journalism and Humanities、Media Production and Design、Nursing、Public Affairs and Policy Management，以及全部 Post-Baccalaureate Diploma。"
+        }
+      ],
+      "source": [
+        "https://admissions.carleton.ca/esl",
+        "https://admissions.carleton.ca/international-homepage/",
+        "https://admissions.carleton.ca/guides/InternationalViewbook.pdf",
+        "https://carleton.ca/slals/esl/credit/esla-faq",
+        "https://calendar.carleton.ca/undergrad/regulations/admissions/"
+      ],
+      "checkedAt": "2026-09-19"
+    }
+  ]
+}

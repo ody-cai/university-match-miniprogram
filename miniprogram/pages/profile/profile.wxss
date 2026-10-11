@@ -1,0 +1,193 @@
+/* ============================================================
+   个人资料（10）
+   二级页：无标签栏，底部为 .cta-bar（页面根节点用 .page--cta 留白）
+   ============================================================ */
+.prof__body {
+  padding: 10px 16px 0;
+}
+
+/* ---------------- 头像 ---------------- */
+/* button 自带边框/背景/行高，这里全部清掉，只留自定义外观 */
+.av {
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border: none;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.av::after {
+  border: none;
+}
+.av__box {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.av__img {
+  width: 84px;
+  height: 84px;
+}
+.av__ph {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 右下角「可更换」角标：白加号落在钴蓝圆底上。
+   不用「相机」图标是因为图标库里没有相机，而 plus 在本项目里
+   已经表示「点这里添加/更换」，语义一致 */
+.av__edit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--brand);
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.av__hint {
+  display: block;
+  margin-top: 10px;
+  max-width: 280px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--brand);
+  text-align: center;
+}
+
+/* ---------------- 未登录引导 ---------------- */
+.nudge {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: var(--r-card);
+  background: var(--brand-tint);
+}
+.nudge__body {
+  display: flex;
+  flex-direction: column;
+}
+.nudge__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand);
+}
+.nudge__sub {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--t2);
+}
+.nudge__btn {
+  height: 44px;
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* ---------------- 分组标题 ---------------- */
+.prof__group {
+  display: block;
+  margin: 20px 0 10px;
+  padding-left: 2px;
+  font-size: 13px;
+  color: var(--t3);
+}
+.prof__card {
+  padding: 0 16px;
+}
+
+/* ---------------- 字段行 ---------------- */
+/* 行高 52 与设计稿的输入行一致 */
+.frow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+}
+/**
+ * 行间分割线用显式类，**不要**换回 `.frow + .frow`：
+ * 「年级」行外面包着一层 <picker>，相邻关系被它打断 —— 相邻选择器不会报错，
+ * 只会让那两行凭空少一条分割线（真机上看起来像两行粘在一起）。
+ */
+.frow--sep {
+  border-top: 1px solid var(--line);
+}
+.frow__label {
+  flex-shrink: 0;
+  font-size: 15px;
+  color: var(--t1);
+}
+/* 输入右对齐，与「设置行」的视觉语言一致 */
+.frow__input {
+  flex: 1;
+  min-width: 0;
+  height: 36px;
+  margin-left: 16px;
+  text-align: right;
+  font-size: 15px;
+  color: var(--t1);
+}
+.frow__ph {
+  font-size: 13px;
+  color: var(--t4);
+}
+.frow__right {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  margin-left: 16px;
+}
+.frow__value {
+  font-size: 15px;
+  color: var(--t1);
+}
+/* 未选择：用占位色，与「已经选了」区分开 */
+.frow__value--ph {
+  color: var(--t4);
+}
+
+/* ---------------- 只读账号信息 ---------------- */
+.mrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 46px;
+}
+.mrow + .mrow {
+  border-top: 1px solid var(--line);
+}
+.mrow__label {
+  flex-shrink: 0;
+  font-size: 15px;
+  color: var(--t1);
+}
+/* 值可能很长（账号 ID / 时间），省略号兜底 */
+.mrow__value {
+  margin-left: 16px;
+  font-size: 14px;
+  color: var(--t2);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.prof__foot {
+  display: block;
+  margin: 18px 0 4px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--t4);
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "cloud1-d6got4b1s9baaed04",
+  "functionRoot": "miniprogram/cloudfunctions",
+  "functions": [
+    {
+      "name": "admin",
+      "timeout": 20,
+      "memorySize": 256,
+      "runtime": "Nodejs16.13",
+      "handler": "index.main",
+      "envVariables": {
+        "ADMIN_KEY_SHA256": "__SET_WITH_TCB_CONSOLE_OR_CLI__"
+      }
+    }
+  ]
+}

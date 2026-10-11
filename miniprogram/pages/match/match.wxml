@@ -1,0 +1,257 @@
+<!-- ============================================================
+     成绩匹配（03 首屏 + 03b 续屏）
+     单页滚动：课程体系分段 / 课程成绩卡（选填）/ 学业总成绩卡（必需）
+              / 目标国家 / 目标专业 / 信息说明卡 / 底部 CTA
+     所有文案来自 content.match，不写死
+     ============================================================ -->
+<view class="page page--cta-tab">
+  <nav-bar title="{{c.nav.match}}" />
+
+  <view class="match">
+    <!-- ============ 课程体系分段控件 ============ -->
+    <view class="seg">
+      <view
+        wx:for="{{curricula}}"
+        wx:key="key"
+        class="seg__item {{curriculum === item.key ? 'seg__item--on' : ''}}"
+        data-key="{{item.key}}"
+        bindtap="onCurriculum"
+      >
+        <text>{{item.label}}</text>
+      </view>
+    </view>
+
+    <!-- ============ 我的课程成绩（选填） ============ -->
+    <view class="card">
+      <view class="card-head">
+        <view class="card-head-left">
+          <view class="card-title">{{c.match.sections.course}}</view>
+          <view class="badge badge--opt">{{c.match.badges.optional}}</view>
+        </view>
+        <!-- 加号只能有一个：图标已经画了加号，文案层不再带「+」（见 content.js addCourse） -->
+        <view class="add tap" bindtap="onAddCourse">
+          <icon name="plus" size="{{14}}" color="blue" />
+          <text class="add__text">{{c.match.addCourse}}</text>
+        </view>
+      </view>
+
+      <!-- 空态与卡底提示互斥：两者文案同源（courseHint），同时渲染会出现两行一模一样的字 -->
+      <view wx:if="{{!courses.length}}" class="course-empty">
+        <text>{{c.match.courseHint}}</text>
+      </view>
+
+      <!-- wx:key 必须是 item 上**真实存在且唯一**的属性。
+           这里曾写 wx:key="index"，而 item 上没有 index 属性 → 每行的 key 都是
+           undefined，所有行共用一个 key，框架分不清删掉的是哪一行，
+           表现就是「删了列表不更新」。key 由页面在装载/新增时生成（见 match.js）。 -->
+      <view wx:for="{{courses}}" wx:key="key" class="course-row">
+        <view class="course-row__main tap" data-index="{{index}}" bindtap="onEditCourse">
+          <view class="course-row__score {{item.score === item.max ? 'course-row__score--full' : ''}}">
+            <text>{{item.score !== null && item.score !== undefined ? item.score : '—'}}</text>
+          </view>
+          <view class="course-row__body">
+            <text class="course-row__name">{{item.name || '未命名科目'}}</text>
+            <text class="course-row__date">{{item.date}}</text>
+          </view>
+          <icon name="chevron-right" size="{{16}}" color="line" />
+        </view>
+        <!-- 删除键：用垃圾桶图标，不用箭头旋转。箭头在本项目里一律代表「可进入」，
+             曾经这里放 rotate(180deg) 的 chevron-left，与行内的 chevron-right
+             形状几乎一致，用户加完科目后根本认不出哪个是删除。 -->
+        <view
+          class="course-row__del tap"
+          data-index="{{index}}"
+          catchtap="onRemoveCourse"
+          hover-class="course-row__del--on"
+          hover-stay-time="80"
+        >
+          <icon name="trash" size="{{16}}" color="red" />
+        </view>
+      </view>
+
+      <!-- 有科目时才显示卡底提示；空态已在上面用同一句 courseHint 占位，这里再渲染就是重复 -->
+      <text wx:if="{{courses.length}}" class="card-desc">{{c.match.courseHint}}</text>
+    </view>
+
+    <!-- ============ 学业总成绩（必需） ============ -->
+    <view class="card">
+      <view class="card-head card-head--tight">
+        <view class="card-head-left">
+          <view class="card-title">{{c.match.sections.total}}</view>
+          <view class="badge badge--req">{{c.match.badges.required}}</view>
+        </view>
+      </view>
+
+      <view class="field-row tap" bindtap="onEditGpa">
+        <view>
+          <view class="field-row__label">{{c.match.rows.gpa}}</view>
+          <view class="field-row__hint">{{gpaHint}}</view>
+        </view>
+        <view class="field-row__right">
+          <text class="field-row__value">{{gpaDisplay}}</text>
+          <icon name="chevron-right" size="{{16}}" color="line" style="margin-left:6px" />
+        </view>
+      </view>
+
+      <view class="field-row tap" bindtap="onEditIelts">
+        <view>
+          <view class="field-row__label">{{c.match.rows.ielts}}</view>
+          <view class="field-row__hint">{{ieltsHint}}</view>
+        </view>
+        <view class="field-row__right">
+          <text class="field-row__value {{!ielts || ielts.overall < 6.5 ? 'field-row__value--warn' : ''}}">{{ieltsDisplay}}</text>
+          <icon name="chevron-right" size="{{16}}" color="line" style="margin-left:6px" />
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 目标国家 / 地区 ============ -->
+    <view class="card">
+      <view class="card-head card-head--tight">
+        <view class="card-title">{{c.match.sections.countries}}</view>
+      </view>
+      <!-- 国家 5 项一行放不下，必须用 chips--wrap 换行。
+           本页没有 scroll-view 外壳，直接用 .chips（横向滚动版）会让 flex 项被
+           压缩进 311px 卡片内宽，文字溢出药丸外。 -->
+      <view class="chips chips--wrap chips--pick">
+        <view
+          wx:for="{{countries}}"
+          wx:key="key"
+          class="chip {{item.on ? 'chip--on' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="onToggleCountry"
+        >
+          <text>{{item.label}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 目标专业方向 ============ -->
+    <view class="card">
+      <view class="card-head card-head--tight">
+        <view class="card-title">{{c.match.sections.majors}}</view>
+      </view>
+      <view class="chips chips--wrap chips--pick">
+        <view
+          wx:for="{{majors}}"
+          wx:key="key"
+          class="chip {{item.on ? 'chip--on' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="onToggleMajor"
+        >
+          <text>{{item.label}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 匹配会用到哪些信息 ============ -->
+    <view class="card card--field">
+      <view class="card-head card-head--tight">
+        <view class="card-title">{{c.match.sections.usage}}</view>
+      </view>
+      <text class="card-desc">{{c.match.usage.desc}}</text>
+      <view class="usage">
+        <view wx:for="{{c.match.usage.items}}" wx:key="label" class="usage__row">
+          <text class="usage__label">{{item.label}}</text>
+          <view class="badge {{item.badge === 'required' ? 'badge--req' : 'badge--opt'}}">
+            <text>{{item.badge === 'required' ? c.match.badges.required : c.match.badges.optional}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- ============ 底部 CTA ============
+       cta-bar--float：不要通栏白底，按钮直接悬浮在内容之上（见 app.wxss 该类的注释）。
+       页面仍用 .page--cta-tab，底部留白 150px > 按钮顶边 142px，滚到底不会被遮。 -->
+  <view class="cta-bar cta-bar--tab cta-bar--float">
+    <button class="btn btn--primary" bindtap="onStart">
+      <text>{{c.match.cta}}</text>
+    </button>
+  </view>
+
+  <!-- ============ 编辑浮层 ============ -->
+  <view wx:if="{{sheet}}" class="sheet-mask" bindtap="onSheetClose">
+    <!-- sheet--tab：本页有标签栏，浮层底部必须让出标签栏高度，
+         否则末尾的「确定」按钮会被标签栏盖住（详见 app.wxss 的 .sheet--tab 注释）。
+         非标签栏页面（如条款页）用不带修饰符的 class="sheet" 即可，不要照抄这一行。 -->
+    <view class="sheet sheet--tab" catchtap="noop">
+      <view class="sheet__head">
+        <text class="sheet__title">
+          {{sheet === 'gpa' ? c.match.rows.gpa : (sheet === 'ielts' ? c.match.rows.ielts : '编辑科目')}}
+        </text>
+        <view class="sheet__close tap" bindtap="onSheetClose">
+          <icon name="chevron-left" size="{{20}}" color="sub" />
+        </view>
+      </view>
+
+      <!-- 均分 -->
+      <block wx:if="{{sheet === 'gpa'}}">
+        <view class="edit-row">
+          <text class="edit-row__label">{{c.match.rows.gpa}}（满分 100）</text>
+          <input
+            class="edit-row__input"
+            type="digit"
+            value="{{edit.gpa}}"
+            data-field="gpa"
+            bindinput="onEditInput"
+            placeholder="如 86"
+          />
+        </view>
+      </block>
+
+      <!-- 雅思 -->
+      <block wx:elif="{{sheet === 'ielts'}}">
+        <view class="edit-row">
+          <text class="edit-row__label">总分</text>
+          <input class="edit-row__input" type="digit" value="{{edit.overall}}" data-field="overall" bindinput="onEditInput" placeholder="如 6.5" />
+        </view>
+        <view class="edit-row">
+          <text class="edit-row__label">听力 L</text>
+          <input class="edit-row__input" type="digit" value="{{edit.l}}" data-field="l" bindinput="onEditInput" placeholder="如 4.5" />
+        </view>
+        <view class="edit-row">
+          <text class="edit-row__label">阅读 R</text>
+          <input class="edit-row__input" type="digit" value="{{edit.r}}" data-field="r" bindinput="onEditInput" placeholder="如 4.5" />
+        </view>
+        <view class="edit-row">
+          <text class="edit-row__label">写作 W</text>
+          <input class="edit-row__input" type="digit" value="{{edit.w}}" data-field="w" bindinput="onEditInput" placeholder="如 5.5" />
+        </view>
+        <view class="edit-row">
+          <text class="edit-row__label">口语 S</text>
+          <input class="edit-row__input" type="digit" value="{{edit.s}}" data-field="s" bindinput="onEditInput" placeholder="如 5.0" />
+        </view>
+      </block>
+
+      <!-- 科目 -->
+      <block wx:elif="{{sheet === 'course'}}">
+        <view class="edit-row">
+          <text class="edit-row__label">科目名称</text>
+          <input class="edit-row__input" value="{{edit.name}}" data-field="name" bindinput="onEditInput" placeholder="如 AP Calculus BC" />
+        </view>
+        <view class="edit-row">
+          <text class="edit-row__label">考试时间</text>
+          <input class="edit-row__input" value="{{edit.date}}" data-field="date" bindinput="onEditInput" placeholder="如 2026 年 5 月统考" />
+        </view>
+        <view class="edit-row">
+          <text class="edit-row__label">得分（满分 {{edit.max}}）</text>
+          <input class="edit-row__input" type="number" value="{{edit.score}}" data-field="score" bindinput="onEditInput" placeholder="如 5" />
+        </view>
+        <view class="edit-hint">
+          <text>{{c.match.scoreBlankHint}}</text>
+        </view>
+        <!-- 浮层内删除出口：行右侧垃圾桶只有 36px，真机上容易点空；
+             用户在这里改主意想删时，原先只有「确定」一个按钮，没有出路。 -->
+        <view class="sheet__del tap" bindtap="onRemoveFromSheet">
+          <icon name="trash" size="{{16}}" color="red" />
+          <text class="sheet__del-text">{{c.match.removeCourse}}</text>
+        </view>
+      </block>
+
+      <view class="sheet__foot">
+        <button class="btn btn--primary btn--sm" bindtap="onSheetConfirm">{{c.common.confirm}}</button>
+      </view>
+    </view>
+  </view>
+</view>

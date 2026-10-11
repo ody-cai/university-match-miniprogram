@@ -1,0 +1,242 @@
+/* ============================================================
+   大学详情页
+   ============================================================ */
+.detail {
+  padding: 10px 16px 0;
+}
+
+/* ---------------- Hero（深色卡） ---------------- */
+.dhero {
+  position: relative;
+  padding: 18px 16px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #0a1317 0%, #052550 100%);
+  margin-bottom: 14px;
+}
+.dhero__crest {
+  width: 56px;
+  height: 56px;
+}
+.dhero__body {
+  margin-top: 14px;
+}
+.dhero__name {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+.dhero__en {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.66);
+}
+.dhero__fav {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dhero__fav-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dhero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+/* ---------------- 录取可能性 ---------------- */
+.dscore {
+  display: flex;
+  align-items: center;
+}
+.dscore__num {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--brand);
+  letter-spacing: 0.5px;
+}
+.dscore .mt {
+  margin-left: 10px;
+}
+.dscore__note {
+  display: block;
+  margin-top: 14px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--t4);
+}
+
+.ddims {
+  margin-top: 16px;
+}
+.ddim + .ddim {
+  margin-top: 14px;
+}
+.ddim__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.ddim__label {
+  font-size: 14px;
+  color: var(--t1);
+}
+.ddim__pct {
+  font-size: 13px;
+  font-weight: 600;
+}
+.ddim__pct--ok {
+  color: var(--ok);
+}
+.ddim__pct--warn {
+  color: var(--warn);
+}
+.ddim__detail {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--t3);
+}
+
+/* ---------------- 录取方式 ---------------- */
+.pw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--field);
+}
+.pw + .pw {
+  margin-top: 8px;
+}
+/* 当前可行：浅蓝底 + 主色边框，视觉上从若干方案中「跳出来」 */
+.pw--on {
+  background: var(--brand-tint);
+  border: 1px solid var(--brand-tint-2);
+}
+.pw__main {
+  flex: 1;
+  min-width: 0;
+}
+.pw__name {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.pw__desc {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--t3);
+}
+.pw__badge {
+  flex-shrink: 0;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+/* ---------------- QS 排名 ---------------- */
+.dqs {
+  display: flex;
+  align-items: center;
+  padding: 6px 0 2px;
+}
+.dqs__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20px;
+  border-right: 1px solid var(--line);
+}
+.dqs__num {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--brand);
+  line-height: 1;
+}
+.dqs__label {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--t3);
+}
+.dqs__side {
+  flex: 1;
+  padding-left: 20px;
+}
+.dqs__side-row {
+  display: block;
+  font-size: 13px;
+  color: var(--t2);
+  line-height: 1.9;
+}
+
+/* ---------------- 优势专业 ---------------- */
+.soft-chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ---------------- 相关院校 ---------------- */
+.rrow {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.rrow + .rrow {
+  border-top: 1px solid var(--line);
+}
+.rrow__body {
+  flex: 1;
+  margin-left: 12px;
+  min-width: 0;
+}
+.rrow__name {
+  display: block;
+  font-size: 15px;
+  color: var(--t1);
+}
+.rrow__meta {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  color: var(--t3);
+}
+.rrow .badge {
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+.rrow__qs {
+  margin-left: 8px;
+  font-size: 12px;
+  color: var(--t3);
+  flex-shrink: 0;
+}
+
+.detail__foot {
+  display: block;
+  margin: 18px 4px 8px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--t4);
+  text-align: center;
+}

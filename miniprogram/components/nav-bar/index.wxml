@@ -1,0 +1,20 @@
+<view class="nav-fix {{fixed ? 'nav-fix--on' : ''}} {{theme === 'dark' ? 'nav-fix--dark' : ''}}">
+  <view class="nav-status" style="height:{{sb}}px"></view>
+  <view class="nav-bar" style="height:{{nb}}px">
+    <view
+      wx:if="{{back || backText}}"
+      class="nav-left tap"
+      bindtap="onBack"
+    >
+      <icon
+        wx:if="{{!backText}}"
+        name="chevron-left"
+        size="22"
+        color="{{theme === 'dark' ? 'white' : 'ink'}}"
+      />
+      <text wx:else class="nav-left__text">{{backText}}</text>
+    </view>
+    <view class="nav-title">{{title}}</view>
+  </view>
+</view>
+<view wx:if="{{fixed && placeholder}}" class="nav-ph" style="height:{{sb + nb}}px"></view>

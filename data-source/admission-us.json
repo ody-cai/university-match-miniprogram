@@ -1,0 +1,1290 @@
+{
+  "meta": {
+    "region": "us",
+    "checkedAt": "2026-09-19",
+    "source": "美国 53 所大学官方本科国际生招生页（2027 入学标准快照）",
+    "note": "数据来自各校官方招生站 international applicants / English proficiency 页面，由 5 个采集批次独立完成，2026-09-19 快照。口径要点：① gpaMin——美国大学普遍不公布 100 分制最低均分，绝大多数为整体评估；官网明确「不设最低要求」的一律留 null，不以估计值填充。② 英语要求——顶尖私立校（耶鲁、芝加哥、普林斯顿、西北、塔夫茨、弗吉尼亚等）官网明写不设最低分，本表留 null；公立校多为明确最低线。③ TOEFL 口径——ETS 自 2026-01-21 起将 iBT 改为 1–6 分制（0.5 分一档），并设两年过渡期在成绩单上同时给出 0–120 可比分。本表 toefl 字段统一存 0–120 可比分，以保证与既有澳洲分片的口径一致；新制对应值已逐校记入 gpaNote。④ pathways——美国方向的双录形态为：语言中心有条件录取 / 社区学院 2+2 转学 / 国际大一（Pathway）。仅记录该校真实存在的通道；官网明文「不设条件录取」的记空数组。"
+  },
+  "schools": [
+    {
+      "id": "upenn",
+      "nameCn": "宾夕法尼亚大学",
+      "nameEn": "University of Pennsylvania",
+      "gpaMin": null,
+      "gpaNote": "宾大不公布最低均分，也不公布最低语言分，全部按整体评估（comprehensive review）。学术上要求提交高中四年（9–12 年级）全部成绩单，并结合所在学校的课程难度来判断准备度；官网对 SAT/ACT 亦写明「There is no minimum score required to apply to Penn」。语言要求：母语非英语、且高中不是以英语为主要授课语言者，必须提交 TOEFL / IELTS / Duolingo 三者之一（明确不接受 IELTS Indicator，也不接受托福 MyBest 拼分），但官网未给出任何最低分或建议分。Duolingo English Test（DET）被接受；PTE 未出现在官方接受的考试列表中。SAT/ACT 为必需项（2026–27 申请季起恢复强制，本土/国际/转学申请者一视同仁，确有困难者可提交 waiver 申请豁免）。官网未提及接受中国高考。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "required",
+      "apAccepted": "unknown",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Penn English Language Programs – University Connection (宾大英语语言项目·大学衔接课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "宾大官方英语语言项目（ELP）下的英语强化+美国大学申请辅导课程，面向计划申请美国本科/研究生的国际学生。注意：宾大 ELP 官网 FAQ 明确写「Do you offer conditional admission to Penn? No, we do not offer conditional admission to Penn.」——这不是条件录取通道，读完既不保证也不直接衔接宾大本科录取，只可作为提高英语与了解申请流程的途径。"
+        }
+      ],
+      "source": [
+        "https://www.admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+        "https://admissions.upenn.edu/how-to-apply/international-applicants/international-advanced-standing",
+        "https://ask.admissions.upenn.edu/support/solutions/articles/157000361162-are-international-students-required-to-take-the-toefl-ielts-or-duolingo-english-test-",
+        "https://www.elp.upenn.edu/about/faq"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "cornell",
+      "nameCn": "康奈尔大学",
+      "nameEn": "Cornell University",
+      "gpaMin": null,
+      "gpaNote": "康奈尔不公布最低均分，按整体评估。国际生须提交中学成绩单与 School Report（由升学指导提交），并强烈建议提交高三年级（Senior Year Grade Report）成绩。英语能力要求（康奈尔官网把下列分数表述为「to be most competitive in our admissions review process」，即竞争性参考线，并非绝对硬性最低分）：TOEFL iBT 100 分（2026 年 1 月 21 日起托福改用 1–6 分制，官方对应最低 5.0、建议 5.5）、IELTS 7.5、Duolingo English Test 130、Cambridge C1 Advanced / C2 Proficiency 191；另接受 iTEP 5.5、PTE Academic 70 等。免语言成绩的条件为：母语为英语 / 中学全程英语授课 / SAT 阅读 35 或 ACT 阅读与英语均达 30。SAT/ACT 为必需项（对 2026 年秋季及以后入学的申请者全面恢复要求）。官网未提及接受中国高考。",
+      "ieltsOverall": 7.5,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "required",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.cornell.edu/how-to-apply/first-year-international-applicants",
+        "https://www.engr.cornell.edu/admissions/undergraduate-admissions/admitted-students",
+        "https://sce.cornell.edu/nds-reg-intl-elp/",
+        "https://faq.enrollment.cornell.edu/kb/article/302-how-do-i-apply-as-an-international-student/",
+        "https://business.cornell.edu/admissions/undergraduate/bs-hotel-administration/application-requirements/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "yale",
+      "nameCn": "耶鲁大学",
+      "nameEn": "Yale University",
+      "gpaMin": null,
+      "gpaNote": "耶鲁不公布最低均分，按整体评估（holistic review）；官方要求提交 School Report（含成绩单）、推荐信以及 SAT/ACT 成绩。英语要求：母语非英语且未在英语授课学校读满 2 年者，必须在 SAT/ACT 之外再提交语言成绩。官网给出的是「Yale's most competitive applicants typically earn…」——即最具竞争力申请者的参考值，不是硬性最低分：TOEFL iBT 旧制 100 分（2026 年 1 月 21 日起托福改为 1–6 分制，官方参考值为 5 分及以上）、IELTS 7.0、Duolingo English Test 120、Cambridge English（C1 Advanced / C2 Proficiency / B2 First）185；另可用 InitialView 面试作为补充材料。SAT/ACT 为必需项，不能用 AP/IB 替代。官网未提及接受中国高考。",
+      "ieltsOverall": 7,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "required",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Yale Summer Session – English Language Institute (ELI)（耶鲁暑期语言学院）",
+          "type": "language",
+          "ielts": null,
+          "desc": "耶鲁暑期学院开设的英语语言项目，含 Intensive English Program 以及面向国际高中生的 University Preparation（5 周美国大学升学预备）等方向，官网写明申请 ELI 无需提交英语能力证明。属于暑期语言/预备课程，不是条件录取：完成项目不发学位、不保证也不直接衔接耶鲁本科录取。"
+        }
+      ],
+      "source": [
+        "https://admissions.yale.edu/standardized-testing",
+        "https://summer.yale.edu/academics/english-language-institute"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "jhu",
+      "nameCn": "约翰霍普金斯大学",
+      "nameEn": "Johns Hopkins University",
+      "gpaMin": null,
+      "gpaNote": "JHU 不公布最低均分，本科按整体评估（holistic review），官网明确把 SAT/ACT 与成绩单、AP/IB 分数、课程难度放在一起综合判断。语言要求：如果母语不是英语、或最近三年未在英语授课学校就读，官方建议提交 TOEFL / IELTS / Duolingo(DET) / Cambridge English 之一；官网给的表述是「To be competitive, applicants should typically receive...」（竞争性参考值）：TOEFL iBT 新 1–6 分制最低 5 分（建议单项 Reading 5.5 / Listening 5.5 / Writing 5 / Speaking 5），对应旧制为总分 100、单项 26/26/22/25；IELTS 7.0 且每一项 band 不低于 7.0；DET 总分 120（建议单项 Literacy 125 / Conversation 120 / Comprehension 135 / Production 105）；Cambridge C1 Advanced 或 C2 Proficiency 185。SAT/ACT 为必需项（本科一年级申请者须提交 SAT 数学+EBRW 或 ACT 数学+阅读+英语，转学申请者不需要）。官网未提及接受中国高考。",
+      "ieltsOverall": 7,
+      "ieltsSub": "7.0 or above on each band（每一项不低于 7.0）",
+      "toefl": 100,
+      "satRequired": "required",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+        "https://krieger.jhu.edu/cle/language-programs/esl/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "berkeley",
+      "nameCn": "加州大学伯克利分校",
+      "nameEn": "University of California, Berkeley",
+      "gpaMin": null,
+      "gpaNote": "伯克利不公布中国百分制均分要求。UC 系统只规定 A–G 课程的最低 GPA：加州居民 3.0、非居民（含国际生）3.4（4.0 制，只看 10–11 年级的 A–G 课程，且不得有低于 C 的成绩）；因官网用 4.0 制，不做百分制换算。国际生须完成中学并取得可升入本国大学的毕业资格；若课程体系另有外部考试（A-Level、IB、ATAR、French Bac 等），录取后须提交成绩。仅完成 IGCSE/O-Level 不满足要求，须再读完两年 A-Level（至少 3 门学术考试）或 IB 文凭。英语能力最低分（官方数字）：TOEFL 90（或新 1–6 分制 4.5）、IELTS 6.5、Duolingo English Test 115；也可用 AP 英语语言与写作/英语文学 3 分以上、IB 英语 A（SL 6–7 / HL 5–7）、ACT ELA 24、SAT Writing and Language 31 来满足，或 3 年以上全英文授课经历。UC 明确不把 SAT/ACT 用于录取决定（test-free），但分数可作为满足英语能力要求或入学后课程分级的替代凭证。官网未提及接受中国高考。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 90,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "California Community College → UC Berkeley transfer (加州社区学院 2+2 转学)",
+          "type": "intl_year1",
+          "ielts": null,
+          "desc": "在加州社区学院（CCC）读满 60 个 UC 可转学分（学期制）并完成 7 门课程模式后，以转学生身份申请伯克利大三入学。国际生同样适用转学要求，且转学时不再需要 TOEFL/IELTS（完成 7-Course Pattern 即视为具备英语能力）。注意：伯克利不参加 UC 的转学保证录取项目 TAG（TAG 仅覆盖 Davis、Irvine、Merced、Riverside、Santa Barbara、Santa Cruz 六校），因此 2+2 到伯克利是真实路径但无保证录取。"
+        }
+      ],
+      "source": [
+        "https://admissions.berkeley.edu/requirements-for-international-students/",
+        "https://admission.universityofcalifornia.edu/counselors/preparing-freshman-students/freshman-requirements.html",
+        "https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/uc-transfer-programs/transfer-admission-guarantee-tag.html",
+        "https://www.universityofcalifornia.edu/press-room/university-california-board-regents-unanimously-approved-changes-standardized-testing"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "uchicago",
+      "nameCn": "芝加哥大学",
+      "nameEn": "University of Chicago",
+      "gpaMin": null,
+      "gpaNote": "芝大官网 FAQ 明确写「There is no minimum GPA or required test score」——不设最低均分，也不要求 SAT/ACT。SAT/ACT 为 Test-Optional，并叠加「No Harm」政策：提交的分数只有在有利于申请时才会被纳入审阅，可能拉低评价的分数不会被考虑。官网要求：如果学校不计 GPA 或排名，就留空，不要自行估算或换算。语言要求：官网称只录取英语能力极佳的学生，但「不强制提交」语言考试成绩（若申请材料已充分体现英语能力可不交）；接受 TOEFL / IELTS / Duolingo English Test（芝大官方公告确认新增接受 DET）等，未公布任何最低分。芝大官方明确「不为被录取学生提供 ESL 课程」，也没有条件录取通道。官网未提及接受中国高考。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://collegeadmissions.uchicago.edu/contact/faq",
+        "https://collegeadmissions.uchicago.edu/apply/application/international-applicants/",
+        "https://collegeadmissions.uchicago.edu/apply/application/required-materials/",
+        "https://prospects.uchicago.edu/register/intl-announcement"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "princeton",
+      "nameCn": "普林斯顿大学",
+      "nameEn": "Princeton University",
+      "gpaMin": null,
+      "gpaNote": "普林斯顿不公布最低均分；官网对标准化考试明确写「There are no minimum test score requirements for admission」，全部放整体评估（comprehensive review）中按个人背景判断。语言要求：母语非英语且所在高中非英语授课者，必须提交 TOEFL、IELTS Academic、Duolingo English Test(DET) 或 PTE Academic 之一，但官网未公布任何最低分或建议分。SAT/ACT：2026–27 申请季（2027 秋入学）仍为 Test-Optional，不提交不会处于劣势；自 2027–28 申请季（2028 秋入学）起恢复为必需（SAT 或 ACT）。AP/IB 成绩建议在申请中自行申报，入学后可用于高级学分/跳级（advanced placement）。官网未提及接受中国高考。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admission.princeton.edu/apply/standardized-testing",
+        "https://admission.princeton.edu/faqs?category%5B1021%5D=1021"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "columbia",
+      "nameCn": "哥伦比亚大学",
+      "nameEn": "Columbia University",
+      "gpaMin": null,
+      "gpaNote": "哥大不公布最低高中均分／GPA，官网测试政策页明确 'There are no minimum test score requirements for admission.'，全部走整体评估（holistic review）。中国学生走国际生通道：接受所有高中课程体系（IB、Cambridge A-Level、各国国家课程等），审核时结合你所在课程体系的语境；A-Level、IB、法国Bac、AP 等「毕业所必需」的考试成绩必须提交，非毕业必需的可不交。非英文成绩单／推荐信须附官方英文翻译件。语言成绩：托福 iBT 105（2026-01-20 及之前考试）／新制 5.5（2026-01-21 起）；雅思 7.5；Duolingo 135；剑桥 C1/C2 191。官网未列雅思单项要求。另可用 SAT Reading and Writing 700+ 或 ACT English/Reading 29+ 豁免语言考试。竞争性录取实际远高于此，建议以年级前列为目标。",
+      "ieltsOverall": 7.5,
+      "ieltsSub": null,
+      "toefl": 105,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "American Language Program (ALP) — 哥伦比亚大学美国语言项目（英语强化课程）",
+          "type": "language",
+          "ielts": null,
+          "desc": "哥大 SPS 下设的强化英语课程（秋/春各 14 周，暑期 4/8/12 周），CEFR A2–C2 共八个级别，18 小时/周。属于非学分语言课程，不是有条件录取：读完后仍须单独申请哥大本科，不保证录取。适合语言分暂未达标、希望先赴美提升学术英语的国际学生。"
+        }
+      ],
+      "source": [
+        "https://undergrad.admissions.columbia.edu/english-proficiency",
+        "https://undergrad.admissions.columbia.edu/testing-policy",
+        "https://undergrad.admissions.columbia.edu/node/1065",
+        "https://sps.columbia.edu/academics/american-language-program"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "northwestern",
+      "nameCn": "西北大学",
+      "nameEn": "Northwestern University",
+      "gpaMin": null,
+      "gpaNote": "西北大学不公布最低高中均分／GPA，也不公布英语考试最低分。国际生 FAQ 官方口径原文：'While there is no minimum score required by Northwestern, competitive applicants demonstrate a high level of English proficiency and typically score in the high range on all sections of the exams we accept.'（即无最低分，但竞争性申请者通常在各项考试的各部分都拿到高分）。学校关注的是课程难度而非单一分数：招生委员会会明确留意你是否修读 accelerated、honors 或 Advanced Placement 课程。第一/母语非英语或中学授课语言非英语者必须提交英语成绩，且必须由考试机构官方送分（不接受自报）；接受 Duolingo、IELTS（含 IELTS Indicator）、TOEFL iBT（不接受 TOEFL ITP Plus for China），不接受 TOEFL MyBest / 拼分。国外学历须提供认证英文翻译件。所有申请仅限秋季（9月）入学。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.northwestern.edu/apply/requirements.html",
+        "https://admissions.northwestern.edu/faqs/international-applicants/index.html",
+        "https://admissions.northwestern.edu/faqs/high-school-courses/index.html",
+        "https://admissions.northwestern.edu/apply/identities/international.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "ucla",
+      "nameCn": "加州大学洛杉矶分校",
+      "nameEn": "University of California, Los Angeles",
+      "gpaMin": null,
+      "gpaNote": "UC 对国际生（非加州居民）要求：完成 15 门年制大学预备课程，并以 3.4 GPA（4.0 制）申请（加州本地生为 3.0）。官网以 4.0 制表述，按契约不做百分制换算，故 gpaMin 记 null。UCLA 完全不把 SAT/ACT 用于录取或奖学金（'UCLA does not consider SAT or ACT scores for admission or scholarship purposes.'），录取基于全面评估（课程难度、成绩、课外/领导力、个人见解问题）。英语要求注意区分两个口径：UC 系统最低线为雅思 6.5、托福 iBT 80（2026年1月起新制 4.5）、Duolingo 115、AP 英语语言/文学 3 分以上、IB SL 英语 6-7；而 UCLA 官方《International Admission Guide》给出更高标准——雅思 'A competitive score is 7.5 or higher'、Duolingo 'A competitive score is 135 or higher'（这两项官网明确标注为 competitive，属竞争性参考分而非硬性最低分）、托福 'A score of 5 (on new scale) or 100 or higher (on old scale)'。本记录取 UCLA 校方指南数值，实际竞争远高于 UC 底线。不接受 IELTS One Skill Retake 与 TOEFL MyBest。",
+      "ieltsOverall": 7.5,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "UCLA Transfer Alliance Program (TAP) — 加州社区学院荣誉课程转学通道",
+          "type": "intl_year1",
+          "ielts": null,
+          "desc": "在参与 TAP 的加州社区学院修完 honors/scholars 课程并由该项目辅导员认证后，以大三转学身份申请 UCLA 可获优先审核（适用于 College 多数专业，以及公共卫生、公共事务、教育与社会变革）。这不是双录也不保证录取，需先在加州社区学院读 2 年，是国际生进入 UCLA 的常见 2+2 路径；工程、艺术与建筑、音乐、护理、戏剧影视学院不参与 TAP。"
+        }
+      ],
+      "source": [
+        "https://admission.ucla.edu/sites/default/files/documents/UCLA-International-Admission-Guide-2026.pdf",
+        "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+        "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/applying-for-admission/index.html",
+        "https://admission.ucla.edu/apply/transfer/ucla-transfer-alliance-program"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "umich",
+      "nameCn": "密歇根大学安娜堡分校",
+      "nameEn": "University of Michigan-Ann Arbor",
+      "gpaMin": null,
+      "gpaNote": "密歇根大学不公布最低高中均分／GPA，采用全面评估。国际生申请材料：Common App + $75 申请费、高中成绩单（非英文须附官方英文翻译，已毕业者需显示毕业日期）、School Report、1 封核心学科教师评价，并需解释任何教育空档；Counselor 推荐信为鼓励但非必须。SAT/ACT 为可选（官网原文 'SAT or ACT score, if available and you wish them to be considered'），不提交不会处于劣势。部分学院强烈建议提交 AP 成绩或大学先修课程成绩：LSA（自然科学/社会科学/世界语言）、工程学院（微积分/化学/物理）、罗斯商学院（数学/自然科学/社会科学）、护理与运动机能学院（任意 3 门组合）、音乐戏剧舞蹈/艺术设计/建筑（任意 2 门组合）。英语要求见下；学校明确不为条件录取提供密集英语补课（'we do not offer intensive English make-up course work for conditional admission'）。国际生持临时签证不可申请助学金，须准备全额费用。",
+      "ieltsOverall": 7.0,
+      "ieltsSub": "总分 7.0 档，单项 6.5+",
+      "toefl": 100,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.umich.edu/apply/international-applicants/exams-visas",
+        "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines",
+        "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "cmu",
+      "nameCn": "卡内基梅隆大学",
+      "nameEn": "Carnegie Mellon University",
+      "gpaMin": null,
+      "gpaNote": "CMU 不公布最低高中均分／GPA，官网强调整体评估（'no single grade, score or activity guarantees or disqualifies any candidate'）。标准化考试政策因学院而异：计算机学院（SCS）要求必须提交 SAT 或 ACT；工程学院、Dietrich 人文社科学院、Heinz 信息系统、Mellon 理学院、Tepper 商学院为 test-flexible——必须提交考试成绩，但可在 SAT / ACT / IB（预测或实考）/ AP / Cambridge A-Level（预测或实考）/ 法国 Bac 中自选；艺术学院为 test-optional，需作品集或试镜。因此 AP 可直接用于满足录取所需的考试要求。非英语母语者必须提交 TOEFL / IELTS / Duolingo / Cambridge 官方成绩：雅思至少 7.5（单项 7.5 及以上会被重点考虑）、托福 iBT 至少 102（2026-01-21 起新制至少 5，单项 5 及以上）、TOEFL Essentials 11、Duolingo 135（四个分项均 135）、剑桥 191。成绩两年内有效，不接受 TOEFL MyBest。国际生不获助学金，需准备全额费用；IB/A-Level 学生建议提交预测成绩。",
+      "ieltsOverall": 7.5,
+      "ieltsSub": "总分 7.5，单项 7.5 及以上会被重点考虑",
+      "toefl": 102,
+      "satRequired": "required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://www.cmu.edu/admission/admission/international-applicants",
+        "https://www.cmu.edu/admission/admission/standardized-testing"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "nyu",
+      "nameCn": "纽约大学",
+      "nameEn": "New York University",
+      "gpaMin": null,
+      "gpaNote": "NYU 不公布最低高中均分／GPA，标准考试实施 test-optional（官网明确 'NYU will continue to remain test-optional through the 2027-2028 application cycle'），全申请季不提交也不影响。注意：语言成绩不设最低分，官网原文 'We don't have minimum score requirements, but competitive applicants will receive'——即下列分数是竞争性参考值，不是硬性门槛：托福 iBT 100 及以上（2026-01-20 及之前考试）／新制总分与各单项 5 及以上（2026-01-21 起）、Duolingo 135 及以上、雅思 Academic 7.5 及以上、PTE Academic 70 及以上、剑桥英语量尺 191 及以上。若母语非英语，且最近三个完整学年中修过非英语授课课程（世界语言课除外）、修过 ESL/ELL/IB English B 或就读双语课程，则必须提交语言成绩；SAT/ACT/AP/IB/A-Level 等考试不能用来豁免语言要求。若选择提交标准化考试，可用 AP 满足要求：需至少 3 门 AP，且 1 门人文 + 1 门数学或科学 + 1 门任选（Stern 与 Tandon 要求其中 1 门为数学）；A-Level 学生无论选何种考试都必须提交预测或最终成绩，且至少 3 门 A-Level 才具申请资格。不接受 IELTS One Skill Retake、TOEFL MyBest、IELTS Indicator 及 TOEFL ITP Plus for China。",
+      "ieltsOverall": 7.5,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+"apCoursesMin": 3,
+      "pathways": [],
+      "source": [
+        "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests/english-language-testing.html",
+        "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/standardized-tests.html",
+        "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/all-freshmen-applicants.html",
+        "https://www.nyu.edu/admissions/undergraduate-admissions/how-to-apply/international-applicants.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "brown",
+      "nameCn": "布朗大学",
+      "nameEn": "Brown University",
+      "gpaMin": null,
+      "gpaNote": "布朗不公布国际生本科最低均分或最低 GPA，也没有最低 SAT/ACT 分数，全部按整体评估（whole-person admission）审阅，官网原文为「There are no minimum scores required to be considered for admission」。中国学生为国际生通道，需提交高中完整成绩单（含 9–12 年级课程与分数）与学校报告；IB/A-Level 学生以课程成绩与预估分评阅，官网未给出任何百分制换算口径，故不做换算。英语能力必须在录取前达到：IELTS 8.0、TOEFL iBT 105（2026 年 1 月及以后考试成绩按新 6 分制为 5.5）、Duolingo 130、PTE 75、Cambridge C1 Advanced / C2 Proficiency 191；官网原文为「The following minimum scores are expected in most cases」。布朗本科不设 ESL 课程，官网明确「does not accept on a provisional basis students who are deficient in English」，即语言不达标不予录取。SAT/ACT 自 2024-25 申请季起恢复为第一年申请人必需项。",
+      "ieltsOverall": 8,
+      "ieltsSub": null,
+      "toefl": 105,
+      "satRequired": "required",
+      "apAccepted": "unknown",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admission.brown.edu/international/english-proficiency",
+        "https://admission.brown.edu/first-year/standardized-tests"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "duke",
+      "nameCn": "杜克大学",
+      "nameEn": "Duke University",
+      "gpaMin": null,
+      "gpaNote": "杜克不公布最低均分/GPA 门槛，采用整体评估，审阅高中课程难度、单科成绩、整体 GPA 与班级排名（如学校提供）。官网明确国际生没有额外申请要求，标化政策与本土申请人一致。语言成绩为「建议但不要求」提交（recommend but do not require），官网在英语能力部分列出「期望最低分」：TOEFL iBT 100（另有 revised paper-delivered TOEFL 75）、IELTS 7.0、Duolingo 130、PTE Academic 70、Cambridge C1 Advanced / C2 Proficiency 180；若多次考试取最高分。SAT/ACT 在 2026-2027 申请季为 test-optional，不提交不会处于劣势，AP/IB 成绩可选提交并会纳入审阅。建议高中修读 4 年英语及至少各 3 年数学、自然科学、外语、社会科学；申请 Pratt 工程学院要求修过微积分并强烈建议物理。",
+      "ieltsOverall": 7,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.duke.edu/apply/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "utaustin",
+      "nameCn": "得克萨斯大学奥斯汀分校",
+      "nameEn": "University of Texas at Austin",
+      "gpaMin": null,
+      "gpaNote": "UT Austin 不公布国际生最低均分或百分制 GPA 门槛。国际生按整体评估（holistic review）审阅高中成绩单、课程难度与文书，并须完成规定的高中先修课程（High School Prerequisites，官网另有专页逐项列出）。得州「高中班级前 6% 自动录取」政策仅适用于得州居民，中国国际学生不适用。成绩单须覆盖 9–12 年级完整课程与分数，并附会考/毕业考等外部考试成绩（如 A-Level、GCE O Level、毕业证书、大学入学考试）。英语能力（国际生专用口径，豁免仅限英语为唯一官方语言的国家或在美/豁免国完成至少三年高中者）：IELTS 学术类总分 6.5、TOEFL iBT 79（120 分制）或 4（2026 年起启用的 6 分制）、Duolingo 115；不接受 institutional TOEFL(ITP)、TOEFL Essentials、IELTS General Training。SAT/ACT 为必需项，须由考试机构直送官方成绩（SAT code 6882 / ACT code 4240）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 79,
+      "satRequired": "required",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.utexas.edu/info-for/international-students/",
+        "https://www.admissions.utexas.edu/apply/international-students/",
+        "https://testingservices.utexas.edu/search-undergraduate-exams"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "uiuc",
+      "nameCn": "伊利诺伊大学厄巴纳-香槟分校",
+      "nameEn": "University of Illinois Urbana-Champaign",
+      "gpaMin": null,
+      "gpaNote": "UIUC 不公布最低均分/GPA 门槛，按整体评估，并分学院/专业分别审阅；官网 Class Profile 显示已录取学生中间 50% 区间为 GPA 3.70–4.00（4.0 制，按契约不做百分制换算）。国际生须提交 9–12 年级（至少最近三年）中学修读记录与外部考试成绩，通过 STARS/myIllini 自报。英语能力：官网「第一年申请人英语能力」条款只规定——未在认可英语国家完成 10–12 年级者必须提交 TOEFL iBT、IELTS Academic、Duolingo 或 SAT/ACT 成绩，且该要求「cannot be waived」（不可豁免）；该页面未公布第一年申请人的具体最低分。同一官方页面在「转学生」条目下列出校级最低分：IELTS 学术类 7.5 且各单项 6.5+、TOEFL iBT 旧制 100（2026 年 1 月 21 日及以后考试为 5.0/6 分制且各单项 4.5+）、Duolingo 130（各单项 125+）；低于 full status 者入学后须参加英语分班考试（EPT）并可能修读 ESL。已录取学生中间 50% 语言区间（官方 Class Profile）：TOEFL 105–112、IELTS 7.5–8（各模块不低于 6）、Duolingo 135–145。官网及应用语言中心均明确「UIUC 不提供有条件录取」。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://www.admissions.illinois.edu/international-requirements/",
+        "https://www.admissions.illinois.edu/general-admission-policies/",
+        "https://www.admissions.illinois.edu/apply/freshman/profile",
+        "https://admissions.illinois.edu/college-credit/",
+        "https://iei.illinois.edu/frequently-asked-questions/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "ucsd",
+      "nameCn": "加州大学圣地亚哥分校",
+      "nameEn": "University of California, San Diego",
+      "gpaMin": null,
+      "gpaNote": "UCSD 不公布百分制最低均分。要求完成中学学业且「学术科目平均成绩优异（superior average）」，并取得可在本国升入大学的毕业资格（等同美国高中毕业证）；对部分国家（如日本、韩国）官方口径写为 overall 3.0（4.0 制）——按契约不换算为百分制，故此处记 null。加州大学系统对 SAT/ACT 实行 test-free，官网明确「UC San Diego will not consider SAT or ACT test scores as a factor in admissions decisions」，不作为录取因素。国际生英语能力（最低门槛，仅为获得审阅资格）：IELTS 学术类 7.0、TOEFL iBT 83（2026 年 1 月起启用 6 分制对应 4.5）、Duolingo 115；国际生须额外完成 A–G 类大学预备课程。另可用 AP 英语语言与写作或英语文学与写作 3 分及以上、IB 英语 A HL 5 分及以上满足英语要求。",
+      "ieltsOverall": 7,
+      "ieltsSub": null,
+      "toefl": 83,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.ucsd.edu/international/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "psu",
+      "nameCn": "宾夕法尼亚州立大学",
+      "nameEn": "Pennsylvania State University",
+      "gpaMin": null,
+      "gpaNote": "PSU 不公布国际生最低均分或百分制 GPA 门槛，采用整体评估，审阅最近三年中学修读记录（通过 STARS 自报系统）与课程难度；不要求推荐信。英语能力（国际生母语非英语者必须提供，成绩须两年内且由考试机构直送）可用任一方式满足：IELTS 学术类 6.5、TOEFL iBT 80（2026 年 1 月 21 日及以后考试为 4.5/6 分制；不接受 MyBest）、Duolingo 120、SAT Evidence-Based Reading and Writing 570、ACT English 24、GCSE/GCE 英语 A–C、IB 英语 A（语言与文学）5 分及以上、美国高中修读 4 年、或取得 PSU 强化英语交流项目 IECP 的官方认证。SAT/ACT 为 test-optional，提交与否不影响录取，但可用于满足上述语言要求。所有中学文件须为官方原件或盖章认证件，非英文材料须附逐行直译的认证英文翻译件。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "2+2 Plan (2+2 计划：分校区读两年后转入 University Park)",
+          "type": "conditional",
+          "ielts": 6.5,
+          "desc": "先在 Penn State 任一 Commonwealth 分校区（如 Altoona、Hazleton、Behrend、Harrisburg 等）完成前两年课程，修满学分并达到目标专业的 entrance-to-major 要求后，通过 change of campus 流程转入 University Park 主校区完成后两年，毕业证同为 Penn State 学位。无需重新申请录取，是全美学生最常走的 PSU 路径（超过半数学生从分校区起步）；申请时须同时选择第一志愿与备选起始校区，学术竞争力不足以直录主校区的学生常被录取到备选分校区，分校区学费与生活费也更低。"
+        },
+        {
+          "name": "Intensive English Communication Program (IECP，强化英语交流项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "PSU 官方认可的英语能力达标方式之一：官网明确国际生可通过取得 IECP 的官方认证（official certification）来满足语言能力要求。适用于语言成绩暂未达标、需要先修读强化英语课程的学生；官网未公布 IECP 自身的雅思门槛。"
+        }
+      ],
+      "source": [
+        "https://www.psu.edu/resources/international-students/admission-requirements",
+        "https://www.psu.edu/admission/undergraduate/credit/ap-credit",
+        "https://altoona.psu.edu/node/67466",
+        "https://hazleton.psu.edu/international-student-faqs"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "uw",
+      "nameCn": "华盛顿大学",
+      "nameEn": "University of Washington",
+      "gpaMin": null,
+      "gpaNote": "公立校，不公布统一最低均分，采用整体评估（holistic review）。官网仅公布竞争性实际录取区间：2025 秋季录取新生高中 GPA 中间 50% 为 3.75–3.98（4.0 制），折合 100 分制约 95–100；工程直入（Direct to College）与计算机直入（Direct to Major）竞争更激烈（非华州居民 CS 直入三年平均录取率仅 2%）。国际生须完成中学全部课程并提供官方成绩单；无可用的 100 分制最低线，故 gpaMin 写 null。英语要求：必须提交 TOEFL / IELTS / Duolingo（DET）官方成绩，考试须在申请当年 12 月 31 日前完成；豁免仅限在澳大利亚、加拿大（英语省份）、英国、爱尔兰、新西兰、美国完成全部中小学教育者，在该国出生但在他处受教育不免。可用 SAT EBRW 580 或 ACT English 22 + 10–12 年级英语写作/文学课均分 B 替代语言考试（B 的常见换算：IB 5、100 分制 80、4.0 制 3.0、IGCSE C）。不接受 TOEFL MyBest，不拼分；ESL 或英语写作课不能豁免。AP 成绩不能用于豁免录取要求。",
+      "ieltsOverall": 6.0,
+      "ieltsSub": null,
+      "toefl": 76,
+      "satRequired": "not_required",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/",
+        "https://admit.washington.edu/apply/freshman/by-the-numbers",
+        "https://admit.washington.edu/apply/first-year/exams-for-credit/ap/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "bu",
+      "nameCn": "波士顿大学",
+      "nameEn": "Boston University",
+      "gpaMin": null,
+      "gpaNote": "私立校，不公布最低均分或最低语言硬线，采用整体评估；国际生必须提交 TOEFL iBT / IELTS Academic / Duolingo 之一作为英语能力的主要评估依据。官网口径为竞争性参考值（非硬性门槛）：TOEFL 总分 90–100 且各单项不低于 20（2026 年 1 月 21 日起新制为总分 5.0 以上，同时审各分项一致性）；Duolingo 总分 125–135，且必须同时提交总分与全部小分；TOEFL Essentials 最低 9.0（其他项目不适用）。IELTS Academic 总分 7.0 及以上即为满足全部项目要求（官网明确的达标线）。可用英语豁免申请（English Proficiency Waiver Request，须在申请截止日前随完整申请提交，由招生委员会裁量）。不接受 IELTS Indicator、TOEFL ITP Plus、TOEFL Essentials（本科）与 IELTS One Skill Retake。可选提交 InitialView / Vericant 面试作为补充。SAT/ACT 为 test-optional（适用至 2028 秋季 / 2029 春季）。AP 多数科目 4 或 5 分可换学分（各学院政策不同）。",
+      "ieltsOverall": 7.0,
+      "ieltsSub": null,
+      "toefl": 90,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://www.bu.edu/admissions/apply/international/",
+        "https://www.bu.edu/admissions/apply/first-year/",
+        "https://www.bu.edu/celop/bridge-to-bu/",
+        "https://www.bu.edu/cgs/resources/policies/advanced-units/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "purdue",
+      "nameCn": "普渡大学",
+      "nameEn": "Purdue University",
+      "gpaMin": null,
+      "gpaNote": "公立校，不公布统一最低均分；官网仅要求「至少 3 个连续学年的课程与成绩」及高中毕业证明，录取按整体评估。竞争性参考（第三方整理，非官网硬线）：工程 / 计算机 / 商学院等热门学院建议 GPA 3.7–3.85（4.0 制），普通文理 / 农学约 3.5+。高中必修课：数学 4 年、英语 4 年、实验科学 3 年、社科 3 年、外语 2 年；工程方向须有化学，护理 / 药学 / 兽医护理须一年化学 + 一年生物。非英语母语国际生必须提交语言成绩，官网对 DET / IELTS 用「Generally, applicants have…」表述，属典型录取口径；TOEFL 为明确的 required minimum。可替代语言成绩的方式：SAT EBRW 600+、ACT English 26+、或在全英语课程体系完成至少 3 年且英语课均分达 B 且整体成绩优异、或在美国认证大学修满 24 个可转学分且 GPA≥3.0（含 6 学分非 ESL 英语写作/口语课程且 B 以上）。未提交语言考试者入学后可能需参加英语分级测试。AP 可换学分，但不用于豁免录取要求。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 88,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.purdue.edu/become-student/english-proficiency/",
+        "https://admissions.purdue.edu/become-student/international",
+        "https://admissions.purdue.edu/become-student/first-year-criteria",
+        "https://www.purdue.edu/admissions/academics/credit-by-exam.php"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "rice",
+      "nameCn": "莱斯大学",
+      "nameEn": "Rice University",
+      "gpaMin": null,
+      "gpaNote": "私立校，不公布统一最低均分，按整体评估（committee review，每份申请至少两名招生官评议）。官网明确的最低要求只有高中课程门类与学分：英语 4、社科 2、数学 3、实验科学 2、外语 2、上述类别任选 3，合计 16 个学分；自然科学与工程方向最低须修三角或微积分预备，且同时修化学与物理（可用第二年化学或生物替代物理）。非英语母语申请人须满足以下二者之一：在英语授课体系完成至少 2 年全日制学习，或提交官方语言成绩（TOEFL 100，2026 年 1 月 21 日起新制 5.0；IELTS 7；Duolingo 130；Cambridge C1/C2 185）。TOEFL 接受 Home Edition，不接受 ITP Plus。SAT/ACT 为可选但官方建议提交（if available）。AP 4 或 5 分可换学分（Rice code 6609），AP 英语学分不能免除 Composition Examination。",
+      "ieltsOverall": 7.0,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admission.rice.edu/apply/first-year-international-applicants",
+        "https://admission.rice.edu/frequently-asked-questions",
+        "https://admission.rice.edu/apply/international-students",
+        "https://admission.rice.edu/apply/policies/transfer-credit-policy"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "wisc",
+      "nameCn": "威斯康星大学麦迪逊分校",
+      "nameEn": "University of Wisconsin-Madison",
+      "gpaMin": null,
+      "gpaNote": "公立校，不公布统一最低均分，按整体评估。最低门槛体现为高中课程要求：英语 4 年、数学 3 年（含代数、几何与进阶数学各一年）、社科 3 年、自然科学 3 年、任选 4 年，合计 17 学分；官网说明竞争性申请人通常在核心学科修更多高阶课程并保持高 GPA。首年国际生（非英语国家受教育）必须提交 TOEFL / IELTS / Duolingo，且官网明确 IB HL English、AP English、ACT、SAT、Cambridge English、PTE 均不能用于豁免该要求；唯一豁免条件为中学四年全部以英语为主要授课语言。学校不拼分，成绩报告不得超过申请时两年。不接受 TOEFL MyBest，不接受 TOEFL iTP Plus for China，接受 iBT Special Home Edition。SAT/ACT 至 2028 春季学期（截止 2027-10-01）为可选（test optional），只取最高总分、不做 superscore。AP 可换学分（registrar 学分认定），不用于录取豁免。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.wisc.edu/international/",
+        "https://admissions.wisc.edu/required-materials/",
+        "https://admissions.wisc.edu/prepare/homeschooled.php",
+        "https://registrar.wisc.edu/credit-by-exam/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "ucdavis",
+      "nameCn": "加州大学戴维斯分校",
+      "nameEn": "University of California, Davis",
+      "gpaMin": null,
+      "gpaNote": "公立校，UC 系统不按 100 分制公布最低均分，故 gpaMin 写 null。官方最低学术门槛为 A-G 课程：完成至少 15 门学年制大学预备课程（历史/社科 2、英语 4、数学 3、实验科学 2、外语 2、视觉与表演艺术 1、大学预备选修 1），且非加州居民申请人须在 10–11 年级 A-G 课程取得最低 3.40 GPA（4.0 制；加州居民为 3.00，按 SPEC 要求不做 100 分制换算）。官网明确 UC 与 UC Davis 不再将 SAT/ACT 用于录取决定或奖学金（可自行填报，仅可能用于满足最低学科要求或入学后课程分级）。国际生英语能力要求（须在高三 12 月前完成考试）：TOEFL iBT 80（2026 年 1 月起新制 4.5）、IELTS 6.5、Duolingo 115、AP 英语语言与写作或英语文学与写作 3/4/5、IB 英语（仅 Language A）SL 6–7 或 HL 5/6/7、ACT ELA 24、SAT Writing and Language 31、或 UC 可转的大学英语写作课程 C 以上；满足上述任一即同时满足 UC Entry Level Writing Requirement（ELWR）。UC 不接受 IELTS One Skill Retake、不接受 TOEFL MyBest，数字版 SAT Reading and Writing 未被批准用于满足英语要求。各校区可要求高于系统最低分。AP 3/4/5 分可换学分，其中 AP 英语可直接满足英语能力录取要求。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Transfer Admission Guarantee (TAG)（加州社区学院转学保证协议）",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "非 UC Davis 本校课程：在任一加州社区学院（California Community College）就读并满足约定的 GPA、学分与专业课要求后，通过 UC TAP 提交 TAG 申请（每年 9 月 30 日截止），可获得 UC Davis 的书面转学录取保证，随后以三年级身份进入 UC Davis。仅适用于加州社区学院学生，中国学生需先入读加州社区学院才可使用；国际生读完两年社区学院后按转学生身份申请。"
+        }
+      ],
+      "source": [
+        "https://www.ucdavis.edu/admissions/undergraduate/international/exams-visas",
+        "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+        "https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements",
+        "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/gpa-requirement.html",
+        "https://www.ucdavis.edu/admissions/undergraduate/transfer/transfer-admission-guarantee",
+        "https://catalog.ucdavis.edu/academic-information-policies-regulations/academic-credit/advanced-placement-ap-examinations/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "gatech",
+      "nameCn": "佐治亚理工学院",
+      "nameEn": "Georgia Institute of Technology",
+      "gpaMin": null,
+      "gpaNote": "官网未公布最低均分或最低 GPA，因此无法给出 100 分制数值；官网明确说明「许多教育体系不符合美国 GPA 结构」，按申请者所在课程体系整体评估。硬性材料要求：必须提交中学每一学年的成绩单；中国高中为 10-12 年级三年制者，入学前还须补交 9 年级（初三）成绩单。竞争性参考（官网原文）：IB 申请者「多数科目应为 6 分和 7 分」，无最低 IB 总分要求；A-Level 申请者「应至少完成 3 门完整 A-Level」。标化：SAT 或 ACT 为必需（见下）。英语：佐治亚理工学院不单独公布高于 USG 的本科分数线，官网指向 University System of Georgia 认可方式，即 TOEFL iBT 最低 3.5（2026-01-21 前考试为 69）、IELTS Academic 最低 6、PTE Academic 最低 53、SAT EBRW 480、ACT English 17；USG 允许各校设定更高分数，但 GT 本科官网未公布更高数值。Duolingo 英语测试：GT 明确「欢迎作为补充材料」，但「不能满足 USG 要求」，仅计入整体评估。",
+      "ieltsOverall": 6,
+      "ieltsSub": null,
+      "toefl": 69,
+      "satRequired": "required",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Georgia Tech Language Institute - Intensive English Program (GT 语言学院强化英语课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "Georgia Tech 语言学院的 CEA 认证强化英语课程，7 个级别（100-700）、每级 8 周。USG 政策把「完成受认可的 USG 校内 ESL 课程」列为满足英语能力要求的途径之一，因此可作为英语未达标者的语言补充路径；但 GT 语言学院官网明确「入读语言学院不等于被 Georgia Tech 学位项目录取」，GT 本科亦未公布有条件录取政策。官网未公布该课程自身的 IELTS/TOEFL 门槛，按到校分级测试定级。"
+        }
+      ],
+      "source": [
+        "https://visits.gatech.edu/international/first-year",
+        "https://visits.gatech.edu/first-year/standardized-tests",
+        "https://www.usg.edu/international-education/esl-programs/english-proficiency-requirements/",
+        "https://www.esl.gatech.edu/intensive-english-program/admission-considerations"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "usc",
+      "nameCn": "南加州大学",
+      "nameEn": "University of Southern California",
+      "gpaMin": null,
+      "gpaNote": "USC 为私立大学，不公布统一的最低均分或最低 GPA，采用整体评估（Comprehensive Admission Review），且官网明确「从国外申请的学生的入学审核与美国本土学生相同」，国际生不适用单独的低分线。材料要求：提交相当于美国 9-12 年级的完整官方成绩单（非英文须附认证翻译，由学校或考试机构直寄），并提交外部考试成绩或预估分（GCSE/IGCSE、IB 或 A-Level 预估、印度会考、ATAR 等）。英语口径（官网原文）：USC 列出「认可考试及建议最低分（recommended minimums）」——TOEFL iBT 最低 100（单项不低于 20；2026-01-21 及以后考试为新制 5 分、单项不低于 4）、IELTS 最低 7、PTE 68、Cambridge C1 Advanced 总分 185（单项 169+），或 SAT EBRW 650、或 ACT English 27；未考上述考试者可改考 Duolingo 英语测试，最低 130，用 Duolingo 录取的学生入学后须参加 USC American Language Institute 的 ISE 考试。官网同时说明「申请者低于建议最低分仍可被录取，但录取率降低」，且「最具竞争力的申请者分数显著高于最低分，录取学生托福 iBT 平均分高于 111、单项 25 以上」——即该组分数为官方口径的建议最低分而非绝对硬门槛。不要求面试；不接受中国 TOEFL ITP Plus。",
+      "ieltsOverall": 7,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admission.usc.edu/apply/international-students/",
+        "https://ali.usc.edu/english-language-requirement/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "unc",
+      "nameCn": "北卡罗来纳大学教堂山分校",
+      "nameEn": "University of North Carolina at Chapel Hill",
+      "gpaMin": null,
+      "gpaNote": "官网未公布最低均分，也无法映射 100 分制。英语成绩口径特别提示：UNC 官方明确表示下列分数「不是最低分（these are not minimums）」，只是「强申请者通常达到的分数」，因此本记录 ieltsOverall/toefl 按契约写 null，此处如实转述建议值——TOEFL iBT 100 或以上（2026-01-21 及以后考试为新制 5 分或以上）、IELTS Academic 7.5 或以上、Duolingo 130 或以上、Cambridge C1 Advanced 185 或以上（另接受 C2 Proficiency）。UNC 不接受用 SAT/ACT 或英语课程成绩替代该英语能力要求；但若申请者在英语为主要语言的国家居住满 4 年，或在英语为主要授课语言的学校就读满 4 年，可申请豁免。标化：UNC System 政策规定，申请 2026-2027 学年及以后、加权 GPA ≥ 2.8（4.0 制）者无需提交 SAT/ACT；加权 GPA < 2.8 者必须提交 ACT 17+ 或 SAT 930+。官网补充：多数成功申请者（含国际生）核心课程成绩「远高于 B+ 平均」；若学校不提供 4.0 制加权 GPA 但成绩高于 B+，同样无需提交标化；A-Level 等外部考试成绩被用于判定该 GPA 门槛。国际生不获基于需求的经济资助，须准备全额费用；非美国认证院校的大学课程须做 WES 逐课认证。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.unc.edu/apply/types-of-applications/international/",
+        "https://admissions.unc.edu/faqs/how-does-unc-look-at-english-proficiency-exams-toefl-ielts-person/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "tamu",
+      "nameCn": "得克萨斯农工大学",
+      "nameEn": "Texas A&M University",
+      "gpaMin": null,
+      "gpaNote": "官网未公布 100 分制最低均分，也未公布最低 GPA 数值，因此写 null。官网原文口径：国际新生「成功的申请者将在本国教育体系中排名靠前（B 平均或以上），并在全国性考试中取得远高于平均的成绩」，并要求修读适当的大学预备课程。德州居民 Top 10% 自动录取政策不适用于国际生，国际新生全部走整体审核。标化：TAMU 为 Test-Optional，官网原文「Texas A&M University is test optional and will not require ACT or SAT scores for freshman applicants」，鼓励但非必须提交；提交与否不构成优势或劣势。英语口径（官网原文，国际新生页）：TOEFL iBT 最低 80（2026-01-21 前考试，两年内有效；2026-01-21 及以后为新制 4.5，且单项不低于 4.0）、IELTS Academic 最低 6.0 总分、TOEFL Essentials 最低 8.5、SAT EBRW 560、ACT English 21，或在美国高中完整就读 4 年；不接受 IELTS General Training，不接受 MyBest TOEFL。官网未列出 Duolingo 英语测试为可接受方式，故本记录未采用。申请须通过 STARS 自报成绩系统完成。",
+      "ieltsOverall": 6,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.tamu.edu/apply/freshman",
+        "https://admissions.tamu.edu/apply/international/international-freshman.html",
+        "https://catalog.tamu.edu/undergraduate/general-information/admission/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "asu",
+      "nameCn": "亚利桑那州立大学",
+      "nameEn": "Arizona State University",
+      "gpaMin": null,
+      "gpaNote": "ASU 官方公布的最低学术门槛是「中学 3.00 GPA（4.00 = A，即 B 或以上）」，为 4.0 制，按契约不得换算成 100 分制，故 gpaMin 写 null；官网页面同时说明部分专业要求更高。另需具备 3 年高中课程（在读生提供 9-11 年级、已毕业提供 10-12 年级）、提交毕业证或同等学历证明，并满足能力课程要求：数学 4 年（代数 I、几何、代数 II 及一门以代数 II 为先修的高阶课）、实验科学 3 年（生物/化学/地球科学/综合科学/物理中任选）。标化：ACT/SAT 为可选（官网申请步骤原文为「Submit your ACT or SAT scores (optional)」），部分专业可能参考 ACT/SAT 分数。英语口径（官网最低分，一般要求专业）：IELTS Academic 6.0 总分；TOEFL iBT 61（2026-01-21 前考试，须考试中心场次）或新制 3.5 总分（单项 3.5）；Duolingo 英语测试 95；PTE 53；Cambridge 170；亦可用 Global Launch 语言课程完成证明替代。分专业更高要求：护理 BSN 为 IELTS 6.5 / TOEFL 76（新制 4.0）/ Duolingo 100；Fulton 工程学院高要求专业为 IELTS 6.5 / TOEFL 79（新制 4.0）/ Duolingo 105 / PTE 58 / Cambridge 176；Walter Cronkite 新闻与大众传播学院高要求专业为 IELTS 7.0 / TOEFL 100（新制 5.0）/ Duolingo 120 / PTE 73 / Cambridge 185。ASU 不接受 TOEFL iBT Home Edition（2026-01-21 前考试）、TOEFL iBT Paper Edition 与 TOEFL Essentials；PTE Academic Online 亦不接受。",
+      "ieltsOverall": 6,
+      "ieltsSub": null,
+      "toefl": 61,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "ASU Conditional Admission (有条件录取)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "面向已满足 ASU 学术（aptitude）与能力课程要求、但英语尚未达标的国际本科申请者。收到有条件录取信后，有效期最长 3 个学期，期间须完成 Global Launch 英语课程，或考出合格的 TOEFL/IELTS/PTE 分数，即可转为正式录取。非独立课程，故无自身语言门槛。"
+        },
+        {
+          "name": "Global Launch English Language Program (ELP, 校内/线上沉浸式英语课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "ASU Global Launch 提供的沉浸式英语课程，分 6 级（Basic 到 Advanced）、每级 8 周，入学按分级测试定级。完成最高级 Advanced 2 可获得 TOEFL 豁免，即满足 ASU 本科英语要求并可完成正式录取；另设 8 周在线课程 English for Admission and Achievement。官网未公布 ELP 自身的 IELTS/TOEFL 门槛（按分级测试定级），课程完成结果有效期 2 年。适合英语明显未达标、需要长周期语言提升的学生。"
+        },
+        {
+          "name": "ASU-USA Pathways (国际大一衔接课程，含 1-term / 3-term / Earned Pathways)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "面向国际本科新生的衔接课程，在 ASU 西校区就读，修读语言+带学分课程，成绩合格后可升入 ASU 本科学位课程（衔接至大二）。高中 GPA 2.75 或以上入 1-term Pathways；GPA 低于 2.75 入 3-term Pathways；无合格语言成绩者先进入 Global Launch ELP（称为 Earned Pathways，完成 Intermediate 2 且全部 84% (B) 以上，或 Advanced 1 且全部 70% (C) 以上可进入）。合格语言线：IELTS 5.5 / Duolingo 90 / TOEFL iBT 55（2026-01-21 前考试）或 3.5（2026-01-21 及以后）。适合 GPA 与语言均略低于直录线的国际生。"
+        }
+      ],
+      "source": [
+        "https://admission.asu.edu/apply/international/first-year",
+        "https://admission.asu.edu/apply/international/undergrad/english-proficiency",
+        "https://globallaunch.asu.edu/conditional-admission",
+        "https://globallaunch.asu.edu/learn-english/asu-usa-pathways/eligibility?language_content_entity=en",
+        "https://catalog.asu.edu/credit_exam"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "ucsb",
+      "nameCn": "加州大学圣巴巴拉分校",
+      "nameEn": "University of California, Santa Barbara",
+      "gpaMin": null,
+      "gpaNote": "官网未公布 100 分制最低均分，因此写 null；加州大学系统以 4.0 制 A-G 课程 GPA 审核，本记录不做换算。官网原文口径：国际申请者须「已从中学毕业并取得可在本国升读大学的毕业证书」，且「成绩与考试成绩必须优异（your grades and exam scores must be excellent）」才具竞争力。国际课程具体要求：IB 需至少 6 门 IB 考试、其中 3 门为高级水平（HL），总分平均 5、单科不低于 4、并获 30 分以上文凭；英制需至少 5 门 GCSE/IGCSE (O-Level) 且 GPA 3.4 以上，以及至少 3 门 GCE (A-Level) 且非加权 GPA 3.0 以上、单科不低于 C，考试科目须对应 UC 的 A-G 课程体系。英语口径（国际生须以任一方式证明）：IELTS Academic 6.5 或以上；TOEFL iBT（含 Home Edition）2026 年 1 月前考试最低 80，2026 年 1 月及以后考试最低 4.5；Duolingo 英语测试最低 115；或 ACT ELA 24 以上；或 SAT Writing and Language 31 以上；或 AP 英语语言与写作 / 英语文学与写作 3、4、5 分；或 IB 英语（仅 Language A）SL 6-7 分 / HL 5-7 分；或完成一门 UC 可转学分的大学英语写作课并取得 C 以上。成绩须在入学前 12 月考试日期前完成，TOEFL/IELTS/DET 有效期 2 年。UC 不接受 IELTS One Skill Retake 和 MyBest TOEFL，只接受单次考试的最高总分；数字版 SAT 的 Reading and Writing 分数未被批准用于满足英语能力要求。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [],
+      "source": [
+        "https://admissions.sa.ucsb.edu/apply/international/ELP",
+        "https://admissions.sa.ucsb.edu/international-freshman-eligibility-selection"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "msu",
+      "nameCn": "密歇根州立大学",
+      "nameEn": "Michigan State University",
+      "gpaMin": null,
+      "gpaNote": "官网明确「Admission to Michigan State University is competitive, but there are no minimum requirements」（录取竞争激烈但不设统一最低要求）。Fall 2025 录取新生中间 50%：高中 GPA 3.5–4.0（4.0 制）、ACT 26–31、SAT 1100–1320，官网说明这不是最低标准。高中课程建议：4 年英语、3 年数学（含 2 年代数+1 年几何）、3 年社科、2 年科学、2 年同一外语；鼓励选修 Honors/AP/IB。中国学生须由学校直寄高中成绩单原件与官方英文翻译，且英语语言能力需另行证明（见 pathways）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Provisional Admission (临时/有条件录取)",
+          "type": "conditional",
+          "ielts": 6.0,
+          "desc": "语言成绩略低于常规线时可获临时录取：TOEFL iBT 60–78、IELTS 6.0、Duolingo 95–105、MSUELT 65–79、PTE 总分 46+。入学后须参加 MSUELT 测试，按结果分入①全学分课程②学术+语言混合课程③MSU English Language Center 全日制语言课程；开学前补交达标成绩可转为正式录取。临时录取期间仍为正式本科生、可住校并使用学校资源。"
+        }
+      ],
+      "source": [
+        "https://admissions.msu.edu/apply/international/language-requirements",
+        "https://admissions.msu.edu/apply/international/admission-criteria",
+        "https://admissions.msu.edu/apply/international/apply-now"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "emory",
+      "nameCn": "埃默里大学",
+      "nameEn": "Emory University",
+      "gpaMin": null,
+      "gpaNote": "学校不设最低均分：录取为整体评估（holistic review），官网只公布录取新生的参考数据（Emory College 录取 Class of 2029 未加权 GPA 3.83）。英语要求同样是「不设硬线」——官网原文「While the university does not use strict score cutoffs, the following scores are recommended」，故本表语言分字段按要求填 null，官网口径如实转述如下：TOEFL iBT 旧 0–120 分制期望 100 分（not a strict cutoff），2026-01-21 起新 1–6 分制建议 5.5+；IELTS 期望总分 7.5（not a strict cutoff）；Duolingo 最具竞争力的申请人通常 130+（160 分制）；TOEFL ITP 需 CEFR C1 水平；TOEFL ITP Plus（仅中国大陆）各部分通常 63–68。满足以下任一条件可免交语言考试：SAT EBRW 700+、ACT 英语小分 30+、最近 4 年所有学术科目均为全英文授课。SAT/ACT 2026–2027 申请季为 test-optional（不提交不影响评审）。中国高考成绩可作为补充材料通过 CHESICC 认证提交，非必需。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://apply.emory.edu/apply/international",
+        "https://apply.emory.edu/apply/requirements/exams",
+        "https://apply.web.emory.edu/apply/first-year/tips/standardized-exam-policies.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "osu",
+      "nameCn": "俄亥俄州立大学",
+      "nameEn": "The Ohio State University",
+      "gpaMin": null,
+      "gpaNote": "官网明确「Ohio State does not have minimum requirements for class rank or GPA」（不设最低 GPA 或班级排名门槛），录取采用整体评估。上一年度录取学生：50% 的 ACT 在 27–33、SAT 在 1280–1470；94% 毕业于高中前 25%、64% 前 10%。最低高中课程要求：英语 4 单元、数学 3（建议 4）、自然科学 3、社科 2（建议 3）、同一外语 2（建议 3）、视觉/表演艺术 1，另加任选 1 单元。中国学生须提交 9–12 年级共 4 年成绩单原件及英文翻译（不接受传真），成绩单可由学校通过 Common App/Naviance 或 ugdocs@osu.edu 提交。哥伦布校区要求 ACT 或 SAT 成绩必须由考试机构直送（大学不设最低 ACT/SAT 分数线）。AP/IB/Honors 等加速课程的修读情况会纳入评审并给予额外考虑。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 79,
+      "satRequired": "required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "American Language Program (ALP 美国语言项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "俄亥俄州立大学下设的强化英语项目，语言暂不达标者可单独申请以提高英语水平。注意官网明确：「Ohio State does not offer conditional admission to students who enroll in the American Language Program」——入读 ALP 不等于获得本科有条件录取，仍需另行提交达标的英语成绩才能申请本科。"
+        }
+      ],
+      "source": [
+        "https://undergrad.osu.edu/apply/international-freshmen/apply-step-by-step",
+        "https://undergrad.osu.edu/apply/international-freshmen/who-gets-in"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "ufl",
+      "nameCn": "佛罗里达大学",
+      "nameEn": "University of Florida",
+      "gpaMin": null,
+      "gpaNote": "UF 使用自算的 4.0 制核心加权 GPA（AP/IB/AICE 课程加 1.0 权重、Pre-AP/Pre-IB/Honors 加 0.5），按契约不做百分制换算。官网列的「最低要求」只有：学术核心课程累计 C 均（约 2.0）、完成 16 个学术单元（英语 4 年、数学 4 年、自然科学 3 年、社科 3 年、同一外语 2 年）；Class of 2030 录取中间 50% 为 GPA 4.5–4.7、ACT 32–35、SAT 1420–1520，官网强调「These are NOT minimum criteria」。SAT/ACT/CLT 为强制提交（佛罗里达州 Board of Governors 6.002 规定），国际生一视同仁。非美高课程须提交 course-by-course 学历认证（含 GPA 计算，NACES 成员机构）以及原件+逐字英文翻译；就读非美式评分体系高中的学生不填 STARS。语言最低分说明：UF 本科新生国际页面未公布语言考试最低分，本表 TOEFL 80 / IELTS 6.0 取自 UF 国际申请者（转学）页面明确标注的「Minimum acceptable scores」（TOEFL iBT 80、TOEFL PBT 550、IELTS Academic 6.0），请以招生办确认为准。",
+      "ieltsOverall": 6.0,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.ufl.edu/apply/freshman/international",
+        "https://admissions.ufl.edu/apply/freshman/requirements",
+        "https://admissions.ufl.edu/apply/transfer/international",
+        "https://admissions.ufl.edu/apply/freshman/student-profile"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "rochester",
+      "nameCn": "罗切斯特大学",
+      "nameEn": "University of Rochester",
+      "gpaMin": null,
+      "gpaNote": "学校不设最低均分，采用整体评估。语言成绩官网只给「Recommended score」（建议值），并明确「Applicants whose test scores fall outside of the ranges displayed above are still encouraged to apply」，故本表语言分字段按要求填 null，官网口径如实转述：Duolingo 130、IELTS 7.5、TOEFL iBT 100（旧 0–120 分制）/ 5（2026-01-21 起新 1–6 分制）。不拼分、不看单项合并、不接受 TOEFL MyBest Score，只取单次考试的最高总分。可申请语言豁免的三种情形：①英语母语；②高中至少 3 年以英语为主要授课语言；③转学申请人完成 1 年以上美国大学课程且含 1 门写作密集型课程；豁免须在申请截止前提交申请并在提交申请与成绩单后审核。SAT/ACT 为 test-optional，国际生与本土生使用同一份 Common App/Coalition 申请。国际生还需提交 International Financial Support Form（不需助学金者）或 CSS Profile（需助学金者），无合格财力证明者不予录取。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "unknown",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "English for Academic Purposes Program (EAPP 学术英语项目)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "由罗切斯特大学写作项目开设的两学期项目。若学校评估申请人的英语水平需要额外支持，可通过 EAPP 获得录取；学生第一学期即同时开始学位课程与 EAPP 课程，重点加强批判性阅读、推理、写作与研究能力。申请人不能直接申请 EAPP，由招生办在审核过程中决定。"
+        }
+      ],
+      "source": [
+        "https://admissions.rochester.edu/applying/international/",
+        "https://admissions.rochester.edu/applying/international-students/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "uci",
+      "nameCn": "加州大学尔湾分校",
+      "nameEn": "University of California, Irvine",
+      "gpaMin": null,
+      "gpaNote": "UC 系统采用 4.0 制的 A-G 课程 GPA（只算 10–11 年级的 A-G 课程），按契约不做百分制换算：非加州居民/国际申请人最低 3.4，加州居民最低 3.0，且不允许低于 C 的成绩；须完成 15 门一年制 A-G 课程（其中 11 门须在 12 年级前完成）。UC 为 test-free：明确「UC does not consider SAT or ACT test scores when making admissions decisions or awarding scholarships」，SAT/ACT 成绩仅可能用于满足最低资格要求或入学后课程分班。AP/IB/A-Level 成绩仍会纳入评审。实际录取竞争力远高于最低线。国际生学费与其他 UC 校区一致，申请须在 11 月 30 日前提交。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "not_required",
+      "apAccepted": "direct",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://admissions.uci.edu/apply/international/index.php",
+        "https://admissions.uci.edu/apply/first-year-students/index.php",
+        "https://admission.universityofcalifornia.edu/admission-requirements/international-applicants/english-language-proficiency-toefl-ielts.html",
+        "https://admission.universityofcalifornia.edu/counselors/preparing-freshman-students/freshman-requirements.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "umd",
+      "nameCn": "马里兰大学帕克分校",
+      "nameEn": "University of Maryland, College Park",
+      "gpaMin": null,
+      "gpaNote": "官网未公布中国学生（或本科生）的最低均分线；国际生必须提交 9–12 年级完整课程内部成绩单（不接受仅外部统考成绩，如 GCSE/GCE、CBSE 等只能作为补充），录取采用包含 23 项因素的整体评估，官方口径为成绩达「very good」至「excellent」方有竞争力。语言另接受 Duolingo 120 / IELTS 7.0 / TOEFL 95；UMD 不接受 TOEFL MyBest 拼分，IELTS 不接受纸质成绩单。",
+      "ieltsOverall": 7,
+      "ieltsSub": null,
+      "toefl": 95,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Maryland English Institute (MEI，马里兰英语学院语言课程)",
+          "type": "language",
+          "ielts": 6.5,
+          "desc": "语言未达直录线者的英语通道：官方规定 IELTS 6.5 及以下、TOEFL 94 及以下（新制 4.5 及以下）、Duolingo 115 及以下者进入 MEI 学习；部分申请者会被要求在开始学位课程前完成 MEI 课程，具体是否被要求会写在录取决定信里。适合学术达标但语言差半档的学生。"
+        }
+      ],
+      "source": [
+        "https://www.admissions.umd.edu/apply/requirements/international/english-proficiency",
+        "https://www.admissions.umd.edu/apply/requirements/freshman",
+        "https://academiccatalog.umd.edu/undergraduate/requirements-application-procedures/international-student-admission"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "umn",
+      "nameCn": "明尼苏达大学双城分校",
+      "nameEn": "University of Minnesota Twin Cities",
+      "gpaMin": null,
+      "gpaNote": "官网明确「不设自动录取标准或最低分数线（no automatic criteria or minimums/cut-offs）」，按学术准备与背景做整体评估；申请时自报 9–12 年级课程与成绩即可。语言要求（Spring 2027 申请季起为官方当前口径）：IELTS 学术类 6.5（写作 6.5）、TOEFL iBT 4.5（写作 4.5，新 1–6 分制；0–120 分制历史官方口径为 79、写作 21，见官方 2025 国际生 Fact Book）、PTE 59、剑桥 C1 Advanced 180、Duolingo 120，均不接受 MyBest 拼分。单科略低者可能获 AZ hold 并被要求修一门英语支持课程。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.5,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Conditional Admission for International Freshman (国际生有条件录取 + MELP 密集英语)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "面向学术合格、但语言成绩显示需要整年密集英语训练的国际新生（仅秋季入学、名额有限）：先在明尼苏达英语语言项目 MELP 读一年密集英语，一年后英语达标即转为下一秋季的正式学位生。转学生不适用。官方页面未公布该通道的最低语言分数。"
+        }
+      ],
+      "source": [
+        "https://admissions.tc.umn.edu/admissions/international-admission/english-proficiency-information",
+        "https://admissions.tc.umn.edu/sites/admissions.tc.umn.edu/files/2025-10/2025%20INTL%20Undergrad%20Fact%20Book-WEB.pdf",
+        "https://admissions.tc.umn.edu/frequently-asked-questions-about-conditional-admission"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "umass",
+      "nameCn": "马萨诸塞大学阿默斯特分校",
+      "nameEn": "University of Massachusetts Amherst",
+      "gpaMin": null,
+      "gpaNote": "官网未公布最低均分。自实行 Test-Optional 后，官方明确「不提交标化时高中 GPA 在量化评估中权重更大」，仍按holistic 整体评估；国际生须提交 9–11 年级成绩单（建议用 SRAR 自报），学校会复核课程难度与专业匹配度。语言接受 TOEFL 80（单项不低于 20；2026 年 1 月 21 日后考试为新 1–6 分制 4.5、单项不低于 4）、IELTS 6.5（单项不低于 6.0）、Duolingo 115、剑桥 B2 First/C1 Advanced/C2 Proficiency 合计 176（单项不低于 169）；不接受 IELTS Indicator、TOEFL ITP Plus for China、TOEFL Essentials、PTE Academic Online。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": "单项不低于 6.0",
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [],
+      "source": [
+        "https://www.umass.edu/admissions/english-language-proficiency",
+        "https://www.umass.edu/uww/resources/international-applicant-guide",
+        "http://umass.edu/registrar/advanced-placement-test-university-recommended-scorescredits",
+        "http://netreg.oit.umass.edu/admissions/undergraduate-admissions/connect/information-policies/test-optional-policy"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "virginia",
+      "nameCn": "弗吉尼亚大学",
+      "nameEn": "University of Virginia",
+      "gpaMin": null,
+      "gpaNote": "官网未公布最低均分，也未在本科招生页设定最低语言分数：官方口径是「强烈鼓励母语非英语者参加英语测评」，TOEFL / IELTS / 剑桥 C1-C2 / Duolingo 的结果「可作为申请审核的一部分被考虑」，并建议提交 InitialView 或 Vericant 面试作为补充。因此本档语言分记 null（本科记录中出现的 90 分/7.0 表述为「被录取学生通常达到的水平」以及研究生项目要求，不能当作最低线）。学术要求为完成相当于美国高中文凭的课程，并按年份修满 4–5 门学术课程（英语、数学、历史、科学、外语）；官方 Facts 显示 2025 秋季本科新生收到约 6.4 万份申请、发出约 1 万份 offer，竞争激烈。国际生（外国国籍）不获学校奖学金或贷款，需自备全额资金证明（United World College 学生除外）。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [],
+      "source": [
+        "https://admission.virginia.edu/i-am/international",
+        "https://admission.virginia.edu/faqs?combine=optional&field_category_target_id=All",
+        "https://admission.virginia.edu/node/361"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "pitt",
+      "nameCn": "匹兹堡大学",
+      "nameEn": "University of Pittsburgh",
+      "gpaMin": null,
+      "gpaNote": "官网未公布统一最低均分，录取按整体评估（CDS 中将课程难度、学术 GPA、文书列为非常重要）；各一年级学院公布中位 50% 加权 GPA 区间，如护理 4.10–4.44、工程 3.97–4.46、文理 3.74–4.34（4.0 制加权，不做换算）。语言：学校政策规定国际生录取的最低标准为 TOEFL iBT 80 / IELTS 6.5（低于此不得录取）；但匹兹堡主校区实际竞争力线为 TOEFL 100+（新 1–6 分制 5.0+，小分 4.0+）、IELTS 7.0+（小分 6.0+）、Duolingo 125+。官方明确：TOEFL 80–89 或 IELTS 6.5 的申请者「通常会被考虑录到 Bradford / Greensburg / Johnstown 分校区」，因此申请表中可给分校区排序；TOEFL 90–99 且学术背景强者会被认真考虑。语言豁免不自动，需发邮件申请（条件如：美国高校修满 60 学分、在美高就读满四年、SAT EBRW ≥ 660 或 ACT 英语 ≥ 27、或来自豁免国家）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "English Language Institute (ELI，匹兹堡大学英语语言学院)",
+          "type": "language",
+          "ielts": null,
+          "desc": "1964 年设立的非学分密集英语课程（读、写、听、说、语法，含 TOEFL 备考），供语言未达标的国际学生就读。注意：官方明确「入读 ELI 不等于被匹兹堡大学录取」，ELI 只提供语言培训与申请指导；语言达标后仍需单独申请学位项目。官方未公布该通道的具体语言门槛。"
+        }
+      ],
+      "source": [
+        "https://admissions.pitt.edu/international/toefl-ielts-duolingo/",
+        "https://www.provost.pitt.edu/assessment-english-language-proficiency-admission",
+        "https://admissions.pitt.edu/first-year-student",
+        "https://admissions.pitt.edu/credit/advanced-placement-music-listening-and-literature-345"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "nd",
+      "nameCn": "圣母大学",
+      "nameEn": "University of Notre Dame",
+      "gpaMin": null,
+      "gpaNote": "官网未公布最低均分，录取为整体评估（need-blind，不看支付能力）。需提交中学官方成绩单与核心课程要求：英语 4 单元、数学 3 单元（代数 I、代数 II、几何，建议 4 单元）、外语 2 单元（建议 3–4）、科学 2 单元（建议 4）、历史/社科 2 单元（建议 3–4）；英制课程学生完成 GCSE 后通常须至少修读 3 门 A-Level。语言要求为硬性：母语非英语或中学非英语授课者「必须」提交 TOEFL / IELTS / DET / PTE，官网 Required Score 表列 TOEFL iBT 100（口语不低于 25，2026 年 2 月前旧制；新制为平均 5.5、各单项不低于 5.0）、IELTS 7.5、Duolingo 125。注意：圣母不接受 TOEFL iBT Special Home Edition；若所在国无法考试可用 Duolingo 替代。SAT EBRW ≥ 650 或 ACT 英语/阅读 ≥ 26 可免语言考试。",
+      "ieltsOverall": 7.5,
+      "ieltsSub": null,
+      "toefl": 100,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [],
+      "source": [
+        "https://admissions.nd.edu/apply/resources-for/international-applicants/application-information/",
+        "https://advising.nd.edu/first-year-and-incoming-students/requirements-and-credits/advanced-credit-and-placements/ap-exam-credit"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "arizona",
+      "nameCn": "亚利桑那大学",
+      "nameEn": "The University of Arizona",
+      "gpaMin": 80,
+      "gpaNote": "中国学生走 International Admissions 通道。官网 Admission Criteria 写明「有竞争力的申请者最近三年学业重新计算后的 GPA 应不低于 3.0」；官网中国页同时给出官方折算表：中国高中成绩体系 3.0 GPA 等效于 80%（学校评分制允许给 D 时）或 75%（不设 D 时），故取 80% 为官方公布的等效均分线，非本任务换算。需提交 9–11 年级中英文成绩单（若高三上已结业则含 12 上；已高中毕业者提供 10–12 年级完整成绩单），申请时可用非正式成绩单或自报成绩，入学前须补交正式成绩单与高中毕业证。不要求高考、不要求会考成绩。SAT/ACT 明确「不是录取必需」，提交仅用于课程分级或补足核心能力要求；工程学院 Core GPA 门槛同样为 3.0（4.0 制）。英语能力另接受 Duolingo 110、PTE 60、剑桥英语 180/C1、CEPT 110、SAT EBRW 580、ACT English 21、AP 英语语言或文学 4 分。托福自 2026 年 1 月 21 日起改用 1–6 分制，新制最低 4 分（旧制 0–120 分制为 79）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 4,
+      "pathways": [
+        {
+          "name": "University Track / U-Track (CESL 大学桥梁课程，取得有条件录取后入读)",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "亚利桑那大学官方指定的英语桥梁通道：语言未达直录线（IELTS 6.5 / TOEFL 79 / Duolingo 110）的学生先提交本科申请并获得有条件录取（conditional admission，即学术上已可录取、只差英语），再进入 CESL 的 U-Track，一边强化英语一边修读可计入任何专业毕业要求的通识学分（约 3–6 学分）。官网要求 IELTS 5.5、TOEFL 59、Duolingo 90 即可申请；完成 U-Track 后由 CESL 出具英语认可（endorsement），即视为满足学校的英语入学要求，无需再考托福或雅思，随后进入本科学位课程。"
+        },
+        {
+          "name": "Center for English as a Second Language Intensive English Program (CESL 强化英语课程)",
+          "type": "language",
+          "ielts": null,
+          "desc": "针对完全达不到 U-Track 门槛（低于 IELTS 5.5 / TOEFL 59 / Duolingo 90）的学生，可直接申请 CESL 的强化英语课程。官方页面未公布该项目的最低入学分数，需通过 CESL 分级测试安置；读语言本身不要求先被大学录取。"
+        }
+      ],
+      "source": [
+        "https://international-admissions.arizona.edu/english-proficiency",
+        "https://international-admissions.arizona.edu/country-requirements?country=China",
+        "https://arizona.edu/admissions/undergraduate/first-year",
+        "https://cesl.arizona.edu/student-services/applying-university-arizona"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "rutgers",
+      "nameCn": "罗格斯大学新布朗斯维克分校",
+      "nameEn": "Rutgers University–New Brunswick",
+      "gpaMin": null,
+      "gpaNote": "官网未公布国际生（或本科生）的最低均分线，也无统一 GPA 门槛：录取采用整体评估，要求通过 STARS 系统自报 9–11 年级全部课程与成绩及 12 年级在读课程，申请阶段无需正式成绩单，入学前补交。Rutgers–New Brunswick 自 2024 年起实行 test-optional（官方明确延续至 2027 申请季），SAT/ACT 提交与否不影响录取评审，不提交不会被扣分。国际生英语要求独立于本土、按 New Brunswick 校区执行：IELTS 6.5、TOEFL iBT 79（2026 年 1 月 21 日前的 0–120 分制；1 月 22 日起新 1–6 分制要求 4.5）、Duolingo 115、PTE 53、MET 56、剑桥 B2，或 SAT EBRW 550、ACT English 21；Ernest Mario 药学院与护理学院要求更高（旧制 TOEFL 100、Duolingo 130）。在英语授课高中就读者可个案申请豁免，或修完受认可的美国大学英语写作课并取得 B 以上亦可豁免。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "RU-Path Program (罗格斯英语语言学院 RELI 本科桥梁年)",
+          "type": "foundation",
+          "ielts": null,
+          "desc": "由 Rutgers English Language Institute (RELI) 开设，面向语言未达直录线的国际学生：夏季开学、贯穿一个学年，读完后成绩合格可直接注册为 School of Arts and Sciences、Rutgers Business School 或 School of Environmental and Biological Sciences 的正式一年级学生（fully matriculated first-year）。完成条件为所有非学分英语课成绩 C 以上、含学分课程 GPA 不低于 2.5、通过一门大学级学术英语（EAP）课与一门含学分数学课并保持良好学籍。官方 Program Overview 未公布该项目的雅思/托福最低分门槛。"
+        }
+      ],
+      "source": [
+        "https://admissions.rutgers.edu/apply/international-applicants",
+        "https://admissions.rutgers.edu/apply/first-year-applicants",
+        "https://reli.rutgers.edu/images/2024-2025_RU-Path_Program_Overview.pdf",
+        "https://catalogs.rutgers.edu/generated/nb-ug_1315/pg630.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "ncsu",
+      "nameCn": "北卡罗来纳州立大学",
+      "nameEn": "North Carolina State University",
+      "gpaMin": null,
+      "gpaNote": "官网公布的是 4.0 制加权 GPA 门槛而非百分制均分，故不换算、写 null：加权 GPA ≥ 2.8（约 B-）即可 test-optional，不提交 SAT/ACT 不影响录取；加权 GPA 低于 2.8 则必须提交 SAT/ACT 才构成完整申请。国际新生另须满足 UNC 系统最低课程要求（MCR），官网强烈建议高中修到预备微积分，STEM 与商科方向以预备微积分为竞争线并尽量修微积分。国际生英语要求独立于本土且更高：IELTS Academic 6.5（单项不低于 6.0）、TOEFL iBT 80（单项不低于 18；2026 年 1 月 21 日起新 1–6 分制需 4.5、单项 4）、Duolingo 110、TOEFL Essentials 9.0（单项 8.0）、PTE 58。另接受 AS/A-Level 成绩换学分，但只认 Cambridge A 与 AS Level。AP 成绩明确不参与新生录取评审，仅在入学后按科目换学分（多数科目 3 分及以上即可获学分）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Conditional Admission via NC State Intensive English Program (有条件录取 + IEP 强化英语课程)",
+          "type": "conditional",
+          "ielts": 5.0,
+          "desc": "学术条件达标但语言未达直录线的国际新生会被自动纳入有条件录取考虑，无需另行申请，录取决定信会写明。学生先入读 NC State Intensive English Program（IEP，共 4 级，一般一学期完成一级），修完后直接进入所录专业，无需重考托福/雅思/多邻国/PTE。官方公布的有条件录取语言门槛为 IELTS 5.0 / TOEFL iBT 42（2026 年 1 月 21 日起新制 3）/ Duolingo 80 / PTE 36；须注意一旦接受有条件录取，即使之后考出直录分数，仍必须完成 IEP 才能入学。"
+        }
+      ],
+      "source": [
+        "https://admissions.ncsu.edu/apply/international/first-year/",
+        "https://admissions.ncsu.edu/apply/first-year/test-score-consideration-in-admission-decisions/",
+        "https://admissions.ncsu.edu/admitted/",
+        "https://catalog.ncsu.edu/about/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "cuboulder",
+      "nameCn": "科罗拉多大学博尔德分校",
+      "nameEn": "University of Colorado Boulder",
+      "gpaMin": null,
+      "gpaNote": "国际生与本土生使用同一套学术评审标准，官网未公布百分制最低均分，故写 null。官方口径：录取采用整体评估（holistic review），高中 GPA 与课程难度是最重要指标，且因各校评分制不同，CU Boulder 会把成绩重新计算为标准化的 4.0 制加权 GPA（对荣誉、AP、IB、双学分课程加权）；同时推荐完成 HEAR 课程（未完成不影响录取，但入学后可能需补修才能毕业）。2025 年入学新生平均高中 GPA 为 3.77。SAT/ACT 明确「不要求」（test optional），只有主动提交才会被纳入考虑。英语能力为国际生独立要求：IELTS 6.5、TOEFL iBT 80（2026 年 1 月 21 日起新 1–6 分制为 4.0）、Duolingo 115、PTE 58、剑桥 C1/C2 180，或 AP 英语 4 分、IB HL 英语 A 5 分、IB SL 英语 A 6 分、GCSE/GCE 英语 B、SAT EBRW 580、ACT English 23；成绩须在开学前两年内取得，且多邻国/托福/雅思成绩不可拼分。语言未达标但学术合格者可获有条件录取并通过 Pathway to CU 补语言。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "Pathway to CU Program (有条件录取 + 国际英语中心语言桥梁)",
+          "type": "conditional",
+          "ielts": null,
+          "desc": "CU Boulder 对学术达到录取标准、但英语未达标的国际生发放有条件录取：学生可先进 International English Center 的 Pathway to CU（8 周一期、全年多轮开学、每周 24 小时、共 8 级，对应 CEFR B1 以下至 C2）。完成全部级别、或在此期间另考出达标的托福/雅思/多邻国成绩，即可开始学位课程；英语达到中高级后可选修 1–2 门计学分的大学课程。官方页面未公布该项目的最低雅思分数，仅说明当季最低开设级别为低中级（CEFR B1-），低于该级别可能被转入其他项目。"
+        }
+      ],
+      "source": [
+        "https://www.colorado.edu/node/966",
+        "https://colorado.edu/admissions/process/international/admitted",
+        "http://iec.colorado.edu/programs/eabp",
+        "https://catalog.colorado.edu/undergraduate/admissions/admission-requirements/",
+        "https://www.colorado.edu/about/rankings-achievements"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "casewestern",
+      "nameCn": "凯斯西储大学",
+      "nameEn": "Case Western Reserve University",
+      "gpaMin": null,
+      "gpaNote": "官网明确「不设最低 GPA，也不设最低标化分数线」（no minimum GPA or test score），录取采用整体评估，故 gpaMin 写 null。官方公布的 Class of 2025 录取学生中间 50% 区间为：未加权 GPA 3.6–4.0、SAT 总分 1420–1510、ACT 综合 32–35，且 42% 的录取学生未提交标化（test-optional，提交者按单项最高分 superscore）。申请材料要求：高中成绩单、School Report、1 封升学指导推荐信、2 封任课老师推荐信、$75 申请费。国际生英语要求（非英语母语者必须提交，可先自报、入学时用官方成绩核验）：IELTS 7.0、TOEFL iBT 90（2026 年 1 月 21 日起新 1–6 分制为 4.5；旧制纸考 577）、Duolingo 115、PTE 61。满足以下任一条件可自动豁免英语成绩：在英语授课学校就读至毕业满两年、SAT EBRW ≥ 630、ACT English ≥ 26。",
+      "ieltsOverall": 7,
+      "ieltsSub": null,
+      "toefl": 90,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [],
+      "source": [
+        "https://case.edu/admission/apply/international-applicants",
+        "https://case.edu/admission/apply/first-year-applicants",
+        "https://case.edu/admission/apply/application-tips",
+        "https://bulletin.case.edu/undergraduate-academics/ap-ib-credit-equivalencies"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "tufts",
+      "nameCn": "塔夫茨大学",
+      "nameEn": "Tufts University",
+      "gpaMin": null,
+      "gpaNote": "官网未公布最低均分/GPA 线，采用整体评估（holistic review），重点是在申请人所在国家教育体系内评估其学术表现（明确列举 GCSE/GCE A-Level、IB、法国高考、Abitur 等）与课程难度，不设统一换算线。语言：官网明确写「While Tufts has no score minimums（不设最低分）」，只给出『通常被录取者至少达到』的参考值——TOEFL iBT 100（2026-01-21 起新制 1–6 分制为 5.0+）、IELTS 7+、PTE Academic 68+、Duolingo 130+；因属竞争性参考值而非最低要求，本档 ieltsOverall / toefl 记 null，参考值在此如实转述。母语非英语者须提交语言成绩；在英语授课中学就读满 3 年可豁免，但中学阶段修过 ESOL 课程者可能被要求补充证明。不接受 TOEFL MyBest 拼分、TOEFL ITP Plus 与 IELTS Indicator。SAT/ACT 为 test-optional。AP 不作为录取硬性要求，仅用于入校后换学分/分级：文理学院（A&S）换学分最低需 4 分（多数科目要求 4 或 5 分，个别仅 5 分；3 分通常只给分级安置、不给学分），A&S 最多 5 门课等价学分，工学院最多 27 学分。",
+      "ieltsOverall": null,
+      "ieltsSub": null,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 4,
+      "pathways": [],
+      "source": [
+        "https://admissions.tufts.edu/apply/applying-as-an-international-s",
+        "https://admissions.tufts.edu/academics/pre-matriculation-credits",
+        "https://admissions.tufts.edu/discover-tufts/tufts-history/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "miami",
+      "nameCn": "迈阿密大学",
+      "nameEn": "University of Miami",
+      "gpaMin": null,
+      "gpaNote": "官网未公布国际生或本科生的最低均分线，采用整体评估；官方 2025 秋季本科申请数据：录取者平均未加权 GPA 3.89/4.0、SAT 中位区间 1360–1480、ACT 30–34。学术上要求完成至少 3–4 年严谨的大学预科课程。标化：自 Fall 2026 起 UM 恢复 SAT/ACT 要求，但明确对「将在美国境外高中/中学毕业」的申请者例外——可自行选择是否提交（即中国学生可 test-optional），且 AP/IB 不能替代 SAT/ACT。语言：非英语母语者必须提交 TOEFL / IELTS / DET（不接受 TOEFL Essentials），官网口径为『有竞争力的申请者通常达到（competitive applicants generally score above）』TOEFL iBT 80（0–120 旧制；2026-01-21 起新制 1–6 分制为 4.5）、IELTS 6.5、DET 120；成绩两年有效。本档按该竞争性参考线填 ieltsOverall/toefl 并在 _notes 说明口径。可豁免语言成绩的情形：AP 或 IB HL 英语课程成绩 A/B、IB English A1 SL/HL 预测分 4+、IB English B HL 预测分 5+、IGCSE/GCE 英语第一语言 C 以上、SAT EBRW 650+（须官方送分）、ACT English 27+、在美国高中读满 3 年（含毕业年）、或在英语授课高中读满 3 年、或完成本校 IEP 第 5 级、或在美国高校修满 24 个以上学分（含 6 学分英语写作且 B 以上）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "University of Miami Intensive English Program (IEP，密集英语项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言未达竞争性分数者的官方语言通道：官方 FAQ 明确『本科招生办不发放有条件录取（does not grant conditional admission）』，但学术合格的申请者可在一年内完成 IEP 第 5 级（Level 5，成绩 70% 以上）后，获得下一学年入学的录取；申请时必须已提交官方 TOEFL/IELTS/DET 成绩，逾期未完成则撤销录取。官网未公布 IEP 入学的最低语言分数。"
+        }
+      ],
+      "source": [
+        "https://admissions.miami.edu/undergraduate/application-process/admission-requirements/english-proficiency-requirements/index.html",
+        "https://admissions.miami.edu/undergraduate/application-process/admission-requirements/testing-policy/index.html",
+        "https://bulletin.miami.edu/general-university-information/undergraduate-policies-and-procedures/admission/undergraduate-international-admission/",
+        "https://admissions.miami.edu/undergraduate/about/FAQs/international-applicants/",
+        "https://www.miami.edu/admission-information/undergraduate/"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "iu",
+      "nameCn": "印第安纳大学伯明顿分校",
+      "nameEn": "Indiana University Bloomington",
+      "gpaMin": null,
+      "gpaNote": "官网未给出中国学生的最低均分百分比，官方口径为「我们的学生高中成绩相当于 B 平均或以上（Our students have the equivalent of a B average or higher in secondary school）」；成绩持续高于平均或稳步上升者更受青睐，而最近一学期成绩偏低或课程强度不足常导致拒录。按契约不把「B average」折算成 85 等具体百分数，gpaMin 记 null。学术要求：需完成至少 34 个学分（或学期）的大学预科课程——英语/母语 8 学分（4 年，含文学、语法、写作）、数学 7 学分（3.5 年，含代数 4、几何 2、另 1 学分预微积分/三角/微积分）、社科 6 学分（3 年）、科学 6 学分（3 年，含至少 4 学分即 2 年实验科学）、第二外语 4 学分（2 年）、其他预科课程 3 学分以上。语言：国际本科生必须证明英语能力（两年内有效），可选 TOEFL iBT 79（纸考 550；TOEFL ITP+ China 543）、IELTS 6.5、Duolingo 115、Cambridge English 176、PTE 53、MET 53、SAT EBRW 560、ACT English 21，或完成 IU 密集英语项目 IEP 第 7 级，或提交课程类成绩——AP English and Composition / AP Literature and Composition 3 分以上、IB HL 英语 A 4 分以上、GCE A-Level 英语第一语言 A/B/C。SAT/ACT 为 test-optional（可不提交，提交则采用拼分 Superscore）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": null,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Intensive English Program (IEP，IU 密集英语项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "IU 官方认可的语言通道：完成 IEP 最高级 Level 7 即可免除国际本科入学的英语考试成绩要求；IEP 共 7 级、每级每周 20–25 课时，入学有分级测试，官网未对 IEP 入学设定最低雅思/托福分数。适合学术达标但语言未达直录线（IELTS 6.5 / TOEFL 79）的学生。"
+        }
+      ],
+      "source": [
+        "https://bloomington.iu.edu/admissions/apply/international/english-proficiency.html",
+        "https://bloomington.iu.edu/admissions/apply/international/freshman/admission-standards.html",
+        "https://admissions.indiana.edu/apply/freshman/ap-exam-credit.html",
+        "https://linguistics.indiana.edu/intensive-english-program/program/index.html",
+        "https://admissions.indiana.edu/test-optional/index.html"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "vpi",
+      "nameCn": "弗吉尼亚理工大学",
+      "nameEn": "Virginia Polytechnic Institute and State University",
+      "gpaMin": null,
+      "gpaNote": "官网未公布最低均分线；官方口径是「多数被录取的学生完成了超出最低要求的课程，且 GPA 至少达到 B+（Most students who are selected for admission have completed more than the minimum requirements and have at least a B+ grade point average）」，按契约不折算为百分数，gpaMin 记 null。最低学术要求为课程门类：3 个单位数学（含代数 I、代数 II）、2 个单位实验科学（生物/化学/物理任选）、其余学术课程单位（强烈建议外语）；部分专业要求额外 1 年高阶数学或实验科学。需提交 9–11 年级全部课程与成绩，以及 12/13 年级在读课程与任何预估考试结果（可用 STARS 自报系统或成绩单复印件）。语言：母语非英语者不论国籍都须提交以下之一并达到最低分——TOEFL iBT 80（2026-01-21 前旧制；新制 1–6 分制为 4.5）且各单项不低于 16、IELTS 6.5 且各单项不低于 6.5、PTE 59、Duolingo 115、Cambridge English 176、SAT EBRW 550、ACT English 24、IGCSE/GCSE/GCE 英语第一语言 A/B/C 或 6–9、IB 英语 A（语言与文学）5 分以上；成绩两年内有效；不接受 TOEFL MyBest 拼分、TOEFL Essentials、TOEFL ITP Plus。SAT/ACT 对国际申请者不作要求（Optional）。AP 不作为录取依据，仅用于入校后换学分，最多可换 38 学分；官方 AP 换学分表中多数科目最低 3 分即可（部分科目需 4 或 5 分）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.5,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "AdvantageVT (弗吉尼亚理工国际生桥梁/国际大一项目，由语言与文化学院 VTLCI 运营)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "官方《国际招生指南》列出的 AdvantageVT 三档时长：3 学期（IELTS 5.5 且各单项不低于 5.5）、2 学期（IELTS 6.0 且各单项不低于 6.0）、1 学期（IELTS 6.5 且各单项不低于 6.0），另有 TOEFL、PTE、Duolingo、Cambridge 的对应门槛；覆盖 100 多个本科专业，学生读完并达到成绩要求后进入学位课程。适合语言或学术准备未达直录线的国际生（含 A-Level、普高背景）；该项目另有独立的 GPA 门槛（官方指南表格排版不清，未能可靠辨认具体数值，以校方为准）。"
+        },
+        {
+          "name": "Virginia Tech Language and Culture Institute (VTLCI，语言与文化学院英语项目)",
+          "type": "language",
+          "ielts": null,
+          "desc": "官方国际招生要求页写明：语言未达直录要求但其他录取条件合格的学生，可先入读 VTLCI 语言项目，达到所需语言水平后即被授予正式学位生（regular degree-seeking student）录取；官网未公布该语言项目本身的最低雅思分数。"
+        }
+      ],
+      "source": [
+        "https://vt.edu/admissions/international/requirements.html",
+        "https://lci.vt.edu/content/dam/lci_vt_edu/Intl-Admissions-Guide-25.pdf",
+        "https://www.registrar.vt.edu/content/dam/registrar_vt_edu/documents/Updates/ap_ib_clep/APCredit2025.pdf"
+      ],
+      "checkedAt": "2026-09-19"
+    },
+    {
+      "id": "uic",
+      "nameCn": "伊利诺伊大学芝加哥分校",
+      "nameEn": "University of Illinois Chicago",
+      "gpaMin": null,
+      "gpaNote": "官网未设国际生统一最低均分线，采用整体评估（holistic review）。官方公布的 Test-Optional 录取中位区间（未加权 4.0 制）按学院分别为：应用健康科学 3.2–3.7、建筑/设计与艺术 3.2–3.8、商科 3.2–3.7、教育 3.0–3.6、工程 3.3–3.8、文理 3.3–3.7、护理 3.6–4.0、城市规划与公共事务 2.9–3.6、公共卫生 3.1–3.5；官网给的是 4.0 制 GPA 区间，按契约不换算成百分制，gpaMin 记 null。语言要求适用于全体申请者：可用 TOEFL iBT 80（2026-01-21 起新制 1–6 分制为 4.5）且阅读 19/听力 17/口语 20/写作 21，或 IELTS Academic 6.5 且阅读/听力/口语/写作各 6.0，或 PTE Academic 54（阅读 51/听力 47/口语 53/写作 56）；成绩两年内有效；部分专业与学院要求更高分。2026 官方本科语言表格未列出 Duolingo（校方说明 Duolingo 仅供研究生、且自 Fall 2027 起接受），故本档不填 DET。若在英语为唯一官方语言的国家完成至少 2 年全日制中学或大学学习，或有该国 1 年以上全职工作证明（需雇主信），可免语言成绩；此外招生主任与院长可基于 ACT/SAT/AP/IB 或 GCSE/IGCSE 成绩个案批准豁免。SAT/ACT 为 Test-Optional：自 2027 申请周期起申请人不再需要选择测试方案，提交的分数仅在有利于申请时才被纳入评估。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "credit_only",
+      "apMin": null,
+      "pathways": [
+        {
+          "name": "UIC Global Academic Accelerator Program (AAP，学术加速器项目)",
+          "type": "intl_year1",
+          "ielts": 5.5,
+          "desc": "UIC 官方国际通道 UIC Global（与 Shorelight 合作）的 2 学期课程：GPA 2.5、IELTS 5.5（各单项不低于 5.0）或 TOEFL 68（各单项不低于 14）或 Cambridge B2 First 单项不低于 155；完成后达到 GPA 2.5 并修完 English 160，即可进入多数学院的学位课程。适合语言差半档的国际生。"
+        },
+        {
+          "name": "UIC Global Extended Accelerator Program (EAP，扩展加速器项目)",
+          "type": "intl_year1",
+          "ielts": 5.0,
+          "desc": "同一通道的 3 学期加长版：GPA 2.5、IELTS 5.0（各单项不低于 4.5）或 TOEFL 60（各单项不低于 12）或 Cambridge B2 First 单项不低于 150；完成后达到 GPA 2.5 并修完 English 160 可升学。适合语言基础较弱、需要更长适应期的国际生。"
+        }
+      ],
+      "source": [
+        "https://catalog.uic.edu/ucat/admissions-registration-finances/admissions/",
+        "https://www.uic.edu/depts/oar/undergrad/freshman_requirements_undergrad.html",
+        "http://gppa.uic.edu/prospective-students/prospective-students-application-guide/",
+        "https://global.uic.edu?p=95/"
+      ],
+      "checkedAt": "2026-09-19"
+    }
+  ]
+}

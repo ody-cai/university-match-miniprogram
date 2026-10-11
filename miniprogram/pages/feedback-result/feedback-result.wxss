@@ -1,0 +1,133 @@
+/* ==================================================================
+   反馈结果（09b 成功 / 09c 失败）
+   ------------------------------------------------------------------
+   尺寸依据：升学规划小程序UI稿/09b、09c（375 基准，1:1）
+
+   纵向节奏（内容区可用 617，本页无标签栏）：
+     paddingTop 120 + 吉祥物 132 + 20 + 标题 30 + 8 + 描述 22
+     + 24 + 回执卡 140  ≈ 496
+   余下约 120 留白 —— 与设计稿一致，内容整体偏上、下方留白较多，
+   不要把内容垂直居中（那是 05b「无匹配结果」页的做法，两页观感不同）。
+   ================================================================== */
+
+.fro {
+  padding-bottom: calc(100px + env(safe-area-inset-bottom));
+}
+.fro__body {
+  padding: 120px var(--pad) 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------------- 吉祥物 + 结果徽标 ----------------
+ * 徽标是**页面**的装饰而非吉祥物组件的一部分：
+ * 只有结果页需要它，塞进组件会让组件承担场景专属的样式。
+ */
+.fro__hero {
+  position: relative;
+  width: 132px;
+  height: 132px;
+}
+.fro__badge {
+  position: absolute;
+  right: -4px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 成功 = 钴蓝；失败 / 兜底 = 橙（与本项目「待提升 / 警示」的语义色一致） */
+.fro__badge--success {
+  background: var(--brand);
+}
+.fro__badge--fail,
+.fro__badge--stale {
+  background: var(--warn);
+}
+
+/* ---------------- 标题与描述 ---------------- */
+.fro__title {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--t1);
+  text-align: center;
+}
+.fro__desc {
+  margin-top: 8px;
+  max-width: 100%;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--t2);
+  text-align: center;
+}
+
+/* ---------------- 回执卡 ----------------
+ * 三行结构两态共用，差异在标签与强调色：
+ *   成功 → 工单号 / 反馈类型 / 提交时间
+ *   失败 → 失败原因 / 内容状态（钴蓝强调） / 工单号（灰）
+ */
+.fro__card {
+  width: 100%;
+  margin-top: 24px;
+}
+.fro__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 36px;
+}
+.fro__row + .fro__row {
+  border-top: 1px solid var(--line);
+}
+.fro__k {
+  flex-shrink: 0;
+  margin-right: 12px;
+  font-size: 14px;
+  color: var(--t3);
+}
+.fro__v {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--t1);
+  text-align: right;
+}
+/* 内容已保住是**好消息**，用品牌色把用户的注意力接过去 */
+.fro__v--brand {
+  color: var(--brand);
+}
+.fro__v--mute {
+  color: var(--t3);
+  font-weight: 400;
+}
+
+/* ---------------- 底部动作栏 ----------------
+ * 本页无标签栏，**不需要** `.cta-bar--tab` 的让位修饰符。
+ * 副文案两种：成功态是可点的「再提一条反馈」，失败态是说明文字。
+ */
+.fro__cta {
+  padding-top: 10px;
+  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+}
+.fro__link,
+.fro__foot {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+}
+.fro__link {
+  color: var(--brand);
+}
+.fro__foot {
+  color: var(--t3);
+}
+.fro__link--press {
+  opacity: 0.6;
+}

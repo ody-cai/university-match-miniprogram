@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "region": "au",
+    "checkedAt": "2026-09-15",
+    "source": "澳大利亚 11 所大学官方本科国际生招生页（2027 直录标准快照）",
+    "note": "数据来自各校官方招生/入学要求页面与 2027 本科直录成绩表（UNSW）。gpaMin 为中国学生高考直录的最低专业百分比（满分百分比）；不接受高考直录的墨尔本大学 gpaMin 为 null。AP/SAT 为国际课程（美高）直录路径：澳洲各校普遍接受 AP 直录（通常最少 3 门、单门 3 分+），SAT 为可选替代资格而非强制。英语要求为本科直录通用标准，法学/教育/医学等部分专业更高（已在 gpaNote 标注）。 TOEFL 口径：ETS 自 2026-01-21 起将托福 iBT 改为 1–6 分制（0.5 分一档），并设两年过渡期在成绩单上同时给出 0–120 可比分。本分片 toefl 字段统一存 0–120 可比分，与既有数据口径一致；若该校官网已改用新制（如萨斯喀彻温大学主展示 4.5、旧制 86 移入注释），对应说明写在 gpaNote 中。toefl 字段目前不在小程序界面上展示，仅供后续功能使用。"
+  },
+  "schools": [
+    {
+      "id": "unsw",
+      "nameCn": "新南威尔士大学",
+      "nameEn": "UNSW Sydney",
+      "gpaMin": 70,
+      "gpaNote": "接受中国高考直录，按专业要求高考满分（750 分制）约 70%–91%：文学/理学 70%，工程 75%，商科 80%，精算/医学 90–91%。依据 UNSW 2027 本科直录成绩表（Gao Kao 列）。另接受 IB、A-Level、AP 等。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 90,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "UNSW College Foundation Studies",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科，衔接 UNSW 本科一年级"
+        },
+        {
+          "name": "UNSW College Diploma",
+          "type": "intl_year1",
+          "ielts": 6.0,
+          "desc": "国际大一（文凭课程），完成后升入本科二年级"
+        },
+        {
+          "name": "University English Entry Course (UEEC)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班，未达语言要求可配语言课"
+        }
+      ],
+      "source": [
+        "https://china.unsw.edu.au/entry-requirements",
+        "https://www.unsw.edu.au/study/international-students/entry-requirements"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "melbourne",
+      "nameCn": "墨尔本大学",
+      "nameEn": "University of Melbourne",
+      "gpaMin": null,
+      "gpaNote": "墨尔本大学不接受中国高考直录。中国学生须通过 Trinity College Foundation Studies 预科，或凭 IB / A-Level / 美高文凭（AP+SAT）等国际资格直录。预科毕业方可入读本科一年级。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Trinity College Foundation Studies",
+          "type": "foundation",
+          "ielts": 6.0,
+          "desc": "墨尔本大学指定预科（墨大不接受高考直录，须读预科）"
+        },
+        {
+          "name": "Hawthorn-Melbourne / UMELBP",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（University of Melbourne English Language Bridging Program）"
+        }
+      ],
+      "source": [
+        "https://study.unimelb.edu.au/connect-with-us/international/china",
+        "https://study.unimelb.edu.au/how-to-apply/undergraduate"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "sydney",
+      "nameCn": "悉尼大学",
+      "nameEn": "University of Sydney",
+      "gpaMin": 70,
+      "gpaNote": "接受中国高考直录，总分约 70%–85%：多数专业 70%，商科 75–85%，建筑/法学等更高（部分 90%）。亦接受 IB（31–38）、A-Level、AP 直录。高考分见悉尼大学国际招生指南。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 85,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Taylors College Sydney Foundation Program",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "悉尼大学预科（Taylors College 承办）"
+        },
+        {
+          "name": "Centre for English Teaching (CET)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（悉尼大学英语教学中心）"
+        }
+      ],
+      "source": [
+        "https://www.sydney.edu.au/study/applying/how-to-apply/undergraduate/recognised-qualifications.html",
+        "https://www.sydney.edu.au/dam/corporate/documents/study/how-to-apply/international-admission-guide.pdf"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "anu",
+      "nameCn": "澳大利亚国立大学",
+      "nameEn": "Australian National University",
+      "gpaMin": 70,
+      "gpaNote": "接受中国高考直录，满分 70% 起（525/750）；商科约 73%、工程约 76%，法学/精算等热门专业 80%+。亦接受 AP+普高毕业证（最少 3 门 AP、单门 3 分+），或 IB/A-Level。ANU 无本校预科/国际大一，未达直录可通过合作机构预科衔接。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 80,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+"apCoursesMin": 3,
+      "pathways": [],
+      "source": [
+        "https://study.anu.edu.au/apply/international-applications/indicative-entry-requirement/advanced-placement-ap-applications",
+        "https://study.anu.edu.au/node/3270"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "monash",
+      "nameCn": "蒙纳士大学",
+      "nameEn": "Monash University",
+      "gpaMin": 60,
+      "gpaNote": "接受中国高考直录，满分约 60%–80%：多数专业 60–70%，工程 75%，法学 80%。亦接受 IB、A-Level、AP 直录；或高中三年均分达标直申部分课程。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Monash College Foundation Year",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（Monash College 承办）"
+        },
+        {
+          "name": "Monash College Diploma",
+          "type": "intl_year1",
+          "ielts": 6.0,
+          "desc": "国际大一，完成后升本科二年级"
+        },
+        {
+          "name": "Monash English",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班"
+        }
+      ],
+      "source": [
+        "https://www.monashuniversity.cn/how-to-apply/entry-requirements/undergraduate",
+        "https://www.monash.edu/study/courses/apply/international"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "uq",
+      "nameCn": "昆士兰大学",
+      "nameEn": "University of Queensland",
+      "gpaMin": 70,
+      "gpaNote": "接受中国高考直录，分数转换为百分比：多数专业约 70%，部分 75%，热门专业（如牙医）80%。亦接受 IB、A-Level、AP 等。具体见各专业页最低入学分。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 87,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "UQ College Foundation Studies",
+          "type": "foundation",
+          "ielts": 5.0,
+          "desc": "预科（UQ College 承办）"
+        },
+        {
+          "name": "ICTE-UQ",
+          "type": "language",
+          "ielts": null,
+          "desc": "昆士兰大学语言中心（Institute of Continuing & TESOL Education）"
+        }
+      ],
+      "source": [
+        "https://china.uq.edu.au/how-to-apply/eligibility",
+        "https://study.uq.edu.au/study-options/programs/bachelor-science-2461"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "uwa",
+      "nameCn": "西澳大学",
+      "nameEn": "University of Western Australia",
+      "gpaMin": 65,
+      "gpaNote": "接受中国高考直录，按省份满分折算：最低 65%（对应 ATAR 70），525/750=70%，部分专业 72.5%–90%（对应 ATAR 85–98）。依据 UWA 官方国际学历对照表。亦接受 IB、A-Level、AP。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 82,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "UWA College Foundation Program",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（UWA College 承办）"
+        },
+        {
+          "name": "UWA College Diploma",
+          "type": "intl_year1",
+          "ielts": 6.0,
+          "desc": "国际大一（Diploma in Commerce/Computer/Engineering），完成后升本科二年级"
+        },
+        {
+          "name": "UWA Centre for English Language Teaching (CELT)",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班"
+        }
+      ],
+      "source": [
+        "https://uwa.edu.au/study/how-to-apply/international-and-overseas-qualifications",
+        "https://uwa.edu.au/study/how-to-apply/pathways-and-eligibility/entry-pathways/international-student-pathways"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "adelaide",
+      "nameCn": "阿德莱德大学",
+      "nameEn": "Adelaide University",
+      "gpaMin": 60,
+      "gpaNote": "接受中国高考直录，满分约 60%–75%：文学/农学/商科/IT/护理 60%，工程/计算机 65–70%，法学/药学 75%，医学/口腔等健康类 80%+。具体见各专业页。亦接受 IB、A-Level、AP。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": null,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "Adelaide College Foundation Program",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（Adelaide University College 承办）"
+        },
+        {
+          "name": "Degree Transfer Program",
+          "type": "intl_year1",
+          "ielts": null,
+          "desc": "国际大一，高三均分 70%+ 可申，完成后升本科二年级"
+        }
+      ],
+      "source": [
+        "https://www.adelaide.edu.au/study/how-to-apply/entry-requirements",
+        "https://adelaide.edu.au/study/degrees/bachelor-of-laws-honours-bachelor-of-criminology-and-criminal-justice"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "uts",
+      "nameCn": "悉尼科技大学",
+      "nameEn": "University of Technology Sydney",
+      "gpaMin": null,
+      "gpaNote": "接受中国高考直录（Gaokao），各专业最低分数见 UTS 本科直录成绩表（Direct entry scores PDF），本次未逐一提取精确百分比；语言要求 IELTS 6.5（写 6.0）/ TOEFL 79。亦接受 IB、A-Level、AP。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "UTS College Foundation Studies",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（UTS College 承办，含延伸/标准/加速）"
+        },
+        {
+          "name": "UTS College Diploma",
+          "type": "intl_year1",
+          "ielts": 6.0,
+          "desc": "国际大一，完成后衔接 UTS 本科二年级"
+        },
+        {
+          "name": "UTS College English",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（学术英语）"
+        }
+      ],
+      "source": [
+        "https://www.uts.edu.au/for-students/admissions-entry/how-to-apply/international-applicants/academic-entry-requirements",
+        "https://utsaustralia.cn/study-at-uts/pathways/"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "rmit",
+      "nameCn": "皇家墨尔本理工大学",
+      "nameEn": "RMIT University",
+      "gpaMin": 65,
+      "gpaNote": "接受中国高考直录，满分约 65% 起（多数专业），商科等约 80%；或高中三年均分 75–80% 可免高考直申部分课程。亦接受 IB、A-Level、AP。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 79,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+      "pathways": [
+        {
+          "name": "RMIT Foundation Studies",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科"
+        },
+        {
+          "name": "RMIT College Diploma",
+          "type": "intl_year1",
+          "ielts": 6.0,
+          "desc": "国际大一（文凭课程）"
+        },
+        {
+          "name": "RMIT UP English",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班（RMIT University Pathways 学术英语）"
+        }
+      ],
+      "source": [
+        "https://www.rmit.edu.au/study-with-us/levels-of-study/undergraduate-study/bachelor-degrees/bachelor-of-commerce-bp357",
+        "https://rmit.edu.au/study-with-us/international-students/study/bachelors-in-australia"
+      ],
+      "checkedAt": "2026-09-15"
+    },
+    {
+      "id": "macquarie",
+      "nameCn": "麦考瑞大学",
+      "nameEn": "Macquarie University",
+      "gpaMin": 60,
+      "gpaNote": "接受中国高考直录，满分约 56%–73%：多数专业 60–65%，传媒/IT/商科较低（约 56–63%），临床相关 73%。亦接受 IB、A-Level、AP（通常 3 门 3 分+）。",
+      "ieltsOverall": 6.5,
+      "ieltsSub": 6.0,
+      "toefl": 83,
+      "satRequired": "optional",
+      "apAccepted": "direct",
+      "apMin": 3,
+"apCoursesMin": 3,
+      "pathways": [
+        {
+          "name": "Macquarie University College Foundation",
+          "type": "foundation",
+          "ielts": 5.5,
+          "desc": "预科（MQ College 承办）"
+        },
+        {
+          "name": "Macquarie University College Diploma",
+          "type": "intl_year1",
+          "ielts": 6.0,
+          "desc": "国际大一，完成后升本科二年级"
+        },
+        {
+          "name": "Macquarie English Language Program",
+          "type": "language",
+          "ielts": null,
+          "desc": "语言班"
+        }
+      ],
+      "source": [
+        "https://www.mq.edu.au/study/admissions-and-entry/apply/international/international-academic-requirements",
+        "https://www.mq.edu.au/study/admissions-and-entry/apply/international"
+      ],
+      "checkedAt": "2026-09-15"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+/* ============================================================
+   全部功能页
+   宫格与首页保持同一套规格：图标容器 56 / 圆角 18 / 标签 12，
+   保证同一控件在不同页面观感一致
+   ============================================================ */
+.fn {
+  padding: 10px 16px 24px;
+}
+
+/* 搜索框：本页底色为浅灰（首页搜索框同为浅灰，保持一致） */
+.fn .search {
+  background: #f1f4f7;
+  border: none;
+}
+.fn .search__input {
+  flex: 1;
+  margin-left: 8px;
+  font-size: 14px;
+  height: 100%;
+}
+.fn__clear {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---------------- 分组 ---------------- */
+.fn__group {
+  margin-top: 22px;
+}
+.fn__group-title {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.fn__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fn__item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.fn__box {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: #f1f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fn__label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--t1);
+}
+/* 尚未上线的功能：文字随之降级，避免误导为「已可用」 */
+.fn__label--off {
+  color: var(--t3);
+}
+
+.fn__foot {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--t4);
+}
+.fn__empty {
+  padding: 80px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--t3);
+}

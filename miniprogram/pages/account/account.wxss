@@ -1,0 +1,167 @@
+/* ============================================================
+   账号管理
+   ============================================================ */
+.acct {
+  padding: 10px 16px 0;
+}
+
+/* ---------------- 资料卡 ---------------- */
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+}
+.profile__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.profile__avatar-img {
+  width: 56px;
+  height: 56px;
+}
+.profile__body {
+  flex: 1;
+  margin-left: 14px;
+  min-width: 0;
+}
+/* 名字与版本徽标同一行；徽标可能不存在（未下发），所以用 flex 而不是 margin 硬撑 */
+.profile__name-row {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.profile__name {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--t1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.profile__plan {
+  margin-left: 6px;
+  flex-shrink: 0;
+}
+.profile__sub {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--t3);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ---------------- 三项统计 ---------------- */
+.stats {
+  display: flex;
+  margin-top: 14px;
+  padding: 16px 0;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+}
+.stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat + .stat {
+  border-left: 1px solid var(--line);
+}
+.stat__value-row {
+  display: flex;
+  align-items: center;
+}
+.stat__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--t1);
+}
+.stat__label {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--t3);
+}
+/* 可点击项：用主色区分于纯展示数字 */
+.stat__label--link {
+  color: var(--brand);
+}
+
+/* ---------------- 分组 ---------------- */
+.group {
+  margin-top: 20px;
+}
+.group__title {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  font-size: 13px;
+  color: var(--t3);
+}
+.glist {
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.grow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  padding: 0 16px;
+}
+.grow + .grow {
+  border-top: 1px solid var(--line);
+}
+.grow__label {
+  font-size: 15px;
+  color: var(--t1);
+}
+/* 行右侧：「可选状态标签 + 箭头」。
+   ⚠️ 标签为空时（读不到状态）只剩箭头，视觉上与其他行一致 ——
+      不要为了「对齐」放一个空占位，那会在真机上表现为一处莫名的缩进 */
+.grow__right {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+.grow__value {
+  margin-right: 6px;
+  font-size: 13px;
+  color: var(--t3);
+}
+
+/* ---------------- 退出登录 ---------------- */
+.logout {
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: var(--danger);
+}
+
+.acct__foot {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--t4);
+}

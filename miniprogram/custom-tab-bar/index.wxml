@@ -1,0 +1,18 @@
+<view class="tabbar" style="padding-bottom:{{safeBottom}}px">
+  <view class="tabbar__inner" style="height:{{barHeight}}px">
+    <view
+      wx:for="{{list}}"
+      wx:key="pagePath"
+      class="tabbar__item tap"
+      data-index="{{index}}"
+      bindtap="onTap"
+    >
+      <icon
+        name="{{item.icon}}"
+        size="25"
+        color="{{selected === index ? 'blue' : 'mute'}}"
+      />
+      <text class="tabbar__text {{selected === index ? 'tabbar__text--on' : ''}}">{{item.text}}</text>
+    </view>
+  </view>
+</view>

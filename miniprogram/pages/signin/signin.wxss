@@ -1,0 +1,209 @@
+/* ============================================================
+   登录页布局
+   中部内容整体垂直居中，底部按钮固定 —— 与设计稿一致：
+   吉祥物 132 居中，按钮 52 高，两个按钮间距 10
+   ============================================================ */
+.signin {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* 为固定底部动作区留出空间：10 + 52 + 10 + 52 + 文字行 + 安全区 */
+  padding-bottom: calc(174px + env(safe-area-inset-bottom));
+}
+
+.signin__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+/* ---------------- 品牌区 ---------------- */
+.signin__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signin__title {
+  margin-top: 22px;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--t1);
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.signin__sub {
+  margin-top: 10px;
+  padding: 0 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--t3);
+  text-align: center;
+}
+
+/* ---------------- 权益列表 ---------------- */
+.benefits {
+  margin-top: 26px;
+  padding: 18px 16px;
+  border-radius: 16px;
+  background: #f7f9fb;
+}
+.benefit {
+  display: flex;
+  align-items: flex-start;
+}
+.benefit + .benefit {
+  margin-top: 14px;
+}
+.benefit__ic {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefit__text {
+  flex: 1;
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--t1);
+}
+
+.signin__privacy {
+  display: block;
+  margin-top: 18px;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--t3);
+  text-align: center;
+}
+
+/* 模式说明：如实告诉用户数据落在哪里，不要含糊其辞 */
+.signin__mode {
+  display: block;
+  margin-top: 10px;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--t4);
+  text-align: center;
+}
+
+/* ---------------- 第二步：资料表单 ---------------- */
+.signin__main--form {
+  justify-content: flex-start;
+  padding-top: 40px;
+  align-items: center;
+}
+.signin__form-title {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--t1);
+}
+.signin__form-sub {
+  margin-top: 10px;
+  padding: 0 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--t3);
+  text-align: center;
+}
+
+/* 头像按钮：button 默认有边框与背景，这里全部清掉 */
+.avatar-btn {
+  width: 100%;
+  margin-top: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar-btn::after {
+  border: none;
+}
+.avatar-box {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.avatar-img {
+  width: 88px;
+  height: 88px;
+}
+.avatar-ph {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 提示语允许换行（文案说明了「可用微信头像，也可自己上传」，比一行宽） */
+.avatar-hint {
+  margin-top: 10px;
+  max-width: 260px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--brand);
+  text-align: center;
+}
+
+/* 昵称输入 */
+.nick-row {
+  width: 100%;
+  margin-top: 28px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--field);
+  display: flex;
+  align-items: center;
+}
+.nick-label {
+  font-size: 15px;
+  color: var(--t1);
+  flex-shrink: 0;
+}
+.nick-input {
+  flex: 1;
+  margin-left: 16px;
+  text-align: right;
+  font-size: 16px;
+  color: var(--t1);
+  height: 32px;
+}
+.nick-ph {
+  color: var(--t3);
+  font-size: 15px;
+}
+
+/* ---------------- 底部动作区 ---------------- */
+.signin__cta {
+  padding-top: 10px;
+  padding-bottom: calc(8px + env(safe-area-inset-bottom));
+}
+.signin__btn2 {
+  margin-top: 10px;
+}
+.signin__skip {
+  height: 40px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--t3);
+}
+.signin__skip--hover {
+  opacity: 0.6;
+}

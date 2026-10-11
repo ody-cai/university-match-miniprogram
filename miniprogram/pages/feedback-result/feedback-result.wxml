@@ -1,0 +1,54 @@
+<!-- ============================================================
+     反馈结果（09b 成功 / 09c 失败）
+     ------------------------------------------------------------
+     一个页面承载两态，靠本机最近一次提交结果分流（不需要 URL 传参）：
+       提交成功 → 吉祥物笑 + 钴蓝对勾徽标 + 回执卡（工单号/类型/时间）
+       提交失败 → 吉祥物难过 + 橙色感叹徽标 + 回执卡（原因/内容状态/工单号）
+       无结果   → 兜底态，如实说「没有可展示的结果」，不编造成功
+
+     设计稿：升学规划小程序UI稿/09b-反馈提交成功-Success.png
+              升学规划小程序UI稿/09c-反馈提交失败-Failure.png
+     ============================================================ -->
+<view class="page fro">
+  <nav-bar
+    title="{{c.feedback.result.navTitle}}"
+    back="{{true}}"
+    backUrl="{{backUrl}}"
+    backTab="{{backTab}}"
+    fallbackUrl="/pages/home/home"
+  />
+
+  <view class="fro__body">
+    <!-- 吉祥物 + 结果徽标 -->
+    <view class="fro__hero">
+      <mascot size="{{132}}" motion="{{heroMotion}}" mood="{{heroMood}}" />
+      <view class="fro__badge fro__badge--{{status}}">
+        <icon name="{{badgeIcon}}" size="{{20}}" color="white" />
+      </view>
+    </view>
+
+    <text class="fro__title">{{view.title}}</text>
+    <text class="fro__desc">{{view.desc}}</text>
+
+    <!-- 回执卡：两态行数相同，但标签与强调色不同 -->
+    <view wx:if="{{info.length}}" class="card fro__card">
+      <view wx:for="{{info}}" wx:key="k" class="fro__row">
+        <text class="fro__k">{{item.k}}</text>
+        <text class="fro__v {{item.tone ? 'fro__v--' + item.tone : ''}}">{{item.v}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部动作栏 -->
+  <view class="cta-bar fro__cta">
+    <button class="btn btn--primary" bindtap="onPrimary">{{view.primary}}</button>
+    <text
+      wx:if="{{view.again}}"
+      class="fro__link tap"
+      bindtap="onAgain"
+      hover-class="fro__link--press"
+      hover-stay-time="120"
+    >{{view.again}}</text>
+    <text wx:elif="{{view.foot}}" class="fro__foot">{{view.foot}}</text>
+  </view>
+</view>

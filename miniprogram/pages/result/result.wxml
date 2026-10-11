@@ -1,0 +1,105 @@
+<!-- ============================================================
+     匹配结果（05）
+     深色汇总卡 / 档位筛选 / 结果卡片列表 / 底部口径说明
+     ============================================================ -->
+<view class="page page--tab">
+  <!-- 从「匹配中」跳过来用的是 redirectTo，栈里上一页是匹配页，因此可以返回 -->
+  <nav-bar title="{{c.nav.result}}" back="{{true}}" fallback-url="/pages/schools/schools" />
+
+  <view wx:if="{{hasResult}}" class="result">
+    <!-- ============ 汇总卡 ============ -->
+    <view class="summary">
+      <view class="summary__count">
+        <text class="summary__num">{{result.evaluated}}</text>
+        <text class="summary__unit">{{c.result.summarySuffix}}</text>
+      </view>
+      <text class="summary__insight">{{result.insight}}</text>
+      <view class="summary__tiers">
+        <view class="summary__tier">
+          <text class="summary__tier-num">{{result.tiers.reach}}</text>
+          <text class="summary__tier-label">{{c.result.tierLabels.reach}}</text>
+        </view>
+        <view class="summary__tier">
+          <text class="summary__tier-num">{{result.tiers.match}}</text>
+          <text class="summary__tier-label">{{c.result.tierLabels.match}}</text>
+        </view>
+        <view class="summary__tier">
+          <text class="summary__tier-num">{{result.tiers.safe}}</text>
+          <text class="summary__tier-label">{{c.result.tierLabels.safe}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 行动建议（由规则引擎按内容层模板生成，来源在底部如实标注） ============ -->
+    <view wx:if="{{result.suggestions.length}}" class="sug">
+      <view wx:for="{{result.suggestions}}" wx:key="title" class="sug__item">
+        <view class="sug__dot"></view>
+        <view class="sug__body">
+          <text class="sug__title">{{item.title}}</text>
+          <text class="sug__detail">{{item.detail}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============ 档位筛选 ============ -->
+    <scroll-view class="chips__scroll" scroll-x enable-flex>
+      <view class="chips">
+        <view
+          wx:for="{{filters}}"
+          wx:key="key"
+          class="chip {{filter === item.key ? 'chip--on' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="onFilter"
+        >
+          <text>{{item.label}}</text>
+        </view>
+      </view>
+    </scroll-view>
+
+    <!-- ============ 结果列表 ============ -->
+    <view
+      wx:for="{{filtered}}"
+      wx:key="id"
+      class="rcard tap"
+      data-id="{{item.id}}"
+      bindtap="onOpenSchool"
+    >
+      <crest size="{{52}}" color="{{item.crest.color}}" shape="{{item.crest.shape}}" />
+
+      <view class="rcard__body">
+        <view class="rcard__name-row">
+          <text class="rcard__name">{{item.nameCn}}</text>
+          <view wx:if="{{item.top}}" class="badge badge--ok">完美匹配</view>
+        </view>
+        <text class="rcard__meta">{{item.countryCn}} · {{item.cityCn}} · {{item.qsLabel}}</text>
+      </view>
+
+      <view class="rcard__right">
+        <text class="rcard__score {{item.match === null ? 'rcard__score--mute' : ''}}">
+          {{item.match === null ? '—' : item.match}}
+        </text>
+        <view class="mt mt--{{item.tier}}">
+          <text>{{item.tierLabel}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 空筛选结果 -->
+    <view wx:if="{{!filtered.length}}" class="result__empty">
+      <text>{{c.common.emptyData}}</text>
+    </view>
+
+    <text class="result__disclaimer">{{disclaimer}}</text>
+    <!-- 解读来源必须如实标注：规则引擎生成的不冒充 AI 生成 -->
+    <text wx:if="{{insightByLabel}}" class="result__src">{{insightByLabel}}</text>
+  </view>
+
+  <!-- ============ 无结果引导 ============ -->
+  <view wx:else class="result__none">
+    <mascot size="{{132}}" />
+    <text class="result__none-title">{{c.result.emptyTip}}</text>
+    <button class="btn btn--primary result__none-btn" bindtap="onGoMatch">
+      <text>{{c.match.cta}}</text>
+    </button>
+  </view>
+</view>

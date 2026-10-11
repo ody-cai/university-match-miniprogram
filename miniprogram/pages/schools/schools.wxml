@@ -1,0 +1,77 @@
+<!-- ============================================================
+     院校库（06）
+     搜索框 / 地区筛选 chips / 排序 / 院校行列表
+     行本身是 components/school-row（与「我的收藏」14 共用）
+     ============================================================ -->
+<view class="page page--tab">
+  <nav-bar title="{{c.nav.schools}}" />
+
+  <view class="schools">
+    <!-- 搜索 -->
+    <view class="search">
+      <icon name="search" size="{{18}}" color="mute" />
+      <input
+        class="search__input"
+        value="{{keyword}}"
+        placeholder="{{c.schools.searchPlaceholder}}"
+        placeholder-class="search__ph"
+        confirm-type="search"
+        bindinput="onInput"
+      />
+    </view>
+
+    <!-- 地区筛选 -->
+    <scroll-view class="chips__scroll schools__chips" scroll-x enable-flex>
+      <view class="chips">
+        <view
+          wx:for="{{regions}}"
+          wx:key="key"
+          class="chip {{region === item.key ? 'chip--on' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="onRegion"
+        >
+          <text>{{item.label}}</text>
+        </view>
+      </view>
+    </scroll-view>
+
+    <!-- 结果统计 + 排序 -->
+    <view class="schools__bar">
+      <!-- 统计文案必须在 JS 里 api.tpl() 插值后再绑（内容层给的是「共 {count} 所院校」模板），
+           直接绑 c.schools.totalTemplate 会把占位符原样显示出来 -->
+      <text class="schools__total">{{totalLabel}}</text>
+      <view class="schools__sorts">
+        <view
+          wx:for="{{sorts}}"
+          wx:key="key"
+          class="schools__sort {{sort === item.key ? 'schools__sort--on' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="onSort"
+        >
+          <text>{{item.label}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 置顶提示：解释「为什么收藏的院校跑到了最前面」。
+         数量只算**当前筛选结果里**被置顶的条数，一条都没有时整行不渲染 -->
+    <view wx:if="{{pinnedLabel}}" class="schools__pinned">
+      <icon name="star" size="{{13}}" color="blue" />
+      <text class="schools__pinned-text">{{pinnedLabel}}</text>
+    </view>
+
+    <!-- 列表 -->
+    <school-row
+      wx:for="{{list}}"
+      wx:key="id"
+      school="{{item}}"
+      bind:open="onOpenSchool"
+      bind:favorite="onToggleFavorite"
+    />
+
+    <!-- 空结果 -->
+    <view wx:if="{{!loading && !list.length}}" class="schools__empty">
+      <text>{{c.schools.empty}}</text>
+    </view>
+  </view>
+</view>

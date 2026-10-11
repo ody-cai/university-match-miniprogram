@@ -1,0 +1,127 @@
+<!-- ============================================================
+     意见反馈（09）
+     ------------------------------------------------------------
+     三张卡：反馈类型 / 问题描述 / 相关截图
+     底部固定动作栏：仅提交按钮
+     设计稿：升学规划小程序UI稿/09-意见反馈-Feedback.png
+
+     ⚠️ 提交结果**不在本页展示**，而是跳到独立的「反馈结果」页
+        （09b 成功 / 09c 失败，见 pages/feedback-result/）。
+        两个原因：设计稿把结果页做成了独立页面（导航栏标题是「反馈结果」，
+        不是「意见反馈」）；且失败时要保留本页内容供重试。
+
+     ⚠️ v1.0.3（2026-09-25）依平台审核意见**移除「联系方式」输入卡**。
+        驳回原话：「涉嫌在非合理场景下收集、存储用户密码或个人敏感信息，
+        包括但不限于微信帐号、QQ 号码、银行账号等」。
+        本产品的反馈链路确实不需要联系方式：工单存在服务端、结果页给回执号，
+        要追问可以在详情里继续。**别再把它加回来**。
+        随之删除的还有底部那句「我们会在 3 个工作日内通过微信回复你」——
+        既已不收集联系方式，这句承诺无从兑现（改到结果页说感谢语）。
+
+     ⚠️ 本地模式提示条必须保留 —— 后端未接入时反馈只落在本机、团队收不到，
+        必须如实告知（见 data/content.js 的 localNotice）。
+     ============================================================ -->
+<view class="page fb">
+  <nav-bar
+    title="{{c.nav.feedback}}"
+    back="{{true}}"
+    fallbackUrl="/pages/home/home"
+  />
+
+  <view class="fb__body">
+    <!-- 卡 1 · 反馈类型（必填） -->
+    <view class="card fb__card">
+      <view class="fb__head">
+        <text class="card-title">{{c.feedback.sections.type}}</text>
+        <text class="badge badge--req">{{c.feedback.badges.required}}</text>
+      </view>
+      <view class="fb__types">
+        <view
+          wx:for="{{types}}"
+          wx:key="key"
+          class="fb-type {{type === item.key ? 'fb-type--on' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="onPickType"
+          hover-class="fb-type--press"
+          hover-stay-time="100"
+        >{{item.label}}</view>
+      </view>
+    </view>
+
+    <!-- 卡 2 · 问题描述（必填） -->
+    <view class="card fb__card">
+      <view class="fb__head fb__head--between">
+        <view class="fb__head-l">
+          <text class="card-title">{{c.feedback.sections.desc}}</text>
+          <text class="badge badge--req">{{c.feedback.badges.required}}</text>
+        </view>
+        <text class="fb__count num">{{counterText}}</text>
+      </view>
+      <textarea
+        class="fb__ta"
+        value="{{desc}}"
+        maxlength="{{c.feedback.descMax}}"
+        placeholder="{{c.feedback.descPlaceholder}}"
+        placeholder-class="fb__ph"
+        bindinput="onInputDesc"
+        show-confirm-bar="{{false}}"
+        cursor-spacing="24"
+      />
+    </view>
+
+    <!-- 卡 3 · 相关截图（选填） -->
+    <view class="card fb__card">
+      <view class="fb__head">
+        <text class="card-title">{{c.feedback.sections.images}}</text>
+        <text class="badge badge--opt">{{c.feedback.badges.optional}}</text>
+      </view>
+      <view class="fb__imgs">
+        <view
+          wx:for="{{images}}"
+          wx:key="path"
+          class="fb__img"
+        >
+          <image class="fb__img-pic" src="{{item.path}}" mode="aspectFill" />
+          <view
+            class="fb__img-del"
+            data-index="{{index}}"
+            catchtap="onRemoveImage"
+          >
+            <!-- 加号旋转 45° 即 ×：省一个图标，且与上传框的 + 同源 -->
+            <icon
+              name="plus"
+              size="{{11}}"
+              color="white"
+              style="transform: rotate(45deg);"
+            />
+          </view>
+        </view>
+        <view
+          wx:if="{{images.length < c.feedback.imageMax}}"
+          class="fb__add"
+          bindtap="onAddImage"
+          hover-class="fb__add--press"
+          hover-stay-time="100"
+        >
+          <icon name="plus" size="{{22}}" color="mute" />
+        </view>
+        <text class="fb__imgs-hint">{{imagesHint}}</text>
+      </view>
+    </view>
+
+    <!-- 卡 4 已于 v1.0.3 移除：原为「联系方式」输入卡（平台审核驳回项） -->
+
+    <!-- 本地模式如实提示：反馈不会送达团队 -->
+    <view wx:if="{{!remote}}" class="datacap fb__local">
+      <text>{{c.feedback.localNotice}}</text>
+    </view>
+  </view>
+
+  <!-- 底部动作栏（v1.0.3 起只放按钮，不再挂「N 个工作日内回复」的承诺） -->
+  <view class="cta-bar fb__cta">
+    <button
+      class="btn {{canSubmit ? 'btn--primary' : 'btn--disabled'}}"
+      bindtap="onSubmit"
+    >{{submitting ? c.feedback.submitting : c.feedback.submit}}</button>
+  </view>
+</view>

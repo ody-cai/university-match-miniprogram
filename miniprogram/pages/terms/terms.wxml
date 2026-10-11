@@ -1,0 +1,93 @@
+<!-- ============================================================
+     服务条款与隐私（00a）—— 启动页
+     品牌区（吉祥物即品牌标识）/ 三份条款入口 / 勾选同意 / 底部双出口
+     「不同意」必须有真实响应，这是合规硬要求
+
+     ⚠️ 正文整体受 ready 守卫：ready=false 表示「同意态还没判定完」。
+        判定是**同步**的（onLoad 第一句读本地 Storage），所以正常情况下
+        ready=false 只存在一帧；已同意的用户看不到条款页闪一下。
+        不要把这个守卫改成 wx:if="{{c}}" 之类的网络条件 —— 那正是
+        「每次打开都要再看一遍条款页」的老 bug。
+     ============================================================ -->
+<view class="page terms">
+  <block wx:if="{{ready}}">
+    <nav-bar title="{{c.nav.terms}}" />
+
+    <view class="terms__body">
+      <!-- 品牌区：吉祥物 132 + 品牌名 + 标语，整体居中 -->
+      <view class="brand">
+        <mascot size="{{132}}" motion="idle" />
+        <text class="brand__name">{{c.brand.name}}</text>
+        <text class="brand__tag">{{c.brand.tagline}}</text>
+      </view>
+
+      <text class="terms__intro">{{c.terms.intro}}</text>
+
+      <!-- 三份文档入口，点击展开正文浮层 -->
+      <view class="docs">
+        <view
+          wx:for="{{docs}}"
+          wx:key="key"
+          class="doc"
+          hover-class="doc--press"
+          hover-stay-time="120"
+          data-key="{{item.key}}"
+          bindtap="onOpenDoc"
+        >
+          <view class="doc__ic">
+            <icon name="{{item.icon}}" size="{{22}}" color="{{item.tone}}" />
+          </view>
+          <view class="doc__body">
+            <text class="doc__title">{{item.title}}</text>
+            <text class="doc__desc">{{item.desc}}</text>
+          </view>
+          <icon name="chevron-right" size="{{18}}" color="line" />
+        </view>
+      </view>
+
+      <!-- 勾选：未勾选时「同意并继续」为禁用态 -->
+      <view class="agree" bindtap="onToggle" hover-class="agree--press" hover-stay-time="100">
+        <view class="agree__box {{checked ? 'agree__box--on' : ''}}">
+          <icon wx:if="{{checked}}" name="check" size="{{13}}" color="white" />
+        </view>
+        <text class="agree__text">{{c.terms.checkLabel}}</text>
+      </view>
+
+      <text class="terms__foot">{{c.terms.foot}}</text>
+    </view>
+
+    <!-- 底部动作栏：同意为主按钮；下方「不同意」为文本出口 -->
+    <view class="cta-bar terms__cta">
+      <button
+        class="btn {{checked ? 'btn--primary' : 'btn--disabled'}}"
+        bindtap="onAgree"
+      >{{c.terms.agree}}</button>
+
+      <view class="terms__decline" bindtap="onDecline" hover-class="terms__decline--press" hover-stay-time="120">
+        <text>{{c.terms.decline}}</text>
+      </view>
+    </view>
+
+    <!-- 条款正文浮层 -->
+    <view wx:if="{{doc}}" class="sheet-mask" bindtap="onCloseDoc">
+      <view class="sheet" catchtap="noop">
+        <view class="sheet__head">
+          <text class="sheet__title">{{doc.title}}</text>
+          <view class="sheet__close" bindtap="onCloseDoc">
+            <icon name="chevron-left" size="{{20}}" color="sub" />
+          </view>
+        </view>
+        <text class="sheet__meta">{{docMeta}}</text>
+        <scroll-view class="sheet__scroll" scroll-y>
+          <view wx:for="{{doc.sections}}" wx:key="h" class="sheet__sec">
+            <text class="sheet__h">{{item.h}}</text>
+            <text class="sheet__p">{{item.p}}</text>
+          </view>
+        </scroll-view>
+        <view class="sheet__foot">
+          <button class="btn btn--primary btn--sm" bindtap="onCloseDoc">{{c.terms.readDone}}</button>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

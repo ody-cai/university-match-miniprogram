@@ -1,0 +1,43 @@
+<!-- ============================================================
+     我的收藏（11）
+     只列已收藏院校；空态给出「去院校库」的出口
+     行是 components/school-row（与院校库 06 共用）
+     ============================================================ -->
+<view class="page">
+  <!-- ⚠️ 本页是 navigateTo 进来的二级页，nav-bar 的返回箭头**不会自动出现** ——
+       必须显式传 back，否则用户除了系统手势就没有出口（漏了不报错，只是没有箭头）。
+       fallbackUrl 是「从分享卡片直达、没有历史栈」时的兜底，与 profile 页同一写法。 -->
+  <nav-bar
+    title="{{c.nav.favorites}}"
+    back="{{true}}"
+    fallback-url="/pages/account/account"
+  />
+
+  <view class="fav">
+    <!-- 统计 -->
+    <view wx:if="{{list.length}}" class="fav__bar">
+      <text class="fav__total">{{totalLabel}}</text>
+    </view>
+
+    <!-- 列表 -->
+    <school-row
+      wx:for="{{list}}"
+      wx:key="id"
+      school="{{item}}"
+      bind:open="onOpenSchool"
+      bind:favorite="onRemove"
+    />
+
+    <!-- 空态：尚未收藏任何院校。
+         不用「加载中」占位文字冒充内容，也不显示「共 0 所」这种废话 -->
+    <view wx:if="{{!loading && !list.length}}" class="fav__empty">
+      <icon name="star-line" size="{{40}}" color="line" />
+      <text class="fav__empty-title">{{c.favorites.empty}}</text>
+      <text class="fav__empty-hint">{{c.favorites.emptyHint}}</text>
+      <!-- 按钮复用 app.wxss 的 .btn--primary，不另造一套外观 -->
+      <view class="btn btn--primary fav__empty-btn tap" bindtap="onGoSchools">
+        <text>{{c.favorites.emptyAction}}</text>
+      </view>
+    </view>
+  </view>
+</view>

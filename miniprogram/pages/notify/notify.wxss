@@ -1,0 +1,158 @@
+/* ============================================================
+   消息通知（二级页）
+   根节点用 .page--cta：无标签栏，底部是 .cta-bar，需要预留其高度
+   ============================================================ */
+.ntf__body {
+  padding: 10px 16px 0;
+}
+
+/* ---------------- 说明卡 ---------------- */
+.ntf__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px 16px;
+}
+.ntf__badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ntf__title {
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.ntf__desc {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--t2);
+}
+
+/* ---------------- 分组标题 ---------------- */
+.ntf__group {
+  display: block;
+  margin: 20px 0 10px;
+  padding-left: 2px;
+  font-size: 13px;
+  color: var(--t3);
+}
+
+/* ---------------- 状态卡 ----------------
+   五态各有专属状态点：只有 ready 是「开着」（绿），used 是「额度已用掉」
+   （橙），其余（off / unavailable / unknown）统一用中性灰。
+   ⚠️ 不要给 unknown 用红色 —— 它是「不知道」，不是「出错」，
+      更不是「没有」；用错误色会让用户以为自己的账号出了问题。
+   -------------------------------------------- */
+.ntf__status {
+  padding: 16px;
+}
+.ntf__status-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ntf__status-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.ntf__dot {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background: var(--t4);
+}
+.ntf__dot--ready {
+  background: var(--ok);
+}
+.ntf__dot--used {
+  background: var(--warn);
+}
+.ntf__status-desc {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--t2);
+}
+
+/* 关联工单：没有工单号时整行不渲染（见 wxml 的 wx:if），
+   不留一个只有标签没有值的空行 */
+.ntf__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.ntf__meta-k {
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--t3);
+}
+.ntf__meta-v {
+  margin-left: 12px;
+  font-size: 13px;
+  color: var(--t1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ---------------- 未登录说明 ---------------- */
+.ntf__tip {
+  display: block;
+  margin-top: 10px;
+  padding-left: 2px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--t3);
+}
+
+/* ---------------- 说明列表 ---------------- */
+.ntf__notes {
+  padding: 14px 16px;
+}
+.ntf__note {
+  display: flex;
+  align-items: flex-start;
+}
+.ntf__note + .ntf__note {
+  margin-top: 10px;
+}
+/* 圆点用独立元素，不用 ::before —— 小程序里伪元素的 content
+   在部分基础库上表现不一致，而「少一个圆点」不会有任何报错 */
+.ntf__bullet {
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--brand-soft);
+}
+.ntf__note-text {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--t2);
+}
+
+.ntf__foot {
+  display: block;
+  margin: 14px 0 4px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--t4);
+}

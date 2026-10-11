@@ -1,0 +1,94 @@
+<!-- ============================================================
+     登录页（00b）
+     两步流程：
+       intro   —— 品牌 + 权益 + 微信一键登录
+       profile —— 完善头像昵称（微信不再自动提供，必须用户主动填写）
+     合规要点：左上「取消」与底部「暂不登录，先浏览」都必须真实可点且有响应
+     ============================================================ -->
+<view class="page signin">
+  <nav-bar title="{{c.nav.signin}}" back-text="{{c.signin.cancel}}" bind:back="onCancel" />
+
+  <!-- ==================== 第一步：介绍与登录 ==================== -->
+  <view wx:if="{{step === 'intro'}}" class="signin__main">
+    <view class="signin__brand">
+      <mascot size="{{132}}" motion="idle" />
+      <text class="signin__title">{{c.signin.title}}</text>
+      <text class="signin__sub">{{c.signin.sub}}</text>
+    </view>
+
+    <view class="benefits">
+      <view wx:for="{{c.signin.benefits}}" wx:key="*this" class="benefit">
+        <view class="benefit__ic">
+          <icon name="check" size="{{14}}" color="blue" />
+        </view>
+        <text class="benefit__text">{{item}}</text>
+      </view>
+    </view>
+
+    <text class="signin__privacy">{{c.signin.privacy}}</text>
+
+    <!-- 如实告知数据存在哪里，不含糊 -->
+    <text class="signin__mode">{{remote ? c.signin.remoteModeTip : c.signin.localModeTip}}</text>
+  </view>
+
+  <!-- ==================== 第二步：完善资料 ==================== -->
+  <view wx:else class="signin__main signin__main--form">
+    <text class="signin__form-title">{{c.signin.profileTitle}}</text>
+    <text class="signin__form-sub">{{c.signin.profileSub}}</text>
+
+    <!-- 头像：微信要求通过 button open-type=chooseAvatar 获取 -->
+    <button class="avatar-btn" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+      <view class="avatar-box">
+        <image wx:if="{{avatarUrl}}" class="avatar-img" src="{{avatarUrl}}" mode="aspectFill" />
+        <view wx:else class="avatar-ph">
+          <icon name="tab-me" size="{{30}}" color="mute" />
+        </view>
+      </view>
+      <text class="avatar-hint">{{c.signin.avatarHint}}</text>
+    </button>
+
+    <!-- 昵称：type=nickname 会唤起微信昵称填写，但用户也可自行输入 -->
+    <view class="nick-row">
+      <text class="nick-label">{{c.signin.nicknameLabel}}</text>
+      <input
+        class="nick-input"
+        type="nickname"
+        value="{{nickname}}"
+        placeholder="{{c.signin.nicknamePlaceholder}}"
+        placeholder-class="nick-ph"
+        bindinput="onNicknameInput"
+      />
+    </view>
+
+    <text class="signin__mode">{{remote ? c.signin.remoteModeTip : c.signin.localModeTip}}</text>
+  </view>
+
+  <!-- ==================== 底部动作区 ==================== -->
+  <view class="cta-bar signin__cta">
+    <!-- 第一步：微信一键登录 -->
+    <block wx:if="{{step === 'intro'}}">
+      <button class="btn btn--primary {{loading ? 'btn--disabled' : ''}}" bindtap="onWechatLogin">
+        <icon name="wechat" size="{{20}}" color="white" style="margin-right:8px" />
+        <text>{{loading ? c.common.loading : c.signin.wechatLogin}}</text>
+      </button>
+
+      <button
+        wx:if="{{showPhone}}"
+        class="btn btn--ghost signin__btn2"
+        open-type="getPhoneNumber"
+        bindgetphonenumber="onPhoneLogin"
+      >{{c.signin.phoneLogin}}</button>
+    </block>
+
+    <!-- 第二步：保存资料 -->
+    <block wx:else>
+      <button class="btn btn--primary {{saving ? 'btn--disabled' : ''}}" bindtap="onSaveProfile">
+        <text>{{saving ? c.signin.saving : c.signin.save}}</text>
+      </button>
+    </block>
+
+    <view class="signin__skip" bindtap="onCancel" hover-class="signin__skip--hover" hover-stay-time="120">
+      <text>{{c.signin.skip}}</text>
+    </view>
+  </view>
+</view>

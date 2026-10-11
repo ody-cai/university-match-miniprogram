@@ -1,0 +1,74 @@
+/* ============================================================
+   院校库（06）
+   列表行：校徽 52 + 名称/元信息 + QS 标签 + 收藏星标
+   ============================================================ */
+.schools {
+  padding: 10px 16px 0;
+}
+
+.schools .search {
+  background: #ffffff;
+}
+.schools .search__input {
+  flex: 1;
+  margin-left: 8px;
+  font-size: 14px;
+  height: 100%;
+}
+
+.schools__chips {
+  margin-top: 12px;
+}
+
+/* ---------------- 统计 + 排序 ---------------- */
+.schools__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0 10px;
+}
+.schools__total {
+  font-size: 13px;
+  color: var(--t3);
+}
+.schools__sorts {
+  display: flex;
+  align-items: center;
+}
+.schools__sort {
+  font-size: 13px;
+  color: var(--t3);
+  padding: 0 4px;
+}
+.schools__sort + .schools__sort {
+  margin-left: 10px;
+}
+.schools__sort--on {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+/* ---------------- 置顶提示 ---------------- */
+/* 「已收藏 N 所，已置顶」：解释收藏的院校为什么跑到了最前面 */
+.schools__pinned {
+  display: flex;
+  align-items: center;
+  margin: 0 2px 10px;
+}
+.schools__pinned-text {
+  margin-left: 4px;
+  font-size: 12px;
+  color: var(--t3);
+}
+
+/* ---------------- 列表行 ----------------
+   ⚠️ 行样式已随组件搬到 components/school-row/index.wxss。
+      院校库与「我的收藏」共用同一行，样式只留一份，别再在这里补。 */
+
+
+.schools__empty {
+  padding: 80px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--t3);
+}

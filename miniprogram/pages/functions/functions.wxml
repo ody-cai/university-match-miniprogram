@@ -1,0 +1,59 @@
+<!-- ============================================================
+     全部功能（02）
+     结构：导航栏（可返回） / 搜索框 / 4 组功能宫格 / 底部统计
+     分组数据来自 content.functions.groups，支持关键词过滤
+     ============================================================ -->
+<view class="page">
+  <nav-bar title="{{c.nav.functions}}" back="{{true}}" fallback-url="/pages/home/home" />
+
+  <view class="fn">
+    <!-- 搜索 -->
+    <view class="search">
+      <icon name="search" size="{{18}}" color="mute" />
+      <input
+        class="search__input"
+        value="{{keyword}}"
+        placeholder="{{c.functions.searchPlaceholder}}"
+        placeholder-class="search__ph"
+        confirm-type="search"
+        bindinput="onInput"
+      />
+      <view wx:if="{{keyword}}" class="fn__clear tap" bindtap="onClear">
+        <icon name="chevron-left" size="{{16}}" color="mute" style="transform:rotate(90deg)" />
+      </view>
+    </view>
+
+    <!-- 分组 -->
+    <view wx:for="{{groups}}" wx:key="title" class="fn__group">
+      <text class="fn__group-title">{{item.title}}</text>
+      <view class="fn__grid">
+        <view
+          wx:for="{{item.items}}"
+          wx:for-item="f"
+          wx:key="key"
+          class="fn__item tap"
+          data-url="{{f.url}}"
+          data-tab="{{f.tab}}"
+          data-ready="{{f.ready}}"
+          data-label="{{f.label}}"
+          bindtap="onTap"
+        >
+          <view class="fn__box">
+            <icon name="{{f.icon}}" size="{{26}}" color="{{f.ready ? 'ink' : 'mute'}}" />
+          </view>
+          <text class="fn__label {{f.ready ? '' : 'fn__label--off'}}">{{f.label}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 空结果 -->
+    <view wx:if="{{hit === 0}}" class="fn__empty">
+      <text>{{c.functions.empty}}</text>
+    </view>
+
+    <view wx:else class="fn__foot">
+      <!-- 必须绑 footerText（JS 里 api.tpl 插值过的），不要直接绑 c.functions.footer -->
+      <text>{{footerText}}</text>
+    </view>
+  </view>
+</view>

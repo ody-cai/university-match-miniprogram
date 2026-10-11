@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    ⚠️ 必须显式指定 base，不要删。
+    本函数挂在云网关的 /admin 路径下，而用户往往直接输入不带斜杠的 `/admin`。
+    此时浏览器把相对地址 `styles.css` 解析成站点根的 `/styles.css` → 命中网关 404，
+    结果是「没有样式、也没有脚本」，页面变成一堆裸 HTML（页签点了也不动）。
+    加了 base 之后，/admin 与 /admin/ 两种入口的相对资源都稳定落在 /admin/ 之下。
+    注意：base 的值必须与函数的访问路径一致；换挂载路径时要同步改这里和 app.js 的 API_BASE。
+  -->
+  <base href="/admin/">
+  <title>升学规划 · 运营管理台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">升</span><div><strong>升学规划</strong><small>运营管理台</small></div></div>
+      <div class="topbar-right"><span id="connectionState" class="status-dot offline">未连接</span><button id="logoutBtn" class="text-btn hidden">退出管理台</button></div>
+    </header>
+    <main class="shell">
+      <section id="loginView" class="login-view">
+        <div class="login-card">
+          <div class="eyebrow">PRIVATE CONSOLE</div><h1>管理工单与用户档案</h1>
+          <p class="muted">管理密钥仅保存在当前页面内存，不会写入浏览器存储。</p>
+          <label class="field"><span>管理员密钥</span><input id="keyInput" type="password" autocomplete="off" placeholder="输入已配置的管理密钥"></label>
+          <button id="loginBtn" class="primary wide">进入管理台</button>
+          <p id="loginError" class="error-text"></p>
+        </div>
+      </section>
+      <section id="dashboardView" class="hidden">
+        <div class="page-head"><div><div class="eyebrow">CONTROL CENTER</div><h1>运营概览</h1><p class="muted">统一管理用户档案、院校要求和用户投诉工单。</p></div><button id="refreshBtn" class="secondary">刷新数据</button></div>
+        <div id="overviewCards" class="metric-grid"></div>
+        <div class="tabs" role="tablist"><button class="tab active" data-tab="tickets">投诉工单</button><button class="tab" data-tab="users">用户档案</button><button class="tab" data-tab="schools">院校数据</button></div>
+        <section id="ticketsPanel" class="panel tab-panel"></section>
+        <section id="usersPanel" class="panel tab-panel hidden"></section>
+        <section id="schoolsPanel" class="panel tab-panel hidden"></section>
+      </section>
+    </main>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card"><button id="modalClose" class="modal-close" aria-label="关闭">×</button><div id="modalBody"></div></div></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

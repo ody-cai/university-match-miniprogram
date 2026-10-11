@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 微信小程序开发大赛 · 规范速查</title>
+<style>
+  :root{
+    --bg:#FAFAF8; --card:#FFFFFF; --ink:#2C2C2A; --muted:#6B6A64; --hint:#9A9992;
+    --line:#E6E4DC; --accent:#185FA5; --accent-soft:#E6F1FB;
+    --red:#A32D2D; --red-soft:#FCEBEB; --teal:#0F6E56; --teal-soft:#E1F5EE;
+    --purple:#534AB7; --purple-soft:#EEEDFE; --amber:#854F0B; --amber-soft:#FAEEDA;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:15px; line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:48px 24px 96px}
+  header{border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:32px}
+  h1{font-size:26px; font-weight:600; margin:0 0 8px; letter-spacing:-.01em}
+  .sub{color:var(--muted); font-size:14px; margin:0}
+  .tagline{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px}
+  .tag{font-size:12px; padding:3px 10px; border-radius:20px; background:var(--accent-soft); color:var(--accent)}
+  .tag.g{background:var(--teal-soft); color:var(--teal)}
+  .tag.p{background:var(--purple-soft); color:var(--purple)}
+  .tag.r{background:var(--red-soft); color:var(--red)}
+
+  section{margin-bottom:44px}
+  h2{font-size:18px; font-weight:600; margin:0 0 4px; display:flex; align-items:baseline; gap:10px}
+  h2 .n{font-size:12px; font-weight:500; color:var(--hint); font-variant-numeric:tabular-nums}
+  .lede{color:var(--muted); font-size:14px; margin:0 0 20px}
+  h3{font-size:15px; font-weight:600; margin:26px 0 10px}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin-bottom:14px}
+  .card.warn{border-color:#F0CFCF; background:#FFFBFB}
+  .card.key{border-color:#C9DDF3; background:#FBFDff}
+
+  table{width:100%; border-collapse:collapse; font-size:14px; table-layout:fixed}
+  th,td{text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top; word-break:break-word}
+  th{font-weight:600; color:var(--muted); font-size:13px; background:#FCFCFA}
+  tr:last-child td{border-bottom:none}
+  td:first-child{font-weight:500}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:13px; background:#F3F2EC; padding:1px 5px; border-radius:4px}
+
+  ul{margin:8px 0 0; padding-left:20px}
+  li{margin-bottom:6px}
+
+  .kv{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:14px 0}
+  .kv > div{background:#FCFCFA; border-radius:8px; padding:12px 14px}
+  .kv .k{font-size:12px; color:var(--muted); margin-bottom:2px}
+  .kv .v{font-size:20px; font-weight:600; font-variant-numeric:tabular-nums}
+  .kv .u{font-size:12px; color:var(--hint); font-weight:400; margin-left:2px}
+
+  .note{font-size:13px; color:var(--muted); border-left:2px solid var(--line); padding-left:12px; margin-top:14px}
+  .src{font-size:12px; color:var(--hint); margin-top:10px}
+  .src b{color:var(--amber); font-weight:500}
+
+  .steps{counter-reset:s; list-style:none; padding-left:0; margin:14px 0 0}
+  .steps li{counter-increment:s; position:relative; padding-left:34px; margin-bottom:12px}
+  .steps li::before{
+    content:counter(s); position:absolute; left:0; top:1px; width:22px; height:22px;
+    border-radius:50%; background:var(--accent-soft); color:var(--accent);
+    font-size:12px; font-weight:600; display:flex; align-items:center; justify-content:center;
+  }
+
+  .two{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px}
+  .two .card{margin-bottom:0}
+  .pill{display:inline-block; font-size:12px; font-weight:500; padding:2px 9px; border-radius:20px; margin-bottom:8px}
+  .pill.a{background:var(--teal-soft); color:var(--teal)}
+  .pill.b{background:var(--purple-soft); color:var(--purple)}
+
+  .check{list-style:none; padding:0; margin:0}
+  .check li{display:flex; gap:12px; align-items:flex-start; padding:10px 12px; border-radius:8px; cursor:pointer; transition:background .12s}
+  .check li:hover{background:#F7F7F3}
+  .check input{margin:5px 0 0; width:16px; height:16px; flex:0 0 16px; accent-color:var(--accent); cursor:pointer}
+  .check .txt{flex:1}
+  .check .txt small{display:block; color:var(--muted); font-size:13px; margin-top:2px}
+  .check li.done .txt > span{text-decoration:line-through; color:var(--hint)}
+
+  .bar{height:6px; background:#EDEBE4; border-radius:4px; overflow:hidden; margin:16px 0 6px}
+  .bar i{display:block; height:100%; background:var(--accent); border-radius:4px; width:0; transition:width .25s ease}
+  .barlab{font-size:13px; color:var(--muted); display:flex; justify-content:space-between; font-variant-numeric:tabular-nums}
+  .btn{font:inherit; font-size:13px; padding:6px 14px; border-radius:8px; border:1px solid var(--line); background:#fff; color:var(--muted); cursor:pointer; margin-top:14px}
+  .btn:hover{border-color:#C9C7BE; color:var(--ink)}
+  footer{border-top:1px solid var(--line); padding-top:20px; color:var(--hint); font-size:12px; line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>2026 微信小程序开发大赛 · 规范速查</h1>
+  <p class="sub">把三份官方材料拆成可执行条目 —— 设计指南、平台运营规范、微信 AI 生态接入指引。</p>
+  <div class="tagline">
+    <span class="tag g">设计指南 → 用户体验感 20 分</span>
+    <span class="tag r">运营规范 → 合规红线</span>
+    <span class="tag p">AI 接入指引 → 产品创新性 30 分</span>
+  </div>
+</header>
+
+<section>
+  <h2><span class="n">01</span>三份材料各管什么</h2>
+  <p class="lede">大赛规程原文要求参赛作品「需遵循《微信小程序设计指南》和《微信小程序平台运营规范》」——所以前两份不是建议，是参赛资格的一部分。</p>
+  <table>
+    <tr><th style="width:30%">材料</th><th style="width:26%">性质</th><th>对参赛的作用</th></tr>
+    <tr>
+      <td>《微信小程序设计指南》</td>
+      <td>设计规范</td>
+      <td>既对应「用户体验感」20 分，又是规程点名的强制要求。含可量化的硬指标。</td>
+    </tr>
+    <tr>
+      <td>《微信小程序平台运营规范》</td>
+      <td>强制规则</td>
+      <td>下架、限流、封禁的依据。与「用户反馈（DAU/MAU）」直接冲突——被限流，数据就没了。</td>
+    </tr>
+    <tr>
+      <td>《关于开发者接入微信AI生态的指引》</td>
+      <td>能力接入</td>
+      <td>对应「产品创新性」30 分的第一条细则「AI 应用创新」。<b>⚠️ 2026-09-24 实测：其中「开发模式 / Skill」不可提审、代码已摘除；本项目改走「自动模式」并已开启，见 §04。</b></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2><span class="n">02</span>设计指南 · 可直接抄进开发规范的硬指标</h2>
+  <p class="lede">指南主体是四条原则（友好礼貌、清晰明确、便捷优雅、统一稳定），真正能验收的是下面这些具体数字和禁令。</p>
+
+  <div class="kv">
+    <div><div class="k">常用字号</div><div class="v">22 / 17 / 15<span class="u">/ 14 / 12 pt</span></div></div>
+    <div><div class="k">点击热区物理尺寸</div><div class="v">7–9<span class="u"> mm</span></div></div>
+    <div><div class="k">标签分页数量</div><div class="v">2–5<span class="u"> 个（建议 ≤4）</span></div></div>
+    <div><div class="k">设计稿基准宽度</div><div class="v">375 / 390<span class="u"> px</span></div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">字体与视觉</h3>
+    <ul>
+      <li>字体与运行系统保持一致；常用字号 <code>22 / 17 / 15 / 14 / 12 pt</code>。</li>
+      <li>设计稿两种基准：<b>375px</b> 走固定布局（不同机型等比缩放）；<b>390px</b> 走响应式布局（需逐机型适配）。二选一，别混用。</li>
+      <li>官方控件库可直接取用：WeUI Sketch / Photoshop 组件库，网页预览 <code>weui.io</code>。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">导航与小程序的既有约束</h3>
+    <ul>
+      <li>右上角小程序菜单是微信官方控件：<b>内容不可自定义</b>，只能选深／浅两套基本配色，且设计界面时必须<b>预留该区域空间</b>。</li>
+      <li>建议所有次级页面左上角提供「返回上一级」。</li>
+      <li>标签分页栏可固定在顶部或底部，<b>数量不得少于 2 个、不得超过 5 个</b>（为保证点击区域建议 ≤4 个）；<b>一个页面不应出现一组以上的标签分页栏</b>。</li>
+      <li>原生底部标签分页样式<b>仅供小程序首页使用</b>。</li>
+      <li>自有导航样式建议与官方控件保持一定差异，便于用户区分。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">加载与反馈（最容易被扣分的地方）</h3>
+    <ul>
+      <li>载入时间较长时，<b>应提供取消操作并使用进度条</b>显示进度。</li>
+      <li>加载过程<b>必须保持动画</b>——无动画的加载会让人误以为界面卡死。</li>
+      <li><b>同一页面不得同时使用超过 1 个加载动画。</b></li>
+      <li>推荐「局部加载反馈」而非模态加载；模态加载覆盖全页、无法指明加载位置，<b>应谨慎使用</b>，仅限全局性操作。</li>
+      <li>图标型／文字型弹出提示 1.5 秒后自动消失、不打断流程；<b>错误提示不适用</b>这类一闪而过的形式。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">输入与误操作</h3>
+    <ul>
+      <li><b>减少输入</b>：优先用摄像头识别、地理位置等微信接口替代键盘输入；必须手输时，尽量让用户「选择」而不是「记忆+输入」（如提供搜索历史）。</li>
+      <li><b>避免误操作</b>：可点击控件热区换算成物理尺寸约 <code>7mm–9mm</code>。直接把 PC 界面搬到手机上最容易踩这条。</li>
+      <li><b>异常可控、有路可退</b>：杜绝用户停滞在某页无处可去。表单报错需在顶部告知原因<b>并标识出错误字段</b>，按需选用原位／公告／模态三种报错。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">03</span>运营规范 · 与参赛直接相关的红线</h2>
+  <p class="lede">这份是「会被下架的那份」。下面只挑与参赛作品、与 DAU/MAU 增长手段直接冲突的条款。</p>
+
+  <div class="card warn">
+    <h3 style="margin-top:0">会直接影响「用户反馈」得分的三条</h3>
+    <table>
+      <tr><th style="width:22%">条款</th><th>内容与后果</th></tr>
+      <tr>
+        <td>5.28 分享场景频率限制</td>
+        <td>以<b>利益诱导分享</b>（现金、实物、红包、优惠券、积分、话费、流量等），且一段时间内分享次数过多，会触发频率限制，<b>新增分享页面将被限制访问</b>。→ 拉新手段不能靠利诱。</td>
+      </tr>
+      <tr>
+        <td>5.10 互推行为</td>
+        <td>不得与其他第三方共同利用腾讯服务对小游戏／小程序或 APP 进行推荐、推广、排行、集中跳转。<b>一经发现下架处理。</b>→ 别想着和别的参赛作品互相导流。</td>
+      </tr>
+      <tr>
+        <td>5.8 游戏测试行为</td>
+        <td>不得生成二维码在朋友圈传播、不得恶意导流至其他小程序完成测试、不得用隐藏内容绕过审核。<b>可封禁朋友圈二维码识别能力直至封号。</b></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card warn">
+    <h3 style="margin-top:0">主体资质（个人开发者的现实门槛）</h3>
+    <ul>
+      <li><b>4.2</b> 须按平台要求提供相应的<b>审批、备案等资质文件材料</b>，否则平台有理由认为违规；伪造造假将被拒或强制处理。</li>
+      <li><b>4.4</b> 未取得法定许可证件或牌照，发布、传播或从事相关经营活动的，平台有权拒绝。</li>
+      <li><b>4.1 / 4.3</b> 有合理理由认为违反法律法规或为违法活动提供便利的，将被拒绝。</li>
+      <li><b>5.32</b> 特定行业管控：符合《小程序特定行业管理规范》类目范围的，需额外遵守对应规定。</li>
+    </ul>
+    <p class="note">结合大赛「须在 10 月 17 日前正式上线」的窗口，<b>需要审批／备案的类目会直接吃掉你的工期</b>。选题阶段就要避开。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">UI 规范（第 13 条，逐条可验收）</h3>
+    <ul>
+      <li>13.1 应符合微信小程序设计规范。</li>
+      <li>13.2 不得提供改变微信外观和功能的用户体验。</li>
+      <li>13.3 保持所有图片文本简洁，<b>不可使用文本遮挡图片</b>。</li>
+      <li>13.4 icon 建议使用有色背景。</li>
+      <li>13.5 页面内的<b>浮层和弹窗应可关闭</b>。</li>
+      <li>13.6 <b>不得模仿系统通知或警告诱导用户点击。</b></li>
+      <li>13.7 页面下拉时，账号字样应清晰可见，<b>不得使用背景色遮挡账号名称</b>。</li>
+    </ul>
+    <p class="src">另：5.4 外挂行为、5.22 交易争议及交易体验分、5.26 保证金——涉及交易功能时需额外关注。</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">04</span>微信 AI 生态接入 · 怎么接、选哪个模式</h2>
+  <p class="lede">这是三份材料里唯一「花 10 分钟就能拿到客观证据」的动作——它直接支撑占 30 分的创新性维度。</p>
+
+  <div class="card" style="border-left:4px solid #D93025; background:#FFF6F6">
+    <h3 style="margin-top:0">⚠️ 2026-09-24 实测：走「开发模式（Skill）」的版本提审必被驳回</h3>
+    <p style="margin:0 0 8px 0; font-size:14px">本项目已按「开发模式」做完 5 个原子接口（独立分包 + <code>agent.skills</code> 声明），正式提审被驳回。审核答复原文：</p>
+    <blockquote style="margin:0 0 8px 0; padding:8px 12px; border-left:3px solid #D93025; background:#fff; font-size:13.5px; line-height:1.75">
+      你好，当前小程序版本包含 Skill 相关能力，该能力尚处于灰度测试阶段，暂未开放提审，请等待官方统一下发通知后再提交包含 Skill 的版本。如有常规版本发布诉求，建议移除 Skill 相关代码后重新提交。
+    </blockquote>
+    <p style="margin:0; font-size:14px">⇒ <b>只要包里还有 Skill 相关代码／声明，这个版本就提不上去</b>，与代码质量无关。相关代码已于同日整体摘除（清单与恢复须知见 <code>版本备注.md</code> §三.6）。<br>
+    在官方下发开放通知之前，唯一可走的是<b>模式一「自动模式」</b>——它<b>不需要写任何代码</b>，因此不受此限制。</p>
+    <p style="margin:10px 0 0 0; padding:8px 12px; background:#E8F5E9; border-left:3px solid #2E7D32; font-size:14px">
+      ✅ <b>本项目处置（2026-09-24 已确认）</b>：已在公众平台开启<b>自动模式</b> ⇒ 参赛简介按官方口径写
+      「已接入微信 AI 生态（平台自动模式）」，这是客观事实。⚠️ 术语别混：<b>自动模式</b>＝平台读源码、零开发；
+      <b>开发模式</b>＝自己实现原子接口（即被驳回的那条）。</p>
+  </div>
+
+  <div class="card key">
+    <h3 style="margin-top:0">两条官方原文事实</h3>
+    <ul>
+      <li>接入后，小程序<b>将有机会被微信 AI 推荐和调用</b>；<b>未完成接入的小程序，将无法被微信 AI 推荐及调用</b>。</li>
+      <li>平台提供两种接入模式，开发者可按需选择，<b>两种模式不互斥，可同时选择</b>。</li>
+    </ul>
+    <p class="src"><b>注意</b>：网上流传的版本常把这一句写成「两种模式互斥」，属于漏字误读。原文是不互斥。</p>
+  </div>
+
+  <div class="two">
+    <div class="card">
+      <span class="pill a">模式一</span>
+      <h3 style="margin-top:0">自动模式</h3>
+      <p style="margin:0; font-size:14px">授权平台提审时读取小程序源码，<b>无需投入额外开发</b>。平台将分析你的小程序页面，让微信 AI 能直接操作。</p>
+      <p class="note">零开发成本。适合页面结构清晰的工具类、电商类小程序。代价是需授权平台读取源码。</p>
+    </div>
+    <div class="card">
+      <span class="pill b">模式二</span>
+      <h3 style="margin-top:0">开发模式</h3>
+      <p style="margin:0; font-size:14px">可基于小程序业务特性，<b>自主个性化开发</b>。通过平台评测与审核后，可被微信 AI 调用。</p>
+      <p class="note">控制力更强，但需走评测与审核流程，有时间成本。适合有定制需求的项目。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">入口与操作</h3>
+    <ol class="steps">
+      <li>打开网页端<b>「微信公众平台 → 基础功能 → AI 能力」</b>；或在微信内进入小程序<b>「微信开发者助手 → 小程序 → 微信 AI 管理」</b>。</li>
+      <li>在「AI 能力」页面找到<b>自动模式</b>开关，开启并同意授权协议。平台会在提审时读取源码、分析页面结构。</li>
+      <li>如需定制能力，再单独申请<b>开发模式</b>，按官方文档开发后提交评测与审核。</li>
+      <li>把「已接入微信 AI 生态」作为客观事实写进小程序介绍文档，对应「AI 应用创新」评分点。<b>⚠️ 只有自动模式确实开启之后才写</b>；后台「介绍」字段一律不写（见 <code>小程序简介.md</code> §1.2）。</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">05</span>参赛自查清单</h2>
+  <p class="lede">勾选状态会自动保存在本机浏览器里，可随时回来续。</p>
+  <div class="bar"><i id="barfill"></i></div>
+  <div class="barlab"><span id="barcount">0 / 0 已完成</span><button class="btn" id="reset">重置</button></div>
+  <ul class="check" id="list">
+    <li><input type="checkbox"><span class="txt"><span>确认作品是「小程序」而非「小游戏」，且具备实用性与原创性</span><small>规程二、参赛作品要求</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>确认选题不涉及需审批／备案的类目，能在 10/17 前完成上架</span><small>运营规范 4.2 / 4.4 / 5.32</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>已提交小程序<b>备案</b>（微信端「小程序认证及备案」），备注按个人主体写、字数 20–200 实测</span><small>管局审核 1–20 工作日，不上线就参赛无效 ⇒ 现在就得递</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>确认作品在 2026-07-17 ~ 10-17 窗口内首次正式上线，且 7/17 前未上线过</span><small>规程二、第 3 条</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>在「微信公众平台 → 基础功能 → AI 能力」开启自动模式接入（✅ 2026-09-24 已开启）</span><small>AI 生态接入指引 / 已办</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>评估是否需要额外申请开发模式（⚠️ 当前灰度中：含 Skill 的版本会被驳回，暂只开自动模式）</span><small>AI 生态接入指引 / 2026-09-24 实测</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>字号、热区、基准宽度按设计指南落定（22/17/15/14/12pt、7–9mm、375 或 390px）</span><small>设计指南 三 / 五 / 六</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>右上角小程序菜单区域已预留，且只用官方深浅配色</span><small>设计指南 2.1</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>标签分页数量在 2–5 之间，单页不超过一组</span><small>设计指南 2.1</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>同页加载动画不超过 1 个；长时加载提供取消操作与进度条</span><small>设计指南 2.2</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>表单报错标识到具体字段，异常状态有明确出路</span><small>设计指南 2.3</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>浮层／弹窗均可关闭，未模仿系统通知诱导点击</span><small>运营规范 13.5 / 13.6</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>拉新方案不含利诱分享，也不与其他作品互推</span><small>运营规范 5.28 / 5.10</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>已建立 AI 使用过程的可追溯记录（提示词、生成物、人工修改痕迹）</span><small>规程七、违规处理 第 4 条</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>介绍文档 PDF 已覆盖：功能简介、应用场景、实际问题、技术方案、创新点</span><small>规程三、第 5 项</small></span></li>
+    <li><input type="checkbox"><span class="txt"><span>全队证件图片（每位参赛者各一份）、AppID、小程序二维码、参赛授权书齐备</span><small>规程三、第 1/3/4/6 项（授权书签署份数规程未写明，已去函确认）</small></span></li>
+  </ul>
+</section>
+
+<footer>
+  来源：2026 微信小程序开发大赛规程（10 页 PDF）· 微信小程序设计指南 · 微信小程序平台运营规范 · 关于开发者接入微信AI生态的指引（微信团队，2026-06-08）。<br>
+  注：AI 接入指引中「两种模式不互斥」「未接入则无法被推荐及调用」为官方原文；关于微信 AI 当前处于内测阶段、原子接口／原子组件／Skill 等实现细节来自媒体报道，非官方原文，引用前请以官方文档为准。
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var list=document.getElementById('list');
+  var items=[].slice.call(list.querySelectorAll('li'));
+  var fill=document.getElementById('barfill');
+  var count=document.getElementById('barcount');
+  var KEY='wxminiapp2026-checklist-v1';
+
+  function state(){
+    try{ return JSON.parse(localStorage.getItem(KEY))||{}; }catch(e){ return {}; }
+  }
+  function save(s){
+    try{ localStorage.setItem(KEY, JSON.stringify(s)); }catch(e){}
+  }
+  function render(){
+    var s=state(), done=0;
+    items.forEach(function(li,i){
+      var cb=li.querySelector('input');
+      var on=!!s[i];
+      cb.checked=on;
+      li.classList.toggle('done', on);
+      if(on) done++;
+    });
+    var pct=items.length? Math.round(done/items.length*100):0;
+    fill.style.width=pct+'%';
+    count.textContent=done+' / '+items.length+' 已完成';
+  }
+  items.forEach(function(li,i){
+    li.addEventListener('click', function(e){
+      if(e.target.tagName==='INPUT') return;
+      var cb=li.querySelector('input');
+      cb.checked=!cb.checked;
+      var s=state(); s[i]=cb.checked; save(s); render();
+    });
+    li.querySelector('input').addEventListener('change', function(){
+      var s=state(); s[i]=this.checked; save(s); render();
+    });
+  });
+  document.getElementById('reset').addEventListener('click', function(){
+    save({}); render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+.home {
+  padding: 10px 16px 0;
+}
+
+/* ================= Hero ================= */
+.hero {
+  padding: 16px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #0a1317 0%, #052550 100%);
+}
+.hero__chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.32;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.hero__sub {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.66);
+}
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 14px;
+  padding: 0 18px;
+  border-radius: 100px;
+  background: var(--brand);
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ================= 搜索 ================= */
+.search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 22px;
+  padding: 0 14px;
+  border-radius: 100px;
+  background: #f1f4f7;
+}
+.search__ph {
+  margin-left: 8px;
+  font-size: 14px;
+  color: var(--t3);
+}
+
+/* ================= 常用功能 =================
+   常态：浅灰容器 + 墨蓝图标（所有入口一致，无特权项）
+   按下：钴蓝容器 + 白色图标
+   双份图标叠放 + 透明度切换 —— 因为图标是 PNG，不能靠 CSS 换色 */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid__item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.grid__box {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: #f1f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.14s ease-out;
+}
+
+/* 两个图标叠放在同一格
+   ------------------------------------------------------------------
+   ⚠️ 曾经这里的写法是 `.grid__ic { position:absolute; left:0; top:0;
+      right:0; bottom:0; margin:auto; }` 想让图标自动居中 ——
+      真机上图标全部飘到盒子左上角。
+
+   根因：绝对定位元素在 left/right 与 top/bottom 都给值、而 width/height
+      仍是 auto 时，会被**四边拉伸填满父容器**；一旦被拉伸，margin:auto
+      就没有剩余空间可分配，居中彻底失效，于是图标贴在左上角。
+
+   正确做法：先给一层给死尺寸的 wrap（由父级 flex 居中），
+      两个图标再绝对定位到 (0,0) 精确重合。不依赖任何「自动居中」的推断。 */
+.grid__ic-wrap {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+.grid__ic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.12s ease-out;
+}
+.grid__ic--press {
+  opacity: 0;
+}
+.grid__label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--t1);
+  transition: color 0.14s ease-out;
+}
+
+/* hover-class 挂在 .grid__item 上，所以用后代选择器向内作用 */
+.grid__item--press .grid__box {
+  background: var(--brand);
+  box-shadow: 0 8px 18px -6px rgba(0, 100, 224, 0.5);
+}
+.grid__item--press .grid__ic--idle {
+  opacity: 0;
+}
+.grid__item--press .grid__ic--press {
+  opacity: 1;
+}
+.grid__item--press .grid__label {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+/* ================= 为你推荐 ================= */
+.rec {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+.rec + .rec {
+  margin-top: 10px;
+}
+.rec__body {
+  flex: 1;
+  margin-left: 12px;
+  min-width: 0;
+}
+.rec__name {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.rec__meta {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--t3);
+}
+.rec__dot {
+  margin: 0 5px;
+}
+.rec__right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.rec__star {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 加载骨架 */
+.rec-skeleton {
+  height: 84px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #f1f4f7 0%, #e8edf3 50%, #f1f4f7 100%);
+}
+
+.home__foot {
+  margin: 22px 0 8px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--t4);
+  line-height: 1.6;
+}
