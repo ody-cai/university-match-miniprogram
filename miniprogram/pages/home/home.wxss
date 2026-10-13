@@ -193,11 +193,9 @@
   justify-content: center;
 }
 
-/* 加载骨架 */
-.rec-skeleton {
-  height: 84px;
-  border-radius: 16px;
-  background: linear-gradient(90deg, #f1f4f7 0%, #e8edf3 50%, #f1f4f7 100%);
+/* 骨架行复用 .rec 的几何（内距/圆角/背景），只是内容换成 .sk 占位块（app.wxss） */
+.rec--skel {
+  pointer-events: none;
 }
 
 .home__foot {

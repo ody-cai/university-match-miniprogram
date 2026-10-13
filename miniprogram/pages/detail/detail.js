@@ -34,6 +34,8 @@ Page(share.withShare({
     admissionPartialText: '',
     /** 语言未达直录线、档位被封顶时的说明；无此情况则留空 */
     admissionCappedText: '',
+    /** 整页骨架的卡片块数（wxml wx:elif="{{loading}}" 分支用） */
+    skelCards: [0, 1, 2],
   },
 
   /**

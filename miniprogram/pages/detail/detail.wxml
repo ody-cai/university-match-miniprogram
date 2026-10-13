@@ -192,3 +192,32 @@
     </view>
   </view>
 </view>
+
+<!-- ============ 加载骨架 ============
+     整页曾是 wx:if="{{school}}" 单闸门：加载期间连导航栏都不渲染（全白），
+     数据一到整页突入。骨架分支与真实页同几何（深色 Hero + 卡片列），
+     数据到达后原位替换。加载失败（catch 置 loading=false）时整块隐藏，
+     页面留白 + toast 如实告知。 -->
+<view class="page page--cta" wx:elif="{{loading}}">
+  <nav-bar title="{{c.nav.detail}}" back="{{true}}" fallback-url="/pages/schools/schools" />
+
+  <view class="detail">
+    <view class="dhero dhero--skel">
+      <view class="sk sk--hero" style="width:56px;height:56px;border-radius:16px"></view>
+      <view class="sk sk--hero" style="width:52%;height:20px;margin-top:14px"></view>
+      <view class="sk sk--hero" style="width:38%;height:11px;margin-top:6px"></view>
+      <view class="dhero__chips">
+        <view class="sk sk--hero" style="width:64px;height:26px;border-radius:100px"></view>
+        <view class="sk sk--hero" style="width:96px;height:26px;border-radius:100px"></view>
+        <view class="sk sk--hero" style="width:80px;height:26px;border-radius:100px"></view>
+      </view>
+    </view>
+
+    <view class="card" wx:for="{{skelCards}}" wx:key="*this">
+      <view class="sk" style="width:40%;height:16px"></view>
+      <view class="sk" style="width:100%;height:12px;margin-top:16px"></view>
+      <view class="sk" style="width:82%;height:12px;margin-top:8px"></view>
+      <view class="sk" style="width:64%;height:12px;margin-top:8px"></view>
+    </view>
+  </view>
+</view>

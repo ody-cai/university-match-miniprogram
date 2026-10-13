@@ -24,14 +24,21 @@ const share = require('../../utils/share');
 Page(share.withShare({
   data: {
     c: api.content(),
-    regions: [],
-    sorts: [],
+    /**
+     * 首帧即渲染：chips / 排序条来自打包内置的内容层，同步可读。
+     * 曾经初始为空、等 loadContent() 网络回来才渲染 —— 首帧只有搜索框，
+     * 筛选条整排突入并顶开下方列表（布局跳变）。
+     */
+    regions: api.content().enums.regions,
+    sorts: api.content().schools.sorts,
     region: 'all',
     sort: 'qs',
     keyword: '',
     list: [],
     favorites: [],
     total: 0,
+    /** 列表骨架行数：与首屏可见行数相当即可，数据到达后原位填充 */
+    skelRows: [0, 1, 2, 3, 4, 5],
     /**
      * 结果统计文案（如「共 99 所院校」）。
      * ⚠️ 内容层给的是**带占位符的模板** `共 {count} 所院校`，必须 `api.tpl()` 插值后再绑。
@@ -66,6 +73,9 @@ Page(share.withShare({
   },
 
   onLoad() {
+    // 列表数据与远端内容补丁并行拉取（曾经串行：等完补丁才发列表请求，
+    // 弱网下骨架屏白白多等一个网络往返）
+    this.refresh();
     api.loadContent().then((c) => {
       this.setData({
         c,
@@ -73,7 +83,6 @@ Page(share.withShare({
         sorts: c.schools.sorts,
       });
       this.contentReady = true;
-      this.refresh();
     });
   },
 
@@ -99,10 +108,18 @@ Page(share.withShare({
   },
 
   refresh() {
+    /**
+     * 序号守卫：首帧渲染后筛选/排序立即可点，用户可能在一次请求在途时
+     * 又触发新的筛选 —— 没有守卫的话，慢的旧响应会后到、把新的结果覆盖掉
+     * （列表闪回旧筛选）。只认最后一次请求的结果。
+     */
+    this._refreshSeq = (this._refreshSeq || 0) + 1;
+    const seq = this._refreshSeq;
     return Promise.all([
       api.listSchools({ region: this.data.region, keyword: this.data.keyword, sort: this.data.sort }),
       api.getFavorites(),
     ]).then(([res, favorites]) => {
+      if (seq !== this._refreshSeq) return;
       const view = res.list.map((s) => this.toRow(s, favorites));
       this.setData({
         list: this.order(view),

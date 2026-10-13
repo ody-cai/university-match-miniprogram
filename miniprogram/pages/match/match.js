@@ -94,7 +94,21 @@ Page(share.withShare({
      * 「与网络无关的先决条件必须在第一句做完」，与条款页那条纪律同源。
      */
     this.enums = this.data.c.enums;
-    this.setData({ curricula: this.enums.curricula });
+    /**
+     * 首帧即渲染：药丸 / 成绩行先按「未填写」形态就位 —— 这与档案到达后的
+     * 默认形态完全一致（defaultAcademic：无国家/专业选中、gpa  null、
+     * 无雅思），网络回来后只翻转选中态与数值，不再整块突入。
+     */
+    const c0 = this.data.c;
+    this.setData({
+      curricula: this.enums.curricula,
+      countries: this.buildChips(this.enums.countries, []),
+      majors: this.buildChips(this.enums.majors, []),
+      gpaDisplay: '—',
+      ieltsDisplay: '—',
+      gpaHint: api.tpl(c0.match.rowHints.gpa, { scale: 100 }),
+      ieltsHint: api.tpl(c0.match.rowHints.ielts, { l: '-', r: '-', w: '-', s: '-' }),
+    });
 
     /**
      * ⚠️ 档案装载**必须自己负责失败**（2026-09-25 修 P0）。

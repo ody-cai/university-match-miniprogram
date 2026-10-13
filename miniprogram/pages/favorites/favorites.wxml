@@ -19,6 +19,19 @@
       <text class="fav__total">{{totalLabel}}</text>
     </view>
 
+    <!-- 加载骨架：与 school-row 同几何（.sk-row，见 app.wxss），数据到达后原位填充 -->
+    <block wx:if="{{loading}}">
+      <view wx:for="{{skelRows}}" wx:key="*this" class="sk-row">
+        <view class="sk sk--circle" style="width:40px;height:40px"></view>
+        <view class="sk-row__body">
+          <view class="sk" style="width:50%;height:16px"></view>
+          <view class="sk" style="width:72%;height:12px;margin-top:6px"></view>
+        </view>
+        <view class="sk" style="width:36px;height:14px"></view>
+        <view class="sk sk--circle" style="width:28px;height:28px"></view>
+      </view>
+    </block>
+
     <!-- 列表 -->
     <school-row
       wx:for="{{list}}"

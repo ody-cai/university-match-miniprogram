@@ -58,6 +58,13 @@
   margin-top: 16px;
 }
 
+/* 骨架屏里的 Hero 占位：深色渐变卡片上用半透明白块，
+   覆盖全局 .sk 的浅灰（浅灰块落在深色 Hero 上会像补丁） */
+.dhero--skel .sk--hero {
+  background: rgba(255, 255, 255, 0.14);
+  animation: none;
+}
+
 /* ---------------- 录取可能性 ---------------- */
 .dscore {
   display: flex;

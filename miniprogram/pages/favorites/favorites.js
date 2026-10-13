@@ -29,6 +29,8 @@ Page(share.withShare({
     /** 统计文案（内容层给的是模板，必须 api.tpl() 插值后再绑） */
     totalLabel: '',
     loading: true,
+    /** 列表骨架行数（与 school-row 同几何的 .sk-row，见 app.wxss） */
+    skelRows: [0, 1, 2],
   },
 
   /**

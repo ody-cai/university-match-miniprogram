@@ -21,16 +21,30 @@ Component({
     /** 标签项内容高度（设计稿实测 44 + 安全区 34 = 78） */
     barHeight: 44,
     safeBottom: 0,
-    list: [],
+    /**
+     * 首帧即渲染：内容层是打包内置数据，api.content() 纯同步可读，
+     * 不必等 attached 再填（曾经 list 初始为空、attached 才 setData，
+     * 标签栏区域会先空一帧再整块出现）。
+     */
+    list: (api.content().tabBar || []).slice(0, 5),
   },
 
   lifetimes: {
     attached() {
       const app = getApp();
       const g = (app && app.globalData) || {};
+      /**
+       * 选中项在这里按**当前页面路由**直接定好，而不是先落默认值 0
+       * （首页高亮）再等页面 onShow 来纠偏 —— 后者在切到非首页的 tab 时
+       * 会闪一帧「首页被选中」。各页 onShow 仍保留同步调用作兜底
+       * （attached 与 onShow 的先后顺序框架不保证），两处写的是同一个值。
+       */
+      const pages = getCurrentPages();
+      const route = pages.length ? '/' + pages[pages.length - 1].route : '';
+      const idx = this.data.list.findIndex((it) => it.pagePath === route);
       this.setData({
         safeBottom: g.safeBottom || 0,
-        list: (api.content().tabBar || []).slice(0, 5),
+        selected: idx > -1 ? idx : 0,
       });
     },
   },

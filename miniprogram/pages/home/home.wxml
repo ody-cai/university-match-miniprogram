@@ -73,7 +73,18 @@
       </view>
     </view>
 
-    <view wx:if="{{loading}}" class="rec-skeleton"></view>
+    <!-- 加载骨架：与真实推荐行同几何（.rec 复用），行数 = skelRows（与推荐条数一致），
+         数据到达后原位填充，避免「空白 → 整块突入」的割裂感 -->
+    <block wx:if="{{loading}}">
+      <view wx:for="{{skelRows}}" wx:key="*this" class="rec rec--skel">
+        <view class="sk sk--circle" style="width:52px;height:52px"></view>
+        <view class="rec__body">
+          <view class="sk" style="width:55%;height:16px"></view>
+          <view class="sk" style="width:35%;height:12px;margin-top:8px"></view>
+        </view>
+        <view class="sk" style="width:56px;height:24px;border-radius:100px"></view>
+      </view>
+    </block>
 
     <view
       wx:for="{{recommend}}"

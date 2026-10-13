@@ -17,28 +17,44 @@ const share = require('../../utils/share');
 Page(share.withShare({
   data: {
     c: api.content(),               // 内容配置（文案 / 列表 / 开关）
-    season: '',
+    season: api.content().home.season,
     /** Hero chip 的成品文案（内容层模板经 {season} 插值后的结果） */
-    chipText: '',
-    features: [],
+    chipText: api.tpl(api.content().home.hero.chip, { season: api.content().home.season }),
+    features: (api.content().home.features || []).filter((f) => f.ready || true),
     recommend: [],
     mode: 'local',
     loading: true,
+    /**
+     * 推荐区骨架行数与推荐条数一致：骨架消失、真实行原位填入时布局零跳变。
+     * 数量取内置内容层的 recommendCount（同步可读），远端补丁若改条数，
+     * 下一次加载会按新条数重算。
+     */
+    skelRows: Array.from({ length: api.content().home.recommendCount || 3 }, (_, i) => i),
   },
 
   onLoad() {
-    // 先加载内容配置再渲染：页面所有文案都来自 content，晚到会导致文案闪烁
+    /**
+     * 首帧即渲染（与 match.js 同一纪律）：内容层是打包内置数据，
+     * api.content() 同步可得 —— Hero / 宫格 / chip 先按本地内容画出来，
+     * 远端补丁到达后只换文案，不再「整块突入」。
+     * 推荐列表是真实用户数据，用骨架屏占位（wxml 的 skelRows），到点原位填充。
+     *
+     * 曾经这里等 loadContent()  resolve 才渲染 anything：弱网下首屏空等
+     * 一个网络往返，然后所有区块同时突入 —— 正是「割裂感」的来源。
+     */
+    this.c = api.content();
+    this.setData({ mode: api.mode() });
+    // 远端内容补丁与推荐数据**并行**拉取（曾经串行：等完补丁才发推荐请求）
     api.loadContent().then((c) => {
       this.c = c;
       this.setData({
         c,
-        mode: api.mode(),
         season: c.home.season,
         features: (c.home.features || []).filter((f) => f.ready || true),
       });
       this.initSeasonChip();
-      this.refreshRecommend();
     });
+    this.refreshRecommend();
   },
 
   onShow() {

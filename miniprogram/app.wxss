@@ -106,6 +106,51 @@ view, text, navigator, button, input, scroll-view, swiper, image {
 }
 
 /* ------------------------------------------------------------------
+   骨架屏（Skeleton）
+   ------------------------------------------------------------------
+   原则：结构同步首帧渲染，真实数据未到先用 .sk 占位，数据到了原位填充 ——
+   不允许「空白若干帧 → 整块突入」。.sk-row 与 components/school-row 同几何
+   （白卡 + 14px 内距 + 16 圆角 + 10 下边距），骨架消失时列表布局零跳变。
+   ------------------------------------------------------------------ */
+.sk {
+  display: block;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f1f4f7 0%, #e8edf3 50%, #f1f4f7 100%);
+  background-size: 200% 100%;
+  animation: sk-breathe 1.4s ease-in-out infinite;
+}
+.sk--circle {
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@keyframes sk-breathe {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+/* 尊重系统「减弱动态效果」设置 */
+@media (prefers-reduced-motion: reduce) {
+  .sk {
+    animation: none;
+  }
+}
+
+/* 院校行骨架（院校库 / 我的收藏 共用）：几何与 school-row 的 .srow 一致 */
+.sk-row {
+  display: flex;
+  align-items: center;
+  padding: 14px 12px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  margin-bottom: 10px;
+}
+.sk-row__body {
+  flex: 1;
+  margin-left: 12px;
+  min-width: 0;
+}
+
+/* ------------------------------------------------------------------
    卡片
    ------------------------------------------------------------------ */
 .card {

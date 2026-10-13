@@ -24,6 +24,16 @@ Page(share.withShare({
   },
 
   onLoad() {
+    // 首帧即渲染：资料卡的姓名/副标题按「当前登录态」同步推导 ——
+    // 与 refresh() 的口径一致（未登录 → 引导文案；已登录 → 「未设置昵称」占位，
+    // 邮箱等网络数据到了再原位替换），不再空白一帧再突入
+    const signedIn0 = api.isSignedIn();
+    const c0 = this.data.c;
+    this.setData({
+      signedIn: signedIn0,
+      profileName: signedIn0 ? c0.account.profileNoNickname : c0.account.profileNotSignedIn,
+      profileSub: signedIn0 ? c0.account.profileNoEmail : c0.signin.sub,
+    });
     this.setData({
       security: [
         // 「个人资料」原先 url 为空、ready=false，点下去只提示「开发中」——
